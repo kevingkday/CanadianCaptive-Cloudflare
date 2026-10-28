@@ -919,16 +919,22 @@ ${buildFooter('')}
 // ── Sitemap & Cross-Page Count Sync ──────────────────────────────────────────
 
 function generateSitemap(domiciles) {
-    const today = new Date().toISOString().split('T')[0];
+    // Use the latest verification date in domiciles.json for deterministic output
+    const verifiedDates = domiciles
+        .map(d => d.last_verified)
+        .filter(Boolean)
+        .sort();
+    const latestVerified = verifiedDates.length > 0 ? verifiedDates[verifiedDates.length - 1] : '2026-10-28';
+    const defaultDomicileDate = '2026-03-28';
 
     const staticEntries = [
-        { loc: `${DOMAIN}/`, lastmod: today, changefreq: 'weekly', priority: '1.0' },
-        { loc: `${DOMAIN}/domiciles.html`, lastmod: today, changefreq: 'weekly', priority: '0.9' },
-        { loc: `${DOMAIN}/captive-management.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
-        { loc: `${DOMAIN}/feasibility-studies.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
-        { loc: `${DOMAIN}/formation-structuring.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
-        { loc: `${DOMAIN}/captive-advantages.html`, lastmod: today, changefreq: 'monthly', priority: '0.75' },
-        { loc: `${DOMAIN}/service-providers.html`, lastmod: today, changefreq: 'monthly', priority: '0.75' },
+        { loc: `${DOMAIN}/`, lastmod: latestVerified, changefreq: 'weekly', priority: '1.0' },
+        { loc: `${DOMAIN}/domiciles.html`, lastmod: latestVerified, changefreq: 'weekly', priority: '0.9' },
+        { loc: `${DOMAIN}/captive-management.html`, lastmod: latestVerified, changefreq: 'monthly', priority: '0.8' },
+        { loc: `${DOMAIN}/feasibility-studies.html`, lastmod: latestVerified, changefreq: 'monthly', priority: '0.8' },
+        { loc: `${DOMAIN}/formation-structuring.html`, lastmod: latestVerified, changefreq: 'monthly', priority: '0.8' },
+        { loc: `${DOMAIN}/captive-advantages.html`, lastmod: latestVerified, changefreq: 'monthly', priority: '0.75' },
+        { loc: `${DOMAIN}/service-providers.html`, lastmod: latestVerified, changefreq: 'monthly', priority: '0.75' },
     ];
 
     const canadianDomicileEntries = [];
@@ -936,7 +942,7 @@ function generateSitemap(domiciles) {
 
     domiciles.forEach(d => {
         const slug = getSlug(d);
-        const lastmod = d.last_verified || today;
+        const lastmod = d.last_verified || defaultDomicileDate;
         const isCanadian = (d.jurisdiction || '').toLowerCase().includes('canada');
         const entry = {
             loc: `${DOMAIN}/domiciles/${slug}.html`,
@@ -949,8 +955,8 @@ function generateSitemap(domiciles) {
     });
 
     const legalEntries = [
-        { loc: `${DOMAIN}/privacy-policy.html`, lastmod: today, changefreq: 'monthly', priority: '0.3' },
-        { loc: `${DOMAIN}/terms-of-service.html`, lastmod: today, changefreq: 'monthly', priority: '0.3' },
+        { loc: `${DOMAIN}/privacy-policy.html`, lastmod: defaultDomicileDate, changefreq: 'monthly', priority: '0.3' },
+        { loc: `${DOMAIN}/terms-of-service.html`, lastmod: defaultDomicileDate, changefreq: 'monthly', priority: '0.3' },
     ];
 
     const allEntries = [

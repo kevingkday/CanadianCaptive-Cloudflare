@@ -1,0 +1,42 @@
+name: Build Domicile Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/domiciles.json'
+      - 'scripts/generate-domiciles.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate-domiciles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate domicile pages and sitemap
+        run: node scripts/generate-domiciles.js
+
+      - name: Commit and push updated pages if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add domiciles/ domiciles.html sitemap.xml *.html scripts/generate-service-providers.js scripts/seo-optimize.js
+            git commit -m "chore(domiciles): auto-regenerate domicile pages and sitemap"
+            git push origin HEAD:main
+          else
+            echo "All domicile pages and sitemap are already up to date."
+          fi
