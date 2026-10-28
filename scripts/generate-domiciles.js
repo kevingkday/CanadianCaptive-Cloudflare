@@ -238,26 +238,28 @@ const TAILWIND_CONFIG = `tailwind.config = {
 function buildNav(pathPrefix, activePage, totalCount) {
     // pathPrefix: '' for root pages, '../' for /domiciles/ pages
     const homeActive = activePage === 'home';
+    const lifecycleActive = activePage === 'lifecycle';
+    const advantagesActive = activePage === 'advantages';
     const domicilesActive = activePage === 'domiciles';
     const serviceProvidersActive = activePage === 'service-providers';
 
     return `    <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
-        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
-            <a href="${pathPrefix}index.html" class="text-2xl font-bold tracking-tighter text-red-700 hover:opacity-80 transition-opacity">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 py-3.5 md:py-4">
+            <a href="${pathPrefix}index.html" class="text-xl sm:text-2xl font-bold tracking-tighter text-red-700 hover:opacity-80 transition-opacity shrink-0">
                 CanadianCaptive.com
             </a>
-            <div class="hidden md:flex items-center gap-x-8">
-                <a class="${homeActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight"
+            <div class="hidden lg:flex items-center gap-x-6 xl:gap-x-8 text-sm xl:text-base">
+                <a class="${homeActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight whitespace-nowrap"
                     href="${pathPrefix}index.html">Home</a>
-                <a class="text-slate-600 hover:text-red-600 transition-colors font-sans antialiased tracking-tight"
+                <a class="${lifecycleActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight whitespace-nowrap"
                     href="${pathPrefix}index.html#services">Captive Lifecycle Phases</a>
-                <a class="text-slate-600 hover:text-red-600 transition-colors font-sans antialiased tracking-tight"
+                <a class="${advantagesActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight whitespace-nowrap"
                     href="${pathPrefix}captive-advantages.html">Captive Advantages</a>
                 <div class="relative group">
-                    <a class="${domicilesActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight cursor-pointer flex items-center gap-1"
+                    <a class="${domicilesActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight cursor-pointer flex items-center gap-1 whitespace-nowrap"
                         href="${pathPrefix}domiciles.html">Domiciles <span class="material-symbols-outlined text-sm">expand_more</span></a>
                     <div class="absolute top-full left-0 pt-2 hidden group-hover:block z-50">
-                        <div class="bg-white rounded-xl shadow-lg border border-slate-200 py-2 min-w-[220px] max-h-[400px] overflow-y-auto">
+                        <div class="bg-white rounded-xl shadow-lg border border-slate-200 py-2 min-w-[240px] max-h-[400px] overflow-y-auto">
                             <div class="px-4 py-1.5 text-[0.65rem] font-bold uppercase tracking-widest text-red-700">Canadian</div>
                             <a class="block px-5 py-2 text-sm text-slate-600 hover:text-red-600 hover:bg-slate-50 transition-colors"
                                 href="${pathPrefix}domiciles/british-columbia.html">British Columbia</a>
@@ -269,16 +271,80 @@ function buildNav(pathPrefix, activePage, totalCount) {
                         </div>
                     </div>
                 </div>
-                <a class="${serviceProvidersActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight"
+                <a class="${serviceProvidersActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight whitespace-nowrap"
                     href="${pathPrefix}service-providers.html">Service Providers</a>
-                <a class="text-slate-600 hover:text-red-600 transition-colors font-sans antialiased tracking-tight"
+                <a class="text-slate-600 hover:text-red-600 transition-colors font-sans antialiased tracking-tight whitespace-nowrap"
                     href="${pathPrefix}index.html#news">Captive News</a>
             </div>
-            <div class="flex items-center gap-6">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="${pathPrefix}domiciles.html"
+                    class="lg:hidden inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold ${domicilesActive ? 'bg-red-700 text-white' : 'bg-red-50 text-red-700 border border-red-200'} hover:bg-red-100 transition-colors whitespace-nowrap">
+                    <span class="material-symbols-outlined text-sm">public</span>
+                    Domiciles
+                </a>
                 <a href="${pathPrefix}index.html#contact"
-                    class="bg-primary text-on-primary px-6 py-2 rounded-xl font-semibold hover:opacity-90 transition-all scale-95 duration-200 ease-in-out">
+                    class="hidden sm:inline-flex bg-primary text-on-primary px-4 md:px-6 py-2 rounded-xl text-sm md:text-base font-semibold hover:opacity-90 transition-all whitespace-nowrap">
                     Contact Us
                 </a>
+                <button type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                    onclick="const m=document.getElementById('mobile-nav-menu'); const icon=this.querySelector('.material-symbols-outlined'); const open=m.classList.toggle('hidden'); this.setAttribute('aria-expanded', !open); icon.textContent = open ? 'menu' : 'close';"
+                    class="lg:hidden inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-red-700 hover:bg-slate-100 transition-colors focus:outline-none">
+                    <span class="material-symbols-outlined text-2xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-nav-menu" class="hidden lg:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-xl shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <div class="max-w-7xl mx-auto px-6 py-5 space-y-2">
+                <div class="p-3.5 rounded-xl bg-red-50/70 border border-red-200/70 mb-3">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[0.7rem] font-bold uppercase tracking-widest text-red-700 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">public</span> Featured Domiciles
+                        </span>
+                        <a href="${pathPrefix}domiciles.html" class="text-xs font-bold text-red-700 hover:underline flex items-center gap-0.5">
+                            View All ${totalCount} <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="${pathPrefix}domiciles/british-columbia.html" class="bg-white px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:text-red-700 border border-slate-200/80 flex items-center justify-between">
+                            <span>British Columbia</span>
+                            <span class="material-symbols-outlined text-xs text-red-700">chevron_right</span>
+                        </a>
+                        <a href="${pathPrefix}domiciles/alberta.html" class="bg-white px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:text-red-700 border border-slate-200/80 flex items-center justify-between">
+                            <span>Alberta</span>
+                            <span class="material-symbols-outlined text-xs text-red-700">chevron_right</span>
+                        </a>
+                    </div>
+                    <a href="${pathPrefix}domiciles.html" class="mt-2 w-full bg-red-700 text-white py-2.5 px-4 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm hover:opacity-95 transition-opacity">
+                        Browse All ${totalCount} Global Domiciles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <a href="${pathPrefix}index.html" onclick="document.getElementById('mobile-nav-menu').classList.add('hidden')"
+                    class="block px-4 py-2.5 rounded-xl text-sm font-medium ${homeActive ? 'bg-red-50 text-red-700 font-semibold' : 'text-slate-700 hover:bg-slate-50 hover:text-red-700'} transition-colors">
+                    Home
+                </a>
+                <a href="${pathPrefix}index.html#services" onclick="document.getElementById('mobile-nav-menu').classList.add('hidden')"
+                    class="block px-4 py-2.5 rounded-xl text-sm font-medium ${lifecycleActive ? 'bg-red-50 text-red-700 font-semibold' : 'text-slate-700 hover:bg-slate-50 hover:text-red-700'} transition-colors">
+                    Captive Lifecycle Phases
+                </a>
+                <a href="${pathPrefix}captive-advantages.html" onclick="document.getElementById('mobile-nav-menu').classList.add('hidden')"
+                    class="block px-4 py-2.5 rounded-xl text-sm font-medium ${advantagesActive ? 'bg-red-50 text-red-700 font-semibold' : 'text-slate-700 hover:bg-slate-50 hover:text-red-700'} transition-colors">
+                    Captive Advantages
+                </a>
+                <a href="${pathPrefix}service-providers.html" onclick="document.getElementById('mobile-nav-menu').classList.add('hidden')"
+                    class="block px-4 py-2.5 rounded-xl text-sm font-medium ${serviceProvidersActive ? 'bg-red-50 text-red-700 font-semibold' : 'text-slate-700 hover:bg-slate-50 hover:text-red-700'} transition-colors">
+                    Service Providers
+                </a>
+                <a href="${pathPrefix}index.html#news" onclick="document.getElementById('mobile-nav-menu').classList.add('hidden')"
+                    class="block px-4 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-red-700 transition-colors">
+                    Captive News
+                </a>
+                <div class="pt-2 border-t border-slate-100">
+                    <a href="${pathPrefix}index.html#contact" onclick="document.getElementById('mobile-nav-menu').classList.add('hidden')"
+                        class="w-full bg-primary text-on-primary py-3 px-6 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-all">
+                        Contact Us
+                    </a>
+                </div>
             </div>
         </div>
     </nav>`;
@@ -904,26 +970,52 @@ function generateSitemap(domiciles) {
 }
 
 function updateDynamicCountsAcrossSite(totalCount) {
-    const filesToSync = [
-        path.join(ROOT, 'index.html'),
-        path.join(ROOT, 'captive-advantages.html'),
-        path.join(ROOT, 'captive-management.html'),
-        path.join(ROOT, 'feasibility-studies.html'),
-        path.join(ROOT, 'formation-structuring.html'),
-        path.join(ROOT, 'privacy-policy.html'),
-        path.join(ROOT, 'service-providers.html'),
-        path.join(ROOT, 'terms-of-service.html'),
+    const rootPages = [
+        { file: 'index.html', active: 'home' },
+        { file: 'captive-advantages.html', active: 'advantages' },
+        { file: 'captive-management.html', active: 'lifecycle' },
+        { file: 'feasibility-studies.html', active: 'lifecycle' },
+        { file: 'formation-structuring.html', active: 'lifecycle' },
+        { file: 'privacy-policy.html', active: '' },
+        { file: 'service-providers.html', active: 'service-providers' },
+        { file: 'terms-of-service.html', active: '' },
+    ];
+
+    rootPages.forEach(({ file, active }) => {
+        const filePath = path.join(ROOT, file);
+        if (!fs.existsSync(filePath)) return;
+        const original = fs.readFileSync(filePath, 'utf-8');
+        const newNav = buildNav('', active, totalCount);
+        const updated = original
+            .replace(/<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">[\s\S]*?<\/nav>/, newNav.trimStart())
+            .replace(/Browse All \d+\+? Domiciles/g, `Browse All ${totalCount} Domiciles`)
+            .replace(/across \d+\+? global domiciles/g, `across ${totalCount} global domiciles`)
+            .replace(/Explore \d+\+? captive insurance domiciles/g, `Explore ${totalCount} captive insurance domiciles`);
+        if (updated !== original) {
+            fs.writeFileSync(filePath, updated, 'utf-8');
+            console.log(`  ✓ Synced responsive nav & dynamic count (${totalCount}) in ${file}`);
+        }
+    });
+
+    const scriptFiles = [
         path.join(ROOT, 'scripts', 'generate-service-providers.js'),
         path.join(ROOT, 'scripts', 'seo-optimize.js'),
     ];
 
-    filesToSync.forEach(filePath => {
+    scriptFiles.forEach(filePath => {
         if (!fs.existsSync(filePath)) return;
         const original = fs.readFileSync(filePath, 'utf-8');
-        const updated = original
+        let updated = original
             .replace(/Browse All \d+\+? Domiciles/g, `Browse All ${totalCount} Domiciles`)
             .replace(/across \d+\+? global domiciles/g, `across ${totalCount} global domiciles`)
             .replace(/Explore \d+\+? captive insurance domiciles/g, `Explore ${totalCount} captive insurance domiciles`);
+        if (path.basename(filePath) === 'generate-service-providers.js') {
+            const spNav = buildNav('', 'service-providers', totalCount);
+            updated = updated.replace(
+                /function buildNav\(\) \{[\s\S]*?\n\}/,
+                `function buildNav() {\n    return \`${spNav}\`;\n}`
+            );
+        }
         if (updated !== original) {
             fs.writeFileSync(filePath, updated, 'utf-8');
             console.log(`  ✓ Synced dynamic count (${totalCount}) in ${path.relative(ROOT, filePath)}`);
