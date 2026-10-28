@@ -89,13 +89,13 @@ console.log('✓ robots.txt');
 
 const seoMeta = {
     'index.html': {
-        description: 'CanadianCaptive.com provides expert captive insurance consultancy for Canadian enterprises. Feasibility studies, formation, structuring, and ongoing captive management across 60+ global domiciles.',
+        description: 'CanadianCaptive.com provides expert captive insurance consultancy for Canadian enterprises. Feasibility studies, formation, structuring, and ongoing captive management across 68 global domiciles.',
         keywords: 'captive insurance, Canadian captive, risk management, feasibility study, captive formation, captive management, alternative risk transfer, insurance domicile',
         ogTitle: 'CanadianCaptive.com | Expert Captive Insurance Consultancy',
         ogType: 'website',
     },
     'domiciles.html': {
-        description: 'Explore 60+ captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, tax environments, and regulatory frameworks to find the optimal home for your captive.',
+        description: 'Explore 68 captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, tax environments, and regulatory frameworks to find the optimal home for your captive.',
         keywords: 'captive insurance domiciles, insurance jurisdictions, offshore captive, onshore captive, captive domicile comparison',
     },
     'feasibility-studies.html': {

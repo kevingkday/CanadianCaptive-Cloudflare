@@ -4,9 +4,11 @@
  * Reads data/domiciles.json and generates:
  *   1. Individual HTML pages for each domicile (in /domiciles/ directory)
  *   2. A domiciles directory page (domiciles.html) listing all domiciles
+ *   3. Updated sitemap.xml with all static + domicile pages
+ *   4. Synchronized dynamic domicile counts across root HTML pages
  * 
  * Usage:  node scripts/generate-domiciles.js
- * Run monthly (or whenever domiciles.json is updated) to regenerate pages.
+ * Run weekly (or whenever domiciles.json is updated) to regenerate pages.
  */
 
 const fs = require('fs');
@@ -15,6 +17,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const DATA_FILE = path.join(ROOT, 'data', 'domiciles.json');
 const DOMICILES_DIR = path.join(ROOT, 'domiciles');
+const SITEMAP_FILE = path.join(ROOT, 'sitemap.xml');
+const DOMAIN = 'https://canadiancaptive.com';
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -51,16 +55,31 @@ function jurisdictionCategory(jurisdiction) {
 }
 
 function escapeTemplateValue(value) {
+    if (value === null || value === undefined) return '';
     return String(value)
         .replace(/`/g, '&#96;')
         .replace(/\$\{/g, '&#36;{');
 }
 
+function formatSourceLabel(url) {
+    try {
+        const parsed = new URL(url);
+        const host = parsed.hostname.replace(/^www\./, '');
+        const cleanPath = parsed.pathname.replace(/\/$/, '');
+        if (!cleanPath || cleanPath === '') return host;
+        const segments = cleanPath.split('/').filter(Boolean);
+        const last = segments[segments.length - 1];
+        return `${host} / ${last.length > 42 ? last.substring(0, 39) + '...' : last}`;
+    } catch {
+        return url;
+    }
+}
+
 function buildCapitalRows(minCapital) {
     return Object.entries(minCapital).map(([type, amount]) =>
         `                            <tr class="border-b border-outline-variant/10 last:border-0">
-                                <td class="py-4 pr-8 text-on-surface font-medium">${escapeTemplateValue(type)}</td>
-                                <td class="py-4 text-secondary">${escapeTemplateValue(amount)}</td>
+                                <td class="px-8 py-4 text-on-surface font-medium">${escapeTemplateValue(type)}</td>
+                                <td class="px-8 py-4 text-secondary">${escapeTemplateValue(amount)}</td>
                             </tr>`
     ).join('\n');
 }
@@ -82,8 +101,10 @@ function renderStatsBlock(stats) {
         `;
     }
 
-    const cellText = stats.individual_cells_count 
-        ? `${stats.individual_cells_count}${stats.individual_cells_estimated ? ' (estimated)' : ''} as of ${stats.individual_cells_year || '2024'}`
+    const cellText = (stats.individual_cells_count !== null && stats.individual_cells_count !== undefined)
+        ? (stats.individual_cells_count > 0
+            ? `${stats.individual_cells_count}${stats.individual_cells_estimated ? ' (estimated)' : ''}${stats.individual_cells_year ? ` as of ${stats.individual_cells_year}` : ''}`
+            : '0')
         : 'Pending verification';
 
     return `
@@ -214,7 +235,7 @@ const TAILWIND_CONFIG = `tailwind.config = {
             },
         }`;
 
-function buildNav(pathPrefix, activePage) {
+function buildNav(pathPrefix, activePage, totalCount) {
     // pathPrefix: '' for root pages, '../' for /domiciles/ pages
     const homeActive = activePage === 'home';
     const domicilesActive = activePage === 'domiciles';
@@ -244,12 +265,14 @@ function buildNav(pathPrefix, activePage) {
                                 href="${pathPrefix}domiciles/alberta.html">Alberta</a>
                             <div class="border-t border-slate-100 my-1"></div>
                             <a class="block px-5 py-2.5 text-sm text-red-700 font-semibold hover:bg-red-50 transition-colors flex items-center gap-1"
-                                href="${pathPrefix}domiciles.html">Browse All 60+ Domiciles <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                                href="${pathPrefix}domiciles.html">Browse All ${totalCount} Domiciles <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
                         </div>
                     </div>
                 </div>
                 <a class="${serviceProvidersActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight"
                     href="${pathPrefix}service-providers.html">Service Providers</a>
+                <a class="text-slate-600 hover:text-red-600 transition-colors font-sans antialiased tracking-tight"
+                    href="${pathPrefix}index.html#news">Captive News</a>
             </div>
             <div class="flex items-center gap-6">
                 <a href="${pathPrefix}index.html#contact"
@@ -313,15 +336,24 @@ function buildFooter(pathPrefix) {
 // ── Individual Domicile Page Template ────────────────────────────────────────
 
 function generateDomicilePage(domicile, allDomiciles) {
+    const slug = getSlug(domicile);
     const badge = jurisdictionBadgeColor(domicile.jurisdiction);
     const capitalRows = buildCapitalRows(domicile.min_capital);
-    const capitalCount = Object.keys(domicile.min_capital).length;
     const pathPrefix = '../';
+    const totalCount = allDomiciles.length;
 
     // Find prev/next domiciles for navigation
     const idx = allDomiciles.findIndex(d => d.name === domicile.name);
     const prev = idx > 0 ? allDomiciles[idx - 1] : null;
     const next = idx < allDomiciles.length - 1 ? allDomiciles[idx + 1] : null;
+
+    const hasDistinctApplicableLegislation = Boolean(
+        domicile.applicable_legislation &&
+        domicile.applicable_legislation.trim() !== '' &&
+        domicile.applicable_legislation.trim() !== (domicile.legislation || '').trim()
+    );
+
+    const hasSourceUrls = Array.isArray(domicile.source_urls) && domicile.source_urls.length > 0;
 
     return `<!DOCTYPE html>
 <html class="light" lang="en">
@@ -336,15 +368,15 @@ function generateDomicilePage(domicile, allDomiciles) {
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta name="keywords" content="${domicile.name} captive insurance, ${domicile.jurisdiction} domicile, captive formation" />
-    <link rel="canonical" href="https://canadiancaptive.com/domiciles/${domicile.slug}.html" />
-    <meta property="og:title" content="${domicile.name} Captive Insurance Domicile | CanadianCaptive.com" />
-    <meta property="og:description" content="${domicile.summary.substring(0, 160).replace(/"/g, '&quot;')}..." />
+    <meta name="keywords" content="${escapeTemplateValue(domicile.name)} captive insurance, ${escapeTemplateValue(domicile.jurisdiction)} domicile, captive formation" />
+    <link rel="canonical" href="https://canadiancaptive.com/domiciles/${slug}.html" />
+    <meta property="og:title" content="${escapeTemplateValue(domicile.name)} Captive Insurance Domicile | CanadianCaptive.com" />
+    <meta property="og:description" content="${escapeTemplateValue(domicile.summary.substring(0, 160).replace(/"/g, '&quot;'))}..." />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://canadiancaptive.com/domiciles/${domicile.slug}.html" />
+    <meta property="og:url" content="https://canadiancaptive.com/domiciles/${slug}.html" />
     <meta property="og:site_name" content="CanadianCaptive.com" />
-    <title>${domicile.name} Domicile | CanadianCaptive.com</title>
-    <meta name="description" content="${domicile.summary.substring(0, 160).replace(/"/g, '&quot;')}..." />
+    <title>${escapeTemplateValue(domicile.name)} Domicile | CanadianCaptive.com</title>
+    <meta name="description" content="${escapeTemplateValue(domicile.summary.substring(0, 160).replace(/"/g, '&quot;'))}..." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
@@ -356,7 +388,7 @@ function generateDomicilePage(domicile, allDomiciles) {
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
-${buildNav(pathPrefix, 'domiciles')}
+${buildNav(pathPrefix, 'domiciles', totalCount)}
 
     <main class="pt-24">
         <!-- Hero Section -->
@@ -367,46 +399,58 @@ ${buildNav(pathPrefix, 'domiciles')}
                         <span class="material-symbols-outlined text-sm">arrow_back</span> All Domiciles
                     </a>
                     <span class="text-outline-variant">/</span>
-                    <span class="text-secondary text-sm">${domicile.name}</span>
+                    <span class="text-secondary text-sm">${escapeTemplateValue(domicile.name)}</span>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     <div class="lg:col-span-8">
                         <div class="flex flex-wrap items-center gap-3 mb-6">
                             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider border ${badge.bg} ${badge.text} ${badge.border}">
                                 <span class="material-symbols-outlined text-sm">public</span>
-                                ${domicile.jurisdiction}
+                                ${escapeTemplateValue(domicile.jurisdiction)}
                             </span>
+                            ${domicile.last_verified ? `<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider border bg-emerald-50 text-emerald-700 border-emerald-200">
+                                <span class="material-symbols-outlined text-sm">verified</span>
+                                Last Verified: ${escapeTemplateValue(domicile.last_verified)}
+                            </span>` : ''}
                         </div>
                         <h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-on-surface leading-[1.1] mb-8">
-                            ${domicile.name}
+                            ${escapeTemplateValue(domicile.name)}
                         </h1>
                         <div class="horizon-line mb-8"></div>
                         <p class="text-lg md:text-xl text-secondary max-w-3xl leading-relaxed mb-10">
-                            ${domicile.summary}
+                            ${escapeTemplateValue(domicile.summary)}
                         </p>
                     </div>
                     <div class="lg:col-span-4">
                         <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10 overflow-hidden">
-                            <div class="bg-inverse-surface text-inverse-on-surface px-8 py-5">
+                            <div class="bg-inverse-surface text-inverse-on-surface px-8 py-5 flex items-center justify-between">
                                 <h3 class="font-bold text-lg">Quick Facts</h3>
+                                ${domicile.last_verified ? `<span class="text-[0.65rem] font-semibold uppercase tracking-widest bg-emerald-500/20 text-emerald-200 px-2.5 py-1 rounded border border-emerald-400/30">Verified ${escapeTemplateValue(domicile.last_verified)}</span>` : ''}
                             </div>
                             <div class="px-8 py-6 space-y-5">
                                 <div>
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Jurisdiction</div>
-                                    <div class="font-semibold text-on-surface">${domicile.jurisdiction}</div>
+                                    <div class="font-semibold text-on-surface">${escapeTemplateValue(domicile.jurisdiction)}</div>
                                 </div>
                                 <div class="border-t border-outline-variant/10 pt-5">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Legislation</div>
-                                    <div class="font-semibold text-on-surface">${domicile.legislation}</div>
+                                    <div class="font-semibold text-on-surface">${escapeTemplateValue(domicile.legislation)}</div>
                                 </div>
                                 <div class="border-t border-outline-variant/10 pt-5">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Tax Environment</div>
-                                    <div class="font-semibold text-on-surface">${domicile.tax_notes}</div>
+                                    <div class="font-semibold text-on-surface">${escapeTemplateValue(domicile.tax_notes)}</div>
                                 </div>
                                 ${domicile.contact_name ? `<div class="border-t border-outline-variant/10 pt-5">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Contact</div>
-                                    <div class="font-semibold text-on-surface">${domicile.contact_name}</div>
-                                    ${domicile.contact_email ? `<a href="mailto:${domicile.contact_email}" class="text-primary text-sm hover:underline">${domicile.contact_email}</a>` : ''}
+                                    <div class="font-semibold text-on-surface">${escapeTemplateValue(domicile.contact_name)}</div>
+                                    ${domicile.contact_email ? `<a href="mailto:${escapeTemplateValue(domicile.contact_email)}" class="text-primary text-sm hover:underline">${escapeTemplateValue(domicile.contact_email)}</a>` : ''}
+                                </div>` : ''}
+                                ${domicile.last_verified ? `<div class="border-t border-outline-variant/10 pt-5">
+                                    <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Last Verified</div>
+                                    <div class="font-semibold text-emerald-700 flex items-center gap-1.5 text-sm">
+                                        <span class="material-symbols-outlined text-base">verified</span>
+                                        ${escapeTemplateValue(domicile.last_verified)}
+                                    </div>
                                 </div>` : ''}
                             </div>
                         </div>
@@ -446,7 +490,11 @@ ${capitalRows}
                                 <span class="material-symbols-outlined text-primary mt-1">info</span>
                                 <div>
                                     <h3 class="text-lg font-bold text-on-surface mb-2">Regulatory Framework</h3>
-                                    <p class="text-secondary leading-relaxed">${domicile.legislation}</p>
+                                    <p class="text-secondary leading-relaxed">${escapeTemplateValue(domicile.legislation)}</p>
+                                    ${hasDistinctApplicableLegislation ? `<div class="mt-4 pt-4 border-t border-outline-variant/15">
+                                        <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Applicable Statutes &amp; Regulations</div>
+                                        <p class="text-secondary text-sm leading-relaxed">${escapeTemplateValue(domicile.applicable_legislation)}</p>
+                                    </div>` : ''}
                                 </div>
                             </div>
                         </div>
@@ -455,7 +503,7 @@ ${capitalRows}
                                 <span class="material-symbols-outlined text-primary mt-1">account_balance_wallet</span>
                                 <div>
                                     <h3 class="text-lg font-bold text-on-surface mb-2">Tax Environment</h3>
-                                    <p class="text-secondary leading-relaxed">${domicile.tax_notes}</p>
+                                    <p class="text-secondary leading-relaxed">${escapeTemplateValue(domicile.tax_notes)}</p>
                                 </div>
                             </div>
                         </div>
@@ -539,7 +587,7 @@ ${capitalRows}
                                 <div>
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Supervisory Authority</div>
                                     <div class="font-semibold text-on-surface text-sm">${renderMetric(domicile.regulator?.name)}</div>
-                                    ${domicile.regulator?.website ? `<a href="${domicile.regulator.website}" target="_blank" rel="noopener noreferrer" class="text-primary text-xs hover:underline flex items-center gap-1 mt-1">${domicile.regulator.website} <span class="material-symbols-outlined text-[10px]">open_in_new</span></a>` : ''}
+                                    ${domicile.regulator?.website ? `<a href="${escapeTemplateValue(domicile.regulator.website)}" target="_blank" rel="noopener noreferrer" class="text-primary text-xs hover:underline flex items-center gap-1 mt-1">${escapeTemplateValue(domicile.regulator.website)} <span class="material-symbols-outlined text-[10px]">open_in_new</span></a>` : ''}
                                 </div>
                                 <div class="border-t border-outline-variant/10 pt-4">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Office Address</div>
@@ -552,10 +600,22 @@ ${capitalRows}
                                 <div class="border-t border-outline-variant/10 pt-4">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Captive Administrator</div>
                                     <div class="font-semibold text-on-surface text-sm">${renderMetric(domicile.captive_administrator?.name)}</div>
-                                    ${domicile.captive_administrator?.email ? `<a href="mailto:${domicile.captive_administrator.email}" class="text-primary text-xs block hover:underline mt-1">${domicile.captive_administrator.email}</a>` : ''}
-                                    ${domicile.captive_administrator?.phone ? `<div class="text-xs text-secondary mt-1">Phone: ${domicile.captive_administrator.phone}</div>` : ''}
-                                    ${domicile.captive_administrator?.fax ? `<div class="text-xs text-secondary mt-0.5">Fax: ${domicile.captive_administrator.fax}</div>` : ''}
+                                    ${domicile.captive_administrator?.email ? `<a href="mailto:${escapeTemplateValue(domicile.captive_administrator.email)}" class="text-primary text-xs block hover:underline mt-1">${escapeTemplateValue(domicile.captive_administrator.email)}</a>` : ''}
+                                    ${domicile.captive_administrator?.phone ? `<div class="text-xs text-secondary mt-1">Phone: ${escapeTemplateValue(domicile.captive_administrator.phone)}</div>` : ''}
+                                    ${domicile.captive_administrator?.fax ? `<div class="text-xs text-secondary mt-0.5">Fax: ${escapeTemplateValue(domicile.captive_administrator.fax)}</div>` : ''}
                                 </div>
+                                ${hasSourceUrls ? `<div class="border-t border-outline-variant/10 pt-4">
+                                    <div class="text-xs font-label uppercase tracking-widest text-secondary mb-2">Official Regulatory Sources</div>
+                                    <ul class="space-y-1.5">
+                                        ${domicile.source_urls.map(url => `<li>
+                                            <a href="${escapeTemplateValue(url)}" target="_blank" rel="noopener noreferrer" class="text-primary text-xs hover:underline inline-flex items-center gap-1 break-all">
+                                                <span class="material-symbols-outlined text-[12px] shrink-0">link</span>
+                                                <span>${escapeTemplateValue(formatSourceLabel(url))}</span>
+                                                <span class="material-symbols-outlined text-[10px] shrink-0">open_in_new</span>
+                                            </a>
+                                        </li>`).join('\n                                        ')}
+                                    </ul>
+                                </div>` : ''}
                             </div>
                         </div>
                     </div>
@@ -567,7 +627,7 @@ ${capitalRows}
         <section class="py-12 bg-surface-container-low border-t border-outline-variant/10 text-center">
             <div class="max-w-7xl mx-auto px-6">
                 <a href="${pathPrefix}index.html#project-brief" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-semibold inline-flex items-center gap-2 hover:shadow-lg transition-all">
-                    Request ${domicile.name} Feasibility Study
+                    Request ${escapeTemplateValue(domicile.name)} Feasibility Study
                     <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
             </div>
@@ -581,13 +641,13 @@ ${capitalRows}
                         <span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
                         <div>
                             <div class="text-xs uppercase tracking-wider opacity-60">Previous</div>
-                            <div class="font-semibold">${prev.name}</div>
+                            <div class="font-semibold">${escapeTemplateValue(prev.name)}</div>
                         </div>
                     </a>` : '<div></div>'}
                     ${next ? `<a href="${getSlug(next)}.html" class="flex items-center gap-2 text-secondary hover:text-primary transition-colors text-right group">
                         <div>
                             <div class="text-xs uppercase tracking-wider opacity-60">Next</div>
-                            <div class="font-semibold">${next.name}</div>
+                            <div class="font-semibold">${escapeTemplateValue(next.name)}</div>
                         </div>
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </a>` : '<div></div>'}
@@ -600,12 +660,12 @@ ${capitalRows}
             <div class="max-w-7xl mx-auto px-6">
                 <div class="bg-on-surface text-surface rounded-2xl overflow-hidden relative">
                     <div class="p-12 md:p-20 text-center max-w-3xl mx-auto">
-                        <h2 class="text-4xl font-headline font-extrabold mb-6 tracking-tight">Considering ${domicile.name} for Your Captive?</h2>
-                        <p class="text-secondary-fixed-dim text-lg mb-10">Our consultants provide end-to-end guidance on domicile selection, feasibility, and formation. Let us help you determine if ${domicile.name} is the right fit.</p>
+                        <h2 class="text-4xl font-headline font-extrabold mb-6 tracking-tight">Considering ${escapeTemplateValue(domicile.name)} for Your Captive?</h2>
+                        <p class="text-secondary-fixed-dim text-lg mb-10">Our consultants provide end-to-end guidance on domicile selection, feasibility, and formation. Let us help you determine if ${escapeTemplateValue(domicile.name)} is the right fit.</p>
                         <div class="flex flex-col sm:flex-row justify-center gap-4">
-                            <button class="bg-white text-on-surface px-10 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all">
+                            <a href="${pathPrefix}index.html#contact" class="bg-white text-on-surface px-10 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all inline-flex items-center justify-center">
                                 Schedule a Consultation
-                            </button>
+                            </a>
                             <a href="${pathPrefix}domiciles.html" class="border border-white/30 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition-all inline-flex items-center justify-center">
                                 Compare Other Domiciles
                             </a>
@@ -624,6 +684,9 @@ ${buildFooter(pathPrefix)}
 // ── Directory Page Template ──────────────────────────────────────────────────
 
 function generateDirectoryPage(domiciles) {
+    const totalCount = domiciles.length;
+    const verifiedCount = domiciles.filter(d => Boolean(d.last_verified)).length;
+
     // Group by category
     const groups = {};
     domiciles.forEach(d => {
@@ -653,16 +716,27 @@ function generateDirectoryPage(domiciles) {
             const badge = jurisdictionBadgeColor(d.jurisdiction);
             const firstCapitalKey = Object.keys(d.min_capital)[0];
             const firstCapitalVal = d.min_capital[firstCapitalKey];
+            const verifiedBadge = d.last_verified
+                ? `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[0.65rem] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span class="material-symbols-outlined text-[12px]">verified</span> Verified ${escapeTemplateValue(d.last_verified)}
+                            </span>`
+                : '';
+
             return `
                     <a href="domiciles/${slug}.html"
-                        class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-md transition-all group border border-outline-variant/10 block">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">${escapeTemplateValue(d.name)}</h3>
-                            <span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+                        class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-md transition-all group border border-outline-variant/10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-bold text-on-surface group-hover:text-primary transition-colors">${escapeTemplateValue(d.name)}</h3>
+                                <span class="material-symbols-outlined text-secondary group-hover:text-primary group-hover:translate-x-1 transition-all text-sm">arrow_forward</span>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                <span class="inline-block px-2 py-0.5 rounded text-[0.65rem] font-semibold uppercase tracking-wider ${badge.bg} ${badge.text} ${badge.border} border">${escapeTemplateValue(d.jurisdiction)}</span>
+                                ${verifiedBadge}
+                            </div>
+                            <p class="text-secondary text-sm leading-relaxed mb-4 line-clamp-2">${escapeTemplateValue(d.summary.substring(0, 140))}...</p>
                         </div>
-                        <span class="inline-block px-2 py-0.5 rounded text-[0.65rem] font-semibold uppercase tracking-wider ${badge.bg} ${badge.text} ${badge.border} border mb-3">${escapeTemplateValue(d.jurisdiction)}</span>
-                        <p class="text-secondary text-sm leading-relaxed mb-4 line-clamp-2">${escapeTemplateValue(d.summary.substring(0, 140))}...</p>
-                        <div class="text-xs text-on-surface-variant">
+                        <div class="text-xs text-on-surface-variant pt-3 border-t border-outline-variant/10">
                             <span class="font-semibold">${escapeTemplateValue(firstCapitalKey)}:</span> ${escapeTemplateValue(firstCapitalVal)}
                         </div>
                     </a>`;
@@ -706,13 +780,13 @@ ${cardsHTML}
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="canonical" href="https://canadiancaptive.com/domiciles.html" />
-    <meta property="og:title" content="Global Captive Domiciles | CanadianCaptive.com" />
-    <meta property="og:description" content="Explore 60+ captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments." />
+    <meta property="og:title" content="Global Captive Domiciles (${totalCount}) | CanadianCaptive.com" />
+    <meta property="og:description" content="Explore ${totalCount} captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://canadiancaptive.com/domiciles.html" />
     <meta property="og:site_name" content="CanadianCaptive.com" />
-    <title>Global Captive Domiciles | CanadianCaptive.com</title>
-    <meta name="description" content="Explore 60+ captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments to find the right home for your captive." />
+    <title>Global Captive Domiciles (${totalCount}) | CanadianCaptive.com</title>
+    <meta name="description" content="Explore ${totalCount} captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments to find the right home for your captive." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
@@ -725,22 +799,22 @@ ${cardsHTML}
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
-${buildNav('', 'domiciles')}
+${buildNav('', 'domiciles', totalCount)}
 
     <main class="pt-24">
         <!-- Hero -->
         <section class="py-20 md:py-28 bg-surface">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="mb-6 flex items-center gap-4">
+                <div class="mb-6 flex flex-wrap items-center gap-4">
                     <div class="h-px w-12 bg-primary"></div>
-                    <span class="text-secondary font-label text-xs tracking-widest uppercase">Global Directory</span>
+                    <span class="text-secondary font-label text-xs tracking-widest uppercase">Global Directory &bull; ${totalCount} Jurisdictions (${verifiedCount} Verified Profiles)</span>
                 </div>
                 <h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-on-surface leading-[1.1] mb-6">
                     Captive Insurance <span class="text-primary">Domiciles</span>
                 </h1>
                 <div class="horizon-line mb-8"></div>
                 <p class="text-lg md:text-xl text-secondary max-w-3xl leading-relaxed mb-10">
-                    Explore over 60 domiciles worldwide. Each jurisdiction offers unique regulatory frameworks, capital requirements, and tax environments &mdash; our consultants help you find the optimal fit for your organization.
+                    Explore ${totalCount} domiciles worldwide. Each jurisdiction offers unique regulatory frameworks, capital requirements, and tax environments &mdash; our consultants help you find the optimal fit for your organization.
                 </p>
                 <div class="flex flex-wrap gap-3">
                     ${jumpPills}
@@ -762,9 +836,9 @@ ${sectionsHTML}
                     <div class="p-12 md:p-20 text-center max-w-3xl mx-auto">
                         <h2 class="text-4xl font-headline font-extrabold mb-6 tracking-tight">Not Sure Which Domicile Is Right?</h2>
                         <p class="text-secondary-fixed-dim text-lg mb-10">Our domicile selection analysis compares jurisdictions head-to-head based on your unique corporate profile, risk appetite, and strategic objectives.</p>
-                        <button class="bg-white text-on-surface px-10 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all">
+                        <a href="index.html#contact" class="bg-white text-on-surface px-10 py-4 rounded-xl font-bold hover:bg-surface-container-low transition-all inline-block">
                             Schedule a Domicile Consultation
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -774,6 +848,87 @@ ${sectionsHTML}
 ${buildFooter('')}
 </body>
 </html>`;
+}
+
+// ── Sitemap & Cross-Page Count Sync ──────────────────────────────────────────
+
+function generateSitemap(domiciles) {
+    const today = new Date().toISOString().split('T')[0];
+
+    const staticEntries = [
+        { loc: `${DOMAIN}/`, lastmod: today, changefreq: 'weekly', priority: '1.0' },
+        { loc: `${DOMAIN}/domiciles.html`, lastmod: today, changefreq: 'weekly', priority: '0.9' },
+        { loc: `${DOMAIN}/captive-management.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
+        { loc: `${DOMAIN}/feasibility-studies.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
+        { loc: `${DOMAIN}/formation-structuring.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
+        { loc: `${DOMAIN}/captive-advantages.html`, lastmod: today, changefreq: 'monthly', priority: '0.75' },
+        { loc: `${DOMAIN}/service-providers.html`, lastmod: today, changefreq: 'monthly', priority: '0.75' },
+    ];
+
+    const canadianDomicileEntries = [];
+    const otherDomicileEntries = [];
+
+    domiciles.forEach(d => {
+        const slug = getSlug(d);
+        const lastmod = d.last_verified || today;
+        const isCanadian = (d.jurisdiction || '').toLowerCase().includes('canada');
+        const entry = {
+            loc: `${DOMAIN}/domiciles/${slug}.html`,
+            lastmod,
+            changefreq: 'monthly',
+            priority: isCanadian ? '0.85' : '0.7'
+        };
+        if (isCanadian) canadianDomicileEntries.push(entry);
+        else otherDomicileEntries.push(entry);
+    });
+
+    const legalEntries = [
+        { loc: `${DOMAIN}/privacy-policy.html`, lastmod: today, changefreq: 'monthly', priority: '0.3' },
+        { loc: `${DOMAIN}/terms-of-service.html`, lastmod: today, changefreq: 'monthly', priority: '0.3' },
+    ];
+
+    const allEntries = [
+        ...staticEntries.slice(0, 2),
+        ...canadianDomicileEntries,
+        ...staticEntries.slice(2),
+        ...otherDomicileEntries,
+        ...legalEntries
+    ];
+
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+        allEntries.map(e => `  <url>\n    <loc>${e.loc}</loc>\n    <lastmod>${e.lastmod}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`).join('\n') +
+        `\n</urlset>\n`;
+
+    fs.writeFileSync(SITEMAP_FILE, xml, 'utf-8');
+    console.log(`  ✓ sitemap.xml (${allEntries.length} URLs)`);
+}
+
+function updateDynamicCountsAcrossSite(totalCount) {
+    const filesToSync = [
+        path.join(ROOT, 'index.html'),
+        path.join(ROOT, 'captive-advantages.html'),
+        path.join(ROOT, 'captive-management.html'),
+        path.join(ROOT, 'feasibility-studies.html'),
+        path.join(ROOT, 'formation-structuring.html'),
+        path.join(ROOT, 'privacy-policy.html'),
+        path.join(ROOT, 'service-providers.html'),
+        path.join(ROOT, 'terms-of-service.html'),
+        path.join(ROOT, 'scripts', 'generate-service-providers.js'),
+        path.join(ROOT, 'scripts', 'seo-optimize.js'),
+    ];
+
+    filesToSync.forEach(filePath => {
+        if (!fs.existsSync(filePath)) return;
+        const original = fs.readFileSync(filePath, 'utf-8');
+        const updated = original
+            .replace(/Browse All \d+\+? Domiciles/g, `Browse All ${totalCount} Domiciles`)
+            .replace(/across \d+\+? global domiciles/g, `across ${totalCount} global domiciles`)
+            .replace(/Explore \d+\+? captive insurance domiciles/g, `Explore ${totalCount} captive insurance domiciles`);
+        if (updated !== original) {
+            fs.writeFileSync(filePath, updated, 'utf-8');
+            console.log(`  ✓ Synced dynamic count (${totalCount}) in ${path.relative(ROOT, filePath)}`);
+        }
+    });
 }
 
 // ── Main Execution ───────────────────────────────────────────────────────────
@@ -803,4 +958,8 @@ const directoryHtml = generateDirectoryPage(domiciles);
 fs.writeFileSync(directoryPath, directoryHtml, 'utf-8');
 console.log(`  ✓ domiciles.html (directory)`);
 
-console.log(`\nDone! Generated ${domiciles.length} domicile pages + 1 directory page.`);
+// Generate sitemap.xml and sync dynamic counts across static pages
+generateSitemap(domiciles);
+updateDynamicCountsAcrossSite(domiciles.length);
+
+console.log(`\nDone! Generated ${domiciles.length} domicile pages, 1 directory page, and sitemap.xml.`);
