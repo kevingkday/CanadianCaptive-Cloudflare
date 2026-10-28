@@ -45,21 +45,30 @@
   },
   {
     "name": "Alberta",
-    "summary": "Alberta does not have dedicated captive insurance legislation, but captives can be established under the province's general Insurance Act with approval from the Alberta Superintendent of Insurance. The province's strong energy and natural resource sectors create significant demand for alternative risk transfer mechanisms. Alberta offers a business-friendly regulatory environment and competitive corporate tax rates, making it an emerging consideration for Canadian enterprises exploring captive solutions.",
-    "jurisdiction": "Onshore (Canada)",
-    "legislation": "Alberta Insurance Act (General Provisions)",
-    "min_capital": {
-      "Single parent captives": "Capital Guideline for Captive Insurance Companies – November 2025"
-    },
-    "tax_notes": "Provincial premium taxes apply; competitive corporate tax rate of 8%",
-    "contact_name": "Alberta Superintendent of Insurance",
-    "contact_email": "tbf.insurance-licens@gov.ab.ca",
-    "last_verified": "2026-06-29",
-    "source_urls": [
-      "https://www.alberta.ca/information-for-captive-insurers"
-    ],
     "slug": "alberta",
+    "jurisdiction": "Onshore (Canada)",
+    "summary": "Alberta enacted dedicated captive insurance legislation under the Captive Insurance Companies Act (SA 2021, c. C-2.4), which came into force on July 1, 2022, making it the second Canadian province with a standalone captive statute. Administered by the Alberta Superintendent of Insurance (Treasury Board and Finance), the regime authorizes pure, association, and sophisticated insured captives\u2014formed as either corporations or limited partnerships\u2014as well as redomestication of foreign captives. Driven by strong demand from the energy, natural resource, and commercial sectors, along with Canada's lowest provincial corporate income tax rate (8%) and streamlined 6-week licensing, Alberta has rapidly expanded its captive insurance sector.",
+    "legislation": "Captive Insurance Companies Act, SA 2021, c. C-2.4 (in force July 1, 2022) & Captive Insurance Companies Regulation, Alta. Reg. 100/2022",
     "legislation_year": 2022,
+    "applicable_legislation": "Captive Insurance Companies Act (SA 2021, c. C-2.4); Captive Insurance Companies Regulation (Alta. Reg. 100/2022); Captive Insurance Companies (Prescribed Enactments) Regulation (Alta. Reg. 103/2022); Fees Under the Captive Insurance Companies Act Order (Ministerial Order 14/2022); Classes of Insurance Regulation (Alta. Reg. 144/2011); Recovery of Insurance Administration Costs Regulation (Alta. Reg. 102/2022); Insurance Enforcement and Administration Regulation (Alta. Reg. 101/2022); Business Corporations Act (RSA 2000, c. B-9); Partnership Act (RSA 2000, c. P-3); Alberta Corporate Tax Act (RSA 2000, c. A-15).",
+    "min_capital": {
+      "Pure Captive": "CAD 250,000 minimum base capital (or greater of 20% of first CAD 5M Net Insurance Revenue + 10% over CAD 5M, or 15% of net Liabilities for Incurred Claims for P&C; subject to Superintendent's risk-based determination)",
+      "Association Captive": "CAD 500,000 minimum base capital (or greater of formulaic revenue/claims thresholds or actuary-proposed risk-based amount; subject to Superintendent's determination)",
+      "Sophisticated Insured Captive": "CAD 500,000 minimum base capital (insureds must demonstrate insurance expertise and pay at least CAD 500,000 in aggregate annual premiums; subject to Superintendent's determination)"
+    },
+    "tax_notes": "Subject to federal and provincial corporate income tax (8% Alberta general corporate tax rate) and Alberta insurance premiums tax under the Alberta Corporate Tax Act (3% on life, accident and sickness insurance; 4% on property, casualty and other insurance contracts on Alberta risks).",
+    "contact_name": "Erin O'Neill, Alberta Superintendent of Insurance",
+    "contact_email": "tbf.insurance-licens@gov.ab.ca",
+    "last_verified": "2026-10-28",
+    "source_urls": [
+      "https://www.alberta.ca/information-for-captive-insurers",
+      "https://www.alberta.ca/system/files/custom_downloaded_images/tbf-captive-insurance-company-licensing-guide.pdf",
+      "https://www.alberta.ca/system/files/custom_downloaded_images/tbf-capital-guideline-captive-insurance-companies.pdf",
+      "https://www.alberta.ca/system/files/tbf-insurance-filing-requirements-captive-insurance-companies.pdf",
+      "https://open.alberta.ca/publications/tbf-14-2022",
+      "https://open.alberta.ca/publications/c02p4",
+      "https://open.alberta.ca/publications/797501"
+    ],
     "stats": {
       "reporting_year": 2025,
       "total_captives": 37,
@@ -72,22 +81,28 @@
       "other_captives": 0
     },
     "types_allowed": [
-      "Single parent captives"
+      "Pure captives (Single parent captives)",
+      "Association captives",
+      "Sophisticated insured captives",
+      "Redomesticated foreign captives"
     ],
     "regulator_staff_count": null,
-    "fees": null,
-    "annual_filing_requirements": null,
-    "applicable_legislation": "Alberta Insurance Act",
+    "fees": {
+      "licensing_incorporation": "CAD 500 document filing fee (for association/sophisticated insured filings under s. 15) plus licence fee per class of insurance: CAD 600 each for Life, Property, Accident & Sickness, or Hail insurance; CAD 100 for one or more of any other class (50% prorated if issued after 8 months of the licensing year, per Ministerial Order 14/2022).",
+      "annual_fees": "Annual licence renewal fee (due by November 30 via IRIS): CAD 600 each for Life, Property, Accident & Sickness, or Hail insurance; CAD 100 for one or more of any other class; CAD 600 for run-off/discontinued renewal; plus annual regulatory cost recovery assessment under the Recovery of Insurance Administration Costs Regulation.",
+      "premium_tax_rate": "3% on life, accident and sickness insurance premiums; 4% on property and casualty and all other insurance contracts on risks insured in Alberta (under the Alberta Corporate Tax Act). 8% provincial corporate income tax rate."
+    },
+    "annual_filing_requirements": "Electronic filing via IRIS required: Captive Annual Return Template and Signed Affidavit within 60 days after calendar year-end; Consolidated Audited Financial Statements (under IFRS 17), Auditor's Report, and Appointed Actuary's Report within 180 days after fiscal year-end; Alberta Premium Tax Return by May 15; Annual Licence Renewal by November 30; monthly Anti-Terrorism Financing Report by the 15th of each month. Principal place of business and records must be maintained in Alberta.",
     "captive_administrator": {
-      "name": "Alberta Superintendent of Insurance",
+      "name": "Erin O'Neill, Alberta Superintendent of Insurance",
       "email": "tbf.insurance-licens@gov.ab.ca",
       "phone": "780-643-2237",
       "fax": "780-420-0752"
     },
-    "licensing_speed": null,
+    "licensing_speed": "6 weeks (target for 90% of complete applications)",
     "regulator": {
-      "name": "Alberta Treasury Board and Finance",
-      "address": "Alberta Superintendent of Insurance, Alberta Treasury Board and Finance, Financial Sector Regulation and Policy, 402 Terrace Building, 9515 107 Street, Edmonton, Alberta T5K 2C3",
+      "name": "Office of the Alberta Superintendent of Insurance, Alberta Treasury Board and Finance",
+      "address": "402 Terrace Building, 9515 - 107 Street NW, Edmonton, Alberta T5K 2C3",
       "website": "https://www.alberta.ca/information-for-captive-insurers"
     }
   },
@@ -293,24 +308,28 @@
   },
   {
     "name": "British Columbia",
-    "summary": "British Columbia is the only Canadian province with dedicated captive legislation, the Insurance (Captive Company) Act. It permits pure, association, and sophisticated insured captives, the latter requiring aggregate annual premiums of at least 500,000 CAD. While subject to federal and provincial income taxes, captives can write nearly all insurance classes with few restrictions.",
-    "jurisdiction": "Onshore (Canada)",
-    "legislation": "Insurance (Captive Company) Act (ICCA)",
-    "min_capital": {
-      "Pure, Association, & Sophisticated": "CAD 300,000"
-    },
-    "tax_notes": "Premium taxes set by the province where risk is located",
-    "contact_name": "Blair Morrison",
-    "contact_email": "bcfsa@bcfsa.ca",
-    "last_verified": "2026-06-29",
-    "source_urls": [
-      "https://www.bcfsa.ca/industry-resources/insurance-resources",
-      "https://www.bcfsa.ca/about-us/contact-us",
-      "https://www.bcfsa.ca/industry-resources/insurance-resources/insurance-regulatory-information/insurance-regulatory-statements",
-      "https://www.fic.gov.bc.ca"
-    ],
     "slug": "british-columbia",
-    "legislation_year": 1996,
+    "jurisdiction": "Onshore (Canada)",
+    "summary": "British Columbia enacted Canada's first dedicated captive insurance statute in 1987 under the Insurance (Captive Company) Act (RSBC 1996, c. 227) and remains one of two Canadian provinces with standalone captive legislation alongside Alberta. Regulated by the BC Financial Services Authority (BCFSA), which succeeded the Financial Institutions Commission (FICOM) in 2019, it permits pure, association, and sophisticated insured captives\u2014the latter requiring insureds to have aggregate annual insurance premiums of at least CAD 500,000. Captives can write nearly all classes of insurance or reinsurance (excluding direct surety and non-fleet automobile) and require a minimum of CAD 200,000 in shareholders' equity and CAD 100,000 in reserves.",
+    "legislation": "Insurance (Captive Company) Act, RSBC 1996, c. 227 & Insurance (Captive Company) Regulation, BC Reg. 99/2017",
+    "legislation_year": 1987,
+    "applicable_legislation": "Insurance (Captive Company) Act, RSBC 1996, c. 227; Insurance (Captive Company) Regulation, BC Reg. 99/2017 (as amended by BC Reg. 183/2024); Financial Institutions Act, RSBC 1996, c. 141; Financial Services Authority Act, SBC 2019, c. 14; Insurance Act, RSBC 2012, c. 1; Business Corporations Act, SBC 2002, c. 57; Insurance Premium Tax Act, RSBC 1996, c. 232.",
+    "min_capital": {
+      "Pure, Association, & Sophisticated Insured": "CAD 300,000 combined minimum (at least CAD 200,000 shareholders' equity and CAD 100,000 reserves per s. 8 of ICCA and s. 5 of BC Reg. 99/2017, or such higher amount as the Superintendent requires to maintain solvency)"
+    },
+    "tax_notes": "Subject to BC Insurance Premium Tax on BC risks (4.4% property and fleet auto, 4% general/other, 2% life, accident and sickness) and federal (15%) and provincial (12%) corporate income taxes.",
+    "contact_name": "Tolga Yalkin, CEO & Superintendent of Financial Institutions",
+    "contact_email": "statapprovals@bcfsa.ca",
+    "last_verified": "2026-10-28",
+    "source_urls": [
+      "https://www.bcfsa.ca",
+      "https://www.bcfsa.ca/industry-resources/insurance-resources",
+      "https://www.bcfsa.ca/industry-resources/insurance-resources/insurance-fee-schedule",
+      "https://www.bcfsa.ca/industry-resources/insurance-resources/insurance-regulatory-information/insurance-regulatory-statements",
+      "https://www.bcfsa.ca/about-us/contact-us",
+      "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96227_01",
+      "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/99_2017"
+    ],
     "stats": {
       "reporting_year": 2025,
       "total_captives": 20,
@@ -323,28 +342,28 @@
       "other_captives": 0
     },
     "types_allowed": [
-      "Single parent captives",
-      "Association captives"
+      "Pure captives (Single parent captives)",
+      "Association captives",
+      "Sophisticated insured captives"
     ],
     "regulator_staff_count": "11",
     "fees": {
-      "licensing_incorporation": "CAD 3,000",
-      "annual_fees": "CAD 2,500",
-      "premium_tax_rate": "Premium taxes are set according to the province where the insured risk is located. Corporate tax rates: federal 15%, provincial 11%; premium tax rates: variable"
+      "licensing_incorporation": "CAD 10,000 application fee for initial registration (effective September 1, 2024 under BC Reg. 183/2024; previously CAD 3,000).",
+      "annual_fees": "Variable based on non-consolidated assets plus 0.019% of prior fiscal year written premiums (effective September 1, 2024): assets <= CAD 100M: CAD 5,000 + 0.019% of written premiums; assets > CAD 100M to CAD 1B: CAD 7,500 + 0.019% of written premiums; assets > CAD 1B: CAD 10,000 + 0.019% of written premiums. Consent fees: CAD 5,000 amalgamation, CAD 500 change in control, CAD 100 articles amendment.",
+      "premium_tax_rate": "BC Insurance Premium Tax on taxable BC premiums: 4.4% for property and automobile insurance; 4% for general/other insurance; 2% for life, accident and sickness, and loss-of-wages insurance. Corporate income tax rates: 15% federal, 12% provincial."
     },
-    "annual_filing_requirements": "Meeting required in domicile.",
-    "applicable_legislation": "The British Columbia Financial Institutions Act; Insurance (Captive Company) Act.",
+    "annual_filing_requirements": "Registration expires 90 days after fiscal year-end and must be renewed annually via BCFSA's IRIS portal on or before 90 days after fiscal year-end, including: renewal application and fee, Captive Insurance Financial Schedule, audited financial statements (prepared under IFRS 17) with auditor's report, independent actuarial report (FCIA), parent/association financial statements, copies of insurance policies, reinsurance agreements, and investment policy. Meeting required in domicile.",
     "captive_administrator": {
-      "name": "Blair Morrison",
-      "email": "bcfsa@bcfsa.ca",
+      "name": "Tolga Yalkin, CEO & Superintendent of Financial Institutions",
+      "email": "statapprovals@bcfsa.ca",
       "phone": "604-660-3555",
       "fax": "604-660-3365"
     },
     "licensing_speed": "90 days or less",
     "regulator": {
-      "name": "Financial Institutions Commission",
-      "address": "555 W. Hastings St., Suite 2800, Vancouver, BC V6B 4N6",
-      "website": "https://www.fic.gov.bc.ca"
+      "name": "BC Financial Services Authority (BCFSA)",
+      "address": "600-750 West Pender Street, Vancouver, BC V6C 2T8",
+      "website": "https://www.bcfsa.ca"
     }
   },
   {
@@ -1244,18 +1263,79 @@
   },
   {
     "name": "Vermont",
-    "summary": "Vermont is the largest captive domicile in the US and the third-largest in the world, pioneering the industry since 1981. The 1981 Special Insurers Act gave parents the freedom to operate without proving insurance unavailability in the traditional market. Recent 2021 amendments have further streamlined formation by allowing capital to be contributed after licensure rather than before.",
+    "slug": "vermont",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Special Insurers Act of 1981",
+    "summary": "Vermont is the largest onshore captive domicile in the United States and a premier global captive hub, having pioneered the US industry with the enactment of the Special Insurer Act of 1981 (8 V.S.A. Chapter 141). Regulated by the Vermont Department of Financial Regulation (DFR) Captive Insurance Division\u2014which maintains a dedicated in-house team of analysts and financial examiners\u2014and supported by the Vermont Captive Insurance Association (VCIA), the state had 707 licensed captives ($243.6B in assets and $36.3B in gross written premium) at year-end 2025. Vermont licenses nine distinct captive structures, offers a 30-day licensing turnaround, and provides a competitive graduated premium tax capped at $200,000 with a $5,000 tax credit in each of the first two years.",
+    "legislation": "Special Insurer Act of 1981 (Title 8 V.S.A. Chapters 141, 142, and 142A)",
+    "legislation_year": 1981,
+    "applicable_legislation": "Title 8, Vermont Statutes Annotated (V.S.A.), Chapter 141 (Captive Insurance Companies, 8 V.S.A. \u00a7\u00a7 6001\u20136049o), Chapter 142 (Risk Retention Groups and Purchasing Groups), and Chapter 142A (Risk Retention Group Managing General Agents, Reinsurance Intermediaries, and Producer Controlled Insurers); Vermont DFR Regulation C-81-2 (Captive Insurance Financial Regulation).",
     "min_capital": {
-      "Pure / Branch": "$250,000",
-      "Sponsored": "$100,000",
-      "RRG": "$1,000,000",
-      "Association / Agency": "$500,000"
+      "Sponsored": "USD $100,000",
+      "Pure": "USD $250,000",
+      "Branch": "USD $250,000",
+      "Agency": "USD $250,000",
+      "Association": "USD $500,000",
+      "Industrial Insured": "USD $500,000",
+      "Risk Retention Group (RRG)": "USD $1,000,000",
+      "Special Purpose Financial Insurer (SPFI)": "USD $5,000,000",
+      "Affiliated Reinsurance Company (ARC)": "USD $5,000,000"
     },
-    "tax_notes": "Largest US captive domicile; mature tax structure",
-    "contact_name": "Christine Brown, Deputy Commissioner, Captive Insurance Division",
-    "contact_email": "christine.brown@vermont.gov"
+    "tax_notes": "Graduated direct premium tax (0.38% on first $20M, 0.285% on next $20M, 0.19% on next $20M, 0.072% over $60M) and assumed reinsurance tax (0.214% on first $20M, 0.143% on next $20M, 0.048% on next $20M, 0.024% over $60M); $7,500 minimum and $200,000 maximum annual cap; $5,000 tax credit in each of the first 2 years; no Vermont corporate income tax on captives.",
+    "contact_name": "Christine Brown, Deputy Commissioner of Captive Insurance",
+    "contact_email": "christine.brown@vermont.gov",
+    "last_verified": "2026-10-28",
+    "source_urls": [
+      "https://dfr.vermont.gov/captive-insurance",
+      "https://dfr.vermont.gov/captive-insurance/vermont-captive-data",
+      "https://dfr.vermont.gov/captive-insurance/contact-us",
+      "https://www.vermontcaptive.com/why-vermont/",
+      "https://www.vermontcaptive.com/forming-operating-a-captive/",
+      "https://legislature.vermont.gov/statutes/fullchapter/08/141",
+      "https://www.vcia.com"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 707,
+      "new_captives": 51,
+      "surrendered_licenses": 27,
+      "pure_captives": 477,
+      "group_captives": 31,
+      "sponsored_cell_captives": 72,
+      "individual_cells_count": 316,
+      "individual_cells_year": 2025,
+      "individual_cells_estimated": false,
+      "other_captives": 127
+    },
+    "types_allowed": [
+      "Pure captives (Single parent captives)",
+      "Association captives",
+      "Sponsored cell captives (Protected and Incorporated cells)",
+      "Industrial insured captives",
+      "Risk retention groups (RRGs)",
+      "Special purpose financial insurers (SPFIs)",
+      "Branch captives",
+      "Agency captives",
+      "Affiliated reinsurance companies (ARCs)"
+    ],
+    "regulator_staff_count": "25",
+    "fees": {
+      "licensing_incorporation": "USD $500 initial licensure fee (USD $5,000 for SPFI) plus USD $6,000 actuarial application review fee (USD $10,000 for SPFI).",
+      "annual_fees": "USD $500 annual license renewal fee due April 1 (USD $5,000 for SPFI).",
+      "premium_tax_rate": "Direct premiums: 0.38% on first $20M, 0.285% on next $20M, 0.19% on next $20M, 0.072% over $60M. Assumed reinsurance premiums: 0.214% on first $20M, 0.143% on next $20M, 0.048% on next $20M, 0.024% over $60M. Minimum annual tax: $7,500; Maximum annual tax cap: $200,000 (consolidated cap for sponsored captives and common ownership groups). $5,000 tax credit in each of the first 2 years."
+    },
+    "annual_filing_requirements": "Annual financial report (VCAR or NAIC statement) due by March 15 for pure, association, sponsored, industrial insured, and agency captives, and by March 1 for RRGs and other captives (or within 75 days of fiscal year-end if approved for an alternative fiscal year). Annual audited financial statements and actuarial opinion due by June 30 (or 6 months after fiscal year-end). Board of directors (or committee of managers) must hold at least one annual meeting in Vermont.",
+    "captive_administrator": {
+      "name": "Christine Brown, Deputy Commissioner of Captive Insurance",
+      "email": "christine.brown@vermont.gov",
+      "phone": "802-828-3304",
+      "fax": null
+    },
+    "licensing_speed": "30 days (14 days for qualifying RRGs)",
+    "regulator": {
+      "name": "Vermont Department of Financial Regulation (DFR), Captive Insurance Division",
+      "address": "89 Main Street, Montpelier, VT 05620-3101",
+      "website": "https://dfr.vermont.gov/captive-insurance"
+    }
   },
   {
     "name": "Virginia",
