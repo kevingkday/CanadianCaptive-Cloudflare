@@ -375,6 +375,385 @@
             </div>
         </div>
     </section>
+
+    <!-- Interactive Captive Insurance Feasibility Assessment -->
+    <section id="feasibility-assessment" class="py-24 bg-[#0c1d2a] text-white relative overflow-hidden border-y border-amber-500/20">
+        <!-- Subtle Editorial Background Glow -->
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-400/30 text-amber-300 text-xs font-semibold uppercase tracking-widest mb-4">
+                    <span class="material-symbols-outlined text-sm">calculate</span>
+                    Interactive Diagnostic Tool
+                </div>
+                <h2 class="text-3xl md:text-5xl font-headline font-extrabold tracking-tight text-white mb-4">
+                    Captive Insurance <span class="text-amber-400">Feasibility Assessment</span>
+                </h2>
+                <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+                    Evaluate your organization's risk profile, premium volume, and 5-year loss ratio in 60 seconds to receive an instant viability rating, onshore excise tax analysis, and structure recommendation.
+                </p>
+            </div>
+
+            <!-- Assessment Card -->
+            <div class="bg-[#122636] border border-amber-500/25 rounded-2xl shadow-2xl overflow-hidden">
+                <!-- Progress Header -->
+                <div id="fa-progress-header" class="bg-[#091520] px-6 sm:px-10 py-5 border-b border-slate-800">
+                    <div class="flex items-center justify-between text-xs font-label uppercase tracking-widest text-slate-400 mb-3">
+                        <span id="fa-step-label" class="text-amber-400 font-bold">Step 1 of 5 &bull; Industry &amp; Sector</span>
+                        <span id="fa-step-pct">20% Complete</span>
+                    </div>
+                    <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                        <div id="fa-progress-bar" class="h-full bg-gradient-to-r from-amber-500 to-amber-300 transition-all duration-300 ease-out" style="width: 20%"></div>
+                    </div>
+                </div>
+
+                <!-- Wizard Body -->
+                <div class="p-6 sm:p-10 md:p-12">
+                    <!-- Step 1: Industry / Sector -->
+                    <div class="fa-step" data-step="1">
+                        <h3 class="text-2xl font-headline font-bold text-white mb-2">1. Select Your Primary Industry or Sector</h3>
+                        <p class="text-slate-400 text-sm mb-8">Certain Canadian sectors face heightened commercial capacity constraints or specialized risk profiles ideally suited for captive underwriting.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" role="radiogroup" aria-label="Industry or Sector">
+                            <button type="button" data-field="industry" data-value="Transportation & Fleet" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400 text-2xl">local_shipping</span>
+                                    <span class="font-semibold text-white">Transportation &amp; Fleet</span>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="industry" data-value="Construction & Real Estate" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400 text-2xl">domain</span>
+                                    <span class="font-semibold text-white">Construction &amp; Real Estate</span>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="industry" data-value="Natural Resources & Energy" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400 text-2xl">bolt</span>
+                                    <span class="font-semibold text-white">Natural Resources &amp; Energy</span>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="industry" data-value="Manufacturing" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400 text-2xl">precision_manufacturing</span>
+                                    <span class="font-semibold text-white">Manufacturing</span>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="industry" data-value="Healthcare / Professional Services" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400 text-2xl">medical_services</span>
+                                    <span class="font-semibold text-white">Healthcare / Professional Services</span>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="industry" data-value="Other" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400 text-2xl">corporate_fare</span>
+                                    <span class="font-semibold text-white">Other Enterprise Sector</span>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Commercial Premium Spend -->
+                    <div class="fa-step hidden" data-step="2">
+                        <h3 class="text-2xl font-headline font-bold text-white mb-2">2. Total Annual Commercial Insurance Premium Spend</h3>
+                        <p class="text-slate-400 text-sm mb-8">Aggregate annual P&amp;C, liability, auto fleet, property, and specialty premiums across your corporate group or association.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" role="radiogroup" aria-label="Commercial Premium Spend">
+                            <button type="button" data-field="spend" data-value="Under $1M/year" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-white">Under $1M / year</div>
+                                    <div class="text-xs text-slate-400 mt-1">Emerging risk retention or association participation</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="spend" data-value="$1M – $3M/year" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-white">$1M &ndash; $3M / year</div>
+                                    <div class="text-xs text-slate-400 mt-1">Mid-market threshold for protected cell or pure captives</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="spend" data-value="$3M – $5M/year" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-white">$3M &ndash; $5M / year</div>
+                                    <div class="text-xs text-slate-400 mt-1">Strong scale for standalone single-parent formation</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="spend" data-value="$5M+/year" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-white">$5M+ / year</div>
+                                    <div class="text-xs text-slate-400 mt-1">Enterprise scale for multi-line pure captive &amp; reinsurance access</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                        </div>
+                        <div class="mt-8 flex justify-start">
+                            <button type="button" onclick="faPrevStep()" class="text-slate-400 hover:text-white text-sm font-semibold flex items-center gap-1.5 transition-colors">
+                                <span class="material-symbols-outlined text-base">arrow_back</span> Previous Step
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Primary Risk Objective -->
+                    <div class="fa-step hidden" data-step="3">
+                        <h3 class="text-2xl font-headline font-bold text-white mb-2">3. Primary Strategic Risk Objective</h3>
+                        <p class="text-slate-400 text-sm mb-8">What is the primary catalyst driving your evaluation of an alternative risk transfer structure?</p>
+                        <div class="grid grid-cols-1 gap-3.5" role="radiogroup" aria-label="Primary Risk Objective">
+                            <button type="button" data-field="objective" data-value="High deductibles / uninsurable lines" class="fa-option-btn text-left p-4 sm:p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400">shield_lock</span>
+                                    <div>
+                                        <div class="font-semibold text-white">High deductibles / uninsurable lines</div>
+                                        <div class="text-xs text-slate-400">Formalizing retention for distressed, excluded, or high-deductible layers</div>
+                                    </div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="objective" data-value="Retaining underwriting profits" class="fa-option-btn text-left p-4 sm:p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400">savings</span>
+                                    <div>
+                                        <div class="font-semibold text-white">Retaining underwriting profits &amp; investment income</div>
+                                        <div class="text-xs text-slate-400">Capturing surplus and investment yield rather than ceding margins to commercial carriers</div>
+                                    </div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="objective" data-value="Controlling rising commercial premiums" class="fa-option-btn text-left p-4 sm:p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400">trending_down</span>
+                                    <div>
+                                        <div class="font-semibold text-white">Controlling rising commercial premiums</div>
+                                        <div class="text-xs text-slate-400">Insulating pricing from broader commercial market hardening cycles</div>
+                                    </div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="objective" data-value="Group / Association pooling" class="fa-option-btn text-left p-4 sm:p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400">groups</span>
+                                    <div>
+                                        <div class="font-semibold text-white">Group / Association risk pooling</div>
+                                        <div class="text-xs text-slate-400">Establishing a member-owned industry association or homogeneous group captive</div>
+                                    </div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="objective" data-value="Onshore tax & compliance optimization" class="fa-option-btn text-left p-4 sm:p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div class="flex items-center gap-3.5">
+                                    <span class="material-symbols-outlined text-amber-400">gavel</span>
+                                    <div>
+                                        <div class="font-semibold text-white">Onshore Canadian tax &amp; compliance optimization</div>
+                                        <div class="text-xs text-slate-400">Eliminating the 10% federal excise tax and simplifying CRA / FAPI governance in BC or Alberta</div>
+                                    </div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                        </div>
+                        <div class="mt-8 flex justify-start">
+                            <button type="button" onclick="faPrevStep()" class="text-slate-400 hover:text-white text-sm font-semibold flex items-center gap-1.5 transition-colors">
+                                <span class="material-symbols-outlined text-base">arrow_back</span> Previous Step
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: 5-Year Loss Ratio Profile -->
+                    <div class="fa-step hidden" data-step="4">
+                        <h3 class="text-2xl font-headline font-bold text-white mb-2">4. Historical 5-Year Loss Ratio Profile</h3>
+                        <p class="text-slate-400 text-sm mb-8">Approximate percentage of total commercial premiums paid out in claims over the past five years.</p>
+                        <div class="grid grid-cols-1 gap-4" role="radiogroup" aria-label="5-Year Loss Ratio Profile">
+                            <button type="button" data-field="lossRatio" data-value="Low loss ratio (<35% of premiums paid out)" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-emerald-400">Low Loss Ratio (&lt;35% of premiums paid out)</div>
+                                    <div class="text-xs text-slate-300 mt-1">Strong risk control history; substantial underwriting surplus currently ceded to commercial insurers.</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="lossRatio" data-value="Moderate (35%–60%)" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-amber-300">Moderate Loss Ratio (35% &ndash; 60%)</div>
+                                    <div class="text-xs text-slate-300 mt-1">Predictable attritional losses; strong opportunity to retain working layers and access wholesale reinsurance.</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                            <button type="button" data-field="lossRatio" data-value="High/Volatile (>60%)" class="fa-option-btn text-left p-5 rounded-xl border border-slate-700/80 bg-[#162d40]/60 hover:border-amber-400/60 hover:bg-[#1a354b] transition-all flex items-center justify-between group">
+                                <div>
+                                    <div class="font-bold text-lg text-rose-300">High / Volatile (&gt;60%)</div>
+                                    <div class="text-xs text-slate-300 mt-1">Experiencing commercial market rate increases or capacity restrictions; focus on deductible buy-downs &amp; loss control.</div>
+                                </div>
+                                <span class="material-symbols-outlined text-slate-500 group-hover:text-amber-400 transition-colors">chevron_right</span>
+                            </button>
+                        </div>
+                        <div class="mt-8 flex justify-start">
+                            <button type="button" onclick="faPrevStep()" class="text-slate-400 hover:text-white text-sm font-semibold flex items-center gap-1.5 transition-colors">
+                                <span class="material-symbols-outlined text-base">arrow_back</span> Previous Step
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Contact Gate -->
+                    <div class="fa-step hidden" data-step="5">
+                        <div class="max-w-2xl mx-auto">
+                            <div class="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                                <span class="material-symbols-outlined text-sm">verified_user</span> Final Step &bull; Unlock Instant Diagnostic
+                            </div>
+                            <h3 class="text-2xl font-headline font-bold text-white mb-2">5. Where Should We Send Your Full Feasibility Copy?</h3>
+                            <p class="text-slate-400 text-sm mb-6">Enter your corporate details below to view your instant on-screen Viability Score, Excise Tax Analysis, and Recommended Captive Structure.</p>
+
+                            <form id="fa-contact-form" class="space-y-4" novalidate>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="fa-name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Full Name *</label>
+                                        <input type="text" id="fa-name" required placeholder="Jane Doe"
+                                            class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#091520] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm" />
+                                    </div>
+                                    <div>
+                                        <label for="fa-company" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Company Name *</label>
+                                        <input type="text" id="fa-company" required placeholder="Northern Enterprises Ltd."
+                                            class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#091520] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm" />
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="fa-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Work Email *</label>
+                                        <input type="email" id="fa-email" required placeholder="jane.doe@company.ca"
+                                            class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#091520] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm" />
+                                        <p id="fa-email-hint" class="text-[11px] text-slate-400 mt-1">Corporate/business email domain preferred.</p>
+                                    </div>
+                                    <div>
+                                        <label for="fa-phone" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Phone <span class="text-slate-500 font-normal">(Optional)</span></label>
+                                        <input type="tel" id="fa-phone" placeholder="+1 (604) 555-0199"
+                                            class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-[#091520] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm" />
+                                    </div>
+                                </div>
+                                <div id="fa-form-error" class="hidden text-xs font-semibold text-rose-400 bg-rose-950/50 border border-rose-500/30 rounded-lg px-4 py-2.5"></div>
+
+                                <div class="pt-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+                                    <button type="button" onclick="faPrevStep()" class="text-slate-400 hover:text-white text-sm font-semibold flex items-center gap-1.5 transition-colors order-2 sm:order-1">
+                                        <span class="material-symbols-outlined text-base">arrow_back</span> Previous Step
+                                    </button>
+                                    <button type="submit" class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl hover:brightness-110 transition-all shadow-lg flex items-center justify-center gap-2 order-1 sm:order-2">
+                                        <span>Calculate Feasibility Score</span>
+                                        <span class="material-symbols-outlined text-lg">analytics</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Instant Output & Results View -->
+                    <div id="fa-results-view" class="hidden">
+                        <div class="border-b border-slate-800 pb-6 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div>
+                                <div class="text-xs font-label uppercase tracking-widest text-amber-400 mb-1">Preliminary Diagnostic Complete</div>
+                                <h3 class="text-2xl sm:text-3xl font-headline font-extrabold text-white">Feasibility Evaluation for <span id="fa-res-company" class="text-amber-400"></span></h3>
+                            </div>
+                            <div id="fa-res-badge" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-bold self-start md:self-auto"></div>
+                        </div>
+
+                        <!-- 3-Column Executive Output -->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                            <!-- Card 1: Viability Score -->
+                            <div class="bg-[#091520] border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-xs font-label uppercase tracking-widest text-slate-400">Viability Rating</span>
+                                        <span class="material-symbols-outlined text-amber-400">speed</span>
+                                    </div>
+                                    <div id="fa-res-tier" class="text-xl font-extrabold text-white mb-2"></div>
+                                    <p id="fa-res-rationale" class="text-slate-300 text-xs leading-relaxed"></p>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                                    <span class="text-slate-400">Composite Index</span>
+                                    <span id="fa-res-score-num" class="font-bold text-amber-400"></span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Recommended Captive Structure -->
+                            <div class="bg-[#091520] border border-amber-500/30 rounded-xl p-6 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-xs font-label uppercase tracking-widest text-amber-400">Recommended Structure</span>
+                                        <span class="material-symbols-outlined text-amber-400">account_tree</span>
+                                    </div>
+                                    <div id="fa-res-structure" class="text-xl font-extrabold text-white mb-2"></div>
+                                    <p id="fa-res-structure-desc" class="text-slate-300 text-xs leading-relaxed"></p>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                                    <span class="text-slate-400">Primary Domicile Fit</span>
+                                    <a href="domiciles.html" id="fa-res-domicile-link" class="font-semibold text-amber-400 hover:underline">British Columbia / Alberta</a>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Onshore Federal Excise Tax Savings -->
+                            <div class="bg-[#091520] border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-xs font-label uppercase tracking-widest text-emerald-400">10% Excise Tax Analysis</span>
+                                        <span class="material-symbols-outlined text-emerald-400">payments</span>
+                                    </div>
+                                    <div id="fa-res-excise-headline" class="text-xl font-extrabold text-emerald-400 mb-2"></div>
+                                    <p id="fa-res-excise-desc" class="text-slate-300 text-xs leading-relaxed"></p>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400">
+                                    Under Part I of the federal <em>Excise Tax Act</em> (Canada) on unlicensed extraterritorial placements.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Selected Parameters Summary Bar -->
+                        <div class="bg-[#091520]/60 border border-slate-800 rounded-xl p-4 mb-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+                            <div>
+                                <span class="text-slate-400 block mb-0.5">Sector</span>
+                                <span id="fa-sum-industry" class="font-semibold text-white"></span>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block mb-0.5">Annual Spend</span>
+                                <span id="fa-sum-spend" class="font-semibold text-white"></span>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block mb-0.5">Primary Objective</span>
+                                <span id="fa-sum-objective" class="font-semibold text-white"></span>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block mb-0.5">5-Yr Loss Ratio</span>
+                                <span id="fa-sum-loss" class="font-semibold text-white"></span>
+                            </div>
+                        </div>
+
+                        <!-- Next Step CTAs -->
+                        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                            <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+                                <a id="fa-book-review-btn" href="#contact"
+                                    class="bg-primary text-white font-bold px-7 py-4 rounded-xl hover:opacity-95 transition-all flex items-center justify-center gap-2 text-sm shadow-lg">
+                                    <span class="material-symbols-outlined text-lg">event_available</span>
+                                    <span>Book a 15-Minute Technical Review</span>
+                                </a>
+                                <button type="button" id="fa-download-roadmap-btn"
+                                    class="border border-amber-400/50 text-amber-300 hover:bg-amber-400/10 font-bold px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
+                                    <span class="material-symbols-outlined text-lg">download</span>
+                                    <span>Download Tailored Feasibility Roadmap (PDF)</span>
+                                </button>
+                            </div>
+                            <button type="button" onclick="faResetWizard()" class="text-slate-400 hover:text-white text-xs font-semibold underline">
+                                Recalculate with Different Parameters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section (Asymmetric Bento Grid) -->
     <section class="py-24 bg-surface">
         <div class="max-w-7xl mx-auto px-6">
@@ -861,6 +1240,408 @@
             } catch (err) {
                 console.error('Error loading captive news:', err);
                 newsGrid.innerHTML = `<p class="text-secondary col-span-3">Unable to load latest captive news right now.</p>`;
+            }
+        });
+
+        // --- Interactive Captive Insurance Feasibility Assessment ---
+        const faState = {
+            step: 1,
+            industry: '',
+            spend: '',
+            objective: '',
+            lossRatio: '',
+            name: '',
+            company: '',
+            email: '',
+            phone: '',
+            evaluation: null
+        };
+
+        const faStepTitles = {
+            1: 'Step 1 of 5 \u2022 Industry & Sector',
+            2: 'Step 2 of 5 \u2022 Commercial Premium Spend',
+            3: 'Step 3 of 5 \u2022 Primary Risk Objective',
+            4: 'Step 4 of 5 \u2022 5-Year Loss Ratio Profile',
+            5: 'Step 5 of 5 \u2022 Executive Contact Details'
+        };
+
+        function faGoToStep(stepNumber) {
+            faState.step = stepNumber;
+            const progressHeader = document.getElementById('fa-progress-header');
+            const resultsView = document.getElementById('fa-results-view');
+            if (progressHeader) progressHeader.classList.remove('hidden');
+            if (resultsView) resultsView.classList.add('hidden');
+
+            document.querySelectorAll('.fa-step').forEach(el => {
+                const s = parseInt(el.getAttribute('data-step'), 10);
+                if (s === stepNumber) {
+                    el.classList.remove('hidden');
+                } else {
+                    el.classList.add('hidden');
+                }
+            });
+
+            const pct = Math.min(100, stepNumber * 20);
+            const bar = document.getElementById('fa-progress-bar');
+            const label = document.getElementById('fa-step-label');
+            const pctLabel = document.getElementById('fa-step-pct');
+            if (bar) bar.style.width = `${pct}%`;
+            if (label) label.textContent = faStepTitles[stepNumber] || '';
+            if (pctLabel) pctLabel.textContent = `${pct}% Complete`;
+        }
+
+        function faPrevStep() {
+            if (faState.step > 1) {
+                faGoToStep(faState.step - 1);
+            }
+        }
+
+        function faResetWizard() {
+            faState.industry = '';
+            faState.spend = '';
+            faState.objective = '';
+            faState.lossRatio = '';
+            faGoToStep(1);
+        }
+
+        function faComputeEvaluation() {
+            let score = 50;
+
+            // Premium spend weight
+            if (faState.spend === '$5M+/year') score += 32;
+            else if (faState.spend === '$3M – $5M/year') score += 25;
+            else if (faState.spend === '$1M – $3M/year') score += 16;
+            else score += 4;
+
+            // Loss ratio weight
+            if (faState.lossRatio.startsWith('Low')) score += 16;
+            else if (faState.lossRatio.startsWith('Moderate')) score += 10;
+            else score += 2;
+
+            score = Math.min(98, Math.max(38, score));
+
+            let tier = '';
+            let badgeClass = '';
+            let rationale = '';
+            let structure = '';
+            let structureDesc = '';
+            let domicileText = 'British Columbia / Alberta (Onshore)';
+            let domicileHref = 'domiciles.html#canadian';
+            let exciseHeadline = '';
+            let exciseDesc = '';
+
+            const isGroupObj = faState.objective === 'Group / Association pooling';
+            const isLowSpend = faState.spend === 'Under $1M/year';
+            const isMidSpend = faState.spend === '$1M – $3M/year';
+            const isHighLoss = faState.lossRatio.startsWith('High');
+
+            if (score >= 78 && !isLowSpend) {
+                tier = 'High Candidate';
+                badgeClass = 'bg-emerald-500/15 border-emerald-400/40 text-emerald-300';
+                rationale = `With ${faState.spend} in premium volume and a ${faState.lossRatio.split(' ')[0].toLowerCase()} loss profile in ${faState.industry}, your organization has the scale to retain working-layer underwriting surplus and access institutional reinsurance directly.`;
+            } else if (score >= 60 || isGroupObj || (isLowSpend && !isHighLoss)) {
+                tier = 'Moderate / Group Candidate';
+                badgeClass = 'bg-amber-500/15 border-amber-400/40 text-amber-300';
+                rationale = `Your profile aligns well with shared-infrastructure risk vehicles. Forming a Segregated Cell or participating in a homogeneous Group/Association Captive reduces fixed frictional costs while still capturing underwriting margin.`;
+            } else {
+                tier = 'Not Yet Feasible (Standalone)';
+                badgeClass = 'bg-rose-500/15 border-rose-400/40 text-rose-300';
+                rationale = `At under $1M in annual spend combined with elevated loss volatility, a standalone single-parent captive would face disproportionate capitalization and frictional costs. Structured deductible buy-downs or association pooling is recommended first.`;
+            }
+
+            // Recommended Structure
+            if (isGroupObj || isLowSpend) {
+                structure = 'Group / Association Captive';
+                structureDesc = 'Pools homogeneous industry risks across member enterprises, satisfying CRA risk-distribution criteria while sharing actuarial, audit, and management overhead.';
+                domicileText = 'Alberta / BC / Barbados';
+            } else if (isMidSpend) {
+                structure = 'Cell Captive / Protected Cell';
+                structureDesc = 'Segregates your cellular assets and underwriting profits legally within an existing sponsored facility, offering lower minimum capital ($100k–$250k) and rapid 30-day setup.';
+                domicileText = 'Vermont / Bermuda / Cayman';
+                domicileHref = 'domiciles.html';
+            } else {
+                structure = 'Pure Single-Parent Captive';
+                structureDesc = 'A wholly owned subsidiary insurer licensed under BC (BCFSA) or Alberta (CICA) statute—or Barbados/Bermuda for international risks—providing total governance and investment control.';
+                domicileText = 'British Columbia / Alberta';
+            }
+
+            // 10% Federal Excise Tax Analysis
+            if (faState.spend === '$5M+/year') {
+                exciseHeadline = 'Est. $500,000+/yr Saved Onshore';
+                exciseDesc = 'Domiciling onshore in British Columbia or Alberta avoids the 10% federal Excise Tax on unlicensed offshore placements of Canadian-situated risks ($500k+ annual savings on $5M+ ceded premium).';
+            } else if (faState.spend === '$3M – $5M/year') {
+                exciseHeadline = 'Est. $300k – $500k/yr Saved Onshore';
+                exciseDesc = 'An onshore BC or Alberta captive eliminates the 10% federal Excise Tax on Canadian risks placed with unlicensed foreign insurers, preserving $300k–$500k annually.';
+            } else if (faState.spend === '$1M – $3M/year') {
+                exciseHeadline = 'Est. $100k – $300k/yr Saved Onshore';
+                exciseDesc = 'By licensing domestically in BC or Alberta rather than placing direct Canadian risk into an unlicensed offshore vehicle, you avoid the mandatory 10% federal Excise Tax.';
+            } else {
+                exciseHeadline = 'Up to 10% Excise Tax Avoidance';
+                exciseDesc = 'Canadian risks insured directly with an unlicensed offshore captive trigger a 10% federal Excise Tax. Onshore BC and Alberta structures eliminate this tax entirely.';
+            }
+
+            return {
+                score,
+                tier,
+                badgeClass,
+                rationale,
+                structure,
+                structureDesc,
+                domicileText,
+                domicileHref,
+                exciseHeadline,
+                exciseDesc
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Option buttons for Steps 1–4
+            document.querySelectorAll('.fa-option-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const field = btn.getAttribute('data-field');
+                    const value = btn.getAttribute('data-value');
+                    if (field && value) {
+                        faState[field] = value;
+                        // Highlight active selection in current step
+                        btn.parentElement.querySelectorAll('.fa-option-btn').forEach(sibling => {
+                            sibling.classList.remove('border-amber-400', 'bg-[#1a354b]');
+                        });
+                        btn.classList.add('border-amber-400', 'bg-[#1a354b]');
+                        faGoToStep(faState.step + 1);
+                    }
+                });
+            });
+
+            // Email domain hint check
+            const emailInput = document.getElementById('fa-email');
+            const emailHint = document.getElementById('fa-email-hint');
+            const freeDomains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'icloud.com', 'aol.com'];
+            if (emailInput && emailHint) {
+                emailInput.addEventListener('input', () => {
+                    const val = emailInput.value.trim().toLowerCase();
+                    const parts = val.split('@');
+                    if (parts.length === 2 && freeDomains.includes(parts[1])) {
+                        emailHint.textContent = 'Note: Corporate domain preferred for actuarial benchmarking, though personal email is accepted.';
+                        emailHint.className = 'text-[11px] text-amber-400 mt-1';
+                    } else {
+                        emailHint.textContent = 'Corporate/business email domain preferred.';
+                        emailHint.className = 'text-[11px] text-slate-400 mt-1';
+                    }
+                });
+            }
+
+            // Step 5 Contact Gate submission
+            const contactForm = document.getElementById('fa-contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('fa-name').value.trim();
+                    const company = document.getElementById('fa-company').value.trim();
+                    const email = document.getElementById('fa-email').value.trim();
+                    const phone = document.getElementById('fa-phone').value.trim();
+                    const errorBox = document.getElementById('fa-form-error');
+
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+                    if (!name || !company || !emailRegex.test(email)) {
+                        errorBox.textContent = 'Please provide your Full Name, Company Name, and a valid corporate Email Address.';
+                        errorBox.classList.remove('hidden');
+                        return;
+                    }
+                    errorBox.classList.add('hidden');
+
+                    faState.name = name;
+                    faState.company = company;
+                    faState.email = email;
+                    faState.phone = phone;
+                    const ev = faComputeEvaluation();
+                    faState.evaluation = ev;
+
+                    // Populate Results View
+                    document.getElementById('fa-res-company').textContent = company;
+                    const badgeEl = document.getElementById('fa-res-badge');
+                    badgeEl.className = `inline-flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-bold self-start md:self-auto ${ev.badgeClass}`;
+                    badgeEl.innerHTML = `<span class="material-symbols-outlined text-base">verified</span> <span>${ev.tier}</span>`;
+
+                    document.getElementById('fa-res-tier').textContent = ev.tier;
+                    document.getElementById('fa-res-rationale').textContent = ev.rationale;
+                    document.getElementById('fa-res-score-num').textContent = `${ev.score} / 100`;
+
+                    document.getElementById('fa-res-structure').textContent = ev.structure;
+                    document.getElementById('fa-res-structure-desc').textContent = ev.structureDesc;
+                    const domLink = document.getElementById('fa-res-domicile-link');
+                    domLink.textContent = ev.domicileText;
+                    domLink.href = ev.domicileHref;
+
+                    document.getElementById('fa-res-excise-headline').textContent = ev.exciseHeadline;
+                    document.getElementById('fa-res-excise-desc').textContent = ev.exciseDesc;
+
+                    document.getElementById('fa-sum-industry').textContent = faState.industry;
+                    document.getElementById('fa-sum-spend').textContent = faState.spend;
+                    document.getElementById('fa-sum-objective').textContent = faState.objective;
+                    document.getElementById('fa-sum-loss').textContent = faState.lossRatio;
+
+                    // Pre-fill Project Brief form at bottom of page for seamless booking
+                    const briefName = document.getElementById('form-name');
+                    const briefCompany = document.getElementById('form-company');
+                    const briefEmail = document.getElementById('form-email');
+                    const briefPhone = document.getElementById('form-phone');
+                    if (briefName) briefName.value = name;
+                    if (briefCompany) briefCompany.value = company;
+                    if (briefEmail) briefEmail.value = email;
+                    if (briefPhone && phone) briefPhone.value = phone;
+
+                    // Configure Book Technical Review CTA
+                    const bookBtn = document.getElementById('fa-book-review-btn');
+                    if (bookBtn) {
+                        const subject = encodeURIComponent(`15-Min Captive Feasibility Review — ${company} (${ev.tier})`);
+                        const body = encodeURIComponent(
+`Hello CanadianCaptive.com Advisory Team,
+
+We just completed the Captive Insurance Feasibility Assessment and would like to schedule a 15-minute technical review.
+
+--- ASSESSMENT SUMMARY ---
+Company: ${company}
+Contact: ${name} (${email}${phone ? ', ' + phone : ''})
+Industry / Sector: ${faState.industry}
+Annual Premium Spend: ${faState.spend}
+Primary Objective: ${faState.objective}
+5-Year Loss Ratio: ${faState.lossRatio}
+
+--- DIAGNOSTIC OUTPUT ---
+Viability Rating: ${ev.tier} (${ev.score}/100)
+Recommended Structure: ${ev.structure}
+10% Excise Tax Analysis: ${ev.exciseHeadline}
+
+Please let us know available times this week.`
+                        );
+                        bookBtn.href = `mailto:hello@canadiancaptive.com?subject=${subject}&body=${body}`;
+                    }
+
+                    // Send lead payload asynchronously to hello@canadiancaptive.com endpoint
+                    try {
+                        fetch('https://formsubmit.co/ajax/hello@canadiancaptive.com', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                            body: JSON.stringify({
+                                _subject: `New Captive Feasibility Assessment: ${company} (${ev.tier})`,
+                                name,
+                                company,
+                                email,
+                                phone: phone || 'Not provided',
+                                industry: faState.industry,
+                                annual_premium_spend: faState.spend,
+                                primary_objective: faState.objective,
+                                loss_ratio_5yr: faState.lossRatio,
+                                viability_rating: `${ev.tier} (${ev.score}/100)`,
+                                recommended_structure: ev.structure,
+                                excise_tax_analysis: ev.exciseHeadline
+                            })
+                        }).catch(() => {});
+                    } catch (_) {}
+
+                    // Switch UI to Results View
+                    document.getElementById('fa-progress-header').classList.add('hidden');
+                    document.querySelectorAll('.fa-step').forEach(el => el.classList.add('hidden'));
+                    document.getElementById('fa-results-view').classList.remove('hidden');
+                });
+            }
+
+            // Tailored Printable PDF Roadmap Generator
+            const downloadBtn = document.getElementById('fa-download-roadmap-btn');
+            if (downloadBtn) {
+                downloadBtn.addEventListener('click', () => {
+                    const ev = faState.evaluation;
+                    if (!ev) return;
+                    const printWin = window.open('', '_blank', 'width=900,height=800');
+                    if (!printWin) return;
+                    const todayStr = new Date().toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+                    printWin.document.write(`<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Captive Feasibility Roadmap — ${faState.company}</title>
+    <style>
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #0c1d2a; margin: 40px; line-height: 1.5; }
+        .header { border-bottom: 3px solid #b41d25; padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .brand { font-size: 22px; font-weight: 800; color: #b41d25; }
+        .meta { font-size: 12px; color: #506070; text-align: right; }
+        h1 { font-size: 26px; margin: 0 0 8px 0; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+        .card { border: 1px solid #cbdcef; border-radius: 8px; padding: 16px; background: #f7f9ff; }
+        .card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #b41d25; font-weight: 700; margin-bottom: 6px; }
+        .card-title { font-size: 17px; font-weight: 800; margin-bottom: 8px; }
+        .card-desc { font-size: 12px; color: #394857; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
+        th, td { border: 1px solid #cbdcef; padding: 10px 12px; text-align: left; }
+        th { background: #edf4ff; font-weight: 700; width: 35%; }
+        .steps { margin-top: 24px; }
+        .steps li { margin-bottom: 8px; font-size: 13px; }
+        .footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #cbdcef; font-size: 11px; color: #506070; display: flex; justify-content: space-between; }
+        @media print { .no-print { display: none; } body { margin: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div class="brand">CanadianCaptive.com</div>
+            <div style="font-size:12px;color:#506070;">Independent Captive Insurance Resource &amp; Advisory Hub</div>
+        </div>
+        <div class="meta">
+            <div><strong>Prepared For:</strong> ${faState.name}, ${faState.company}</div>
+            <div><strong>Date:</strong> ${todayStr}</div>
+        </div>
+    </div>
+
+    <h1>Tailored Captive Insurance Feasibility Roadmap</h1>
+    <p style="font-size:13px;color:#506070;">Preliminary diagnostic summary based on your organizational risk parameters and Canadian regulatory guidelines.</p>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-label">Viability Score</div>
+            <div class="card-title">${ev.tier} (${ev.score}/100)</div>
+            <div class="card-desc">${ev.rationale}</div>
+        </div>
+        <div class="card">
+            <div class="card-label">Recommended Structure</div>
+            <div class="card-title">${ev.structure}</div>
+            <div class="card-desc">${ev.structureDesc}</div>
+        </div>
+        <div class="card">
+            <div class="card-label">10% Excise Tax Analysis</div>
+            <div class="card-title">${ev.exciseHeadline}</div>
+            <div class="card-desc">${ev.exciseDesc}</div>
+        </div>
+    </div>
+
+    <h3 style="font-size:15px;margin-bottom:8px;">Submitted Risk Profile Parameters</h3>
+    <table>
+        <tr><th>Organization &amp; Contact</th><td>${faState.company} &mdash; ${faState.name} (${faState.email})</td></tr>
+        <tr><th>Industry / Sector</th><td>${faState.industry}</td></tr>
+        <tr><th>Annual Commercial Premium Spend</th><td>${faState.spend}</td></tr>
+        <tr><th>Primary Strategic Objective</th><td>${faState.objective}</td></tr>
+        <tr><th>5-Year Historical Loss Ratio</th><td>${faState.lossRatio}</td></tr>
+        <tr><th>Primary Domiciles to Evaluate</th><td>${ev.domicileText}</td></tr>
+    </table>
+
+    <div class="steps">
+        <h3 style="font-size:15px;margin-bottom:8px;">Recommended 4-Phase Implementation Roadmap</h3>
+        <ol>
+            <li><strong>Phase 1: Actuarial &amp; Tax Feasibility Study (Weeks 1–4):</strong> Analyze 5-year loss runs, model expected vs. adverse loss layers (75th–95th confidence levels), and confirm CRA risk-transfer &amp; deductibility alignment.</li>
+            <li><strong>Phase 2: Domicile &amp; Fronting Selection (Weeks 4–6):</strong> Compare onshore Canadian licensing (BCFSA in British Columbia or Superintendent of Insurance in Alberta) against Barbados, Bermuda, Cayman, or Vermont.</li>
+            <li><strong>Phase 3: Regulatory Application &amp; Capitalization (Weeks 6–12):</strong> File business plan, pro-forma IFRS 17 financials, and Appointed Actuary opinion with the target regulator; fund minimum base capital.</li>
+            <li><strong>Phase 4: Launch &amp; Ongoing Captive Management (Week 12+):</strong> Issue policies (direct or fronted), establish investment governance, and maintain annual regulatory filings.</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <span>CanadianCaptive.com &bull; hello@canadiancaptive.com &bull; +1 778-653-8828</span>
+        <span>Confidential Preliminary Assessment</span>
+    </div>
+    <script>window.onload = function() { setTimeout(function() { window.print(); }, 250); };<\/script>
+</body>
+</html>`);
+                    printWin.document.close();
+                });
             }
         });
     </script>
