@@ -47,7 +47,7 @@
     "name": "Alberta",
     "slug": "alberta",
     "jurisdiction": "Onshore (Canada)",
-    "summary": "Alberta enacted dedicated captive insurance legislation under the Captive Insurance Companies Act (SA 2021, c. C-2.4), which came into force on July 1, 2022, making it the second Canadian province with a standalone captive statute. Administered by the Alberta Superintendent of Insurance (Treasury Board and Finance), the regime authorizes pure, association, and sophisticated insured captives\u2014formed as either corporations or limited partnerships\u2014as well as redomestication of foreign captives. Driven by strong demand from the energy, natural resource, and commercial sectors, along with Canada's lowest provincial corporate income tax rate (8%) and streamlined 6-week licensing, Alberta has rapidly expanded its captive insurance sector.",
+    "summary": "Alberta enacted dedicated captive insurance legislation under the Captive Insurance Companies Act (SA 2021, c. C-2.4), which came into force on July 1, 2022, making it the second Canadian province with a standalone captive statute. Administered by the Alberta Superintendent of Insurance (Treasury Board and Finance), the regime authorizes pure, association, and sophisticated insured captives—formed as either corporations or limited partnerships—as well as redomestication of foreign captives. Driven by strong demand from the energy, natural resource, and commercial sectors, along with Canada's lowest provincial corporate income tax rate (8%) and streamlined 6-week licensing, Alberta has rapidly expanded its captive insurance sector.",
     "legislation": "Captive Insurance Companies Act, SA 2021, c. C-2.4 (in force July 1, 2022) & Captive Insurance Companies Regulation, Alta. Reg. 100/2022",
     "legislation_year": 2022,
     "applicable_legislation": "Captive Insurance Companies Act (SA 2021, c. C-2.4); Captive Insurance Companies Regulation (Alta. Reg. 100/2022); Captive Insurance Companies (Prescribed Enactments) Regulation (Alta. Reg. 103/2022); Fees Under the Captive Insurance Companies Act Order (Ministerial Order 14/2022); Classes of Insurance Regulation (Alta. Reg. 144/2011); Recovery of Insurance Administration Costs Regulation (Alta. Reg. 102/2022); Insurance Enforcement and Administration Regulation (Alta. Reg. 101/2022); Business Corporations Act (RSA 2000, c. B-9); Partnership Act (RSA 2000, c. P-3); Alberta Corporate Tax Act (RSA 2000, c. A-15).",
@@ -310,7 +310,7 @@
     "name": "British Columbia",
     "slug": "british-columbia",
     "jurisdiction": "Onshore (Canada)",
-    "summary": "British Columbia enacted Canada's first dedicated captive insurance statute in 1987 under the Insurance (Captive Company) Act (RSBC 1996, c. 227) and remains one of two Canadian provinces with standalone captive legislation alongside Alberta. Regulated by the BC Financial Services Authority (BCFSA), which succeeded the Financial Institutions Commission (FICOM) in 2019, it permits pure, association, and sophisticated insured captives\u2014the latter requiring insureds to have aggregate annual insurance premiums of at least CAD 500,000. Captives can write nearly all classes of insurance or reinsurance (excluding direct surety and non-fleet automobile) and require a minimum of CAD 200,000 in shareholders' equity and CAD 100,000 in reserves.",
+    "summary": "British Columbia enacted Canada's first dedicated captive insurance statute in 1987 under the Insurance (Captive Company) Act (RSBC 1996, c. 227) and remains one of two Canadian provinces with standalone captive legislation alongside Alberta. Regulated by the BC Financial Services Authority (BCFSA), which succeeded the Financial Institutions Commission (FICOM) in 2019, it permits pure, association, and sophisticated insured captives—the latter requiring insureds to have aggregate annual insurance premiums of at least CAD 500,000. Captives can write nearly all classes of insurance or reinsurance (excluding direct surety and non-fleet automobile) and require a minimum of CAD 200,000 in shareholders' equity and CAD 100,000 in reserves.",
     "legislation": "Insurance (Captive Company) Act, RSBC 1996, c. 227 & Insurance (Captive Company) Regulation, BC Reg. 99/2017",
     "legislation_year": 1987,
     "applicable_legislation": "Insurance (Captive Company) Act, RSBC 1996, c. 227; Insurance (Captive Company) Regulation, BC Reg. 99/2017 (as amended by BC Reg. 183/2024); Financial Institutions Act, RSBC 1996, c. 141; Financial Services Authority Act, SBC 2019, c. 14; Insurance Act, RSBC 2012, c. 1; Business Corporations Act, SBC 2002, c. 57; Insurance Premium Tax Act, RSBC 1996, c. 232.",
@@ -384,24 +384,80 @@
   },
   {
     "name": "Cayman Islands",
-    "summary": "The Cayman Islands is the world's second-largest captive domicile and the leader in healthcare-related medical malpractice captives. Governed by the Insurance Law of 2010, it offers a flexible legislative environment that aligns with global industry standards. Captives are primarily categorized under Class B, which is further divided into four subgroups based on the origin of net premiums.",
+    "slug": "cayman-islands",
     "jurisdiction": "Offshore",
-    "legislation": "Insurance Act, 2010 (as amended)",
+    "summary": "The Cayman Islands is the world's second-largest captive domicile and the leading domicile for healthcare captives, regulated by the Cayman Islands Monetary Authority (CIMA) under the Insurance Act, 2010, as amended. International insurers are licensed as Class B (B(i) where at least 95 percent of net premiums come from related business, B(ii) where more than 50 percent are related, and B(iii) where 50 percent or less are related), Class C (fully collateralised insurance-linked structures) or Class D (open-market reinsurance). As of Q3 2026, CIMA reported 720 Class B, C and D insurers, writing US$62.3 billion of premium and holding US$202.9 billion of assets. Of that population, 337 were categorised as pure captives and 149 as group captives. Medical malpractice was the primary class of 127 licensees, and North America accounted for 632 licensees (88 percent). Class B segregated portfolio companies numbered 177, with 634 segregated portfolios and 68 portfolio insurance companies; those counts sit inside the 720 and are not additional licensees. In 2025 CIMA issued 42 international licences and cancelled 19. Through the 2026 year to date, issues and cancellations were 28 and 28, leaving the international total at 720. Every captive must appoint a licensed local insurance manager. CIMA states that a complete Class B or Class C application takes six to eight weeks. The Islands levy an annual licence fee rather than a premium tax, and CIMA describes the domicile as having no corporate or personal taxes.",
+    "legislation": "Insurance Act, 2010 (Law 32 of 2010), as amended, and the Insurance (Capital and Solvency) (Classes B, C and D Insurers) Regulations (2018 Revision)",
+    "legislation_year": 2010,
+    "applicable_legislation": "Insurance Act, 2010 (Law 32 of 2010), as amended, including the Insurance (Amendment and Validation) Act, 2024 (Act 14 of 2024); Insurance (Capital and Solvency) (Classes B, C and D Insurers) Regulations (2018 Revision); Insurance (Applications and Fees) Regulations (2026 Revision), as adjusted for Class B(i), (ii) and (iii) by the Insurance (Application and Fees) (Amendment) Regulations, 2025, effective 1 January 2026; Insurance (Portfolio Insurance Companies) Regulations (2026 Revision); Companies Act (2026 Revision) segregated portfolio company provisions.",
     "min_capital": {
-      "Class B(i) General": "US$100,000",
-      "Class B(i) Long-term": "US$200,000",
-      "Class B(i) Composite": "US$300,000",
-      "Class B(ii) General": "US$150,000",
-      "Class B(ii) Long-term": "US$300,000",
-      "Class B(ii) Composite": "US$450,000",
-      "Class B(iii) General": "US$200,000",
-      "Class B(iii) Long-term": "US$400,000",
-      "Class B(iii) Composite": "US$600,000",
-      "Class C": "US$500,000"
+      "Class B(i) General": "US$100,000 minimum capital requirement; prescribed capital requirement equals the MCR",
+      "Class B(i) Long-term": "US$200,000 minimum capital requirement; prescribed capital requirement equals the MCR",
+      "Class B(i) Composite": "US$300,000 minimum capital requirement; prescribed capital requirement equals the MCR",
+      "Class B(ii) General": "US$150,000 minimum capital requirement; prescribed capital requirement is 10% of net earned premium on the first US$5 million, 5% on the next premium up to US$20 million, and 2.5% above US$20 million",
+      "Class B(ii) Long-term": "US$300,000 minimum capital requirement; prescribed capital requirement equals the MCR",
+      "Class B(ii) Composite": "US$450,000 minimum capital requirement; prescribed capital requirement is the general-business amount plus the MCR",
+      "Class B(iii) General": "US$200,000 minimum capital requirement; prescribed capital requirement is 15% of net earned premium on the first US$5 million, 7.5% on the next premium up to US$20 million, and 5% above US$20 million",
+      "Class B(iii) Long-term": "US$400,000 minimum capital requirement; prescribed capital requirement equals the MCR",
+      "Class B(iii) Composite": "US$600,000 minimum capital requirement; prescribed capital requirement is the general-business amount plus the MCR",
+      "Class C (general, long-term, or composite)": "US$500 minimum capital requirement; prescribed capital requirement equals the MCR. Obligations must be fully collateralised. CIMA may set a higher requirement from the business plan",
+      "Class D (open-market reinsurance)": "US$50,000,000 minimum capital requirement, with a risk-based prescribed capital requirement. The Authority may approve a reduced minimum in writing. This is not a captive class"
     },
-    "tax_notes": "91% of captive business originates from the US",
-    "contact_name": "Insurance Division, Cayman Islands Monetary Authority",
-    "contact_email": "insurance@cima.ky"
+    "tax_notes": "No premium tax. The regulatory charge is a fixed annual licence fee under the Insurance (Applications and Fees) Regulations, as increased for Class B(i), (ii) and (iii) from 1 January 2026. CIMA states that the Cayman Islands is a tax-free domicile with no corporate or personal taxes.",
+    "contact_name": "Kara Ebanks, Head of Insurance, Cayman Islands Monetary Authority",
+    "contact_email": "ContactInsurance@cima.ky",
+    "last_verified": "2026-10-30",
+    "source_urls": [
+      "https://www.cima.ky/insurance-statistics",
+      "https://www.cima.ky/insurance-licensing-requirements",
+      "https://www.cima.ky/contact-us",
+      "https://www.cima.ky/fees",
+      "https://www.cima.ky/government-fee-increases-for-financial-services-starting-1-january-2026",
+      "https://www.cima.ky/upimages/commonfiles/WebsiteFeeSchedule1January2026Update_1770328410.pdf",
+      "https://legislation.gov.ky/cms/images/LEGISLATION/PRINCIPAL/2010/2010-0032/2010-0032_Act%2032%20of%202010.pdf",
+      "https://legislation.gov.ky/cms/images/LEGISLATION/SUBORDINATE/2012/2012-0084/2012-0084_2018%20Revision.pdf",
+      "https://legislation.gov.ky/cms/images/LEGISLATION/SUBORDINATE/2012/2012-0061/2012-0061_2026%20Revision.pdf",
+      "https://parliament.ky/wp-content/uploads/2026/06/CIMA-2025-Annual-Report.pdf",
+      "https://imac.ky/q4-stats-show-caymans-captive-insurance-sector-ending-2025-with-sustained-growth/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 486,
+      "pure_captives": 337,
+      "group_captives": 149,
+      "sponsored_cell_captives": 177,
+      "individual_cells_count": 634,
+      "individual_cells_year": 2026,
+      "individual_cells_estimated": false
+    },
+    "types_allowed": [
+      "Class B(i) insurers (at least 95 percent related net premiums)",
+      "Class B(ii) insurers (more than 50 percent related net premiums)",
+      "Class B(iii) insurers (50 percent or less related net premiums)",
+      "Class C fully collateralised insurers and insurance-linked securities",
+      "Segregated portfolio companies",
+      "Portfolio insurance companies",
+      "Class D open-market reinsurers"
+    ],
+    "regulator_staff_count": "26",
+    "fees": {
+      "licensing_incorporation": "Non-refundable application fee of CI$1,000 for a Class B, C or D insurer, plus a fee on the grant of the licence equal to the annual fee. Segregated portfolio companies pay an additional CI$1,000 application amount for each segregated portfolio. US-dollar payments use CIMA's published rate of US$1.00 = CI$0.82.",
+      "annual_fees": "Due 15 January. From 1 January 2026: Class B(i) CI$10,450 (US$12,743.90); Class B(ii) CI$11,550 (US$14,085.37); Class B(iii) CI$14,850 (US$18,109.76); Class C CI$6,500 (US$7,926.83); Class D CI$120,000 (US$146,341.46). An SPC pays an additional CI$1,000 a year for each segregated portfolio. A portfolio insurance company pays CI$1,000 a year. A penalty of one-twelfth of the annual fee accrues for each month the fee remains outstanding.",
+      "premium_tax_rate": "None. Regulatory cost is the fixed annual licence fee, not a percentage of premium."
+    },
+    "annual_filing_requirements": "Annual return within six months of financial year-end, including audited financial statements prepared to internationally recognised standards by a CIMA-approved auditor, and written confirmation that the licence information remains correct. An actuarial valuation and a solvency certification are also required, except that a Class C insurer or a Class B insurer that does not write long-term business does not have to file those two items. A Class B(iii) insurer must make its audited financial statements available to insured persons and third-party beneficiaries on request. Class B, C and D insurers also file a capital and solvency return by the prescribed filing date. Annual licence fees are due by 15 January.",
+    "captive_administrator": {
+      "name": "Kara Ebanks, Head of Insurance, Insurance Supervision Division, Cayman Islands Monetary Authority",
+      "email": "ContactInsurance@cima.ky",
+      "phone": "+1 (345) 244-1411",
+      "fax": "+1 (345) 946-5611"
+    },
+    "licensing_speed": "6 to 8 weeks for a complete Class B or Class C application",
+    "regulator": {
+      "name": "Cayman Islands Monetary Authority, Insurance Supervision Division",
+      "address": "Pavilion East, Cricket Square, 205 Elgin Avenue, PO Box 10052, Grand Cayman KY1-1001, Cayman Islands",
+      "website": "https://www.cima.ky/insurance-statistics"
+    }
   },
   {
     "name": "China",
@@ -615,18 +671,67 @@
   },
   {
     "name": "Guernsey",
-    "summary": "Guernsey is the largest captive domicile in Europe and a global pioneer that introduced the protected cell company (PCC) concept. Being outside the EU, it maintains a highly effective regulatory environment that is IAIS compliant but not subject to Solvency II. It recently introduced a pre-authorization pilot scheme for insurance cells, allowing creation within 48 hours for urgent business needs.",
-    "jurisdiction": "Offshore",
-    "legislation": "Insurance Business (Bailiwick of Guernsey) Law 2002",
-    "min_capital": {
-      "Standard": "Risk-based; 90% confidence level requirement"
-    },
-    "tax_notes": "Not subject to Solvency II",
     "slug": "guernsey",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "jurisdiction": "Offshore",
+    "summary": "Guernsey is a leading captive centre and the jurisdiction that pioneered the protected cell company. The Guernsey Financial Services Commission regulates insurers under the Insurance Business (Bailiwick of Guernsey) Law, 2002, using its own solvency rules rather than the EU Solvency II standard formula. At 31 December 2025 the Commission reported 196 non-cellular captives, after 8 additions and 9 surrenders in 2025, and 126 captive cells, after 13 additions and 9 surrenders. The wider international sector totalled 549 entities: 223 companies, 44 protected cell companies, 222 PCC cells excluding insurance-linked securities, 14 incorporated cell companies and 46 ICC cells. The latest financial totals, for 2024, were £29.70 billion of gross assets, £12.62 billion of net worth and £5.19 billion of premiums written by international insurers as a whole, not by captives alone. Captive (re)insurers are Category 5 licensees. The capital floor is £100,000 for general business and £250,000 for long-term business, and the captive prescribed capital requirement is calibrated at a 90 percent confidence level over 12 months. Company income tax is 0 percent on insurance income that is not domestic business and 10 percent on domestic insurance business. Reinsurance is outside the statutory definition of domestic business. The Commission can pre-authorise later protected-cell-company cells on a product or class basis once the company and its first cell are approved, most often for fully collateralised special purpose insurer cells. It does not publish a 48-hour licensing standard.",
+    "legislation": "Insurance Business (Bailiwick of Guernsey) Law, 2002, and the Insurance Business (Solvency) Rules and Guidance, 2021",
+    "legislation_year": 2002,
+    "applicable_legislation": "Insurance Business (Bailiwick of Guernsey) Law, 2002; Insurance Managers and Insurance Intermediaries (Bailiwick of Guernsey) Law, 2002; Insurance Business (Solvency) Rules and Guidance, 2021, including the 2024 amendment to the retail general-business capital floor; Insurance Business Rules and Guidance, 2021; Companies (Guernsey) Law, 2008 (Commission consent to incorporate a protected cell company or an incorporated cell company); Financial Services Commission (Fees and Administrative Penalties) Regulations, 2025; Income Tax (Guernsey) Law, 1975 (company standard rate 0 percent and intermediate rate 10 percent).",
+    "min_capital": {
+      "Category 5 captive, general business": "£100,000 capital floor. Paid-up share capital must be at least the capital floor, and minimum shareholders' funds must be at least 75 percent of the capital floor. The minimum capital requirement cannot be below the capital floor. The prescribed capital requirement is set at a 90 percent confidence level over the next 12 months",
+      "Category 5 captive, long-term business": "£250,000 capital floor, with the same paid-up capital, shareholders' funds and 90 percent prescribed-capital tests",
+      "Category 5 captive, general and long-term": "£250,000 capital floor",
+      "Protected cell company that does not write retail general insurance": "The capital floor applies to the PCC as a whole. There is no separate capital floor for each cell or for the core. Each cell and the core has a notional minimum capital requirement calculated as if it were a stand-alone insurer, and the PCC minimum is the sum of those amounts, subject to the capital floor"
+    },
+    "tax_notes": "Company standard rate of income tax is 0 percent. The 10 percent company intermediate rate applies to domestic insurance business, insurance intermediary business and insurance manager business. Insurance income that is not domestic business, including reinsurance (which the Insurance Business Law excludes from domestic business), is taxed at 0 percent. Income from Guernsey land and buildings is taxed at 20 percent. Insurance is an economic-substance category for accounting periods after 1 January 2019. There is no premium-tax rate on the GFSC insurance fee schedule; the regulatory charge is the licence fee.",
+    "contact_name": "Guernsey Financial Services Commission",
+    "contact_email": "info@gfsc.gg",
+    "last_verified": "2026-10-30",
+    "source_urls": [
+      "https://www.gfsc.gg/industry-sectors/insurance",
+      "https://www.gfsc.gg/industry-sectors/insurance/statistics",
+      "https://www.gfsc.gg/industry-sectors/insurance/fees",
+      "https://www.gfsc.gg/industry-sectors/insurance/returns",
+      "https://www.gfsc.gg/authorisations/insurance-applications/licensed-insurers",
+      "https://www.gfsc.gg/sites/default/files/2021-10/The%20Insurance%20Business%20%28Solvency%29%20Rules%20and%20Guidance%2C%202021_0.pdf",
+      "https://www.gfsc.gg/sites/default/files/Insurance-Business-(Bailiwick-of-Guernsey)-Law-2002-(Consolidated-text).pdf",
+      "https://www.gov.gg/RevenueService/Companies",
+      "https://giia.gg/"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 196,
+      "new_captives": 8,
+      "surrendered_licenses": 9,
+      "individual_cells_count": 126,
+      "individual_cells_year": 2025,
+      "individual_cells_estimated": false
+    },
+    "types_allowed": [
+      "Category 5 captive insurers and reinsurers, including single-parent and association captives",
+      "Protected cell companies and cells",
+      "Incorporated cell companies and cells",
+      "Category 6 insurers, including special purpose insurers and insurance-linked securities"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Under the Financial Services Commission (Fees and Administrative Penalties) Regulations, 2025, as summarised by the GFSC: Category 5 captive insurer or reinsurer application fee £7,850 for a company, PCC core or ICC core. A Category 5 cell of a PCC or ICC is £2,520. A Category 6 special purpose insurer cell is £110. A pro-rata annual fee is invoiced when the licence is issued.",
+      "annual_fees": "Due 31 January for licences in effect on 1 January. Category 5 captive insurer or reinsurer, including a PCC core or ICC: £7,850. Category 5 cell: £2,520. Category 6 company: £7,725. Category 6 cell that is not a special purpose insurer: £2,520. Special purpose insurer cell: £110. Dormant cell: £205. Change of general representative: £600. Change of controller: £2,760.",
+      "premium_tax_rate": "No premium-tax rate is set on the GFSC fee schedule. Company income tax is 0 percent on non-domestic insurance income and 10 percent on domestic insurance business."
+    },
+    "annual_filing_requirements": "Licensed insurers must deposit an annual return with the Commission within four months beginning on the close of the financial year (Insurance Business Law, section 37). The return includes the regulatory solvency assessment. Each insurer must also complete an Own Risk and Solvency Assessment at least annually and submit the resulting Own Solvency Capital Assessment with the annual return. The general representative is responsible for filing. A late return attracts an administrative financial penalty. Licensed insurance managers and insurance intermediaries deposit their annual return within six months of the financial year-end. Guernsey company income tax returns are filed separately with the Revenue Service; the 2025 corporate return is due 30 November 2026.",
+    "captive_administrator": {
+      "name": "Guernsey Financial Services Commission, Banking and Insurance Division",
+      "email": "info@gfsc.gg",
+      "phone": "+44 1481 712706",
+      "fax": null
+    },
+    "licensing_speed": "No published standard timeline. PCC cells may be pre-authorised on a product or class basis after the PCC and its first cell are approved; this route is most commonly used for fully collateralised special purpose insurer cells.",
+    "regulator": {
+      "name": "Guernsey Financial Services Commission",
+      "address": "Regency Court, Glategny Esplanade, St Peter Port, Guernsey, GY1 3HQ",
+      "website": "https://www.gfsc.gg/industry-sectors/insurance"
+    }
   },
   {
     "name": "Hawaii",
@@ -1184,18 +1289,62 @@
   },
   {
     "name": "The Bahamas",
-    "summary": "The Bahamas is a competitive international financial center that promotes cost-effective growth through the use of segregated account (cell) captives. The External Insurance Act of 2009 classifies all captives as 'restricted' external insurers, while the 2017 Commercial Enterprises Act encourages a domestic presence for specific industries. Licensing involves a robust process, including a pre-application meeting and a 30-to-60-day window to meet approval conditions.",
-    "jurisdiction": "Offshore",
-    "legislation": "External Insurance Act 2009",
-    "min_capital": {
-      "Share Capital": "$100,000 (additional regulatory capital may be required)"
-    },
-    "tax_notes": "$2,500 annual renewal fee for standalone captives",
     "slug": "bahamas",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "jurisdiction": "Offshore",
+    "summary": "The Bahamas licenses captives as restricted external insurers under the External Insurance Act, 2009 (Chapter 348), supervised by the Insurance Commission of The Bahamas. A restricted external insurer may cover its members, subsidiaries and affiliates, reinsureds who acknowledge in writing that it is restricted, and other persons the Commission approves. Unrestricted external insurers may write broader business from The Bahamas. Cell programmes use segregated accounts companies under the Segregated Accounts Companies Act (Chapter 369C). The Commission does not publish a current captive or external-insurer census; the statistics page covers domestic general and long-term business, and the latest files there run through 2022. Capital for a restricted insurer is the amount the Commission approves. The prescribed floors for unrestricted insurers are B$100,000 for general business, B$200,000 for long-term business and B$300,000 for both. The annual licence fee is B$2,500 for a restricted insurer and B$3,500 for an unrestricted insurer. Section 52 of the Act gives a licensed external insurer a 20-year exemption, running from the date of its first licence, from Bahamian taxes, fees, duties and imposts other than provisions of that kind already in force when the Act commenced and other than licence charges under the Act. Audited financial statements are due within four months of the financial year-end. The Commission has posted a Draft External Insurance Act, 2025; this profile follows the 2009 Act and the 2010 regulations.",
+    "legislation": "External Insurance Act, 2009 (Chapter 348) and the External Insurance Regulations, 2010",
+    "legislation_year": 2009,
+    "applicable_legislation": "External Insurance Act, 2009 (Chapter 348); External Insurance (Capital Requirements for External Insurers, Insurance Managers and External Insurance Brokers) Regulations, 2010; External Insurance (Forms and Fees) Regulations, 2010; External Insurance (Classes of Insurance Business) Regulations, 2010; External Insurance (Variable Insurance Business) Regulations, 2010; Segregated Accounts Companies Act (Chapter 369C). The Insurance Commission also publishes a Draft External Insurance Act, 2025, which is not treated as in force here.",
+    "min_capital": {
+      "Restricted external insurer (captive)": "Paid-up capital or contributed reserve in the amount approved by the Commission, in cash or other approved assets (External Insurance Act, 2009, s.22(2))",
+      "Unrestricted external insurer, general business": "B$100,000 minimum fully paid-up capital, capital surplus and subordinated capital or contributed reserve fund",
+      "Unrestricted external insurer, long-term business": "B$200,000 minimum fully paid-up capital, capital surplus and subordinated capital or contributed reserve fund",
+      "Unrestricted external insurer, general and long-term": "B$300,000 minimum fully paid-up capital, capital surplus and subordinated capital or contributed reserve fund",
+      "Solvency, restricted general insurer": "Assets must exceed liabilities by the amount the Commission prescribes (s.31(2))",
+      "Solvency, unrestricted general insurer": "After the first financial year, assets must exceed liabilities by one-fifth of the preceding year's premium income where that income does not exceed B$5 million; where premium income exceeded B$5 million, by B$1 million plus one-tenth of the amount by which premium income exceeded B$10 million, unless the Commission determines otherwise (s.31(1))",
+      "Solvency, long-term business": "Assets must exceed liabilities (s.31(3))"
+    },
+    "tax_notes": "The External Insurance Act does not impose a premium tax. Section 52 exempts a licensed external insurer, for 20 years from the date of its first licence, from any tax, fee, duty or impost in The Bahamas, other than provisions of that kind in force when the Act commenced and other than amounts payable for a licence under the Act. The standing annual charge is the licence fee.",
+    "contact_name": "Dana Munnings-Gray, Superintendent of Insurance",
+    "contact_email": "info@icb.gov.bs",
+    "last_verified": "2026-10-30",
+    "source_urls": [
+      "https://www.icb.gov.bs/",
+      "https://www.icb.gov.bs/legal/legislation/",
+      "https://www.icb.gov.bs/contact-us-2/",
+      "https://www.icb.gov.bs/about-us/members-of-the-commission/",
+      "https://www.icb.gov.bs/publications/statistics/",
+      "https://laws.bahamas.gov.bs/cms/images/LEGISLATION/PRINCIPAL/2009/2009-0015/2009-0015_1.pdf",
+      "https://laws.bahamas.gov.bs/cms/images/LEGISLATION/SUBORDINATE/2010/2010-0039/2010-0039_2.pdf",
+      "https://laws.bahamas.gov.bs/cms/images/LEGISLATION/SUBORDINATE/2010/2010-0042/2010-0042_2.pdf",
+      "https://laws.bahamas.gov.bs/cms/images/LEGISLATION/PRINCIPAL/2004/2004-0020/2004-0020.pdf"
+    ],
+    "stats": null,
+    "types_allowed": [
+      "Restricted external insurers (captives)",
+      "Unrestricted external insurers",
+      "Segregated accounts companies (cell captives)",
+      "Variable insurance business"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "B$250 application for an external insurer licence; B$250 application for a segregated account of an external insurer; B$100 application for an insurance manager or external insurance broker. The application fee is not repaid if a licence is refused (External Insurance Act, s.8(3), and the 2010 Forms and Fees Regulations, Sixth Schedule).",
+      "annual_fees": "Restricted external insurer B$2,500; unrestricted external insurer B$3,500; insurance manager B$1,000; external insurance broker B$1,000. Late payment adds 10, 15, 20 or 25 percent of the amount due, according to the quarterly ageing of the overdue fee.",
+      "premium_tax_rate": "No premium tax under the External Insurance Act. Section 52 provides a 20-year exemption from other Bahamian taxes, fees, duties and imposts, subject to the carve-outs in that section. The annual regulatory charge is the licence fee above."
+    },
+    "annual_filing_requirements": "Audited financial statements, complying with international accounting standards or another standard the Commission determines, are due within four months after the financial year-end, or any longer period the Commission allows. They must be audited by a Commission-approved auditor and accompanied by the auditor's report and by the auditor's certificate on the statutory books, compliance with the section 31 solvency test at the balance-sheet date, and compliance with anti-money-laundering and counter-terrorist-financing reporting. The Commission may also require an actuary's certificate that reserves are adequate. A licensee whose outstanding claims, including incurred-but-not-reported claims, exceed 200 percent of capital and surplus must file an annual actuarial review of those claims. A licensee incorporated outside The Bahamas must, within four months of year-end, file a certificate from its overseas regulator. Each licensee must maintain a resident representative in The Bahamas. The external-insurer licence is renewable annually.",
+    "captive_administrator": {
+      "name": "Dana Munnings-Gray, Superintendent of Insurance, Insurance Commission of The Bahamas",
+      "email": "info@icb.gov.bs",
+      "phone": "+1 (242) 603-4183",
+      "fax": null
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Insurance Commission of The Bahamas",
+      "address": "Silk Cotton House, Prospect Ridge Road, P.O. Box N-4844, Nassau, New Providence, The Bahamas",
+      "website": "https://www.icb.gov.bs/"
+    }
   },
   {
     "name": "Turks and Caicos Islands",
@@ -1265,10 +1414,10 @@
     "name": "Vermont",
     "slug": "vermont",
     "jurisdiction": "Onshore (USA)",
-    "summary": "Vermont is the largest onshore captive domicile in the United States and a premier global captive hub, having pioneered the US industry with the enactment of the Special Insurer Act of 1981 (8 V.S.A. Chapter 141). Regulated by the Vermont Department of Financial Regulation (DFR) Captive Insurance Division\u2014which maintains a dedicated in-house team of analysts and financial examiners\u2014and supported by the Vermont Captive Insurance Association (VCIA), the state had 707 licensed captives ($243.6B in assets and $36.3B in gross written premium) at year-end 2025. Vermont licenses nine distinct captive structures, offers a 30-day licensing turnaround, and provides a competitive graduated premium tax capped at $200,000 with a $5,000 tax credit in each of the first two years.",
+    "summary": "Vermont is the largest onshore captive domicile in the United States and a premier global captive hub, having pioneered the US industry with the enactment of the Special Insurer Act of 1981 (8 V.S.A. Chapter 141). Regulated by the Vermont Department of Financial Regulation (DFR) Captive Insurance Division—which maintains a dedicated in-house team of analysts and financial examiners—and supported by the Vermont Captive Insurance Association (VCIA), the state had 707 licensed captives ($243.6B in assets and $36.3B in gross written premium) at year-end 2025. Vermont licenses nine distinct captive structures, offers a 30-day licensing turnaround, and provides a competitive graduated premium tax capped at $200,000 with a $5,000 tax credit in each of the first two years.",
     "legislation": "Special Insurer Act of 1981 (Title 8 V.S.A. Chapters 141, 142, and 142A)",
     "legislation_year": 1981,
-    "applicable_legislation": "Title 8, Vermont Statutes Annotated (V.S.A.), Chapter 141 (Captive Insurance Companies, 8 V.S.A. \u00a7\u00a7 6001\u20136049o), Chapter 142 (Risk Retention Groups and Purchasing Groups), and Chapter 142A (Risk Retention Group Managing General Agents, Reinsurance Intermediaries, and Producer Controlled Insurers); Vermont DFR Regulation C-81-2 (Captive Insurance Financial Regulation).",
+    "applicable_legislation": "Title 8, Vermont Statutes Annotated (V.S.A.), Chapter 141 (Captive Insurance Companies, 8 V.S.A. §§ 6001–6049o), Chapter 142 (Risk Retention Groups and Purchasing Groups), and Chapter 142A (Risk Retention Group Managing General Agents, Reinsurance Intermediaries, and Producer Controlled Insurers); Vermont DFR Regulation C-81-2 (Captive Insurance Financial Regulation).",
     "min_capital": {
       "Sponsored": "USD $100,000",
       "Pure": "USD $250,000",
