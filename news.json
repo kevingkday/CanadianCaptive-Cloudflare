@@ -1,53 +1,53 @@
 {
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-11-01",
   "articles": [
     {
-      "title": "Captives and fronting are reshaping who actually carries the risk in Canada's MGA market",
-      "date": "2026-10-19",
-      "source": "Insurance Business Canada",
+      "title": "Why some Canadian companies are bringing captive risks home to Alberta",
+      "date": "2026-10-30",
+      "source": "Canadian Underwriter",
       "category": "Canadian Domiciles",
-      "summary": "Zurich Canada and Aon Reinsurance leaders report a surge in Canadian captive formations alongside MGA fronting arrangements as large domestic enterprises retain predictable frequency losses and optimize risk capital.",
-      "url": "https://www.insurancebusinessmag.com/ca/news/breaking-news/captives-and-fronting-are-reshaping-who-actually-carries-the-risk-in-canadas-mga-market-593928.aspx"
+      "summary": "Hub International says Canadian firms are redomiciling captive risks from offshore to Alberta, citing flexible rules now allowing surety, lower premiums, and better tax outcomes than offshore captives taxed under FAPI.",
+      "url": "https://canadianunderwriter.ca/news/industry/why-some-canadian-companies-are-bringing-captive-risks-home-to-alberta/"
     },
     {
-      "title": "Data centres are rewriting the rules of Canadian construction insurance",
-      "date": "2026-10-14",
-      "source": "Insurance Business Canada",
-      "category": "Canadian Domiciles",
-      "summary": "With Canadian data centre construction projected to reach $8.6 billion by 2031, Gallagher and Aon brokers highlight emerging opportunities for captive retention structures to bridge mega-project capacity gaps.",
-      "url": "https://www.insurancebusinessmag.com/ca/news/construction/data-centres-are-rewriting-the-rules-of-canadian-construction-insurance-593478.aspx"
+      "title": "Piko Re targeting untapped captive reinsurance market",
+      "date": "2026-10-30",
+      "source": "Captive Review",
+      "category": "Market Trends",
+      "summary": "New captive-focused reinsurance intermediary Piko Re will target mid-sized single-parent captives and segregated cells, starting in the US with Canada flagged as a potential early expansion market.",
+      "url": "https://captivereview.com/news/piko-re-targeting-untapped-captive-reinsurance-market/"
     },
     {
-      "title": "BMA updates guidance for segregated and separate account insurers",
-      "date": "2026-10-22",
-      "source": "Captive Insurance Times",
-      "category": "Regulation",
-      "summary": "The Bermuda Monetary Authority issued updated guidance effective January 1, 2027 for segregated and separate account insurers, clarifying governance, risk management, and targeted reporting expectations for cell-captive participants.",
-      "url": "https://www.captiveinsurancetimes.com/captiveinsurancenews/industryarticle.php?article_id=10695&navigationaction=latestnews&page=1&newssection=industry"
-    },
-    {
-      "title": "IMAC: Cayman gets boost from Q3 2026 numbers",
-      "date": "2026-10-20",
-      "source": "Captive International",
+      "title": "Captive owners find new ways to finance risks, manage losses",
+      "date": "2026-10-29",
+      "source": "Business Insurance",
       "category": "Offshore Domiciles",
-      "summary": "CIMA issued eight new international insurer licences in Q3 2026, bringing Cayman's year-to-date formations to 28 and total international insurers to 720 representing $62 billion in premiums.",
-      "url": "https://www.captiveinternational.com/imac-cayman-gets-boost-from-q3-2026-numbers"
+      "summary": "Vermont's captive regulator reports owners converting single-parent captives into sponsored captives to insure partner and joint-venture risks in segregated cells, a structure Canadian parents with Vermont captives may consider.",
+      "url": "https://www.businessinsurance.com/captive-owners-find-new-ways-to-finance-risks-manage-losses/"
     },
     {
-      "title": "Bermuda Court Rules on Captive Insurance Manager's Duty of Care to Shareholders",
-      "date": "2026-10-19",
-      "source": "Captive.com",
-      "category": "Tax & Compliance",
-      "summary": "Bermuda's Supreme Court ruled that a captive manager owed contractual duties to its client companies rather than individual shareholders, underscoring the importance of clear governance and management agreements.",
-      "url": "https://www.captive.com/news/bermuda-court-rules-on-captive-insurance-managers-duty-of-care-to-shareholders"
-    },
-    {
-      "title": "SIIA Survey Finds Strong Captive Insurance Growth Outlook for 2026",
-      "date": "2026-10-20",
+      "title": "Captive Insurance and Data Centers: Managing Risk in a Digital World",
+      "date": "2026-10-28",
       "source": "Captive.com",
       "category": "Market Trends",
-      "summary": "SIIA's sixth annual captive survey finds 90.6% of brokers anticipate five-year demand growth, driven by pricing predictability, disciplined claims management, and rising interest in medical stop-loss and cyber coverages.",
-      "url": "https://www.captive.com/news/siia-survey-finds-strong-captive-insurance-growth-outlook-for-2026"
+      "summary": "AM Best examines how captives can help data centre operators retain cyber, property, and business interruption risks, relevant as Canadian data centre construction scales into multi-billion-dollar projects.",
+      "url": "https://www.captive.com/news/captive-insurance-and-data-centers-managing-risk-in-a-digital-world"
+    },
+    {
+      "title": "Could QJS unlock capital for Cayman and Guernsey captives?",
+      "date": "2026-10-26",
+      "source": "Captive Review",
+      "category": "Offshore Domiciles",
+      "summary": "Cayman's pursuit of NAIC qualified jurisdiction status could eventually lower US collateral requirements for captive reinsurers, though the initial phase covers only P&C reinsurers rather than most Class B captives.",
+      "url": "https://captivereview.com/news/could-qjs-unlock-capital-for-cayman-and-guernsey-captives/"
+    },
+    {
+      "title": "Lloyd's Establishes Framework for Broker-Originated Reinsurance Structures",
+      "date": "2026-10-21",
+      "source": "Captive.com",
+      "category": "Regulation",
+      "summary": "Lloyd's new framework, effective January 1, 2027, sets capital, eligibility, and oversight rules for investor-backed broker-originated reinsurance structures and requires prior submission when captives participate.",
+      "url": "https://www.captive.com/news/lloyds-establishes-framework-for-broker-originated-reinsurance-structures"
     }
   ]
 }
