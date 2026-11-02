@@ -91,7 +91,7 @@ function renderMetric(value, fallback = 'Pending verification') {
     return escapeTemplateValue(value);
 }
 
-function renderStatsBlock(stats) {
+function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses') {
     if (!stats) {
         return `
             <div class="col-span-full bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 text-center py-12">
@@ -129,7 +129,7 @@ function renderStatsBlock(stats) {
                         <span class="font-semibold text-on-surface">${renderMetric(stats.new_captives)}</span>
                     </div>
                     <div class="flex justify-between items-center pb-1 text-sm">
-                        <span class="text-secondary">Surrendered Licenses</span>
+                        <span class="text-secondary">${exitLabel}</span>
                         <span class="font-semibold text-on-surface">${renderMetric(stats.surrendered_licenses)}</span>
                     </div>
                 </div>
@@ -590,7 +590,7 @@ ${capitalRows}
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <!-- Column 1: Market & Structures -->
                     <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-                        ${renderStatsBlock(domicile.stats)}
+                        ${renderStatsBlock(domicile.stats, domicile.slug === 'vermont' ? 'Dissolutions' : 'Surrendered Licenses')}
                         
                         <!-- Types Allowed Card -->
                         <div class="col-span-full bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
