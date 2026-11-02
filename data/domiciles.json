@@ -508,20 +508,78 @@
   },
   {
     "name": "Delaware",
-    "summary": "Delaware is a top-tier global domicile known for a regulatory bureau with exceptionally high levels of professional expertise and qualifications. It was the first US state to offer same-day conditional licensing, allowing captives to begin operations while their permanent application is reviewed. The state caters to a wide variety of structures, including series captives and risk retention groups.",
-    "jurisdiction": "Onshore (USA)",
-    "legislation": "Delaware Department of Insurance framework",
-    "min_capital": {
-      "Pure / Agency": "$250,000",
-      "RRG": "$1,000,000",
-      "Association": "$750,000"
-    },
-    "tax_notes": "$5,000 minimum tax ($3,500 for series captives)",
     "slug": "delaware",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "jurisdiction": "Onshore (USA)",
+    "summary": "Delaware licenses captives under Title 18, Chapter 69 of the Delaware Code. The Department of Insurance Bureau of Captive and Financial Insurance Products administers the chapter, and the Bureau's welcome page identifies House Bill 218 (2005) as the statute that modernized the law. The Department's 2025 year-in-review reported 638 captives after 51 new licences that year. Minimum capital and surplus is $250,000 for a pure, agency, branch or special purpose captive, $500,000 for an industrial insured captive or a sponsored captive, $750,000 for an association captive, and $1,000,000 for a risk retention group. A series captive's minimum is the amount the Commissioner specifies. Direct premium tax is 0.2 percent, with a $200,000 direct-tax cap, and assumed reinsurance premium tax is 0.1 percent, with a $110,000 cap. The annual minimum is $5,000, or $3,500 for a series captive, and the annual aggregate cap is $200,000. Under § 6914(d) that premium tax is in lieu of other Delaware state and local occupation taxes, other than ad valorem property tax. A conditional certificate of authority is dated the day the Bureau receives the emailed application, if the $3,600 fee arrives within 10 business days.",
+    "legislation": "Title 18, Delaware Code, Chapter 69 (Captive Insurance Companies); the Bureau identifies House Bill 218 (2005) as the modernizing statute",
+    "legislation_year": 2005,
+    "applicable_legislation": "Title 18, Delaware Code, Chapter 69 (Captive Insurance Companies), including § 6902 (definitions), § 6903 (licence application, fees and conditional certificates), § 6905 (minimum capital and surplus), § 6906 (formation), § 6907 (annual reports), § 6914 (tax on premiums) and § 6924 (dormant captive insurance companies). The current text is published on the Delaware Code Online.",
+    "min_capital": {
+      "Pure captive": "USD $250,000 (18 Del. C. § 6905(a)(1))",
+      "Agency captive": "USD $250,000 (§ 6905(a)(4))",
+      "Branch captive": "USD $250,000, or such other amount as the Commissioner determines (§ 6905(a)(8))",
+      "Special purpose captive": "USD $250,000, or such other amount as the Commissioner determines (§ 6905(a)(7))",
+      "Industrial insured captive": "USD $500,000 (§ 6905(a)(3))",
+      "Sponsored captive": "USD $500,000 (§ 6905(a)(6)). This is the sponsored captive minimum, not a published per-cell floor",
+      "Association captive": "USD $750,000 (§ 6905(a)(2))",
+      "Risk retention group": "USD $1,000,000 (§ 6905(a)(5))",
+      "Special purpose financial captive": "USD $500,000 if it is also a sponsored captive; USD $250,000 if it is not (§ 6905(a)(9))",
+      "Series captive": "The amount specified by the Commissioner (§ 6905(a)(10)). No default dollar amount is published in the statute",
+      "Additional and form of capital": "The Commissioner may prescribe additional capital and surplus based on the type, volume and nature of the business (§ 6905(b)). Minimum capital is held as cash, an irrevocable letter of credit from an institution chartered, licensed or otherwise authorized to do banking business in Delaware, or another institution or asset the Commissioner approves. Surplus-note proceeds may count if the Commissioner approves the note (§ 6905(c) and (d))"
+    },
+    "tax_notes": "Direct premiums are taxed at 2/10 of 1 percent (0.2 percent), up to $200,000, and assumed reinsurance premiums at 1/10 of 1 percent (0.1 percent), up to $110,000. Premiums already taxed as direct premiums are not taxed again as assumed reinsurance, and no tax is due on annuity consideration. The annual minimum aggregate tax is $5,000, or $3,500 for a series captive. The annual maximum aggregate tax is $200,000, except that series captives formed in the same limited liability company or statutory trust are not aggregated into that cap. A captive that employs at least 25 qualified full-time individuals in Delaware pays $50,000 if the formula would otherwise exceed that amount. Tax is due by 15 April. Under § 6914(d) this premium tax is all of the tax collectible under Delaware law from a captive, and no other occupation tax is levied by the State or by a county, city or municipality, except ad valorem taxes on real and personal property used in the production of income. A dormant captive is not liable for the premium tax. There is no separate Delaware corporate income tax on captives in Chapter 69.",
+    "contact_name": "Stephen Taylor, Director, Bureau of Captive & Financial Insurance Products",
+    "contact_email": "captive@delaware.gov",
+    "last_verified": "2026-11-02",
+    "source_urls": [
+      "https://delcode.delaware.gov/title18/c069/sc01/index.html",
+      "https://captive.delaware.gov/captive-welcome/",
+      "https://captive.delaware.gov/contact-us/",
+      "https://captive.delaware.gov/taxes-fees/",
+      "https://captive.delaware.gov/annual-filing-requirements/",
+      "https://captive.delaware.gov/wp-content/uploads/sites/18/2024/04/2024-APPLICATION-PROCESS-TIPS-AND-REMINDERS.pdf",
+      "https://captive.delaware.gov/wp-content/uploads/sites/18/2026/03/DOI-OPTins-Availability-Notice-to-Captive-Industry-2026-0316.pdf",
+      "https://news.delaware.gov/2026/02/02/department-of-insurance-releases-2025-data/",
+      "https://news.delaware.gov/files/2026/02/2025-Annual-Year-In-Review_V1.pdf",
+      "https://news.delaware.gov/2023/10/23/delaware-launches-do-guidance-other-improvements-to-foster-captive-industry-growth/",
+      "https://www.delawarecaptive.org/"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 638,
+      "new_captives": 51
+    },
+    "types_allowed": [
+      "Pure captives",
+      "Association captives",
+      "Agency captives",
+      "Industrial insured captives",
+      "Sponsored captives and protected cells",
+      "Special purpose captives",
+      "Special purpose financial captives",
+      "Series captives",
+      "Branch captives",
+      "Risk retention groups"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Nonrefundable application fee of $300 to review completeness, plus a nonrefundable processing fee of $3,200 (18 Del. C. § 6903(d)). The 2024 Bureau application notice collects $3,500 for a regular application. A conditional certificate adds a $100 fee under § 6903(d)(5); the same 2024 notice collects $3,600 for a conditional application. The annual licence fee for the year of registration is $400.",
+      "annual_fees": "$400 certificate-of-authority renewal fee, due 15 April, payable with the premium-tax report. From the 2025 premium tax and 2026 renewal, payment may be made through OPTins or by the existing procedure. A dormant captive that has not resumed business after five years pays a renewal fee of $25,000 in the sixth year of dormancy and $5,000 in each year of dormancy after that (§ 6924(g)).",
+      "premium_tax_rate": "Direct premiums 0.2 percent, maximum $200,000. Assumed reinsurance premiums 0.1 percent, maximum $110,000. Annual minimum aggregate tax $5,000, or $3,500 for a series captive. Annual maximum aggregate tax $200,000. A captive with at least 25 qualified Delaware employees is capped at $50,000. No annuity tax. Dormant captives pay no premium tax."
+    },
+    "annual_filing_requirements": "Each captive other than a branch captive for which the Commissioner has waived the requirement files a report of financial condition by 15 April, verified by oath of two executive officers or authorized persons, using GAAP unless the Commissioner approves statutory accounting principles or international accounting standards (§ 6907). The Bureau requires the annual report (Form F-1, updated 31 March 2025, for pure captives, core LLCs and series; special purpose financial captives that file NAIC statements are excepted) by 15 April, or within 60 days of fiscal year-end where an alternate year-end is used. Audited financial statements and a statement of actuarial opinion, for captives that retain risk, are due by 30 June. Special purpose financial captives also file quarterly reports with the NAIC and the Bureau by 15 May, 15 August and 15 November. Premium tax and the $400 renewal fee are due by 15 April. Annual reports are emailed to captive@delaware.gov.",
+    "captive_administrator": {
+      "name": "Stephen Taylor, Director, Bureau of Captive & Financial Insurance Products, Delaware Department of Insurance",
+      "email": "captive@delaware.gov",
+      "phone": "(302) 577-5280",
+      "fax": null
+    },
+    "licensing_speed": "The 2024 Bureau application notice dates a conditional certificate on the day the emailed application is received, provided the $3,600 fee reaches the Dover accounting office within 10 business days. Only a captive manager that already manages at least two Delaware captives may file a conditional application. In October 2023 the Department said its goal for review of initial application filings is 30 days, down from 45, and that conditional applications received after 1 November are reviewed within 80 days. That 2023 goal is not restated in the 2024 notice or the March 2026 OPTins notice.",
+    "regulator": {
+      "name": "Delaware Department of Insurance, Bureau of Captive & Financial Insurance Products",
+      "address": "503 Carr Road, Suite 303, Wilmington, DE 19809",
+      "website": "https://captive.delaware.gov/"
+    }
   },
   {
     "name": "District of Columbia",
@@ -799,20 +857,64 @@
   },
   {
     "name": "Isle of Man",
-    "summary": "The Isle of Man offers proportional capital requirements and a pragmatic regulatory environment with a strong Moody's Aa3 rating. It is distinguished by bespoke legislation for catastrophe bonds and insurance-linked securities. A key flexibility is the ability for captives to provide a loan back to their parent company.",
-    "jurisdiction": "Offshore",
-    "legislation": "IOMFSA Risk-Based Methodology",
-    "min_capital": {
-      "Captive Insurer": "GBP 50,000",
-      "Reinsurance Company": "GBP 100,000",
-      "General Insurer": "GBP 150,000"
-    },
-    "tax_notes": "GBP 6,694 annual standalone charge",
     "slug": "isle-of-man",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "jurisdiction": "Offshore",
+    "summary": "The Isle of Man Financial Services Authority licenses captives as Class 12 insurers under the Insurance Act 2008 and the Insurance Regulations 2025, in operation from 30 June 2025. A Class 12 insurer may insure its own group, connected entities and connected individuals, and may reinsure a related customer only where a qualifying ceding insurer remains liable for the underlying claim. At 31 March 2025 the Authority reported 81 authorised Class 12 insurers. For non-life Class 12 business the minimum capital requirement is the higher of 75 percent of the solvency capital requirement and £100,000, and the fixed floor is £0 for a protected-cell-company cell. The solvency capital requirement for a non-dormant Class 12 insurer is a one-year value-at-risk at a 90 percent confidence level. The standard rate of Isle of Man corporate income tax is 0 percent. From 1 April 2026 the annual fee for a Class 12 authorised insurer is £8,565. A draft Class 12 and Class 13 valuation framework, consulted on in CP26-01, is written to come into operation on 31 December 2026 and is not in force.",
+    "legislation": "Insurance Act 2008 and the Insurance Regulations 2025, with the Insurance (Non Long-Term Business Valuation and Solvency) Regulations 2021",
+    "legislation_year": 2008,
+    "applicable_legislation": "Insurance Act 2008; Insurance Regulations 2025 (SD 2025/0138, in operation 30 June 2025), including Schedule 1 (Class 12 captive insurers), Schedule 2 (Class 13 insurance special purpose vehicles) and Schedule 3 (fast-track authorisation); Insurance (Non Long-Term Business Valuation and Solvency) Regulations 2021 (SD 2021/0274); Insurance (Long-Term Business Valuation and Solvency) Regulations 2021; Protected Cell Companies Act 2004; Incorporated Cell Companies Act 2010; Corporate Governance Code of Practice for Insurers 2021; Isle of Man Financial Services Authority (Fees) Order 2026 (SD 2026/0060, in operation 1 April 2026).",
+    "min_capital": {
+      "Class 12, non-life, other than a PCC cell": "The higher of 75 percent of the solvency capital requirement and £100,000. For a non-dormant Class 12 insurer the SCR is the one-year value-at-risk of basic own-funds at a 90 percent confidence level. Applies to Class 12 contracts within classes 3 to 9 and 11 (Insurance (Non Long-Term Business Valuation and Solvency) Regulations 2021, regulations 23 and 70)",
+      "Class 12 protected cell company cell": "The fixed floor is £0, so the minimum capital requirement equals 75 percent of the solvency capital requirement (regulation 70). This is the in-force rule. The draft regulations proposed to operate on 31 December 2026 would state a cell MCR of £0 and are not in force",
+      "Class 12 dormant insurer": "The minimum capital requirement equals the solvency capital requirement. For a dormant insurer that requirement is the regulatory capital needed so that assets exceed liabilities, including operational-management and regulatory-compliance liabilities",
+      "Class 12 long-term business": "Long-term Class 12 contracts, within classes 1, 2 and 10, are covered by the Insurance (Long-Term Business Valuation and Solvency) Regulations 2021 rather than the non-life floor above. A separate sterling floor for that long-term business was not located in the materials reviewed",
+      "Class 13 insurance special purpose vehicle": "Must be fully funded at all times, with total adjusted net assets covering maximum aggregate exposure (Insurance Regulations 2025, Schedule 2). Class 13 is supplemental and does not by itself authorise insurance business. No separate fixed sterling floor was extracted"
+    },
+    "tax_notes": "The Isle of Man Income Tax Division states that the standard rate of income tax for corporate taxpayers is 0 percent. A 10 percent rate, increased to 15 percent in the circumstances the Division describes for large multinational groups, applies to banking business and to Isle of Man retail business with taxable income above £500,000. A 20 percent rate applies to income from Isle of Man land and property and, from 6 April 2024, to petroleum extraction. Insurance is not one of those categories. No premium-tax rate is set in the Authority's Fees Order. The regulatory charge is the annual fee.",
+    "contact_name": "Isle of Man Financial Services Authority, Prudential Supervision Division (non-life insurers)",
+    "contact_email": "Non-life@iomfsa.im",
+    "last_verified": "2026-11-02",
+    "source_urls": [
+      "https://www.iomfsa.im/about/our-structure/supervisory-divisions/",
+      "https://www.iomfsa.im/statistics-site/summary-of-registrations-and-licences/",
+      "https://www.iomfsa.im/legislation-guidance/",
+      "https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/2008/2008-0016/2008-0016_12.pdf",
+      "https://legislation.gov.im/cms/images/LEGISLATION/SUBORDINATE/2025/2025-0138/2025-0138.pdf",
+      "https://legislation.gov.im/cms/images/LEGISLATION/SUBORDINATE/2021/2021-0274/2021-0274_1.pdf",
+      "https://legislation.gov.im/cms/images/LEGISLATION/SUBORDINATE/2026/2026-0060/2026-0060_1.pdf",
+      "https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/business-and-corporations/",
+      "https://consult.gov.im/financial-services-authority/proposed-insurance-regulations-and-guidance-notes/"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 81
+    },
+    "types_allowed": [
+      "Class 12 captive insurers, writing direct insurance and reinsurance within the Schedule 1 related-party limits",
+      "Class 12 protected cell companies and cells",
+      "Class 12 incorporated cell companies and cells",
+      "Class 12 permit holders",
+      "Class 13 insurance special purpose vehicles, which must also hold another class"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Isle of Man Financial Services Authority (Fees) Order 2026, in operation 1 April 2026. Class 12 application fees: authorised insurer £6,960; ICC or PCC core £6,960; ICC or PCC cell £2,677; permit holder with an approved supervisor £2,677; permit holder without an approved supervisor £4,283.",
+      "annual_fees": "From 1 April 2026: Class 12 authorised insurer £8,565; Class 12 ICC or PCC core £8,565; Class 12 cell £4,283; Class 12 permit holder with an approved supervisor £4,283; Class 12 permit holder without an approved supervisor £8,565. There is no volume band on the Class 12 annual fee.",
+      "premium_tax_rate": "None. The standard corporate income-tax rate is 0 percent. The regulatory charge is the annual fee in the Fees Order 2026."
+    },
+    "annual_filing_requirements": "Audited annual accounts must be produced to the Authority within 21 days after the board meeting that approves them and in any event within six months after the close of the year, unless the Authority sets another time (Insurance Act 2008, section 14(3)). The annual regulatory return is submitted at the same time and includes the regulatory balance sheet, solvency capital requirement and minimum capital requirement, supplementary information, and a directors' certificate signed by two directors, at least one of whom is resident in the Island (Insurance Regulations 2025, regulation 19). A Class 12 insurer also submits a bi-annual return within three months after each six-month reporting period, unless the Authority approves another frequency. Class 12 insurers do not file the quarterly return required of other classes.",
+    "captive_administrator": {
+      "name": "Isle of Man Financial Services Authority, Prudential Supervision Division (non-life insurers)",
+      "email": "Non-life@iomfsa.im",
+      "phone": "+44 1624 646000",
+      "fax": null
+    },
+    "licensing_speed": "No published day-count. Schedule 3 of the Insurance Regulations 2025 lets the Authority apply a fast-track authorisation process to a Class 12 application, or a Class 13 application combined with another class, that meets the fast-track requirements the Authority has established. The Authority has not published a standard number of days for that process.",
+    "regulator": {
+      "name": "Isle of Man Financial Services Authority",
+      "address": "PO Box 58, Finch Hill House, Bucks Road, Douglas, Isle of Man, IM99 1DT",
+      "website": "https://www.iomfsa.im/legislation-guidance/"
+    }
   },
   {
     "name": "Jersey",
@@ -913,19 +1015,60 @@
   },
   {
     "name": "Luxembourg",
-    "summary": "Luxembourg is the largest captive reinsurance domicile in the EU, attracting global firms with its stable democracy and modern legal framework. It allows captives with low risk diversification to build large technical reserves for high-risk, low-frequency exposures. The minister must authorize a local manager for all reinsurance activities established in the state.",
-    "jurisdiction": "Onshore (EU)",
-    "legislation": "Law of 7 December 2015 (Solvency II)",
-    "min_capital": {
-      "Captive Reinsurance": "EUR 1.2 million",
-      "Commercial Reinsurance": "EUR 3.6 million"
-    },
-    "tax_notes": "Secure legal and tax framework; infrastructure-rich",
     "slug": "luxembourg",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "jurisdiction": "Onshore (EU)",
+    "summary": "Luxembourg authorises captive insurance undertakings and captive reinsurance undertakings under the Law of 7 December 2015 on the insurance sector, as amended, and the Commissariat aux Assurances supervises them. The Law of 21 July 2021 moved the grant and withdrawal of authorisation from the Minister to the CAA. A reinsurance undertaking must be effectively run by at least one natural-person reinsurance executive, or by a CAA-authorised reinsurance management company represented by such an executive. In CAA Regulation 15/03, consolidated at 27 January 2023, the absolute floor of the minimum capital requirement is EUR 1,300,000 for a captive reinsurer and EUR 3,900,000 for any other reinsurer. Captive insurers use the ordinary insurance floors: EUR 2,700,000 for non-life, EUR 4,000,000 where liability classes 10 to 15 are covered, and EUR 4,000,000 for life. At 1 July 2026 the CAA reported 207 Luxembourg-law reinsurance undertakings and a total staff of 93. It does not publish a captive-only census or a captive-unit headcount. It described 12 new reinsurance authorisations in 2025 and 3 in the first half of 2026 as confirming renewed interest in reinsurance captives. Corporate income tax, in the income-tax law in force at 1 January 2026, is 14 percent up to EUR 175,000 of taxable income and 16 percent above EUR 200,000.",
+    "legislation": "Law of 7 December 2015 on the insurance sector, as amended (consolidated text as of 3 April 2026), and Commissariat aux Assurances Regulation No. 15/03 of 7 December 2015, as amended",
+    "legislation_year": 2015,
+    "applicable_legislation": "Law of 7 December 2015 on the insurance sector, as amended, including the definitions of captive insurance undertaking and captive reinsurance undertaking and Article 112 on the minimum capital requirement (CAA English consolidation as of 3 April 2026); Law of 21 July 2021, which transferred authorisation from the Minister to the CAA; CAA Regulation No. 15/03 of 7 December 2015 on insurance and reinsurance undertakings, as amended (English consolidation as of 27 January 2023, Article 52); Grand-Ducal Regulation of 5 December 2007 on the authorisation and exercise of reinsurance undertakings, as amended, on the provision pour fluctuation de sinistralité; CAA Circular 22/10 on annual reinsurance reporting; Grand-Ducal Regulation of 28 April 2014, as amended by the Grand-Ducal Regulation of 19 December 2020, on contributions to CAA staff and operating costs; amended Law of 4 December 1967 on income tax, Articles 167 and 174 (coordinated text in force at 1 January 2026).",
+    "min_capital": {
+      "Captive reinsurance undertaking": "Absolute floor of the minimum capital requirement EUR 1,300,000 (CAA Regulation 15/03, Article 52(2)(c), consolidation of 27 January 2023)",
+      "Other reinsurance undertaking": "Absolute floor EUR 3,900,000 (Article 52(2)(c))",
+      "Non-life insurance, including a captive insurer": "Absolute floor EUR 2,700,000, or EUR 4,000,000 where any risk in classes 10 to 15 of Annex I, Part A, of the 2015 law is covered (Article 52(2)(a))",
+      "Life insurance, including a captive insurer": "Absolute floor EUR 4,000,000 (Article 52(2)(b))",
+      "MCR relative to the SCR": "The minimum capital requirement must not fall below 25 percent, and must not exceed 45 percent, of the solvency capital requirement including any capital add-on (Article 52(3)). It is calculated at least quarterly"
+    },
+    "tax_notes": "Captive insurers and reinsurers are taxed as companies. Article 174 of the amended Law of 4 December 1967, in the Administration des contributions directes coordinated text in force at 1 January 2026, sets corporate income tax at 14 percent where taxable income does not exceed EUR 175,000, at EUR 24,500 plus 30 percent of the income above EUR 175,000 where taxable income is between EUR 175,000 and EUR 200,001, and at 16 percent above EUR 200,000. Guichet.lu, updated 7 April 2026, states that a further 7 percent of the corporate income tax is charged for the employment fund. The rate table on that Guichet page still describes the 2019 schedule of 15 and 17 percent and was not used for the rates above. Article 167 allows deduction of technical-provision allocations by insurance and reinsurance undertakings to the extent they correspond to obligations owed to insureds at the year-end, on conditions set by grand-ducal regulation. Every reinsurance undertaking must also constitute a provision pour fluctuation de sinistralité under the Grand-Ducal Regulation of 5 December 2007, as amended. The texts reviewed do not state, as a captive-specific rule, that this fluctuation provision is deductible in full. Municipal business tax and net wealth tax also apply; commune rates and the net-wealth tariff were not verified here. No premium-tax rate was found in the 2015 insurance-sector law materials reviewed.",
+    "contact_name": "Commissariat aux Assurances",
+    "contact_email": "caa@caa.lu",
+    "last_verified": "2026-11-02",
+    "source_urls": [
+      "https://www.caa.lu/en/documentation/laws",
+      "https://www.caa.lu/en/documentation/caa-regulations",
+      "https://www.caa.lu/uploads/documents/files/Law_on_the_insurance_sector_2015-12-07_consol_2026-04-03_ESAP_.pdf",
+      "https://www.caa.lu/uploads/documents/files/RCAA_15-03_UK_version_consolidated_RCAA_22-03.pdf",
+      "https://www.caa.lu/uploads/documents/files/CAA_RA_2025.pdf",
+      "https://www.caa.lu/uploads/documents/files/CAA_RA_2025_annexes.pdf",
+      "https://www.caa.lu/uploads/documents/files/Reglm_AgrementExercice_REA_2007-12-05_coord_2014-07-04.pdf",
+      "https://www.caa.lu/uploads/documents/files/LC22-10.pdf",
+      "https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf",
+      "https://guichet.public.lu/en/entreprises/fiscalite/impots-benefices/benefices-patrimoine/benefices-societes-capitaux/impot-revenu-collectivites.html",
+      "https://www.aca.lu/"
+    ],
+    "stats": null,
+    "types_allowed": [
+      "Captive insurance undertakings",
+      "Captive reinsurance undertakings"
+    ],
+    "regulator_staff_count": "93",
+    "fees": {
+      "licensing_incorporation": "No fixed captive application fee is stated on the CAA laws or regulations pages reviewed. The CAA annual report for 2025-2026 says staff and operating costs, other than retired-staff pensions, are met by taxes paid by supervised undertakings and by a state grant. Those taxes are set by the Grand-Ducal Regulation of 28 April 2014, as amended by the Grand-Ducal Regulation of 19 December 2020. The euro schedule in that regulation was not extracted in this verification.",
+      "annual_fees": "Annual contributions to CAA staff and operating costs are set by the Grand-Ducal Regulation of 28 April 2014, as amended on 19 December 2020. A current euro amount for a captive or reinsurance undertaking was not extracted from that regulation.",
+      "premium_tax_rate": "No premium-tax rate is set in the Law of 7 December 2015 materials reviewed. Corporate income tax applies under Article 174 of the income-tax law, at 14 percent up to EUR 175,000 of taxable income and 16 percent above EUR 200,000, plus the 7 percent employment-fund charge stated by Guichet.lu."
+    },
+    "annual_filing_requirements": "Insurance and reinsurance undertakings calculate the minimum capital requirement at least quarterly and report it to the CAA (Regulation 15/03, Article 52(4)). Reinsurance undertakings file an annual report. Circular 22/10 requires the claims-fluctuation-provision ceiling table, and the components of the annual movement where the provision exceeds 30 percent of the theoretical maximum. The 2025-2026 annual report says Circular 24/3, as modified by Circulars 25/5 and 25/6, splits the statutory auditor's separate report for reinsurance undertakings into a distinct report and a complementary distinct report, with different submission dates. Those day-counts were not extracted from the circulars. A change in ownership of a captive insurer or a reinsurance undertaking is notified on the forms introduced by Circular 24/9.",
+    "captive_administrator": {
+      "name": "Commissariat aux Assurances",
+      "email": "caa@caa.lu",
+      "phone": "+352 22 69 11-1",
+      "fax": "+352 22 69 10"
+    },
+    "licensing_speed": "No published standard authorisation timeline. The CAA examines the financial and organisational conditions, including human resources, before it grants an authorisation.",
+    "regulator": {
+      "name": "Commissariat aux Assurances",
+      "address": "11, rue Robert Stumper, L-2557 Luxembourg",
+      "website": "https://www.caa.lu/en/documentation/laws"
+    }
   },
   {
     "name": "Malta",
