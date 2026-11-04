@@ -189,122 +189,123 @@
   },
   {
     "name": "Barbados",
-    "summary": "Barbados is a top-tier domicile known for its political stability and extensive bilateral double taxation treaty network with countries like Canada and the US. In 2019, it eliminated its ring-fenced regime, replacing the Exempt Insurance Act with a unified Insurance Act classified into three distinct license classes. Class 1 captives are restricted to related party business, while Class 2 can underwrite third-party risks with a 2% tax rate.",
-    "jurisdiction": "Offshore",
-    "legislation": "Insurance Act, Cap. 310 (effective 2019)",
-    "min_capital": {
-      "Class 1 (related risks)": "$125,000"
-    },
-    "tax_notes": "0% for Class 1; 2% for Class 2 and Class 3 entities",
-    "contact_name": "Kester Guy",
-    "contact_email": "kguy@fsc.gov.bb",
-    "last_verified": "2026-06-29",
-    "source_urls": [
-      "https://www.fsc.gov.bb"
-    ],
     "slug": "barbados",
-    "legislation_year": 1983,
+    "jurisdiction": "Offshore",
+    "summary": "Barbados licenses insurers under the Insurance Act, Cap. 310. The Insurance (Amendment) Act, 2018-52 commenced on 1 January 2019, created three licence classes, and repealed the Exempt Insurance Act, Cap. 308A. A Class 1 licensee is an insurance company that underwrites related-party business. A Class 2 licensee includes an insurance company that underwrites third-party risks, and Class 3 covers insurance intermediaries, managers, and holding companies. The Financial Services Commission supervises the sector under the Financial Services Commission Act, 2010-21. The Commission's homepage reported 176 Class 1 licensees at 31 December 2025, compared with 175 at 31 December 2024. It reported 121 Class 2 licensees at 31 December 2025, of which 21 had direct exposure to the Barbadian public, and 815 Class 3 licensees. Class 1 is the related-party population. The Commission does not publish a pure-versus-group split, a cell count, or 2025 figures for new and surrendered Class 1 licences.",
+    "legislation": "Insurance Act, Cap. 310, as amended by the Insurance (Amendment) Act, 2018-52 (commenced 1 January 2019)",
+    "legislation_year": 2018,
+    "applicable_legislation": "Insurance Act, Cap. 310; Insurance (Amendment) Act, 2018-52, which commenced on 1 January 2019 and repealed the Exempt Insurance Act, Cap. 308A; Financial Services Commission Act, 2010-21. Minimum capital and solvency for Class 1 and Class 2 insurers are set out in the Commission's capital and solvency appendix.",
+    "min_capital": {
+      "Class 1 or Class 2, risks and premiums outside Barbados": "BDS $250,000 minimum paid-up share capital in cash for long-term insurance, general insurance, or both, or such other amount as the Commission determines. An equivalent sum in another currency is allowed if the Commission approves it. Capital must be fully paid up in cash.",
+      "Class 1 or Class 2, risks and premiums in Barbados": "BDS $3,000,000 long-term; BDS $3,000,000 general; BDS $5,000,000 long-term and general; BDS $1,000,000 motor vehicle only; BDS $1,000,000 industrial life.",
+      "Segregated cell company, Barbados reinsurance": "A Class 1 or Class 2 segregated cell company licensed to carry on reinsurance of risks located in Barbados, with premiums originating in Barbados, must have aggregate paid-up capital of BDS $3,000,000, and each cell must have minimum paid-up capital of BDS $500,000.",
+      "Solvency, risks and premiums outside Barbados": "In the first financial year, assets must exceed liabilities by BDS $250,000. After that year, assets must exceed liabilities by BDS $250,000 if the preceding year's premium income did not exceed BDS $1,500,000; by one-fifth of that premium income if it exceeded BDS $1,500,000 but did not exceed BDS $10,000,000; or by BDS $2,000,000 plus one-tenth of the amount by which premium income exceeded BDS $10,000,000."
+    },
+    "tax_notes": "The Barbados Revenue Authority publishes corporate income tax at 0 percent for Class 1 insurance companies, 2 percent for Class 2 insurance companies, and 2 percent for Class 3 insurance companies. The same table still shows 0 percent for exempt insurance companies and 0.35 percent for qualifying insurance companies that were licensed under the Insurance Act, Cap. 310 and carrying on life insurance business before 17 October 2017. No separate captive premium tax was stated on the Revenue Authority corporations page or the Commission pages used.",
+    "contact_name": null,
+    "contact_email": "insurance@fsc.gov.bb",
+    "last_verified": "2026-11-04",
+    "source_urls": [
+      "https://www.fsc.gov.bb/",
+      "https://www.fsc.gov.bb/insurance-division",
+      "https://www.fsc.gov.bb/index.php/contact-us",
+      "https://www.fsc.gov.bb/viewPDF/documents/2022-11-16-07-03-25-Insurance-Amendment-Act-201852.pdf",
+      "https://www.fsc.gov.bb/viewPDF/documents/2025-09-15-16-50-35-Appendix---Capital--Solvency-Requirements.pdf",
+      "https://www.fsc.gov.bb/viewPDF/documents/2024-11-12-16-12-25-FSC-Fees-Order.pdf",
+      "https://bra.gov.bb/About/Tax-Types/Income-Tax/Corporations"
+    ],
     "stats": {
       "reporting_year": 2025,
-      "total_captives": 276,
-      "new_captives": 3,
-      "surrendered_licenses": 11,
-      "pure_captives": 163,
-      "group_captives": 0,
-      "sponsored_cell_captives": 28,
-      "individual_cells_count": 0,
-      "other_captives": 85
+      "total_captives": 176
     },
     "types_allowed": [
-      "Single parent captives",
-      "Association captives",
-      "Group captives",
-      "Protected cell/segregated portfolio companies",
-      "Risk retention groups"
+      "Class 1 insurers underwriting related-party business",
+      "Segregated cell companies licensed as Class 1 or Class 2 insurers"
     ],
-    "regulator_staff_count": "8",
+    "regulator_staff_count": null,
     "fees": {
-      "licensing_incorporation": "$1,000 BDS",
-      "annual_fees": "2019-0.03% of total assets or minimum of $30,000 BDS; 2020-0.04% of total assets or minimum of $40,000 BDS; 2021-0.05% of total assets or minimum of $50,000 BDS",
-      "premium_tax_rate": "Class 1: none; Class 2: 2% on first $250k taxable income; Class 3: 2% (intermediaries, managers, holdings). Special FET exemption (1-4%) if Barbados-domiciled."
+      "licensing_incorporation": "Application and registration fees are prescribed under the Insurance Act, Cap. 310. The Commission's published fees instrument is an image PDF, and the dollar schedule could not be read reliably, so the amounts are not restated.",
+      "annual_fees": "The annual fee in Part I of the Commission's fees schedule is payable by 31 January each year. The dollar amounts in that schedule are not restated because the published PDF did not yield a reliable text extraction.",
+      "premium_tax_rate": "Corporate income tax of 0 percent for Class 1, 2 percent for Class 2, and 2 percent for Class 3. No separate premium-tax rate was published on the pages used."
     },
-    "annual_filing_requirements": "Meeting required in domicile.",
-    "applicable_legislation": "Exempt Insurance Act CAP. 308A; Insurance Act CAP. 310; Financial Services Commission Act, 2010-21.",
+    "annual_filing_requirements": "The annual fee in Part I of the Commission's fees schedule is payable by 31 January. A current deadline for audited financial statements was not confirmed on the Commission pages reviewed.",
     "captive_administrator": {
-      "name": "Kester Guy",
-      "email": "kguy@fsc.gov.bb",
-      "phone": "246-421-2142",
-      "fax": "246-421-2146"
+      "name": "Insurance Division, Financial Services Commission",
+      "email": "insurance@fsc.gov.bb",
+      "phone": "+1 (246) 421-2142",
+      "fax": null
     },
-    "licensing_speed": "3 weeks",
+    "licensing_speed": null,
     "regulator": {
-      "name": "Financial Services Commission",
-      "address": "Harbour Industrial Park, Building 4, Suites 301 & 302, St. Michael, BB11142",
+      "name": "Financial Services Commission, Insurance Division",
+      "address": "Bay Corporate Building, Bay Street, St. Michael, Barbados, BB14038",
       "website": "https://www.fsc.gov.bb"
     }
   },
   {
     "name": "Bermuda",
-    "summary": "Bermuda is a global authority in the captive market, reaching full Solvency II equivalence in 2016 following oversight by the Bermuda Monetary Authority (BMA). Captives benefit from a robust market that provides open-market underwriting capacity not easily found elsewhere. As a reciprocal jurisdiction under the NAIC, Bermuda-based insurers can operate in the US without additional capital requirements.",
-    "jurisdiction": "Offshore",
-    "legislation": "BMA Risk-Based Framework",
-    "min_capital": {
-      "Class 1 / Class A": "$120,000 floor",
-      "Class 2 / Class B": "$250,000 floor",
-      "Class 3": "$1,000,000 floor"
-    },
-    "tax_notes": "Tax-competitive environment",
-    "last_verified": "2026-06-29",
-    "source_urls": [
-      "https://cdn.bma.bm/documents/2025-03-24-13-49-51-2023-Captive-Report.pdf",
-      "https://cdn.bma.bm/documents/2023-11-14-13-37-59-Insurance-Act-1978.pdf",
-      "https://www.bma.bm"
-    ],
     "slug": "bermuda",
+    "jurisdiction": "Offshore",
+    "summary": "Bermuda's captive classes are supervised by the Bermuda Monetary Authority under the Insurance Act 1978. Class 1 is a single-parent general captive writing only the risks of its owners and their affiliates. Class 2 covers multi-owner captives and captives writing no more than 20 percent of net premiums from unrelated risks. Class 3 covers captives writing more than 20 percent, and up to 49 percent, of net premiums from unrelated risks, together with certain third-party writers that are not commercial Class 3A, 3B, or 4 insurers. Class A and Class B are the long-term equivalents of Class 1 and Class 2. The Authority's 2025 annual report gives 2025 register counts of 159 Class 1, 244 Class 2, 180 Class 3, 12 Class A, and 13 Class B insurers, 608 in those captive classes. The 2024 column of the same table is 632 and matches the report's market statistics for the year ended 31 December 2024. Single-parent captives are the Class 1 and Class A counts, 171 in the 2025 column, which is the same pairing the report used for its 31 December 2024 company-type table. Class 3, 180, is the third-party captive category. Class 2 and Class B together are 257 and mix multi-owner captives with captives writing up to 20 percent unrelated premiums, so that pair is not stored as a group-captive count. New captive-class registrations in the 2025 column were 2 Class 1, 5 Class 2, 1 Class 3, 1 Class A, and no Class B, 9 in total. The report does not publish surrenders. Its 2023 captive insight report, published in December 2025, said segregated and incorporated segregated accounts were in excess of 2,000 and that 15 percent of captive-market companies operated as segregated accounts or incorporated segregated accounts companies. That report does not give an exact cell count, and the 2025 annual report does not update it.",
+    "legislation": "Insurance Act 1978, and the Insurance Returns and Solvency Regulations 1980",
     "legislation_year": 1978,
+    "applicable_legislation": "Insurance Act 1978, including section 17 on statutory financial statements and section 18 on statutory financial returns; Insurance Returns and Solvency Regulations 1980, Schedule I (general-business solvency margin) and Schedule II (long-term minimum margin of solvency); Bermuda Monetary Authority Act 1969, Fourth Schedule, for fees effective 1 January 2026; Corporate Income Tax Act 2023.",
+    "min_capital": {
+      "Class 1": "Minimum capital and surplus at least equal to the minimum solvency margin, the greater of a premium-based formula and a reserve-based formula, subject to a $120,000 floor.",
+      "Class 2": "Minimum capital and surplus at least equal to the minimum solvency margin, subject to a $250,000 floor.",
+      "Class 3": "Minimum capital and surplus at least equal to the minimum solvency margin, subject to a $1,000,000 floor.",
+      "Class A": "Long-term single-parent captives maintain minimum capital and surplus at least equal to an asset-based formula, subject to a $120,000 floor.",
+      "Class B": "Long-term multi-owner captives, and long-term captives writing no more than 20 percent of net premiums from unrelated risks, maintain minimum capital and surplus at least equal to an asset-based formula, subject to a $250,000 floor."
+    },
+    "tax_notes": "The Insurance Act fee schedule does not impose a premium tax. Captive regulatory cost is the Bermuda Monetary Authority licence fee. The Corporate Income Tax Act 2023 charges Bermuda corporate income tax to Bermuda constituent entities of an in-scope multinational group for fiscal years beginning on or after 1 January 2025. The Government of Bermuda describes that regime as its implementation of the OECD Pillar II 15 percent minimum tax for multinational groups with annual revenue of EUR 750 million or more. Captives that are not constituent entities of an in-scope group are outside that tax.",
+    "contact_name": null,
+    "contact_email": "enquiries@bma.bm",
+    "last_verified": "2026-11-04",
+    "source_urls": [
+      "https://www.bma.bm/viewPDF/documents/2026-07-20-12-40-59-2025-Annual-Report---Bermuda-Monetary-Authority.pdf",
+      "https://www.bma.bm/insurance-licensing-requirements",
+      "https://www.bma.bm/contact-us",
+      "https://www.bma.bm/viewPDF/documents/2026-03-17-10-11-27-2026-Bermuda-Monetary-Authority-Fees.pdf",
+      "https://www.bermudalaws.bm/Laws/Consolidated%20Law/1978/Insurance%20Act%201978",
+      "https://www.bma.bm/downloadPDF/documents/2023-11-14-13-41-07-Insurance-Returns-and-Solvency-Regulations-1980.pdf",
+      "https://www.bma.bm/viewPDF/documents/2025-12-04-14-34-27-Bermuda-Captive-Insight-Report---2023-Year-end-Data.pdf",
+      "https://www.gov.bm/articles/corporate-income-tax-administrative-provisions",
+      "https://www.gov.bm/news/house-assembly-debate-corporate-income-tax-multinationals-revenue-eu750m"
+    ],
     "stats": {
       "reporting_year": 2025,
-      "total_captives": 610,
+      "total_captives": 608,
       "new_captives": 9,
-      "surrendered_licenses": 31,
-      "pure_captives": 406,
-      "group_captives": 57,
-      "sponsored_cell_captives": 51,
-      "individual_cells_count": 2000,
-      "individual_cells_year": 2024,
-      "individual_cells_estimated": true,
-      "other_captives": 96
+      "pure_captives": 171,
+      "other_captives": 180
     },
     "types_allowed": [
-      "Single parent captives",
-      "Association captives",
-      "Group captives",
-      "Protected cell/segregated portfolio companies",
-      "Special purpose captives",
-      "Special purpose financial captives"
+      "Class 1 single-parent general captives",
+      "Class 2 multi-owner general captives and captives writing up to 20 percent unrelated net premiums",
+      "Class 3 captives writing more than 20 percent and up to 49 percent unrelated net premiums",
+      "Class A single-parent long-term captives",
+      "Class B multi-owner long-term captives and long-term captives writing up to 20 percent unrelated net premiums",
+      "Segregated accounts companies and incorporated segregated accounts companies"
     ],
-    "regulator_staff_count": "10-15",
+    "regulator_staff_count": null,
     "fees": {
-      "licensing_incorporation": "Class 1: $2,250; Class 2: $4,375; Class 3: $17,800 minimum - based on GWP",
-      "annual_fees": "Class 1: $2,250; Class 2: $4,375; Class 3: $17,800 minimum - based on GWP",
-      "premium_tax_rate": "None."
+      "licensing_incorporation": "2026 registration fees in the Bermuda Monetary Authority fee schedule, effective 1 January 2026: Class 1 general business $2,250; Class 2 general business $4,375; Class 3 general business $17,800 where expected gross premium does not exceed $5 million, then $19,800, $22,550, $25,920, and $30,000 at the published premium bands; Class A $13,570; Class B $13,570.",
+      "annual_fees": "2026 annual fees, also effective 1 January 2026, match those registration amounts for Class 1 ($2,250), Class 2 ($4,375), Class 3 ($17,800 to $30,000 by gross premium written), Class A ($13,570), and Class B ($13,570). For a segregated accounts company the premium measure combines the general account and the segregated accounts. Annual fees cancelled by deregistration, discontinuance, or merger before 31 March are pro-rated; otherwise the full annual fee is due.",
+      "premium_tax_rate": "No premium tax is imposed by the Insurance Act fee schedule. Bermuda corporate income tax applies only to Bermuda constituent entities of an in-scope multinational group, for fiscal years beginning on or after 1 January 2025. The Government describes the rate as the OECD Pillar II 15 percent minimum for groups with annual revenue of EUR 750 million or more."
     },
-    "annual_filing_requirements": "Meeting required anywhere offshore.",
-    "applicable_legislation": "The primary legislation relating to insurance business is the Insurance Act 1978, as amended, and related regulations.",
+    "annual_filing_requirements": "Under section 17 of the Insurance Act 1978, a Class 1, Class 2, or Class 3 insurer that is not also Class C, D, or E, and a Class A or Class B insurer, files statutory financial statements within six months after the financial year-end, or within a longer period of up to nine months that the Authority allows on application. The statutory financial return under section 18 is filed at the same time. A loss-reserve specialist's opinion is required annually for a Class 3 insurer and every third year for a Class 2 insurer. The Act does not state that opinion for a Class 1 insurer.",
     "captive_administrator": {
-      "name": "Marianne Suschak-Matvey",
-      "email": "msmatvey@bma.bm",
-      "phone": "441-295-5278",
-      "fax": "441-292-7471"
+      "name": "Bermuda Monetary Authority",
+      "email": "enquiries@bma.bm",
+      "phone": "(441) 295-5278",
+      "fax": "(441) 292-7471"
     },
-    "licensing_speed": "2-4 weeks",
+    "licensing_speed": null,
     "regulator": {
       "name": "Bermuda Monetary Authority",
-      "address": "43 Victoria St., Hamilton, HM 12",
+      "address": "BMA House, 43 Victoria Street, Hamilton HM 12, Bermuda",
       "website": "https://www.bma.bm"
-    },
-    "contact_name": "Marianne Suschak-Matvey",
-    "contact_email": "msmatvey@bma.bm"
+    }
   },
   {
     "name": "British Columbia",
@@ -1521,21 +1522,78 @@
   },
   {
     "name": "Utah",
-    "summary": "Utah is a leading domicile for technological advancement, handling all annual filings and applications via a smooth online portal. A major selling point is that Utah does not impose any state or premium taxes, charging only a flat annual fee. Recent statutory amendments allow captives to cover punitive damages, provided they do not arise from criminal acts.",
-    "jurisdiction": "Onshore (USA)",
-    "legislation": "Utah Insurance Code",
-    "min_capital": {
-      "Pure": "$250,000",
-      "Association": "$750,000",
-      "Industrial Insured": "$700,000",
-      "Sponsor": "$500,000"
-    },
-    "tax_notes": "No premium or state tax; flat annual fee of $6,375",
     "slug": "utah",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "jurisdiction": "Onshore (USA)",
+    "summary": "Utah licenses captives under the Utah Captive Insurance Companies Act, Title 31A, Chapter 37, administered by the Utah Insurance Department Captive Insurance Division. The chapter covers agency, association, branch, industrial insured, pooling, pure, risk retention group, sponsored, special purpose, and special purpose financial captives, and cells of a sponsored captive may be protected cells or incorporated cells. The Department's 2024 annual report, Table A, lists 373 captive insurers, 13 sponsored captive insurers, and 107 cells authorized to write insurance in Utah. The Department does not publish one combined total, and it has not published a 2025 annual report. A certificate of authority expires annually and is renewed by 1 July. The governing body meets at least once a year in Utah, with a quorum and at least one out-of-state individual physically present, unless the captive is a member of the Utah Captive Insurance Association at the highest membership level. The Division's benefits page states that a flat annual fee is charged in lieu of state premium tax. Real and personal property in Utah remains taxable.",
+    "legislation": "Utah Captive Insurance Companies Act, Title 31A, Chapter 37, Utah Code",
+    "legislation_year": null,
+    "applicable_legislation": "Title 31A, Chapter 37, Utah Code, including section 31A-37-102 (definitions), section 31A-37-201 (certificate of authority, in-state meeting or Utah Captive Insurance Association membership, and renewal by 1 July), and section 31A-37-204 (paid-in capital). The Division also cites section 31A-37-501 and rule R590-238 for the annual statement, economic-benefit statement, audit, and actuarial opinion. The current statutory text used here is the version effective 6 May 2026.",
+    "min_capital": {
+      "Pure captive acting as a pool": "Not less than USD $250,000 of unimpaired paid-in capital and unimpaired paid-in surplus (Utah Code section 31A-37-204(2)(a)(i)(A)).",
+      "Pure captive that is not a pool": "If the pure captive is not acting as a pool that facilitates risk distribution for other captive insurers, the greater of 20 percent of the company's total aggregate risk and USD $50,000 (section 31A-37-204(2)(a)(i)(B)). The Division's basics and benefits pages state a flat USD $250,000 for a pure captive and do not restate this alternative.",
+      "Association captive": "Not less than USD $500,000 (section 31A-37-204(2)(a)(ii)).",
+      "Industrial insured captive or risk retention group": "Not less than USD $700,000 (section 31A-37-204(2)(a)(iii)).",
+      "Sponsored captive": "Not less than USD $250,000, of which a minimum of USD $50,000 is provided by the sponsor (section 31A-37-204(2)(a)(iv)).",
+      "Cell": "Section 31A-37-204 does not set a cell floor. The Division's basics page states that a cell has no regulatory minimum and that the sponsor sets it.",
+      "Special purpose captive": "An amount determined by the commissioner after considering the business plan, feasibility study, and pro formas, including the nature of the risks to be insured (section 31A-37-204(2)(a)(v)).",
+      "Agency, branch, and special purpose financial captives": "Section 31A-37-102 includes these as captive insurance companies. Section 31A-37-204(2) does not state a separate dollar floor for them.",
+      "Form of capital": "Required paid-in capital and surplus may be cash or a cash equivalent, an irrevocable letter of credit that the commissioner approves and that is issued by a Utah-chartered bank, a Federal Reserve member bank, or an FDIC member bank, or marketable securities determined under section 31A-37-204(1). The commissioner may require additional capital based on the type, volume, and nature of the business."
+    },
+    "tax_notes": "The Division's benefits page states that a flat annual fee is charged in lieu of state premium taxes, and that real and personal property owned in Utah is taxed. The basics page states the same: no state taxes, with real and personal property taxes still applying. The annual captive fee published by the Division is USD $7,250 plus a USD $250 e-commerce fee, USD $7,500 in total, and USD $1,000 for a cell. No Utah corporate income tax on captives is stated on those pages.",
+    "contact_name": "Travis Wegkamp, Director of Captive Insurance",
+    "contact_email": "captive@utah.gov",
+    "last_verified": "2026-11-04",
+    "source_urls": [
+      "https://insurance.utah.gov/captive/",
+      "https://insurance.utah.gov/captive/about-us-captive/",
+      "https://insurance.utah.gov/captive/benefits/",
+      "https://insurance.utah.gov/captive/research/captives-in-utah-basics/",
+      "https://le.utah.gov/xcode/Title31A/Chapter37/C31A-37-S102_2026050620260506.html",
+      "https://le.utah.gov/xcode/Title31A/Chapter37/C31A-37-S201_2026050620260506.html",
+      "https://le.utah.gov/xcode/Title31A/Chapter37/C31A-37-S204_2026050620260506.html",
+      "https://insurance.utah.gov/wp-content/uploads/UIDAnnualReport2024.pdf",
+      "https://www.utahcaptive.org/"
+    ],
+    "stats": {
+      "reporting_year": 2024,
+      "total_captives": 373,
+      "sponsored_cell_captives": 13,
+      "individual_cells_count": 107,
+      "individual_cells_year": 2024,
+      "individual_cells_estimated": false
+    },
+    "types_allowed": [
+      "Pure captives",
+      "Association captives",
+      "Industrial insured captives",
+      "Agency captives",
+      "Branch captives",
+      "Pooling captives",
+      "Sponsored captives",
+      "Protected cells and incorporated cells",
+      "Special purpose captives",
+      "Special purpose financial captives",
+      "Risk retention groups formed in Utah"
+    ],
+    "regulator_staff_count": "11",
+    "fees": {
+      "licensing_incorporation": "Division basics page: USD $200 application submission fee; initial licence fee of USD $7,250 without proration (USD $1,000 for a cell); initial e-commerce fee of USD $250 without proration, not charged to a cell. Incorporation is a nominal fee paid to the Utah Department of Commerce.",
+      "annual_fees": "Annual renewal fee of USD $7,250 due before 1 June (USD $1,000 for a cell) and an annual e-commerce fee of USD $250 due before 1 June, not charged to a cell. The benefits page states the captive total as USD $7,500, including the e-commerce fee. The certificate of authority expires annually and is renewed by 1 July under section 31A-37-201(8).",
+      "premium_tax_rate": "No state premium tax. The Division charges the flat annual fee in lieu of state premium tax. Real and personal property taxes still apply."
+    },
+    "annual_filing_requirements": "The annual statement of financial condition is due before 1 March, verified under oath of two executive officers, and is filed on the Department portal. A statement of economic benefit to Utah is due before 1 March. An audited financial report and a statement of actuarial opinion are due on or before 30 June for the year ended 31 December. A risk retention group also files the applicable NAIC annual statement blank. There is no mandatory examination period. The commissioner may call an examination at any time, and a called examination typically covers the preceding five years, at the captive's cost. The governing body meets in Utah at least annually, unless the captive holds the highest level of Utah Captive Insurance Association membership.",
+    "captive_administrator": {
+      "name": "Travis Wegkamp, Director of Captive Insurance, Utah Insurance Department",
+      "email": "captive@utah.gov",
+      "phone": "(801) 957-9200, option 5",
+      "fax": null
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Utah Insurance Department, Captive Insurance Division",
+      "address": "Taylorsville State Office Building, 4315 South 2700 West, Suite 2300, Salt Lake City, UT 84129",
+      "website": "https://insurance.utah.gov/captive/"
+    }
   },
   {
     "name": "Vanuatu",
