@@ -86,12 +86,48 @@ function buildCapitalRows(minCapital) {
 
 function renderMetric(value, fallback = 'Pending verification') {
     if (value === null || value === undefined || value === '') {
-        return `<span class="text-slate-400 italic font-normal">${fallback}</span>`;
+        if (fallback === 'Pending verification') {
+            return `<span class="text-slate-400 italic font-normal">${fallback}</span>`;
+        }
+        return escapeTemplateValue(fallback);
     }
     return escapeTemplateValue(value);
 }
 
-function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses') {
+function renderStaffCount(value) {
+    if (value === null || value === undefined || value === '') {
+        return `<span class="text-slate-400 italic font-normal">Pending verification</span>`;
+    }
+    const text = String(value).trim();
+    if (/^\d[\d,]*$/.test(text)) {
+        return `${escapeTemplateValue(text)} FTEs`;
+    }
+    return escapeTemplateValue(text);
+}
+
+// Display labels for counts the schema stores as integers. Guernsey's
+// published statistics distinguish non-cellular captives from the wider
+// international insurance sector, and some permitted structures have no
+// published count. Other domiciles keep the default labels.
+function statDisplay(domicile) {
+    if (!domicile || domicile.slug !== 'guernsey') return {};
+    return {
+        total: 'Non-cellular captives',
+        newLabel: 'New non-cellular captives',
+        exitLabel: 'Non-cellular surrenders',
+        pureFallback: 'Permitted; separate count not published',
+        groupFallback: 'Permitted; separate count not published',
+        sponsoredLabel: 'International insurance PCCs and ICCs',
+        sponsoredFallback: '44 PCCs, 222 PCC cells excluding ILS, 14 ICCs and 46 ICC cells at 31 December 2025. These totals cover the wider international insurance sector and are not all captives. Of cells reported by type of insurer, 126 were classified as captives.',
+        sponsoredWide: true,
+        cellLabel: 'Captive cells',
+        otherLabel: 'Category 6 / ILS (separate)',
+        otherFallback: 'Not necessarily captive business; no captive count is published',
+        otherWide: true,
+    };
+}
+
+function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses', labels = {}) {
     if (!stats) {
         return `
             <div class="col-span-full bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 text-center py-12">
@@ -106,6 +142,7 @@ function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses') {
             ? `${stats.individual_cells_count}${stats.individual_cells_estimated ? ' (estimated)' : ''}${stats.individual_cells_year ? ` as of ${stats.individual_cells_year}` : ''}`
             : '0')
         : 'Pending verification';
+    const resolvedExitLabel = labels.exitLabel || exitLabel;
 
     return `
         <!-- Domicile Statistics -->
@@ -121,15 +158,15 @@ function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses') {
                         <span class="font-semibold text-on-surface">${renderMetric(stats.reporting_year)}</span>
                     </div>
                     <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">Total Active Captives</span>
+                        <span class="text-secondary">${labels.total || 'Total Active Captives'}</span>
                         <span class="font-bold text-primary text-base">${renderMetric(stats.total_captives)}</span>
                     </div>
                     <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">New Captives Licensed</span>
+                        <span class="text-secondary">${labels.newLabel || 'New Captives Licensed'}</span>
                         <span class="font-semibold text-on-surface">${renderMetric(stats.new_captives)}</span>
                     </div>
                     <div class="flex justify-between items-center pb-1 text-sm">
-                        <span class="text-secondary">${exitLabel}</span>
+                        <span class="text-secondary">${resolvedExitLabel}</span>
                         <span class="font-semibold text-on-surface">${renderMetric(stats.surrendered_licenses)}</span>
                     </div>
                 </div>
@@ -144,25 +181,25 @@ function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses') {
                     Structure Distribution
                 </h4>
                 <div class="space-y-4">
-                    <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">Pure / Single Parent</span>
-                        <span class="font-semibold text-on-surface">${renderMetric(stats.pure_captives)}</span>
+                    <div class="flex justify-between ${labels.pureFallback ? 'items-start gap-4' : 'items-center'} border-b border-outline-variant/10 pb-3 text-sm">
+                        <span class="text-secondary">${labels.pureLabel || 'Pure / Single Parent'}</span>
+                        <span class="font-semibold text-on-surface${labels.pureFallback ? ' text-right' : ''}">${renderMetric(stats.pure_captives, labels.pureFallback)}</span>
+                    </div>
+                    <div class="flex justify-between ${labels.groupFallback ? 'items-start gap-4' : 'items-center'} border-b border-outline-variant/10 pb-3 text-sm">
+                        <span class="text-secondary">${labels.groupLabel || 'Group / Association'}</span>
+                        <span class="font-semibold text-on-surface${labels.groupFallback ? ' text-right' : ''}">${renderMetric(stats.group_captives, labels.groupFallback)}</span>
+                    </div>
+                    <div class="flex justify-between ${labels.sponsoredWide ? 'items-start gap-4' : 'items-center'} border-b border-outline-variant/10 pb-3 text-sm">
+                        <span class="text-secondary${labels.sponsoredWide ? ' shrink-0 max-w-[42%]' : ''}">${labels.sponsoredLabel || 'Sponsored / Cell Captives'}</span>
+                        <span class="font-semibold text-on-surface${labels.sponsoredWide ? ' text-right min-w-0' : ''}">${renderMetric(stats.sponsored_cell_captives, labels.sponsoredFallback)}</span>
                     </div>
                     <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">Group / Association</span>
-                        <span class="font-semibold text-on-surface">${renderMetric(stats.group_captives)}</span>
-                    </div>
-                    <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">Sponsored / Cell Captives</span>
-                        <span class="font-semibold text-on-surface">${renderMetric(stats.sponsored_cell_captives)}</span>
-                    </div>
-                    <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">Individual Segregated Cells</span>
+                        <span class="text-secondary">${labels.cellLabel || 'Individual Segregated Cells'}</span>
                         <span class="font-semibold text-on-surface">${cellText}</span>
                     </div>
-                    <div class="flex justify-between items-center pb-1 text-sm">
-                        <span class="text-secondary">Other Allowed Types</span>
-                        <span class="font-semibold text-on-surface">${renderMetric(stats.other_captives)}</span>
+                    <div class="flex justify-between ${labels.otherWide ? 'items-start gap-4' : 'items-center'} pb-1 text-sm">
+                        <span class="text-secondary${labels.otherWide ? ' shrink-0 max-w-[42%]' : ''}">${labels.otherLabel || 'Other Allowed Types'}</span>
+                        <span class="font-semibold text-on-surface${labels.otherWide ? ' text-right min-w-0' : ''}">${renderMetric(stats.other_captives, labels.otherFallback)}</span>
                     </div>
                 </div>
             </div>
@@ -590,7 +627,7 @@ ${capitalRows}
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <!-- Column 1: Market & Structures -->
                     <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-                        ${renderStatsBlock(domicile.stats, domicile.slug === 'vermont' ? 'Dissolutions' : 'Surrendered Licenses')}
+                        ${renderStatsBlock(domicile.stats, domicile.slug === 'vermont' ? 'Dissolutions' : 'Surrendered Licenses', statDisplay(domicile))}
                         
                         <!-- Types Allowed Card -->
                         <div class="col-span-full bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
@@ -661,7 +698,7 @@ ${capitalRows}
                                 </div>
                                 <div class="border-t border-outline-variant/10 pt-4">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Regulatory Department Staff</div>
-                                    <div class="font-semibold text-on-surface text-sm">${domicile.regulator_staff_count ? `${escapeTemplateValue(domicile.regulator_staff_count)} FTEs` : `<span class="text-slate-400 italic font-normal">Pending verification</span>`}</div>
+                                    <div class="font-semibold text-on-surface text-sm">${renderStaffCount(domicile.regulator_staff_count)}</div>
                                 </div>
                                 <div class="border-t border-outline-variant/10 pt-4">
                                     <div class="text-xs font-label uppercase tracking-widest text-secondary mb-1">Captive Administrator</div>
