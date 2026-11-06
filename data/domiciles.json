@@ -1310,7 +1310,7 @@
     "tax_notes": "G.S. 105-228.4A taxes a North Carolina captive, and taxes only the branch business of a branch captive. A foreign captive is not subject to this tax. Direct premiums, after return premiums, are taxed at 0.4% up to $20 million and 0.3% above $20 million. Assumed reinsurance premiums are taxed at 0.225% up to $20 million, 0.150% from $20 million to $40 million, 0.050% from $40 million to $60 million, and 0.025% above $60 million. Assumed-reinsurance tax does not apply to risks already taxed as direct premiums, or to a qualifying assumption of reserves between commonly controlled insurers that is part of a plan to discontinue one insurer. For any captive other than the multi-cell case below, the tax is at least $5,000 and at most $100,000. A protected cell captive with more than 10 cells, or a special purpose captive with a cell or series structure of more than 10 cells or series, pays at least $10,000 and at most the lesser of $100,000 plus $5,000 for each cell or series over 10, and $200,000. Two or more captives under common ownership and control are taxed as one captive, except a protected cell captive and a special purpose captive with a cell or series structure. The premium-tax report and payment are due by March 15. Captives subject to this tax are not subject to the franchise tax, to income tax except as G.S. 105-130.5A provides, to local privilege or local gross-premium taxes, or to the insurance regulatory charge. The redomestication holiday in G.S. 105-228.4A(g) expired for taxable years beginning on or after 1 January 2026. An inactive captive is not liable for tax under Article 8B of Chapter 105 for any full year it is inactive (G.S. 58-10-490).",
     "slug": "north-carolina",
     "contact_name": "Lori Gorman, Deputy Commissioner, Captive Insurance Companies Division",
-    "contact_email": "lori.gorman@ncdoi.gov",
+    "contact_email": null,
     "last_verified": "2026-11-06",
     "source_urls": [
       "https://www.ncdoi.gov/insurance-industry/captive-insurance",
@@ -1363,7 +1363,7 @@
     "annual_filing_requirements": "Each captive submits a report of its financial condition as of the preceding December 31, verified by two executive officers, before March 15. Reporting is on generally accepted accounting principles unless the Commissioner requires or accepts another basis (G.S. 58-10-405). A pure, special purpose, or industrial insured captive may be allowed to file 75 days after its fiscal year-end. The annual audit and statement of actuarial opinion for captives other than risk retention groups are due by June 30, or within 180 days after an approved fiscal year-end (G.S. 58-10-415). Risk retention groups file under Parts 6 and 7 of Article 10 instead of that audit section. The premium-tax report and payment are due by March 15 (G.S. 105-228.4A). The Department's filing page for 2026 also lists Form C-202, the direct economic impact supplement, and Form C-207 for inactive captives. Filings are submitted electronically through the Department's online system or to the Captive Insurance Administrator. The Commissioner may waive the annual report if the annual audit is filed, and may grant a hardship exemption from the audit, but may not waive both at the same time. A request to skip the annual report is due at least 30 days before the report due date.",
     "captive_administrator": {
       "name": "Nancy Staples, Captive Insurance Administrator",
-      "email": "nancy.staples@ncdoi.gov",
+      "email": null,
       "phone": "(919) 807-6180",
       "fax": null
     },
@@ -1514,7 +1514,7 @@
     "annual_filing_requirements": "A risk retention group submits its annual report by March 1. Every other captive submits its annual report by July 1. The report is verified by two executive officers and uses generally accepted accounting principles unless the director approves statutory accounting principles (S.C. Code §38-90-70). A non-risk-retention captive with a fiscal year-end other than December 31 files its income statement and premium schedule before March 1 and the full annual report within 180 days after fiscal year-end. Premium tax is due March 1 (§38-90-140). Beginning the year after licensure, the board, the managing board of a limited liability company, or the subscribers' advisory committee of a reciprocal must meet at least annually with a quorum physically present in South Carolina, including at least two members physically present in the state (§38-90-20). The Division's filing calendar also sets June 30 for the non-risk-retention actuarial opinion and audited financial statements, and it sets quarterly statements and NAIC-style filings for risk retention groups and special purpose financial captives.",
     "captive_administrator": {
       "name": "Andy Noga, Director of Captives",
-      "email": "anoga@doi.sc.gov",
+      "email": "captivemail@doi.sc.gov",
       "phone": "(843) 577-3413",
       "fax": null
     },
