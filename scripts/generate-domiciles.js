@@ -105,26 +105,47 @@ function renderStaffCount(value) {
     return escapeTemplateValue(text);
 }
 
-// Display labels for counts the schema stores as integers. Guernsey's
-// published statistics distinguish non-cellular captives from the wider
-// international insurance sector, and some permitted structures have no
-// published count. Other domiciles keep the default labels.
+// Display labels for counts the schema stores as integers. A few domiciles
+// publish categories that do not match the default labels. Other domiciles
+// keep those defaults.
 function statDisplay(domicile) {
-    if (!domicile || domicile.slug !== 'guernsey') return {};
-    return {
-        total: 'Non-cellular captives',
-        newLabel: 'New non-cellular captives',
-        exitLabel: 'Non-cellular surrenders',
-        pureFallback: 'Permitted; separate count not published',
-        groupFallback: 'Permitted; separate count not published',
-        sponsoredLabel: 'International insurance PCCs and ICCs',
-        sponsoredFallback: '44 PCCs, 222 PCC cells excluding ILS, 14 ICCs and 46 ICC cells at 31 December 2025. These totals cover the wider international insurance sector and are not all captives. Of cells reported by type of insurer, 126 were classified as captives.',
-        sponsoredWide: true,
-        cellLabel: 'Captive cells',
-        otherLabel: 'Category 6 / ILS (separate)',
-        otherFallback: 'Not necessarily captive business; no captive count is published',
-        otherWide: true,
-    };
+    if (!domicile) return {};
+    if (domicile.slug === 'guernsey') {
+        return {
+            total: 'Non-cellular captives',
+            newLabel: 'New non-cellular captives',
+            exitLabel: 'Non-cellular surrenders',
+            pureFallback: 'Permitted; separate count not published',
+            groupFallback: 'Permitted; separate count not published',
+            sponsoredLabel: 'International insurance PCCs and ICCs',
+            sponsoredFallback: '44 PCCs, 222 PCC cells excluding ILS, 14 ICCs and 46 ICC cells at 31 December 2025. These totals cover the wider international insurance sector and are not all captives. Of cells reported by type of insurer, 126 were classified as captives.',
+            sponsoredWide: true,
+            cellLabel: 'Captive cells',
+            otherLabel: 'Category 6 / ILS (separate)',
+            otherFallback: 'Not necessarily captive business; no captive count is published',
+            otherWide: true,
+        };
+    }
+    if (domicile.slug === 'british-columbia') {
+        return {
+            pureLabel: 'Pure Captives',
+            groupLabel: 'Association Captives',
+            otherLabel: 'Sophisticated Captives',
+        };
+    }
+    if (domicile.slug === 'utah') {
+        return {
+            total: 'Total RBEs',
+            newLabel: 'New captive formations',
+            exitLabel: 'Captive licences surrendered',
+            pureLabel: 'Pure captives',
+            groupLabel: 'Group captives',
+            sponsoredLabel: 'Cell structures',
+            cellLabel: 'Series/cell captives',
+            otherLabel: 'Other - Pools & Agencies',
+        };
+    }
+    return {};
 }
 
 function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses', labels = {}) {

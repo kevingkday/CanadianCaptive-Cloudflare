@@ -311,7 +311,7 @@
     "name": "British Columbia",
     "slug": "british-columbia",
     "jurisdiction": "Onshore (Canada)",
-    "summary": "British Columbia enacted Canada's first dedicated captive insurance statute in 1987 under the Insurance (Captive Company) Act (RSBC 1996, c. 227) and remains one of two Canadian provinces with standalone captive legislation alongside Alberta. Regulated by the BC Financial Services Authority (BCFSA), which succeeded the Financial Institutions Commission (FICOM) in 2019, it permits pure, association, and sophisticated insured captives—the latter requiring insureds to have aggregate annual insurance premiums of at least CAD 500,000. Captives can write nearly all classes of insurance or reinsurance (excluding direct surety and non-fleet automobile) and require a minimum of CAD 200,000 in shareholders' equity and CAD 100,000 in reserves.",
+    "summary": "British Columbia enacted Canada's first dedicated captive insurance statute in 1987 under the Insurance (Captive Company) Act (RSBC 1996, c. 227) and remains one of two Canadian provinces with standalone captive legislation alongside Alberta. Regulated by the BC Financial Services Authority (BCFSA), which succeeded the Financial Institutions Commission (FICOM) in 2019, it permits pure, association, and sophisticated insured captives—the latter requiring insureds to have aggregate annual insurance premiums of at least CAD 500,000. Captives can write nearly all classes of insurance or reinsurance (excluding direct surety and non-fleet automobile) and require a minimum of CAD 200,000 in shareholders' equity and CAD 100,000 in reserves. On 5 November 2026, BCFSA Statutory Approvals confirmed 20 active captives: 16 pure captives, 4 association captives, and 0 sophisticated insured captives. During 2026, 1 captive was licensed and 1 captive wound up.",
     "legislation": "Insurance (Captive Company) Act, RSBC 1996, c. 227 & Insurance (Captive Company) Regulation, BC Reg. 99/2017",
     "legislation_year": 1987,
     "applicable_legislation": "Insurance (Captive Company) Act, RSBC 1996, c. 227; Insurance (Captive Company) Regulation, BC Reg. 99/2017 (as amended by BC Reg. 183/2024); Financial Institutions Act, RSBC 1996, c. 141; Financial Services Authority Act, SBC 2019, c. 14; Insurance Act, RSBC 2012, c. 1; Business Corporations Act, SBC 2002, c. 57; Insurance Premium Tax Act, RSBC 1996, c. 232.",
@@ -321,7 +321,7 @@
     "tax_notes": "Subject to BC Insurance Premium Tax on BC risks (4.4% property and fleet auto, 4% general/other, 2% life, accident and sickness) and federal (15%) and provincial (12%) corporate income taxes.",
     "contact_name": "Tolga Yalkin, CEO & Superintendent of Financial Institutions",
     "contact_email": "statapprovals@bcfsa.ca",
-    "last_verified": "2026-10-28",
+    "last_verified": "2026-11-06",
     "source_urls": [
       "https://www.bcfsa.ca",
       "https://www.bcfsa.ca/industry-resources/insurance-resources",
@@ -329,15 +329,16 @@
       "https://www.bcfsa.ca/industry-resources/insurance-resources/insurance-regulatory-information/insurance-regulatory-statements",
       "https://www.bcfsa.ca/about-us/contact-us",
       "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96227_01",
-      "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/99_2017"
+      "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/99_2017",
+      "https://www.bcfsa.ca/media/1399/download"
     ],
     "stats": {
-      "reporting_year": 2025,
+      "reporting_year": 2026,
       "total_captives": 20,
       "new_captives": 1,
-      "surrendered_licenses": 0,
-      "pure_captives": 17,
-      "group_captives": 3,
+      "surrendered_licenses": 1,
+      "pure_captives": 16,
+      "group_captives": 4,
       "sponsored_cell_captives": 0,
       "individual_cells_count": 0,
       "other_captives": 0
@@ -347,7 +348,7 @@
       "Association captives",
       "Sophisticated insured captives"
     ],
-    "regulator_staff_count": "11",
+    "regulator_staff_count": "9",
     "fees": {
       "licensing_incorporation": "CAD 10,000 application fee for initial registration (effective September 1, 2024 under BC Reg. 183/2024; previously CAD 3,000).",
       "annual_fees": "Variable based on non-consolidated assets plus 0.019% of prior fiscal year written premiums (effective September 1, 2024): assets <= CAD 100M: CAD 5,000 + 0.019% of written premiums; assets > CAD 100M to CAD 1B: CAD 7,500 + 0.019% of written premiums; assets > CAD 1B: CAD 10,000 + 0.019% of written premiums. Consent fees: CAD 5,000 amalgamation, CAD 500 change in control, CAD 100 articles amendment.",
@@ -360,7 +361,7 @@
       "phone": "604-660-3555",
       "fax": "604-660-3365"
     },
-    "licensing_speed": "90 days or less",
+    "licensing_speed": "120-day target timeframe for a new captive insurance company under Information Bulletin FI-18-001 (February 2018), which BCFSA publishes. The target runs from the date the completion letter is sent. A preliminary completeness review is completed within ten business days, and the timeline does not start while a submission is deficient. The bulletin states that these timelines are a general guideline, can vary with volume and complexity, and that review by the decision maker may affect them. Captive insurance company renewal has a separate 90-day target in the same bulletin.",
     "regulator": {
       "name": "BC Financial Services Authority (BCFSA)",
       "address": "600-750 West Pender Street, Vancouver, BC V6C 2T8",
@@ -1524,25 +1525,27 @@
     "name": "Utah",
     "slug": "utah",
     "jurisdiction": "Onshore (USA)",
-    "summary": "Utah licenses captives under the Utah Captive Insurance Companies Act, Title 31A, Chapter 37, administered by the Utah Insurance Department Captive Insurance Division. The chapter covers agency, association, branch, industrial insured, pooling, pure, risk retention group, sponsored, special purpose, and special purpose financial captives, and cells of a sponsored captive may be protected cells or incorporated cells. The Department's 2024 annual report, Table A, lists 373 captive insurers, 13 sponsored captive insurers, and 107 cells authorized to write insurance in Utah. The Department does not publish one combined total, and it has not published a 2025 annual report. A certificate of authority expires annually and is renewed by 1 July. The governing body meets at least once a year in Utah, with a quorum and at least one out-of-state individual physically present, unless the captive is a member of the Utah Captive Insurance Association at the highest membership level. The Division's benefits page states that a flat annual fee is charged in lieu of state premium tax. Real and personal property in Utah remains taxable.",
+    "summary": "Utah licenses captives under the Utah Captive Insurance Companies Act, Title 31A, Chapter 37, administered by the Utah Insurance Department Captive Insurance Division. The chapter covers agency, association, branch, industrial insured, pooling, pure, risk retention group, sponsored, special purpose, and special purpose financial captives, and cells of a sponsored captive may be protected cells or incorporated cells. The Division's year-end 2025 workbook, provided by Director Travis Wegkamp on 5 November 2026, counts captives and cells together as risk-bearing entities (RBEs). Year-end 2025 was 605 RBEs: 352 pure captives, 3 group captives, 20 cell structures, 222 series/cell captives, and 8 other (pools and agencies). In 2025 the workbook records 172 formations (41 pure, 5 cell structures, and 126 series/cell) and 31 captive licences surrendered (27 pure, 1 cell structure, and 3 series/cell). It shows a dash, not a number, for 2025 formations and surrenders in the group and other columns; those year-end counts are 3 group captives and 8 other in both 2024 and 2025. Year-end 2024 was 464 RBEs: 338 pure, 3 group, 16 cell structures, 99 series/cell, and 8 other. Year-end captive premium was USD $4,130,262,068 in 2024 and USD $3,500,139,380 in 2025. The Division states that the decrease is accounted for entirely by 1 captive, a large commercial carrier no longer using its captive as a reinsurance pass-through, which accounts for a $1B decrease in gross premium. Year-end captive assets under management were USD $13,138,451,175 in 2024 and USD $14,531,806,939 in 2025. A certificate of authority expires annually and is renewed by 1 July. The governing body meets at least once a year in Utah, with a quorum and at least one out-of-state individual physically present, unless the captive is a member of the Utah Captive Insurance Association at the highest membership level. The Division's benefits page states that a flat annual fee is charged in lieu of state premium tax. Real and personal property in Utah remains taxable.",
     "legislation": "Utah Captive Insurance Companies Act, Title 31A, Chapter 37, Utah Code",
     "legislation_year": null,
-    "applicable_legislation": "Title 31A, Chapter 37, Utah Code, including section 31A-37-102 (definitions), section 31A-37-201 (certificate of authority, in-state meeting or Utah Captive Insurance Association membership, and renewal by 1 July), and section 31A-37-204 (paid-in capital). The Division also cites section 31A-37-501 and rule R590-238 for the annual statement, economic-benefit statement, audit, and actuarial opinion. The current statutory text used here is the version effective 6 May 2026.",
+    "applicable_legislation": "Title 31A, Chapter 37, Utah Code, including section 31A-37-102 (definitions), section 31A-37-201 (certificate of authority, in-state meeting or Utah Captive Insurance Association membership, and renewal by 1 July), and section 31A-37-204 (paid-in capital). Special purpose financial captive minimum capital is section 31A-37a-302 of the Special Purpose Financial Captive Insurance Company Act, Title 31A, Chapter 37a, enacted in 2008 and still the current published text. The Division also cites section 31A-37-501 and rule R590-238 for the annual statement, economic-benefit statement, audit, and actuarial opinion. The Chapter 37 text used here is the version effective 6 May 2026.",
     "min_capital": {
-      "Pure captive acting as a pool": "Not less than USD $250,000 of unimpaired paid-in capital and unimpaired paid-in surplus (Utah Code section 31A-37-204(2)(a)(i)(A)).",
-      "Pure captive that is not a pool": "If the pure captive is not acting as a pool that facilitates risk distribution for other captive insurers, the greater of 20 percent of the company's total aggregate risk and USD $50,000 (section 31A-37-204(2)(a)(i)(B)). The Division's basics and benefits pages state a flat USD $250,000 for a pure captive and do not restate this alternative.",
+      "Pure captive": "USD $250,000 default minimum of unimpaired paid-in capital and surplus (Utah Code section 31A-37-204(2)(a)(i)(A)). A reduced option, the greater of 20 percent of total aggregate risk and USD $50,000, exists for a pure captive that is not a pool (section 31A-37-204(2)(a)(i)(B)). The Captive Insurance Division states that this reduced option has never been used.",
+      "Pure captive acting as a pool": "Not less than USD $250,000 (section 31A-37-204(2)(a)(i)(A)). The reduced option in section 31A-37-204(2)(a)(i)(B) does not apply to a pure captive acting as a pool.",
+      "Agency captive": "The Captive Insurance Division treats an agency captive as a subgroup of a pure captive. The minimum is the pure-captive default of USD $250,000. Section 31A-37-204(2) does not state a separate dollar floor for an agency captive.",
       "Association captive": "Not less than USD $500,000 (section 31A-37-204(2)(a)(ii)).",
       "Industrial insured captive or risk retention group": "Not less than USD $700,000 (section 31A-37-204(2)(a)(iii)).",
       "Sponsored captive": "Not less than USD $250,000, of which a minimum of USD $50,000 is provided by the sponsor (section 31A-37-204(2)(a)(iv)).",
       "Cell": "Section 31A-37-204 does not set a cell floor. The Division's basics page states that a cell has no regulatory minimum and that the sponsor sets it.",
       "Special purpose captive": "An amount determined by the commissioner after considering the business plan, feasibility study, and pro formas, including the nature of the risks to be insured (section 31A-37-204(2)(a)(v)).",
-      "Agency, branch, and special purpose financial captives": "Section 31A-37-102 includes these as captive insurance companies. Section 31A-37-204(2) does not state a separate dollar floor for them.",
+      "Special purpose financial captive": "Not less than USD $250,000 of unimpaired paid-in capital and surplus on the day the certificate of authority is issued (Utah Code section 31A-37a-302(1), Special Purpose Financial Captive Insurance Company Act, Chapter 37a). Section 31A-37a-302(2) requires the company to maintain not less than USD $250,000 while the certificate is in force.",
+      "Branch captive": "None has been licensed. Section 31A-37-204(2) does not state a separate dollar floor for a branch captive, and no floor is stated here. Section 31A-37-204(4) requires a U.S. trust fund as security for branch liabilities, measured by the capital and surplus required by Chapter 37 plus reserves on business written through the branch, without stating a standalone dollar amount.",
       "Form of capital": "Required paid-in capital and surplus may be cash or a cash equivalent, an irrevocable letter of credit that the commissioner approves and that is issued by a Utah-chartered bank, a Federal Reserve member bank, or an FDIC member bank, or marketable securities determined under section 31A-37-204(1). The commissioner may require additional capital based on the type, volume, and nature of the business."
     },
     "tax_notes": "The Division's benefits page states that a flat annual fee is charged in lieu of state premium taxes, and that real and personal property owned in Utah is taxed. The basics page states the same: no state taxes, with real and personal property taxes still applying. The annual captive fee published by the Division is USD $7,250 plus a USD $250 e-commerce fee, USD $7,500 in total, and USD $1,000 for a cell. No Utah corporate income tax on captives is stated on those pages.",
     "contact_name": "Travis Wegkamp, Director of Captive Insurance",
     "contact_email": "captive@utah.gov",
-    "last_verified": "2026-11-04",
+    "last_verified": "2026-11-06",
     "source_urls": [
       "https://insurance.utah.gov/captive/",
       "https://insurance.utah.gov/captive/about-us-captive/",
@@ -1551,16 +1554,22 @@
       "https://le.utah.gov/xcode/Title31A/Chapter37/C31A-37-S102_2026050620260506.html",
       "https://le.utah.gov/xcode/Title31A/Chapter37/C31A-37-S201_2026050620260506.html",
       "https://le.utah.gov/xcode/Title31A/Chapter37/C31A-37-S204_2026050620260506.html",
+      "https://le.utah.gov/xcode/Title31A/Chapter37A/C31A-37a-S302_1800010118000101.html",
       "https://insurance.utah.gov/wp-content/uploads/UIDAnnualReport2024.pdf",
       "https://www.utahcaptive.org/"
     ],
     "stats": {
-      "reporting_year": 2024,
-      "total_captives": 373,
-      "sponsored_cell_captives": 13,
-      "individual_cells_count": 107,
-      "individual_cells_year": 2024,
-      "individual_cells_estimated": false
+      "reporting_year": 2025,
+      "total_captives": 605,
+      "new_captives": 172,
+      "surrendered_licenses": 31,
+      "pure_captives": 352,
+      "group_captives": 3,
+      "sponsored_cell_captives": 20,
+      "individual_cells_count": 222,
+      "individual_cells_year": 2025,
+      "individual_cells_estimated": false,
+      "other_captives": 8
     },
     "types_allowed": [
       "Pure captives",
