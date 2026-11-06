@@ -794,20 +794,72 @@
   },
   {
     "name": "Hawaii",
-    "summary": "With over 30 years of experience, Hawaii is a premier Pacific domicile recognized for its partnership-based approach with captive owners. The insurance commissioner guides capital requirements based on individual programs across five license classes. Taxes are limited to a $200,000 maximum, and there is no taxation on reinsurance premiums assumed by a captive.",
+    "summary": "Hawaii has licensed captive insurers since May 1986 under Hawaii Revised Statutes Chapter 431, Article 19, administered by the Insurance Division's Captive Insurance Branch. The Division's fact sheet reported 276 captive companies as of 30 September 2026. Licenses are issued in five classes. The statutory floors for unimpaired capital and surplus are $100,000 for a Class 1 pure captive that reinsures only, $250,000 for a Class 2 pure captive that may write direct insurance, and $500,000 for a Class 3 association or risk retention captive and for a Class 4 sponsored captive. Class 5 reinsurance or excess captives, and the security a branch captive posts in Hawaii, are set by the Insurance Commissioner. Premium tax has no minimum and a $200,000 maximum, and it does not apply to premiums already taxed where the risk is located or to reinsurance premiums assumed by the captive. A dormant captive holding a certificate of dormancy maintains at least $25,000 of capital and surplus and is not subject to that tax.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Hawaii Captive Statutes",
+    "legislation": "Hawaii Revised Statutes Chapter 431, Article 19 (Captive Insurance Companies)",
+    "legislation_year": 1986,
+    "applicable_legislation": "Hawaii Revised Statutes Title 24, Chapter 431, Article 19 (Captive Insurance Companies), including §431:19-101 (classes), §431:19-102 (certificate of authority), §431:19-104 (minimum capital and surplus), §431:19-107 (financial statements), §431:19-108 (examinations), §431:19-116 (taxation), and §431:19-117 (dormant captive insurance companies, added by Act 69, Session Laws of Hawaii 2024). License and application fees are set in Hawaii Administrative Rules §16-17-6.",
     "min_capital": {
-      "Class 1": "$100,000",
-      "Class 2": "$250,000",
-      "Class 3 / Class 4": "$500,000"
+      "Class 1": "Not less than $100,000. A Class 1 company is a pure captive licensed to write business only as a reinsurer (HRS §§431:19-101 and 431:19-104).",
+      "Class 2": "Not less than $250,000. A Class 2 company is a pure captive licensed to write direct insurance, or direct insurance and reinsurance.",
+      "Class 3": "Not less than $500,000. A Class 3 company is an association captive or a risk retention captive. Other provisions of Chapter 431 may require more.",
+      "Class 4": "Not less than $500,000. A Class 4 company is a sponsored captive.",
+      "Class 5": "An amount set by the Insurance Commissioner case by case. A Class 5 company is a reinsurance or excess captive licensed under HRS §431:19-111.5.",
+      "Branch captive": "In lieu of the class minimum, the commissioner determines the amount and form of security maintained in Hawaii after considering the risk retained in the state, the outside captive's financial condition, and other security already posted (HRS §431:19-104(c)).",
+      "Dormant captive": "Not less than $25,000 of unimpaired paid-in capital and surplus while a certificate of dormancy is in force (HRS §431:19-117).",
+      "Commissioner discretion": "The commissioner sets each captive's required unimpaired capital and surplus after considering the nature and volume of its business. The class amounts are floors. Capital may be held in cash, an irrevocable letter of credit, public obligations, or another form the commissioner approves."
     },
-    "tax_notes": "Max premium tax $200,000; tiered rates",
+    "tax_notes": "Premium tax under HRS §431:19-116 is paid to the director of finance through the commissioner by March 1. On gross premiums for risks resident, situated, or located in Hawaii, and on risks elsewhere on which no premium tax is otherwise paid, less return premiums and less reinsurance accepted, the rates are 0.25% from $0 to $25 million, 0.15% from more than $25 million to $50 million, 0.05% from more than $50 million to $250 million, and 0% above $250 million. There is no minimum tax. The annual maximum aggregate tax is $200,000. The tax is in lieu of other Hawaii state and county taxes except taxes on real property and on the purchase, use, or ownership of tangible personal property. The Insurance Division states the same rule as a tax on the captive's own premiums only, with no tax on premiums already taxed where the underlying risk is located and no tax on reinsurance premiums assumed by the captive. A dormant captive that holds a certificate of dormancy is not subject to the §431:19-116 tax (HRS §431:19-117).",
     "slug": "hawaii",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Andrew J. Kurata, Deputy Commissioner and Captive Insurance Administrator",
+    "contact_email": "captiveins@dcca.hawaii.gov",
+    "last_verified": "2026-11-06",
+    "source_urls": [
+      "https://www.cca.hawaii.gov/ins/captive-insurance/",
+      "https://cca.hawaii.gov/wp-content/uploads/2026/10/2026-Captive-Insurance-Fact-Sheet_093026.pdf",
+      "https://cca.hawaii.gov/wp-content/uploads/2026/02/HAR-16-17-Standard-081719.pdf",
+      "https://cca.hawaii.gov/wp-content/uploads/2026/03/2026-Steps-to-Create-a-Captive.pdf",
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0019-0102.htm",
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0019-0104.htm",
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0019-0107.htm",
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0019-0108.htm",
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0019-0116.htm",
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0019-0117.htm",
+      "https://hawaiicaptives.com/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 276
+    },
+    "types_allowed": [
+      "Class 1 pure captives writing reinsurance only",
+      "Class 2 pure captives writing direct insurance, or direct insurance and reinsurance",
+      "Class 3 association captives",
+      "Class 3 risk retention captives",
+      "Class 4 sponsored captives, which may use protected cells",
+      "Class 5 reinsurance or excess captives",
+      "Branch captives of an outside captive",
+      "Dormant captives holding a certificate of dormancy"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "$50 initial business-registration incorporation fee and a $1,000 nonrefundable captive application fee. If the commissioner uses an independent advisor to review an application or business-plan amendment, the applicant pays a reasonable fee authorized by the commissioner (HRS §431:19-102; Hawaii Administrative Rules §16-17-6).",
+      "annual_fees": "$15 annual business-registration fee. The certificate-of-authority renewal, due on or before April 1, is $300 for a Class 1 or Class 2 captive, $500 for a Class 3 captive, and $1,000 for a Class 4 or Class 5 captive (HAR §16-17-6). A certificate of dormancy is renewed every five years for $300 (HRS §431:19-117).",
+      "premium_tax_rate": "0.25% on the first $25 million, 0.15% from $25 million to $50 million, 0.05% from $50 million to $250 million, and 0% above $250 million. No minimum tax. Maximum annual tax $200,000. No tax on premiums already taxed where the risk is located, on assumed reinsurance, or on a dormant captive holding a certificate of dormancy."
+    },
+    "annual_filing_requirements": "A captive other than a risk retention captive files financial statements, prepared on generally accepted accounting principles or another basis the commissioner accepts and audited by an independent certified public accountant or another professional the commissioner accepts, on or before the last day of the sixth month after its fiscal year-end (HRS §431:19-107(a)). A risk retention captive files an NAIC annual statement and a risk-based capital report by March 1 and an audit by June 1. Actuarial opinions on reserves are included with the audited statements, except that a Class 3 company files its actuarial opinion with the annual statement by March 1. The premium-tax statement is due March 1 (HRS §431:19-116). The governing body holds at least one meeting each year in Hawaii, and the captive keeps its principal place of business in the state (HRS §431:19-102). Examinations occur at least once every five years; a risk retention captive is examined no later than three years after formation and at least once every five years after that (HRS §431:19-108). The Captive Insurance Branch requires electronic annual filings to CaptiveInsAnnualFilings@dcca.hawaii.gov. A dormant captive with a certificate of dormancy files a verified report of its financial condition by March 1 and does not file the audited statements required by §431:19-107.",
+    "captive_administrator": {
+      "name": "Andrew J. Kurata, Deputy Commissioner and Captive Insurance Administrator",
+      "email": "captiveins@dcca.hawaii.gov",
+      "phone": "(808) 586-0981",
+      "fax": "(808) 586-0987"
+    },
+    "licensing_speed": "No published standard timeline. Once issued, a certificate of authority authorizes business until April 1 and may be renewed (HRS §431:19-102).",
+    "regulator": {
+      "name": "Hawaii Department of Commerce and Consumer Affairs, Insurance Division, Captive Insurance Branch",
+      "address": "335 Merchant Street, Room 213, Honolulu, Hawaii 96813",
+      "website": "https://www.cca.hawaii.gov/ins/captive-insurance/"
+    }
   },
   {
     "name": "Hong Kong",
@@ -1238,20 +1290,89 @@
   },
   {
     "name": "North Carolina",
-    "summary": "North Carolina has rapidly achieved prominence due to its modern law and an in-house regulatory team focused on accessibility and customer service. It utilizes a secure online filing system to streamline the application process. The commissioner maintains discretion to allow lower capital amounts if a feasibility study proves adequacy.",
+    "summary": "North Carolina enacted the Captive Insurance Act in 2013 (Session Law 2013-116), now Part 9 of Article 10 of Chapter 58 of the General Statutes, and regulates captives through the Department of Insurance Captive Insurance Companies Division. At year-end 2025 the Department reported 263 captive insurance companies and 746 cells and series, including conditional licenses and approvals, for more than 1,000 risk-bearing entities. Those 263 companies were 188 pure captives, 48 protected cell captives, 9 risk retention groups, and 18 special purpose captives. During 2025 the state licensed 21 captive insurers, counting new formations and redomestications, and approved approximately 80 cells and series. Statutory capital floors are $250,000 for pure, protected cell, and special purpose captives, or another amount the Commissioner sets; $500,000 for association and industrial insured captives; $1,000,000 for a risk retention group; and $250,000 in cash for a special purpose financial captive. Direct premium tax is 0.4% on the first $20 million and 0.3% above that. The ordinary minimum is $5,000 and the ordinary maximum is $100,000. The redomestication premium-tax holiday expired for taxable years beginning on or after 1 January 2026.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "North Carolina Captive Insurance Act",
+    "legislation": "North Carolina Captive Insurance Act (Chapter 58, Article 10, Part 9 of the General Statutes)",
+    "legislation_year": 2013,
+    "applicable_legislation": "North Carolina General Statutes Chapter 58, Article 10, Part 9 (Captive Insurance Companies), enacted by Session Law 2013-116 and amended by Session Laws 2014-65, 2015-99, 2016-78, 2018-120, 2022-7, and 2024-29. Capital and surplus are in G.S. 58-10-370. Special purpose financial captive capital is in G.S. 58-10-575 and the application fee is in G.S. 58-10-565. Annual reports are in G.S. 58-10-405 and the annual audit is in G.S. 58-10-415. Inactive captives are in G.S. 58-10-490. The captive premium tax is G.S. 105-228.4A.",
     "min_capital": {
-      "Pure / Cell / Special Purpose": "$250,000",
-      "Association / Industrial": "$500,000",
-      "RRG": "$1,000,000"
+      "Pure": "Not less than $250,000 of unimpaired paid-in capital and surplus, or another amount determined by the Commissioner (G.S. 58-10-370(a)(1)).",
+      "Association": "Not less than $500,000 (G.S. 58-10-370(a)(2)). The Commissioner may prescribe additional capital.",
+      "Industrial insured": "Not less than $500,000 (G.S. 58-10-370(a)(3)). The Commissioner may prescribe additional capital.",
+      "Risk retention group": "Not less than $1,000,000 (G.S. 58-10-370(a)(4)). The Commissioner may prescribe additional capital.",
+      "Protected cell": "Not less than $250,000, or another amount determined by the Commissioner (G.S. 58-10-370(a)(5)).",
+      "Special purpose": "Not less than $250,000, or another amount determined by the Commissioner (G.S. 58-10-370(a)(6)).",
+      "Special purpose financial captive": "Not less than $250,000 of initial capital, all in cash. The Commissioner may require additional capital after reviewing the plan of operation, feasibility study, pro formas, and the risks insured or reinsured (G.S. 58-10-575).",
+      "Branch captive": "A branch captive is a pure captive for its North Carolina operations unless the Commissioner permits otherwise (G.S. 58-10-340). As security for branch liabilities it must hold an amount equal to the pure-captive minimum plus reserves on branch business, with a credit the Commissioner may allow for security already posted (G.S. 58-10-535).",
+      "Inactive captive": "Unimpaired capital and surplus in an amount determined by the Commissioner (G.S. 58-10-490). A risk retention group cannot be declared inactive.",
+      "Form of capital": "Cash, securities approved by the Commissioner, a clean irrevocable letter of credit from a bank the Commissioner approves, or another approved form (G.S. 58-10-370(c)). Special purpose financial captive minimum initial capital must be cash."
     },
-    "tax_notes": "$100,000 maximum tax ($200,000 for cells with >10 cells)",
+    "tax_notes": "G.S. 105-228.4A taxes a North Carolina captive, and taxes only the branch business of a branch captive. A foreign captive is not subject to this tax. Direct premiums, after return premiums, are taxed at 0.4% up to $20 million and 0.3% above $20 million. Assumed reinsurance premiums are taxed at 0.225% up to $20 million, 0.150% from $20 million to $40 million, 0.050% from $40 million to $60 million, and 0.025% above $60 million. Assumed-reinsurance tax does not apply to risks already taxed as direct premiums, or to a qualifying assumption of reserves between commonly controlled insurers that is part of a plan to discontinue one insurer. For any captive other than the multi-cell case below, the tax is at least $5,000 and at most $100,000. A protected cell captive with more than 10 cells, or a special purpose captive with a cell or series structure of more than 10 cells or series, pays at least $10,000 and at most the lesser of $100,000 plus $5,000 for each cell or series over 10, and $200,000. Two or more captives under common ownership and control are taxed as one captive, except a protected cell captive and a special purpose captive with a cell or series structure. The premium-tax report and payment are due by March 15. Captives subject to this tax are not subject to the franchise tax, to income tax except as G.S. 105-130.5A provides, to local privilege or local gross-premium taxes, or to the insurance regulatory charge. The redomestication holiday in G.S. 105-228.4A(g) expired for taxable years beginning on or after 1 January 2026. An inactive captive is not liable for tax under Article 8B of Chapter 105 for any full year it is inactive (G.S. 58-10-490).",
     "slug": "north-carolina",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Lori Gorman, Deputy Commissioner, Captive Insurance Companies Division",
+    "contact_email": "lori.gorman@ncdoi.gov",
+    "last_verified": "2026-11-06",
+    "source_urls": [
+      "https://www.ncdoi.gov/insurance-industry/captive-insurance",
+      "https://www.ncdoi.gov/news/press-releases/2026/03/09/nc-captive-insurance-industry-marks-another-strong-year",
+      "https://www.ncdoi.gov/insurance-industry/captive-insurance/why-nc",
+      "https://www.ncdoi.gov/insurance-industry/captive-insurance/nc-captive-law",
+      "https://www.ncdoi.gov/insurance-industry/captive-insurance/captive-regulatory-team",
+      "https://www.ncdoi.gov/annual-filing-requirements-and-forms",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-370.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-405.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-415.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-490.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-565.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-575.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_105/GS_105-228.4A.html",
+      "https://www.ncdor.gov/taxes-forms/other-taxes-and-fees/insurance-premiums-tax-information/tax-rates-and-charges",
+      "https://www.nccia.org/",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-340.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-347.html",
+      "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_58/GS_58-10-535.html"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 263,
+      "new_captives": 21,
+      "pure_captives": 188,
+      "sponsored_cell_captives": 48,
+      "individual_cells_count": 746,
+      "individual_cells_year": 2025,
+      "individual_cells_estimated": false,
+      "other_captives": 27
+    },
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Industrial insured captive insurance companies",
+      "Risk retention groups",
+      "Protected cell captive insurance companies",
+      "Special purpose captive insurance companies, including cell or series structures",
+      "Special purpose financial captives",
+      "Branch captive insurance companies",
+      "Inactive captive insurance companies declared by the Commissioner, other than risk retention groups"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "The Department states that it charges no captive fees except the special purpose financial captive application review. Under G.S. 58-10-565(h), when the Department uses internal resources that review has a minimum fee of $12,000, of which $6,000 is payable on filing and the remainder on licensure. The cost of outside legal, financial, and audit services may also be charged to the applicant. Corporate organization fees are paid to the North Carolina Secretary of State and are not set in the Captive Insurance Act.",
+      "annual_fees": "No North Carolina Department of Insurance annual captive license or renewal fee is published. The Department's stated exception to its no-fee practice is the special purpose financial captive application review described above, which is not an annual fee.",
+      "premium_tax_rate": "Direct premiums: 0.4% up to $20 million and 0.3% above $20 million. Assumed reinsurance premiums: 0.225% up to $20 million, 0.150% from $20 million to $40 million, 0.050% from $40 million to $60 million, and 0.025% above $60 million. Ordinary minimum $5,000 and ordinary maximum $100,000. A protected cell captive with more than 10 cells, or a special purpose captive with more than 10 cells or series, has a $10,000 minimum and a maximum of the lesser of $100,000 plus $5,000 per cell or series over 10, and $200,000. The redomestication tax holiday expired for taxable years beginning on or after 1 January 2026."
+    },
+    "annual_filing_requirements": "Each captive submits a report of its financial condition as of the preceding December 31, verified by two executive officers, before March 15. Reporting is on generally accepted accounting principles unless the Commissioner requires or accepts another basis (G.S. 58-10-405). A pure, special purpose, or industrial insured captive may be allowed to file 75 days after its fiscal year-end. The annual audit and statement of actuarial opinion for captives other than risk retention groups are due by June 30, or within 180 days after an approved fiscal year-end (G.S. 58-10-415). Risk retention groups file under Parts 6 and 7 of Article 10 instead of that audit section. The premium-tax report and payment are due by March 15 (G.S. 105-228.4A). The Department's filing page for 2026 also lists Form C-202, the direct economic impact supplement, and Form C-207 for inactive captives. Filings are submitted electronically through the Department's online system or to the Captive Insurance Administrator. The Commissioner may waive the annual report if the annual audit is filed, and may grant a hardship exemption from the audit, but may not waive both at the same time. A request to skip the annual report is due at least 30 days before the report due date.",
+    "captive_administrator": {
+      "name": "Nancy Staples, Captive Insurance Administrator",
+      "email": "nancy.staples@ncdoi.gov",
+      "phone": "(919) 807-6180",
+      "fax": null
+    },
+    "licensing_speed": "No published standard licensing turnaround. The Commissioner may grant provisional approval for not more than 90 days under G.S. 58-10-347 and may extend it in 30-day increments for good cause.",
+    "regulator": {
+      "name": "North Carolina Department of Insurance, Captive Insurance Companies Division",
+      "address": "3200 Beechleaf Court, Raleigh, NC 27604. Mailing address: 1203 Mail Service Center, Raleigh, NC 27699-1203",
+      "website": "https://www.ncdoi.gov/insurance-industry/captive-insurance"
+    }
   },
   {
     "name": "Oklahoma",
@@ -1337,20 +1458,72 @@
   },
   {
     "name": "South Carolina",
-    "summary": "South Carolina is the only mature domicile in the southeastern US, featuring 22 years of operation and a savvy regulatory environment. It focuses on owner value across structures like risk retention groups and special purpose financial captives. The state is recognized for its business-friendly climate and world-class captive know-how.",
+    "summary": "South Carolina has licensed captive insurers since the enabling law of 2000, now Title 38, Chapter 90 of the Code of Laws, and supervises them through the Department of Insurance Captive Insurance Division. The Division reported 235 active captive insurance companies as of February 2026 and 15 new licenses in 2025. A pure captive must hold at least $250,000. An industrial insured captive or a risk retention group must hold at least $500,000, and an association captive at least $750,000. A special purpose financial captive's minimum initial capital is $250,000 in cash. Sponsored captives, and special purpose captives that are not risk retention groups, have capital set by the director. Direct premium tax is 0.4% on the first $20 million and 0.3% after that. Assumed-reinsurance tax steps from 0.225% down to 0.025%. The combined tax has a $5,000 minimum, prorated in the year a captive is first licensed, and a $100,000 maximum. After a completed application, the Division expects licensing to take 30 to 45 days, with additional time possible for a special purpose financial captive.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "South Carolina Statutes",
+    "legislation": "South Carolina Code of Laws, Title 38, Chapter 90 (Captive Insurance Companies)",
+    "legislation_year": 2000,
+    "applicable_legislation": "South Carolina Code of Laws Title 38, Chapter 90, originating in 2000 Act No. 331 and including 2018 Act No. 251 and 2025 Act Nos. 42 and 62. Capitalization is §38-90-40. Licensing and the ordinary fee are §38-90-20. Annual reports are §38-90-70. Premium tax is §38-90-140. Special purpose financial captives are Article 3 of the chapter, including capitalization in §38-90-460, fees in §38-90-440, and tax in §38-90-580.",
     "min_capital": {
-      "Pure / Sponsored": "$250,000",
-      "RRG": "$500,000",
-      "Association": "$750,000"
+      "Pure": "Not less than $250,000 of free and unimpaired paid-in capital, surplus, unrestricted net assets of a nonprofit, or a combination (S.C. Code §38-90-40(A)(1)(a)).",
+      "Association": "Not less than $750,000 for an association captive incorporated as a stock insurer or mutual insurer, or organized as a limited liability company (§38-90-40(A)(1)(b)).",
+      "Industrial insured": "Not less than $500,000 (§38-90-40(A)(1)(c)).",
+      "Risk retention group": "Not less than $500,000 (§38-90-40(A)(1)(c)).",
+      "Sponsored": "An amount determined by the director after considering the business plan, feasibility study, and pro formas, including the nature, scale, and complexity of the risks (§38-90-40(A)(1)(d)). The Division's types page states the same case-by-case standard.",
+      "Special purpose": "For a special purpose captive that is not a risk retention group, an amount determined by the director on the same business-plan basis as a sponsored captive (§38-90-40(A)(1)(e)).",
+      "Special purpose financial captive": "Not less than $250,000. All of the minimum initial capitalization must be cash. The director may require additional capital (S.C. Code §38-90-460).",
+      "Branch captive": "Section 38-90-40(C) requires a United States trust, funded by an irrevocable letter of credit or other acceptable asset, of not less than the reserves on policies and reinsurance written through the branch, with a credit the director may allow for security already posted with a reinsurer or fronting company. The Division's types page separately lists a $250,000 statutory minimum for a branch captive under §38-90-40.",
+      "Additional capital": "The director may prescribe additional capital and surplus based on the type, volume, and nature of business to be transacted (§38-90-40(A)(2)). Required capital is held as cash, approved securities, a clean irrevocable letter of credit, or another form the director approves."
     },
-    "tax_notes": "Tiered direct rates (0.4% down to set $100k blocks)",
+    "tax_notes": "Under S.C. Code §38-90-140, tax is paid to the Department by March 1. Direct premiums, after return premiums, are taxed at 0.4% on the first $20 million and 0.3% on each dollar after that. Assumed reinsurance premiums are taxed at 0.225% on the first $20 million, 0.150% on the next $20 million, 0.050% on the next $20 million, and 0.025% after that. Reinsurance tax does not apply to risks already taxed on a direct basis, or to a qualifying assumption of reserves under common ownership and control that is part of a plan to discontinue the cedent's related operations. If the direct and assumed taxes together are under $5,000, the captive pays a $5,000 minimum. In the calendar year of first licensure that minimum is prorated by quarter: $5,000, $3,750, $2,500, or $1,250. If the calculated taxes exceed $100,000, the captive pays a $100,000 maximum. Captives under common ownership and control are taxed as separate companies. For a branch captive the tax applies only to branch business. For a sponsored captive, the sponsored captive and its incorporated and unincorporated protected cells are taxed on a consolidated basis as one captive. This tax is in lieu of other occupation taxes, except ad valorem taxes on real and personal property used in producing income. A special purpose financial captive is taxed under §38-90-580 at the same direct and assumed rates, with its own $5,000 minimum and $100,000 maximum, and each of its protected cells is taxed as a separate special purpose financial captive. The Division's fee schedule publishes the same $5,000 minimum and $100,000 maximum.",
     "slug": "south-carolina",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "South Carolina Captive Insurance Division",
+    "contact_email": "captivemail@doi.sc.gov",
+    "last_verified": "2026-11-06",
+    "source_urls": [
+      "https://doi.sc.gov/",
+      "https://www.captives.sc.gov/",
+      "https://www.captives.sc.gov/176/SC---Your-Captive-Home",
+      "https://www.captives.sc.gov/178/Types-of-Captives",
+      "https://www.captives.sc.gov/177/Fees-Rates",
+      "https://www.captives.sc.gov/195/Captive-Filing-Deadlines",
+      "https://www.captives.sc.gov/192/How-To-Form-a-Captive-in-South-Carolina",
+      "https://www.captives.sc.gov/198/Staff-Directory",
+      "https://www.scstatehouse.gov/code/t38c090.php",
+      "https://www.sccia.org/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 235
+    },
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Industrial insured captive insurance companies",
+      "Risk retention groups",
+      "Sponsored captive insurance companies, with incorporated or unincorporated protected cells",
+      "Special purpose captive insurance companies",
+      "Special purpose financial captives",
+      "Branch captive insurance companies"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "For a captive other than a special purpose financial captive, S.C. Code §38-90-20 sets a nonrefundable $200 application-processing fee and a $300 license fee for the year of registration. The director may also charge the reasonable cost of outside legal, financial, and examination services. The Division's published schedule lists a $4,000 review fee for those captives and a $0 processing fee beside the $200 application fee. For a special purpose financial captive, §38-90-440 sets a $200 processing fee, a minimum $12,000 fee when internal resources examine the application ($6,000 on filing and the remainder on licensure) or the cost of outside services, and a $300 initial license fee. The Division schedule lists that application fee as $12,000.",
+      "annual_fees": "Annual renewal license fee of $500 for captives and for special purpose financial captives (§§38-90-20 and 38-90-440). A special purpose financial captive also pays an annual review fee of $2,400, or the actual cost if the director determines that cost is higher.",
+      "premium_tax_rate": "Direct premiums: 0.4% on the first $20 million and 0.3% thereafter. Assumed reinsurance premiums: 0.225% on the first $20 million, 0.150% on the next $20 million, 0.050% on the next $20 million, and 0.025% thereafter. Combined minimum $5,000, prorated by quarter in the year of first licensure, and combined maximum $100,000. A special purpose financial captive is taxed at the same rates under §38-90-580, and each of its protected cells is taxed separately. Due March 1."
+    },
+    "annual_filing_requirements": "A risk retention group submits its annual report by March 1. Every other captive submits its annual report by July 1. The report is verified by two executive officers and uses generally accepted accounting principles unless the director approves statutory accounting principles (S.C. Code §38-90-70). A non-risk-retention captive with a fiscal year-end other than December 31 files its income statement and premium schedule before March 1 and the full annual report within 180 days after fiscal year-end. Premium tax is due March 1 (§38-90-140). Beginning the year after licensure, the board, the managing board of a limited liability company, or the subscribers' advisory committee of a reciprocal must meet at least annually with a quorum physically present in South Carolina, including at least two members physically present in the state (§38-90-20). The Division's filing calendar also sets June 30 for the non-risk-retention actuarial opinion and audited financial statements, and it sets quarterly statements and NAIC-style filings for risk retention groups and special purpose financial captives.",
+    "captive_administrator": {
+      "name": "Andy Noga, Director of Captives",
+      "email": "anoga@doi.sc.gov",
+      "phone": "(843) 577-3413",
+      "fax": null
+    },
+    "licensing_speed": "30 to 45 days after receipt of a completed application, depending on complexity. Special purpose financial captives may require additional review time.",
+    "regulator": {
+      "name": "South Carolina Department of Insurance, Captive Insurance Division",
+      "address": "1201 Main Street, Suite 1000, Columbia, SC 29201. Charleston office: 145 King Street, Suite 228, Charleston, SC 29401",
+      "website": "https://www.captives.sc.gov/"
+    }
   },
   {
     "name": "South Dakota",
