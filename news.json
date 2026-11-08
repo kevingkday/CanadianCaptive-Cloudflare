@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-11-01",
+  "lastUpdated": "2026-11-08",
   "articles": [
+    {
+      "title": "Guidance Note – General business insurers with segregated accounts and separate accounts",
+      "date": "2026-11-02",
+      "source": "Walkers",
+      "category": "Offshore Domiciles",
+      "summary": "Bermuda's new BMA guidance, effective January 1, 2027, requires each cell to meet its own solvency, liquidity and collateral tests, adding governance and reporting duties for Canadian parents using Bermuda cell captives.",
+      "url": "https://www.walkersglobal.com/en/Insights/2026/11/Guidance-Note--General-Business-Insurers-with-Segregated-Accounts-and-Separate-Accounts"
+    },
+    {
+      "title": "Premier says Cayman focused on securing US reinsurance recognition",
+      "date": "2026-11-04",
+      "source": "Cayman Independent",
+      "category": "Offshore Domiciles",
+      "summary": "Cayman's Premier says the government is backing its NAIC Qualified Jurisdiction application, with property and casualty reviewed first; any resulting rule changes will involve consultation with the captive industry.",
+      "url": "https://caymanindependent.com/premier-says-cayman-focused-on-securing-us-reinsurance-recognition/"
+    },
+    {
+      "title": "VCIA to Host Captive Tax Update Webinar December 10",
+      "date": "2026-11-06",
+      "source": "Captive.com",
+      "category": "Tax & Compliance",
+      "summary": "Vermont's captive association will review IRS regulations, global minimum tax rules and state premium taxes on December 10, a useful briefing for Canadian groups with Vermont captives planning for 2027.",
+      "url": "https://www.captive.com/news/vcia-to-host-captive-tax-update-webinar-december-10"
+    },
     {
       "title": "Why some Canadian companies are bringing captive risks home to Alberta",
       "date": "2026-10-30",
@@ -24,30 +48,6 @@
       "category": "Offshore Domiciles",
       "summary": "Vermont's captive regulator reports owners converting single-parent captives into sponsored captives to insure partner and joint-venture risks in segregated cells, a structure Canadian parents with Vermont captives may consider.",
       "url": "https://www.businessinsurance.com/captive-owners-find-new-ways-to-finance-risks-manage-losses/"
-    },
-    {
-      "title": "Captive Insurance and Data Centers: Managing Risk in a Digital World",
-      "date": "2026-10-28",
-      "source": "Captive.com",
-      "category": "Market Trends",
-      "summary": "AM Best examines how captives can help data centre operators retain cyber, property, and business interruption risks, relevant as Canadian data centre construction scales into multi-billion-dollar projects.",
-      "url": "https://www.captive.com/news/captive-insurance-and-data-centers-managing-risk-in-a-digital-world"
-    },
-    {
-      "title": "Could QJS unlock capital for Cayman and Guernsey captives?",
-      "date": "2026-10-26",
-      "source": "Captive Review",
-      "category": "Offshore Domiciles",
-      "summary": "Cayman's pursuit of NAIC qualified jurisdiction status could eventually lower US collateral requirements for captive reinsurers, though the initial phase covers only P&C reinsurers rather than most Class B captives.",
-      "url": "https://captivereview.com/news/could-qjs-unlock-capital-for-cayman-and-guernsey-captives/"
-    },
-    {
-      "title": "Lloyd's Establishes Framework for Broker-Originated Reinsurance Structures",
-      "date": "2026-10-21",
-      "source": "Captive.com",
-      "category": "Regulation",
-      "summary": "Lloyd's new framework, effective January 1, 2027, sets capital, eligibility, and oversight rules for investor-backed broker-originated reinsurance structures and requires prior submission when captives participate.",
-      "url": "https://www.captive.com/news/lloyds-establishes-framework-for-broker-originated-reinsurance-structures"
     }
   ]
 }
