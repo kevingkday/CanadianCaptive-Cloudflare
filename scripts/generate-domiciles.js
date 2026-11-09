@@ -165,6 +165,12 @@ function statDisplay(domicile) {
             otherLabel: 'Agency captives and RRGs',
         };
     }
+    if (domicile.slug === 'south-carolina') {
+        return {
+            total: 'Active captives as of November 2026, per the SC Department of Insurance (regulator correspondence)',
+            totalWide: true,
+        };
+    }
     if (domicile.slug === 'texas') {
         return {
             total: 'State-domiciled captives',
@@ -209,9 +215,9 @@ function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses', labels = {}
                         <span class="text-secondary">Reporting Year</span>
                         <span class="font-semibold text-on-surface">${renderMetric(stats.reporting_year)}</span>
                     </div>
-                    <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
-                        <span class="text-secondary">${labels.total || 'Total Active Captives'}</span>
-                        <span class="font-bold text-primary text-base">${renderMetric(stats.total_captives)}</span>
+                    <div class="flex justify-between ${labels.totalWide ? 'items-start gap-4' : 'items-center'} border-b border-outline-variant/10 pb-3 text-sm">
+                        <span class="text-secondary${labels.totalWide ? ' min-w-0' : ''}">${labels.total || 'Total Active Captives'}</span>
+                        <span class="font-bold text-primary text-base${labels.totalWide ? ' shrink-0' : ''}">${renderMetric(stats.total_captives)}</span>
                     </div>
                     <div class="flex justify-between items-center border-b border-outline-variant/10 pb-3 text-sm">
                         <span class="text-secondary">${labels.newLabel || 'New Captives Licensed'}</span>
