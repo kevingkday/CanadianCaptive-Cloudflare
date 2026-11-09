@@ -1520,7 +1520,7 @@
   },
   {
     "name": "South Carolina",
-    "summary": "South Carolina has licensed captive insurers since the enabling law of 2000, now Title 38, Chapter 90 of the Code of Laws, and supervises them through the Department of Insurance Captive Insurance Division. The Division reported 235 active captive insurance companies as of February 2026 and 15 new licenses in 2025. A pure captive must hold at least $250,000. An industrial insured captive or a risk retention group must hold at least $500,000, and an association captive at least $750,000. A special purpose financial captive's minimum initial capital is $250,000 in cash. Sponsored captives, and special purpose captives that are not risk retention groups, have capital set by the director. Direct premium tax is 0.4% on the first $20 million and 0.3% after that. Assumed-reinsurance tax steps from 0.225% down to 0.025%. The combined tax has a $5,000 minimum, prorated in the year a captive is first licensed, and a $100,000 maximum. After a completed application, the Division expects licensing to take 30 to 45 days, with additional time possible for a special purpose financial captive.",
+    "summary": "South Carolina has licensed captive insurers since the enabling law of 2000, now Title 38, Chapter 90 of the Code of Laws, and supervises them through the Department of Insurance Captive Insurance Division. The South Carolina Department of Insurance confirmed 245 active captive insurance companies as of November 2026 (regulator correspondence), and the Division reported 15 new licenses in 2025. A pure captive must hold at least $250,000. An industrial insured captive or a risk retention group must hold at least $500,000, and an association captive at least $750,000. A special purpose financial captive's minimum initial capital is $250,000 in cash. Sponsored captives, and special purpose captives that are not risk retention groups, have capital set by the director. Direct premium tax is 0.4% on the first $20 million and 0.3% after that. Assumed-reinsurance tax steps from 0.225% down to 0.025%. The combined tax has a $5,000 minimum, prorated in the year a captive is first licensed, and a $100,000 maximum. After a completed application, the Division expects licensing to take 30 to 45 days, with additional time possible for a special purpose financial captive.",
     "jurisdiction": "Onshore (USA)",
     "legislation": "South Carolina Code of Laws, Title 38, Chapter 90 (Captive Insurance Companies)",
     "legislation_year": 2000,
@@ -1540,7 +1540,7 @@
     "slug": "south-carolina",
     "contact_name": "South Carolina Captive Insurance Division",
     "contact_email": "captivemail@doi.sc.gov",
-    "last_verified": "2026-11-06",
+    "last_verified": "2026-11-09",
     "source_urls": [
       "https://doi.sc.gov/",
       "https://www.captives.sc.gov/",
@@ -1555,7 +1555,7 @@
     ],
     "stats": {
       "reporting_year": 2026,
-      "total_captives": 235
+      "total_captives": 245
     },
     "types_allowed": [
       "Pure captive insurance companies",
