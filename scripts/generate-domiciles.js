@@ -145,6 +145,37 @@ function statDisplay(domicile) {
             otherLabel: 'Other - Pools & Agencies',
         };
     }
+    if (domicile.slug === 'tennessee') {
+        return {
+            total: 'Companies on the statistics list',
+            pureLabel: 'Pure',
+            groupLabel: 'Association',
+            sponsoredLabel: 'Protected cell companies',
+            cellLabel: 'Individual cells',
+            otherLabel: 'Other types on the list',
+            otherFallback: 'Not a separate column. Risk retention groups, industrial insureds, agency captives, branches, and special purpose financial captives are not broken out.',
+        };
+    }
+    if (domicile.slug === 'arizona') {
+        return {
+            total: 'Captives at 30 June 2026',
+            pureLabel: 'Pure, including reinsurers',
+            groupLabel: 'Industry group and association',
+            sponsoredLabel: 'Protected cell captives',
+            otherLabel: 'Agency captives and RRGs',
+        };
+    }
+    if (domicile.slug === 'texas') {
+        return {
+            total: 'State-domiciled captives',
+            pureFallback: 'No pure-versus-exchange split was published. TDI described one captive type.',
+            groupFallback: 'Chapter 964 does not provide for group or association captives.',
+            sponsoredFallback: 'Cell captives are not authorized by Chapter 964.',
+            cellLabel: 'Individual cells',
+            cellFallback: 'Not authorized by Chapter 964.',
+            otherFallback: 'Captive exchanges are authorized. No separate count was published.',
+        };
+    }
     return {};
 }
 
@@ -162,7 +193,7 @@ function renderStatsBlock(stats, exitLabel = 'Surrendered Licenses', labels = {}
         ? (stats.individual_cells_count > 0
             ? `${stats.individual_cells_count}${stats.individual_cells_estimated ? ' (estimated)' : ''}${stats.individual_cells_year ? ` as of ${stats.individual_cells_year}` : ''}`
             : '0')
-        : 'Pending verification';
+        : (labels.cellFallback || 'Pending verification');
     const resolvedExitLabel = labels.exitLabel || exitLabel;
 
     return `
