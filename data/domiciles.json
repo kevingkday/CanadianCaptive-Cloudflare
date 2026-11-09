@@ -125,20 +125,77 @@
   },
   {
     "name": "Arizona",
-    "summary": "Established in 2002, Arizona is a mature and proven domicile supported by a stable regulatory team and a well-established network of local service providers. The state is highly competitive due to the absence of insurance premium taxes and state/local income taxes for most licensed captives. It provides an electronic filing portal and a cost-effective application process, licensing varied structures including agency and branch captives.",
+    "summary": "Arizona's Captive Insurance Division, in the Department of Insurance and Financial Institutions, licenses captives under Arizona Revised Statutes sections 20-1098 through 20-1098.24. The division states that the captive statute took effect in 2002. A captive may be pure, group, agency, or protected cell, and may be formed as a stock insurer, limited liability company, mutual, reciprocal, or nonprofit. A group captive is an association captive, an industry group captive, or a risk retention group. The statute also provides for branch captives and for dormant captives. Minimum unimpaired paid-in capital and surplus is $250,000 for a pure or protected cell captive and $500,000 for a group, agency, or reciprocal captive. A pure or group captive that transacts only reinsurance holds half of the applicable amount. A dormant captive with a certificate of dormancy holds $125,000. Fees under section 20-167(F) are in lieu of premium tax and other state and local taxes, except taxes on real and tangible personal property located in Arizona, transaction privilege and use taxes, and the section 20-224 premium tax that an agency captive owes on specified life and disability policies to the extent it exceeds those fees. As of 30 June 2026 the division counted 209 captives: 181 pure including reinsurers, 6 protected cell, 5 industry group, 1 association, 4 agency, 12 risk retention groups, and no branch captives. Its growth table lists 14 licenses issued in 2026 beside that cumulative count of 209. The director must approve or deny an application within 30 days after deeming it complete. The governing body meets at least once a year in Arizona, and the captive keeps its principal place of business, books and records, and an Arizona manager in the state.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Arizona Revised Statutes",
+    "legislation": "Arizona Revised Statutes sections 20-1098 through 20-1098.24 (captive insurers)",
+    "legislation_year": 2002,
+    "applicable_legislation": "Arizona Revised Statutes sections 20-1098 through 20-1098.24. Definitions are section 20-1098. Licensing, permitted business, the in-state meeting and principal-place requirements, and the 30-day decision are section 20-1098.01. Minimum capital and surplus are section 20-1098.03. Protected cells are section 20-1098.05. The annual report and audit are section 20-1098.07. The fee-in-lieu and premium-tax rule is section 20-1098.17. Dormancy is section 20-1098.24. Certificate of authority fees for captive insurers are set by the director under section 20-167(F). The Captive Insurance Division states that the captive statute's effective date is 2002. A session-law citation for the original enactment was not retrieved, so 2002 is the effective year the division publishes and is not recorded here as a separately verified enactment year.",
     "min_capital": {
-      "Pure": "$250,000",
-      "Association / Agency / Cell": "$500,000",
-      "RRG": "$500,000"
+      "Pure": "At least $250,000 of unimpaired paid-in capital and surplus in combination (A.R.S. section 20-1098.03(A)(1)). The division publishes the same floor.",
+      "Group": "At least $500,000 (section 20-1098.03(A)(2)). A group captive insurer is an association captive, an industry group captive, or a risk retention group (section 20-1098(16)). The division lists association and industry group captives, and risk retention groups, at $500,000.",
+      "Agency": "At least $500,000 (section 20-1098.03(A)(3)).",
+      "Protected cell": "At least $250,000 (section 20-1098.03(A)(4)). The division publishes the same floor.",
+      "Reciprocal": "At least $500,000 for a captive insurer organized as a reciprocal insurer (section 20-1098.03(A)(5)).",
+      "Pure or group, reinsurance only": "One-half of the applicable pure or group amount (section 20-1098.03(A)(6)). The division states that pure reinsurers hold 50 percent of the indicated amounts.",
+      "Dormant": "A dormant captive insurer that has been issued a certificate of dormancy maintains unimpaired paid-in capital and surplus of at least $125,000 (section 20-1098.24(B)(1)). A risk retention group is excluded from the dormant-captive definition.",
+      "Branch": "The division lists branch captive insurers as a type and counted none at 30 June 2026. Section 20-1098.03 does not state a separate dollar floor for a branch captive.",
+      "Form and additional capital": "The statutory minimum is cash or an irrevocable and unconditional letter of credit with an evergreen clause, payable to, filed with, and held by the director (section 20-1098.03(B)). The director may prescribe additional capital and surplus based on the type, volume, and nature of insurance (section 20-1098.03(C))."
     },
-    "tax_notes": "No premium or state income taxes; flat annual license fee",
+    "tax_notes": "A.R.S. section 20-1098.17 provides that the captive fees paid under section 20-167(F) are payment in full and in lieu of all other state, county, district, municipal, and school taxes, licenses, and excises, except a tax on real and tangible personal property located in Arizona, the transaction privilege tax and use tax under title 42, chapter 5, articles 1 and 4, and transaction privilege and use taxes imposed by a county, city, or town. An agency captive insurer that insures the life or disability risks specified in section 20-1098.01(A)(3)(b) pays the premium tax prescribed in section 20-224 on those policies to the extent it exceeds the fees paid under section 20-167. The Captive Insurance Division states that Arizona has no insurance premium tax. The annual regulatory charge published by the division is the flat license renewal fee, not a premium-tax rate.",
     "slug": "arizona",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Victoria E. Fimea, J.D., Chief Captive Analyst",
+    "contact_email": "Captive@difi.az.gov",
+    "last_verified": "2026-11-09",
+    "source_urls": [
+      "https://difi.az.gov/captive-insurance-division",
+      "https://difi.az.gov/agency-directory",
+      "https://difi.az.gov/faq/what-payment-methods-are-available-pay-captive-related-fees-0",
+      "https://www.azleg.gov/ars/20/01098.htm",
+      "https://www.azleg.gov/ars/20/01098-01.htm",
+      "https://www.azleg.gov/ars/20/01098-03.htm",
+      "https://www.azleg.gov/ars/20/01098-07.htm",
+      "https://www.azleg.gov/ars/20/01098-17.htm",
+      "https://www.azleg.gov/ars/20/01098-24.htm",
+      "https://azcia.org/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 209,
+      "pure_captives": 181,
+      "group_captives": 6,
+      "sponsored_cell_captives": 6,
+      "other_captives": 16
+    },
+    "types_allowed": [
+      "Pure captive insurers, including pure reinsurers",
+      "Association captive insurers",
+      "Industry group captive insurers",
+      "Risk retention groups",
+      "Agency captive insurers",
+      "Protected cell captive insurers",
+      "Branch captive insurers",
+      "Captive insurers organized as reciprocal insurers",
+      "Dormant captive insurers holding a certificate of dormancy, other than risk retention groups"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "DIFI's captive payment page lists an original insurer license application total of $1,175 and an original per-cell application of $1,000. The division's fee table lists a $100 examiners' revolving-fund deposit, a $75 charter-document filing fee, and a $60 articles of incorporation or organization fee payable to the Arizona Corporation Commission. The payment page also lists a $200 license-amendment fee and a $30 amended-charter fee. Fees are nonrefundable. The applicant may also be billed for outside specialists used in the review. Section 20-1098.01(J) requires the nonrefundable issuance fee prescribed under section 20-167.",
+      "annual_fees": "Captive insurer annual license renewal of $5,500, and a protected-cell annual renewal of $2,500, as published by the division and on its payment page. The renewal fee is paid not earlier than 1 July and not later than 1 September (section 20-1098.01(J)). A certificate of dormancy is renewed every five years; the statute points that fee to section 20-167 and the division page does not publish a separate dormancy amount.",
+      "premium_tax_rate": "No generally applicable captive premium tax. Fees under section 20-167(F) are in lieu of other state and local taxes, subject to the property-tax, transaction-privilege-tax, use-tax, and agency-captive exceptions in section 20-1098.17. The standing annual regulatory charge is the $5,500 license renewal, plus $2,500 for each protected cell."
+    },
+    "annual_filing_requirements": "Not later than 90 days after the end of its fiscal year, a captive insurer submits a report of its financial condition verified by the oath of two executive officers. The report may use generally accepted accounting principles unless the director requires statutory accounting principles, with any modifications the director requires (A.R.S. section 20-1098.07(A)). Financial statements are audited by an independent certified public accountant unless the director determines that an audit is not necessary, and the audit opinion is filed not later than six months after fiscal year-end. Unless the director grants an exemption, the annual report meets the applicable life and health, property and casualty, or NAIC health actuarial requirements. A protected cell captive also files an accounting of each protected cell with the annual report. A branch captive files, within 60 days after its fiscal year-end, the reports required by its home jurisdiction. A dormant captive with a certificate of dormancy files a verified financial-condition report within 90 days after fiscal year-end. The license renewal fee is due between 1 July and 1 September. The division states that an exemption from the annual actuarial certification and audit may apply to small captive insurers, and that there is no routine statutory examination for pure captive insurers.",
+    "captive_administrator": {
+      "name": "Victoria E. Fimea, J.D., Chief Captive Analyst, Captive Insurance Division",
+      "email": "Captive@difi.az.gov",
+      "phone": "(602) 364-4490",
+      "fax": null
+    },
+    "licensing_speed": "The director shall approve or deny an application within 30 days after the director deems the application complete (A.R.S. section 20-1098.01(L)).",
+    "regulator": {
+      "name": "Arizona Department of Insurance and Financial Institutions, Captive Insurance Division",
+      "address": "100 North 15th Avenue, Suite 261, Phoenix, AZ 85007-2630",
+      "website": "https://difi.az.gov/captive-insurance-division"
+    }
   },
   {
     "name": "Arkansas",
@@ -1578,36 +1635,140 @@
   },
   {
     "name": "Tennessee",
-    "summary": "Tennessee was one of the first onshore US domiciles and has grown to rank in the top 20 globally after modernizing its statute in 2011. It is one of the few states that allows series limited liability companies, offering lower administrative burdens for incorporated cells. The state even offers a one-year tax holiday for alien captives redomesticating to Tennessee.",
+    "summary": "Tennessee regulates captives through the Department of Commerce and Insurance Captive Insurance Section under the Revised Tennessee Captive Insurance Act, Tennessee Code Title 56, Chapter 13. The department states that captive legislation was first enacted in 1978 and was thoroughly revised in 2011. The Act covers pure, association, industrial insured, agency, risk retention group, protected cell, incorporated cell, branch, and special purpose financial captives. An incorporated protected cell may be an individual series of a limited liability company, and a series cell formed after 1 July 2015 uses a series-cell name. Unimpaired paid-in capital and surplus is at least $250,000 for a pure or agency captive, $500,000 for an association or industrial insured captive, $1,000,000 for a risk retention group, and $100,000 for a protected cell captive. A special purpose financial captive starts with at least $250,000 in cash. A dormant captive holding a letter of dormancy maintains $25,000 and is not liable for the minimum premium tax. Direct premium tax is 0.4 percent on the first $20 million and 0.3 percent after that. Assumed-reinsurance tax is 0.225 percent, 0.150 percent, 0.050 percent, and 0.025 percent on successive $20 million bands. The ordinary minimum is $5,000 and the ordinary maximum is $100,000. A protected cell captive with more than 10 cells has a $10,000 minimum and a maximum of $100,000 plus $5,000 for each cell over 10. An alien company redomesticating to Tennessee may elect to forgo premium tax in either its first or its second year, but not both, and a clawback applies if it leaves within five years. The Captive Statistics page lists 194 captive insurance companies: 111 pure, 79 protected cell companies, and 4 association. The newest license date on that list is 1 October 2026. The page does not state a total, a cell count, or whether every listed company is active. On 17 March 2026 the department reported five new captives and 50 new cells licensed in 2025, and 184 captives and 703 cells at that date. The Spring 2026 newsletter reported 184 captives and 705 cells. A complete application is processed in approximately 30 days.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Updated Tennessee Captive Statute",
+    "legislation": "Revised Tennessee Captive Insurance Act, Tennessee Code Annotated Title 56, Chapter 13",
+    "legislation_year": 2011,
+    "applicable_legislation": "Tennessee Code Annotated Title 56, Chapter 13, the Revised Tennessee Captive Insurance Act. The Captive Insurance Section states that captive legislation was first enacted in 1978 and thoroughly revised by the General Assembly in 2011 (2011 Public Chapter 468). Part 1 is general provisions, including capital in section 56-13-105, annual reports in section 56-13-108, examinations in section 56-13-109, premium tax in section 56-13-114, redomestication in section 56-13-123, and dormancy in section 56-13-124. Part 2 is protected cell captive insurance companies, including series cells in section 56-13-204. Part 3 is branch captive insurance companies. Part 4 is special purpose financial captives, including minimum capitalization in section 56-13-406. Section histories through the 2025 code include 2024 Public Chapter 643.",
     "min_capital": {
-      "Pure": "$250,000",
-      "Protected Cell": "$100,000",
-      "RRG": "$1,000,000",
-      "Association / Industrial": "$500,000"
+      "Pure": "Not less than $250,000 of unimpaired paid-in capital and surplus (Tenn. Code Ann. section 56-13-105(a)(1)).",
+      "Agency": "Not less than $250,000 (section 56-13-105(a)(6)). An agency captive is owned by an insurance agency or brokerage and only reinsures risks of policies placed by or through that agency or brokerage.",
+      "Association": "Not less than $500,000 (section 56-13-105(a)(2)).",
+      "Industrial insured": "Not less than $500,000 (section 56-13-105(a)(3)).",
+      "Risk retention group": "Not less than $1,000,000 (section 56-13-105(a)(4)).",
+      "Protected cell": "Not less than $100,000 for the protected cell captive insurance company (section 56-13-105(a)(5)). A separate statutory dollar floor for each protected cell was not stated in section 56-13-105.",
+      "Special purpose financial captive": "Initial minimum capitalization of not less than $250,000, all of it in cash (section 56-13-406(a)). The commissioner may require additional capitalization after reviewing the plan of operation, feasibility study, pro formas, and the risks.",
+      "Dormant": "A dormant captive that has been issued a letter of dormancy maintains unimpaired paid-in capital and surplus of not less than $25,000 (section 56-13-124(c)(1)).",
+      "Additional capital and form": "The commissioner may prescribe additional capital and surplus based on the type, volume, and nature of the business (section 56-13-105(b)). Capital required by subsection (a) must be cash, a cash equivalent, marketable securities meeting the statute's rating limits, or an irrevocable letter of credit from a bank the commissioner approves. The department's licensing page requires the minimum to be provided on its irrevocable letter of credit or securities account control agreement, and it does not accept changes to those forms."
     },
-    "tax_notes": "$5,000 minimum tax; tiered rates with $100,000 max",
+    "tax_notes": "Under Tenn. Code Ann. section 56-13-114, each captive pays the department by 15 March. Direct premiums, after return premiums, are taxed at 0.4 percent on the first $20 million and 0.3 percent on each dollar after that. Annuity considerations are not taxed. Assumed reinsurance premium is taxed at 0.225 percent on the first $20 million, 0.150 percent on the next $20 million, 0.050 percent on the next $20 million, and 0.025 percent after that. No reinsurance tax applies to risks taxed on a direct basis, or to a qualifying assumption of reserves and liabilities of an insurer under common ownership and control that the commissioner verifies is part of a plan to discontinue that insurer's operations. Except for a protected cell captive with more than 10 cells, the annual minimum aggregate tax is $5,000 and the annual maximum aggregate tax is $100,000. For a protected cell captive with more than 10 cells, the minimum is $10,000 and the maximum is $100,000 plus $5,000 multiplied by the number of cells over 10. A dormant captive with a letter of dormancy is not liable for the minimum. The section states that this tax is all the tax collectible under Tennessee law from the captive and from an insured on payments to the captive, except ad valorem taxes on real and personal property used in the production of income. A company redomesticating under section 56-13-123 is taxed only on premiums paid after redomestication. One that redomesticates after 1 July pays half the minimum tax in its first year. An alien company may elect to forgo premium tax in either its first or its second year after redomestication, but not both. If it then surrenders its license or redomesticates away within five years, it immediately pays the foregone tax plus 10 percent per year from the original due date.",
     "slug": "tennessee",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Captive Insurance Section, Tennessee Department of Commerce and Insurance",
+    "contact_email": "captive.insurance@tn.gov",
+    "last_verified": "2026-11-09",
+    "source_urls": [
+      "https://www.tn.gov/commerce/insurance/captive-insurance.html",
+      "https://www.tn.gov/commerce/insurance/captive/rules-and-laws.html",
+      "https://www.tn.gov/commerce/insurance/captive/statistics.html",
+      "https://www.tn.gov/commerce/insurance/captive/licensing-information.html",
+      "https://www.tn.gov/commerce/insurance/captive/types-of-captives.html",
+      "https://www.tn.gov/commerce/insurance/captive/contact.html",
+      "https://www.tn.gov/commerce/news/2026/3/17/tdci-2025-marks-sixth-consecutive-year-of-captive-insurance-growth.html",
+      "https://www.tn.gov/content/dam/tn/commerce/documents/insurance/captive/newsletter/Spring-2026.pdf",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-1/section-56-13-102/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-1/section-56-13-105/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-1/section-56-13-108/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-1/section-56-13-114/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-1/section-56-13-123/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-1/section-56-13-124/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-2/section-56-13-204/",
+      "https://law.justia.com/codes/tennessee/title-56/chapter-13/part-4/section-56-13-406/",
+      "https://tncaptives.org/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 194,
+      "pure_captives": 111,
+      "group_captives": 4,
+      "sponsored_cell_captives": 79
+    },
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Industrial insured captive insurance companies",
+      "Agency captive insurance companies",
+      "Risk retention groups",
+      "Protected cell captive insurance companies",
+      "Incorporated cell captive insurance companies, including an individual series of a limited liability company",
+      "Branch captive insurance companies",
+      "Special purpose financial captive insurance companies",
+      "Dormant captive insurance companies holding a letter of dormancy, other than risk retention groups"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "The Captive Insurance Section lists an application fee of $675, due before approval of the captive or cell, and a certificate of authority issuance fee of $440. A change in the business plan of operations is $400. A certificate of compliance is $7. If the commissioner assigns the application to an outside actuarial firm, the applicant pays that review. Corporate formation fees are paid to the Tennessee Secretary of State and are not set on the captive fee list.",
+      "annual_fees": "Annual statement filing fee of $515, listed by the Captive Insurance Section. No separate annual license-renewal fee was published on that list.",
+      "premium_tax_rate": "Direct premiums: 0.4 percent on the first $20 million and 0.3 percent thereafter. Assumed reinsurance premiums: 0.225 percent, 0.150 percent, 0.050 percent, and 0.025 percent on successive $20 million bands. Ordinary minimum $5,000 and ordinary maximum $100,000. A protected cell captive with more than 10 cells has a $10,000 minimum and a maximum of $100,000 plus $5,000 per cell over 10. A dormant captive with a letter of dormancy is not liable for the minimum. Due 15 March."
+    },
+    "annual_filing_requirements": "Before 15 March, each captive submits a report of its financial condition, verified by the oath of two executive officers, on the Captive Annual Statement Form. A risk retention group submits that report before 1 March. Reporting uses generally accepted accounting principles unless the commissioner requires, approves, or accepts statutory accounting principles or another comprehensive basis (Tenn. Code Ann. section 56-13-108). A captive other than a risk retention group may be allowed to file 75 days after its fiscal year-end, and a pure or industrial insured captive on a fiscal year still files the premium-tax support before 15 March unless the commissioner approves another tax date. The department requires loss and loss-expense reserves to be certified by a Fellow of the Casualty Actuarial Society, a member in good standing of the American Academy of Actuaries, or another person who has demonstrated competence in loss-reserve evaluation and whom the commissioner has approved. Captives in good standing that have an annual audit by an approved CPA are placed on a five-year examination cycle. Captives that do not have an annual audit are placed on a maximum three-year examination cycle. A dormant captive with a letter of dormancy still files the section 56-13-108 report before 15 March. Filings can be submitted through the department's CORE system.",
+    "captive_administrator": {
+      "name": "Captive Insurance Section, Tennessee Department of Commerce and Insurance",
+      "email": "captive.insurance@tn.gov",
+      "phone": "(615) 741-3805",
+      "fax": "(615) 369-8741"
+    },
+    "licensing_speed": "Approximately 30 days from the time the Captive Insurance Section receives a complete application package.",
+    "regulator": {
+      "name": "Tennessee Department of Commerce and Insurance, Captive Insurance Section",
+      "address": "500 James Robertson Parkway, Nashville, TN 37243",
+      "website": "https://www.tn.gov/commerce/insurance/captive-insurance.html"
+    }
   },
   {
     "name": "Texas",
-    "summary": "Texas focuses on single-parent captives to help business owners protect the enterprise value they create. While primarily supportive of single-parent structures, the state seeks to create the most broadly constructive statute possible for this category. The Texas Department of Insurance examines actuarial projections and other issues before finalizing any formation decisions.",
+    "summary": "Texas licenses captive insurance companies under Insurance Code Chapter 964, added in 2013 by Senate Bill 734 and effective 14 June 2013. A 2017 amendment authorized captive exchanges. A captive may write direct insurance and reinsurance, but only for the operational risks of its affiliates and the risks of a controlled unaffiliated business. It may be formed in any form of organization authorized by the Business Organizations Code except a risk retention group or a general partnership, and it may be a nonprofit corporation only if a nonprofit corporation controls it. A captive exchange is a reciprocal or interinsurance exchange and operates as a captive insurance company. The commissioner sets unencumbered capital and surplus, or the equivalent, at not less than $250,000. Premium tax under Chapter 223A is one-half of one percent of taxable premium receipts, with a $7,500 annual minimum and a $200,000 annual maximum. Premiums received from another authorized insurer for reinsurance are not taxed, and there is no deduction for premiums paid for reinsurance. Captives also pay the insurance maintenance tax on correctly reported gross premiums from risks located in Texas. The application fee is $1,500. Affiliates must have significant operations in Texas, the governing body meets at least once a year in the state, and the principal office and books and records stay in Texas unless the commissioner approves a move. TDI's 15 April 2026 post reported that the sector grew 8.6 percent to 101 state-domiciled captives in the six months leading up to April 2026, and quoted the captive specialist that Texas has only one type of captive. The fiscal 2025 annual report counted 93 captive insurance company licenses. No formation, surrender, or type split was published with the figure of 101.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Texas Department of Insurance (TDI) framework",
+    "legislation": "Texas Insurance Code Chapter 964 (Captive Insurance Companies) and Chapter 223A (Captive Insurance Premium Tax)",
+    "legislation_year": 2013,
+    "applicable_legislation": "Texas Insurance Code Chapter 964, added by Acts 2013, 83rd Legislature, Regular Session, Chapter 569 (Senate Bill 734), effective 14 June 2013, and amended by Acts 2017, 85th Legislature, Regular Session, Chapter 1050 (House Bill 1944), effective 15 June 2017, including the captive-exchange subchapter. Capital and surplus are section 964.056. The application and the $1,500 application fee are section 964.057. The annual report is section 964.060. The maintenance tax is section 964.068. Premium tax is Chapter 223A, added by the same 2013 act. Captive administrative rules are Title 28, Texas Administrative Code, Chapter 6. The Comptroller's captive premium-tax rule is 34 Texas Administrative Code section 3.827.",
     "min_capital": {
-      "Requirement": "$250,000 (combined capital/surplus)"
+      "Captive insurance company": "Unencumbered capital and surplus, or the equivalent, in an amount the commissioner determines after considering premium written, the assets held, reinsurance arrangements, the type of business, underwriting practices and procedures, and any other operational criterion the commissioner finds significant. The amount may not be less than $250,000 (Texas Insurance Code section 964.056(a) and (b)).",
+      "Captive exchange": "A captive exchange is formed as an exchange and, except as its subchapter provides, operates as a captive insurance company (section 964.102). No dollar floor different from section 964.056 was stated for an exchange.",
+      "Form": "United States currency; an irrevocable letter of credit in a form the commissioner approves, not secured by a guarantee from an affiliate, naming the commissioner as beneficiary and issued by a bank the commissioner approves; bonds of this state or of a Texas county or municipality; or bonds or other evidences of indebtedness of the United States whose principal and interest are guaranteed by the United States (section 964.056(c))."
     },
-    "tax_notes": "0.5% premium tax; $7,500 min / $200,000 max",
+    "tax_notes": "Insurance Code section 223A.003 imposes an annual tax of one-half of one percent of a captive insurance company's taxable premium receipts. Taxable receipts include gross premiums, membership fees, assessments, dues, revenues, and other considerations for any kind of insurance written on any kind of property or risk, without regard to where the property or risk is located. They do not include premiums received from another authorized insurer for reinsurance, returned premiums, dividends paid to policyholders, or premiums excluded by another Texas law. There is no deduction for premiums the captive pays for reinsurance. The annual minimum aggregate tax is $7,500 and the annual maximum aggregate tax is $200,000. The tax is due not later than 1 March. A captive whose net tax liability for the previous calendar year exceeded $1,000 makes semiannual prepayments on 1 March and 1 August. A credit is allowed for examination and evaluation fees paid to the state during the year, within the limits in section 803.007. Gross premiums taxed under Chapter 223A are not subject to other taxes, surcharges, or regulatory assessments or fees under the Insurance Code except insurance maintenance taxes under section 964.068. That maintenance tax applies to correctly reported gross premiums from insurance on risks located in Texas, at the line-of-business rates the commissioner sets. The Comptroller states the same 0.5 percent rate, $7,500 minimum, and $200,000 maximum. A single captive maintenance-tax percentage was not published.",
     "slug": "texas",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Andrew Norton, Captive Specialist",
+    "contact_email": "facaptives@tdi.texas.gov",
+    "last_verified": "2026-11-09",
+    "source_urls": [
+      "https://www.tdi.texas.gov/insurer/captives.html",
+      "https://www.tdi.texas.gov/blog/new-captive-insurance-specialist.html",
+      "https://www.tdi.texas.gov/reports/documents/2025-tdi-annual-report.pdf",
+      "https://www.tdi.texas.gov/general/contactus.html",
+      "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.964.htm",
+      "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.223A.htm",
+      "https://comptroller.texas.gov/taxes/insurance/captive.php",
+      "https://www.texascaptives.org/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 101
+    },
+    "types_allowed": [
+      "Captive insurance companies insuring the operational risks of affiliates and the risks of a controlled unaffiliated business",
+      "Captive exchanges, which are reciprocal or interinsurance exchanges"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Application fee of $1,500, or a greater amount the commissioner sets by rule to recover the cost of administering section 964.057 (Texas Insurance Code section 964.057(c)). TDI's captive page uses the certificate of authority application FIN180 and the company licensing fee transmittal FIN321. No greater fee was found in the materials reviewed. Secretary of State formation fees are separate and are not set in Chapter 964.",
+      "annual_fees": "No separate annual captive certificate-of-authority renewal fee is stated in Chapter 964. The annual charges are the Chapter 223A premium tax and the section 964.068 maintenance tax on Texas risks.",
+      "premium_tax_rate": "0.5 percent of taxable premium receipts. Annual minimum $7,500 and annual maximum $200,000. Due 1 March, with semiannual prepayments on 1 March and 1 August when the prior year's net tax liability exceeded $1,000. Reinsurance premiums received from another authorized insurer are excluded, and premiums paid for reinsurance are not deductible. Maintenance tax under section 964.068 is additional and is set by line of business."
+    },
+    "annual_filing_requirements": "On or before 1 March, a captive files a statement of financial condition verified by two executive officers, in the format the commissioner prescribes. On or before 1 June, it files a year-end report of its financial condition with an independent certified public accountant's opinion (Texas Insurance Code section 964.060). The commissioner may allow a fiscal year-end: the annual report is then due not later than the 60th day after fiscal year-end, the audited report not later than the 150th day after the annual report is due, and a balance sheet, income statement, and statement of cash flows verified by two executive officers is still filed before 1 March to support the premium-tax return. The commissioner may waive the actuarial report if net written premium or reinsurance assumed is less than $1 million, or if the company had been in operation for less than six months at the end of the previous calendar year. TDI's captive filing instructions also require the annual statement in Excel, an actuarial opinion or waiver affidavit, and financial projections every third year, and they point captive insurers that are part of a holding-company system to Insurance Code Chapter 823. The Chapter 223A premium-tax report is due on the 1 March tax due date. The governing body holds at least one meeting each year in Texas (section 964.055).",
+    "captive_administrator": {
+      "name": "Andrew Norton, Captive Specialist, Texas Department of Insurance",
+      "email": null,
+      "phone": null,
+      "fax": null
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Texas Department of Insurance",
+      "address": "1601 Congress Avenue, Austin, TX 78701. Mailing address: PO Box 12030, Austin, TX 78711-2030",
+      "website": "https://www.tdi.texas.gov/insurer/captives.html"
+    }
   },
   {
     "name": "The Bahamas",
