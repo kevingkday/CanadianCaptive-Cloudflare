@@ -171,6 +171,20 @@ function statDisplay(domicile) {
             totalWide: true,
         };
     }
+    if (domicile.slug === 'hawaii') {
+        return {
+            total: 'Active captives as of 30 September 2026. Year-end 2025 total was 269 (Hawaii Insurance Division, regulator correspondence, November 2026)',
+            totalWide: true,
+            newLabel: '2026 formations through 30 September',
+            exitLabel: '2026 surrenders and dissolutions through 30 September',
+            pureLabel: 'Class 1 (28) and Class 2 (194) pure captives',
+            groupLabel: 'Class 3 association and risk retention',
+            sponsoredLabel: 'Class 4 sponsored captives',
+            cellLabel: 'Individual protected cells',
+            cellFallback: 'Not reported separately. The 30 September 2026 census counts 12 Class 4 sponsored captives.',
+            otherLabel: 'Class 5 (9) and pre-class structure (19)',
+        };
+    }
     if (domicile.slug === 'texas') {
         return {
             total: 'State-domiciled captives',

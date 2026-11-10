@@ -856,7 +856,7 @@
   },
   {
     "name": "Hawaii",
-    "summary": "Hawaii has licensed captive insurers since May 1986 under Hawaii Revised Statutes Chapter 431, Article 19, administered by the Insurance Division's Captive Insurance Branch. The Division's fact sheet reported 276 captive companies as of 30 September 2026. Licenses are issued in five classes. The statutory floors for unimpaired capital and surplus are $100,000 for a Class 1 pure captive that reinsures only, $250,000 for a Class 2 pure captive that may write direct insurance, and $500,000 for a Class 3 association or risk retention captive and for a Class 4 sponsored captive. Class 5 reinsurance or excess captives, and the security a branch captive posts in Hawaii, are set by the Insurance Commissioner. Premium tax has no minimum and a $200,000 maximum, and it does not apply to premiums already taxed where the risk is located or to reinsurance premiums assumed by the captive. A dormant captive holding a certificate of dormancy maintains at least $25,000 of capital and surplus and is not subject to that tax.",
+    "summary": "Hawaii has licensed captive insurers since May 1986 under Hawaii Revised Statutes Chapter 431, Article 19, administered by the Insurance Division's Captive Insurance Branch. The Hawaii Insurance Division, regulator correspondence, November 2026, reported 269 captives at year-end 2025 and 276 captive companies as of 30 September 2026, after 14 formations and 7 surrenders or dissolutions in 2026 through that date. Those movements reconcile the year-end count with the September census. Of the 276, Class 1 accounted for 28, Class 2 for 194, pre-class structures for 19, Class 3 for 14, Class 4 for 12, and Class 5 for 9. The Captive Insurance Branch has 16 staff, and a typical licence takes about 30 days. Licenses are issued in five classes. The statutory floors for unimpaired capital and surplus are $100,000 for a Class 1 pure captive that reinsures only, $250,000 for a Class 2 pure captive that may write direct insurance, and $500,000 for a Class 3 association or risk retention captive and for a Class 4 sponsored captive. Class 5 reinsurance or excess captives, and the security a branch captive posts in Hawaii, are set by the Insurance Commissioner. Premium tax has no minimum and a $200,000 maximum, and it does not apply to premiums already taxed where the risk is located or to reinsurance premiums assumed by the captive. A dormant captive holding a certificate of dormancy maintains at least $25,000 of capital and surplus and is not subject to that tax.",
     "jurisdiction": "Onshore (USA)",
     "legislation": "Hawaii Revised Statutes Chapter 431, Article 19 (Captive Insurance Companies)",
     "legislation_year": 1986,
@@ -873,9 +873,9 @@
     },
     "tax_notes": "Premium tax under HRS §431:19-116 is paid to the director of finance through the commissioner by March 1. On gross premiums for risks resident, situated, or located in Hawaii, and on risks elsewhere on which no premium tax is otherwise paid, less return premiums and less reinsurance accepted, the rates are 0.25% from $0 to $25 million, 0.15% from more than $25 million to $50 million, 0.05% from more than $50 million to $250 million, and 0% above $250 million. There is no minimum tax. The annual maximum aggregate tax is $200,000. The tax is in lieu of other Hawaii state and county taxes except taxes on real property and on the purchase, use, or ownership of tangible personal property. The Insurance Division states the same rule as a tax on the captive's own premiums only, with no tax on premiums already taxed where the underlying risk is located and no tax on reinsurance premiums assumed by the captive. A dormant captive that holds a certificate of dormancy is not subject to the §431:19-116 tax (HRS §431:19-117).",
     "slug": "hawaii",
-    "contact_name": "Andrew J. Kurata, Deputy Commissioner and Captive Insurance Administrator",
+    "contact_name": "Hawaii Insurance Division, Captive Insurance Branch",
     "contact_email": "captiveins@dcca.hawaii.gov",
-    "last_verified": "2026-11-06",
+    "last_verified": "2026-11-10",
     "source_urls": [
       "https://www.cca.hawaii.gov/ins/captive-insurance/",
       "https://cca.hawaii.gov/wp-content/uploads/2026/10/2026-Captive-Insurance-Fact-Sheet_093026.pdf",
@@ -891,19 +891,25 @@
     ],
     "stats": {
       "reporting_year": 2026,
-      "total_captives": 276
+      "total_captives": 276,
+      "new_captives": 14,
+      "surrendered_licenses": 7,
+      "pure_captives": 222,
+      "group_captives": 14,
+      "sponsored_cell_captives": 12,
+      "other_captives": 28
     },
     "types_allowed": [
-      "Class 1 pure captives writing reinsurance only",
-      "Class 2 pure captives writing direct insurance, or direct insurance and reinsurance",
-      "Class 3 association captives",
-      "Class 3 risk retention captives",
-      "Class 4 sponsored captives, which may use protected cells",
-      "Class 5 reinsurance or excess captives",
+      "Class 1 pure captives writing reinsurance only (28 as of 30 September 2026)",
+      "Class 2 pure captives writing direct insurance, or direct insurance and reinsurance (194 as of 30 September 2026)",
+      "Pre-class structure (19 as of 30 September 2026)",
+      "Class 3 association captives and risk retention captives (14 as of 30 September 2026)",
+      "Class 4 sponsored captives, which may use protected cells (12 as of 30 September 2026)",
+      "Class 5 reinsurance or excess captives (9 as of 30 September 2026)",
       "Branch captives of an outside captive",
       "Dormant captives holding a certificate of dormancy"
     ],
-    "regulator_staff_count": null,
+    "regulator_staff_count": "16",
     "fees": {
       "licensing_incorporation": "$50 initial business-registration incorporation fee and a $1,000 nonrefundable captive application fee. If the commissioner uses an independent advisor to review an application or business-plan amendment, the applicant pays a reasonable fee authorized by the commissioner (HRS §431:19-102; Hawaii Administrative Rules §16-17-6).",
       "annual_fees": "$15 annual business-registration fee. The certificate-of-authority renewal, due on or before April 1, is $300 for a Class 1 or Class 2 captive, $500 for a Class 3 captive, and $1,000 for a Class 4 or Class 5 captive (HAR §16-17-6). A certificate of dormancy is renewed every five years for $300 (HRS §431:19-117).",
@@ -911,12 +917,12 @@
     },
     "annual_filing_requirements": "A captive other than a risk retention captive files financial statements, prepared on generally accepted accounting principles or another basis the commissioner accepts and audited by an independent certified public accountant or another professional the commissioner accepts, on or before the last day of the sixth month after its fiscal year-end (HRS §431:19-107(a)). A risk retention captive files an NAIC annual statement and a risk-based capital report by March 1 and an audit by June 1. Actuarial opinions on reserves are included with the audited statements, except that a Class 3 company files its actuarial opinion with the annual statement by March 1. The premium-tax statement is due March 1 (HRS §431:19-116). The governing body holds at least one meeting each year in Hawaii, and the captive keeps its principal place of business in the state (HRS §431:19-102). Examinations occur at least once every five years; a risk retention captive is examined no later than three years after formation and at least once every five years after that (HRS §431:19-108). The Captive Insurance Branch requires electronic annual filings to CaptiveInsAnnualFilings@dcca.hawaii.gov. A dormant captive with a certificate of dormancy files a verified report of its financial condition by March 1 and does not file the audited statements required by §431:19-107.",
     "captive_administrator": {
-      "name": "Andrew J. Kurata, Deputy Commissioner and Captive Insurance Administrator",
+      "name": "Hawaii Insurance Division, Captive Insurance Branch",
       "email": "captiveins@dcca.hawaii.gov",
       "phone": "(808) 586-0981",
       "fax": "(808) 586-0987"
     },
-    "licensing_speed": "No published standard timeline. Once issued, a certificate of authority authorizes business until April 1 and may be renewed (HRS §431:19-102).",
+    "licensing_speed": "About 30 days. The Hawaii Insurance Division, regulator correspondence, November 2026, states that a typical captive licence takes about 30 days. Once issued, a certificate of authority authorizes business until April 1 and may be renewed (HRS §431:19-102).",
     "regulator": {
       "name": "Hawaii Department of Commerce and Consumer Affairs, Insurance Division, Captive Insurance Branch",
       "address": "335 Merchant Street, Room 213, Honolulu, Hawaii 96813",
