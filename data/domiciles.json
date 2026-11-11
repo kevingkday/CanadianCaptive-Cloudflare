@@ -646,20 +646,87 @@
   },
   {
     "name": "District of Columbia",
-    "summary": "The District of Columbia features a progressive insurance code and a knowledgeable staff specializing in captives and risk retention groups. It offers competitive costs for financial examinations and does not require a local director, though at least one annual board meeting must be facilitated from the district. Examination cycles occur every five years but can be extended upon request.",
+    "summary": "The District of Columbia licenses captives under the Captive Insurance Company Act of 2004, Chapter 39A of Title 31 of the D.C. Code, administered by the Department of Insurance, Securities and Banking Risk Finance Bureau. The 2000 captive law was repealed and replaced by that Act. The first captive was licensed in 2001. A captive may be a pure, association, agency, rental, branch, or protected-cell captive, and a risk retention group may be licensed as a captive. Any type of captive may form protected cells, including incorporated cells that are separate legal entities. Special purpose financial captives are authorized in Subchapter II. A wildcard provision lets the Commissioner authorize a qualified captive to engage in any activity permitted for a captive in any other jurisdiction. On 30 October 2025 the Bureau reported 215 active risk-bearing entities: 49 pure, including 6 protected-cell-captive cores; 10 association captives that are not risk retention groups, including 3 protected-cell-captive cores; 1 agency protected-cell captive; 4 branch captives; 16 rental captives, all protected-cell captives; 29 risk retention groups; and 106 protected cells, of which 78 were unincorporated and 28 were incorporated. Through that date in 2025 the Bureau had licensed 23 entities: 1 incorporated cell, 20 unincorporated protected cells, and 2 risk retention groups. It also said 413 captives had been licensed since 2001. The same presentation reported 2024 captive assets of $11,396,881,785 and 2024 gross written premium of $2,954,868,515. DISB also posts a licensed-captives roster dated 14 July 2026. That roster does not state a total, so the 30 October 2025 census is the figure stored here. A captive other than a protected-cell captive maintains at least $100,000 of unimpaired capital. Unencumbered surplus is at least $150,000 for a pure captive, $300,000 for an agency captive, a rental captive, or a stock association captive, and $500,000 for a mutual or reciprocal association captive. The Commissioner sets cell capital and surplus, and the Bureau's 30 October 2025 presentation states that the minimum is $0 for a protected-cell captive and $0 for cells, including incorporated cells. Non-risk-retention-group direct premium tax starts at 0.25 percent on the first $25 million, with a $7,500 minimum and a $100,000 maximum. The application review fee is $500 and the certificate-of-authority fee is $300, renewed annually by 30 April. Properly documented applications are processed within 30 days. The Bureau page still displays Dana Sheppard as Associate Commissioner for Risk Finance. The 30 October 2025 presentation lists her as Deputy Commissioner for Market Operations and lists Sean O'Donnell as Associate Commissioner, and the Bureau's 7 November 2025 and 17 December 2025 notices are issued by Sean O'Donnell in that office. No dormant-captive statute is in force. The October 2025 presentation said a proposal to add one had been submitted and that no significant captive law had passed in 2025.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "DC Insurance and Corporations Code",
+    "legislation": "Captive Insurance Company Act of 2004, D.C. Code Title 31, Chapter 39A",
+    "legislation_year": 2004,
+    "applicable_legislation": "D.C. Code Title 31, Chapter 39A, Subchapter I, enacted as D.C. Law 15-262 (17 March 2005) and amended since, including the Captive Insurance Company Amendment Act of 2014, D.C. Law 20-203. Chapter 39, the 2000 captive law, is repealed by section 31-3931.23. Capital and surplus are section 31-3931.06. Protected cells are section 31-3931.04. Premium tax is section 31-3931.12. The annual report is section 31-3931.13. Financial examination is section 31-3931.14. Certificate-of-authority renewal by 30 April is section 31-3931.09(d), as cited in the Bureau's 2025 reporting instructions. Special purpose financial captive capital is section 31-3932.05. Non-risk-retention-group audit timing is also in 26 DCMR section 3702, as cited by the Bureau.",
     "min_capital": {
-      "Pure": "$250,000",
-      "Others": "$400,000",
-      "Cells": "No minimum (Commissioner discretionary)"
+      "Captive other than a protected cell captive": "At least $100,000 of minimum unimpaired capital, in addition to any further capital the Commissioner requires (D.C. Code section 31-3931.06(a)(1)).",
+      "Pure captive": "At least $150,000 of unencumbered surplus, in addition to required capital (section 31-3931.06(f)(1)).",
+      "Association captive, stock insurer": "At least $300,000 of unencumbered surplus (section 31-3931.06(f)(2)).",
+      "Agency captive": "At least $300,000 of unencumbered surplus (section 31-3931.06(f)(3)).",
+      "Rental captive": "At least $300,000 of unencumbered surplus (section 31-3931.06(f)(4)).",
+      "Association captive, mutual or reciprocal": "At least $500,000 of unencumbered surplus (section 31-3931.06(f)(5)).",
+      "Protected cell captive and each protected cell": "The Commissioner sets the minimum capital and the minimum surplus for the protected cell captive and for each cell. Protected-cell-captive capital may be zero if each cell maintains the capital required for that cell. A protected cell captive that does not write insurance business in the District is not required to maintain surplus if each cell maintains the surplus required for that cell (section 31-3931.06(a)(2) and (f)(6)). The Bureau's 30 October 2025 presentation states the minimum as $0 for protected cell captives and $0 for cells, including incorporated cells.",
+      "Special purpose financial captive": "At least $100,000 of unimpaired capital and at least $150,000 of unencumbered surplus (section 31-3932.05(a) and (e)).",
+      "Risk retention group": "Section 31-3931.06(l) applies section 31-2502.12 to a risk retention group licensed as a captive. The captive surplus schedule does not state a separate risk-retention-group dollar floor, and no separate floor is restated here.",
+      "Form of capital and surplus": "Cash or an irrevocable letter of credit, unless the Commissioner provides otherwise. The letter of credit is issued by a District-chartered bank, or a District branch of a Federal Reserve member bank or an FDIC-insured bank, on a form the Commissioner approves, and it renews automatically each year."
     },
-    "tax_notes": "Favorable examination costs compared to other domiciles",
+    "tax_notes": "Section 31-3931.12 requires premium tax by 2 March. For a captive that is not a risk retention group, net direct premiums are taxed at 0.250 percent on the first $25 million, 0.150 percent on the next $25 million, and 0.050 percent thereafter. A risk retention group pays 0.38 percent on the first $20 million of total net direct premiums, 0.25 percent on the next $20 million, and 0.18 percent thereafter. Assumed-reinsurance premiums are taxed at 0.225 percent on the first $25 million, 0.150 percent on the next $25 million, and 0.025 percent thereafter. Reinsurance tax is not levied on risks already taxed as direct premiums, or on a qualifying assumption of loss reserves from an insurer under common ownership and control that is being discontinued. A captive other than a risk retention group licensed as an association captive pays at least $7,500. A risk retention group licensed as an association captive pays at least $15,000. The total tax does not exceed $100,000 in any year. Annuity business is not taxed. Branch tax applies only to branch business. A captive licensed in the last quarter of the calendar year may ask the Commissioner to reduce the minimum. The tax is in lieu of other District taxes except real property tax and personal property tax. The Bureau's 2025 reporting instructions say each protected cell captive and each incorporated cell files a separate premium-tax return, incorporated cells are subject to the $7,500 minimum, unincorporated protected cells file a consolidated return with the protected cell captive, and each unincorporated protected cell is not subject to the minimum. From 1 January 2026, premium tax and certificate-of-authority renewal payments are made through NAIC OPTins. The NAIC charges $17.50 per OPTins transaction.",
     "slug": "district-of-columbia",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Sean O'Donnell, Associate Commissioner, Risk Finance Bureau",
+    "contact_email": "disb@dc.gov",
+    "last_verified": "2026-11-11",
+    "source_urls": [
+      "https://disb.dc.gov/page/risk-finance-bureau",
+      "https://disb.dc.gov/captiveins",
+      "https://disb.dc.gov/page/forming-captive-district-columbia-0",
+      "https://disb.dc.gov/sites/default/files/dc/sites/disb/page_content/attachments/DISBUpdateAskRegulators.pdf",
+      "https://disb.dc.gov/sites/default/files/dc/sites/disb/page_content/attachments/DISB_OnePager_CaptiveInsurance_F2.pdf",
+      "https://disb.dc.gov/sites/default/files/dc/sites/disb/publication/attachments/110725MandatoryUseOPTinsCaptivePremiumTaxRenewalFilings.pdf",
+      "https://disb.dc.gov/sites/default/files/dc/sites/disb/page_content/attachments/2025DCCaptiveRRGReportingInstructions.pdf",
+      "https://disb.dc.gov/sites/default/files/dc/sites/disb/page_content/attachments/LicensedCaptives7142026.pdf",
+      "https://disb.dc.gov/publication/certification-fees-captive-insurance-companies",
+      "https://code.dccouncil.gov/us/dc/council/code/titles/31/chapters/39A",
+      "https://code.dccouncil.gov/us/dc/council/code/sections/31-3931.06",
+      "https://code.dccouncil.gov/us/dc/council/code/sections/31-3931.12",
+      "https://code.dccouncil.gov/us/dc/council/code/sections/31-3931.13",
+      "https://code.dccouncil.gov/us/dc/council/code/sections/31-3931.14",
+      "https://code.dccouncil.gov/us/dc/council/code/sections/31-3932.05",
+      "https://www.dccaptives.org/"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 215,
+      "new_captives": 23,
+      "pure_captives": 49,
+      "group_captives": 10,
+      "individual_cells_count": 106,
+      "individual_cells_year": 2025,
+      "individual_cells_estimated": false,
+      "other_captives": 50
+    },
+    "types_allowed": [
+      "Pure captive insurers",
+      "Association captive insurers",
+      "Agency captive insurers",
+      "Rental captive insurers",
+      "Branch captive insurers",
+      "Protected cell captive insurers",
+      "Incorporated protected cells and unincorporated protected cells",
+      "Risk retention groups licensed as captive insurers",
+      "Special purpose financial captive insurance companies"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "The forming page and the Bureau's 30 October 2025 presentation require a $500 application review fee and a $300 certificate-of-authority fee with the application. Incorporation is handled inside the Department. The presentation states that there are no fees other than the $500 application fee, the $300 annual certificate-of-authority fee, and annual premium taxes. Section 31-3931.04(b)(4) also says a protected cell captive pays an additional annual fee for each protected cell in an amount the Commissioner establishes. No separate dollar amount for that cell fee was published on the pages reviewed. A certification of captive documents is $10, paid in advance, under the Bureau's certification-fee notice.",
+      "annual_fees": "Annual certificate-of-authority renewal fee of $300, due on or before 30 April under section 31-3931.09(d), as stated in the 17 December 2025 reporting instructions. Beginning with the 2026-2027 renewals, renewal payments are made through NAIC OPTins. The NAIC charges $17.50 per transaction. The Commissioner may fine, suspend, or revoke a certificate that is not renewed by 1 August.",
+      "premium_tax_rate": "Non-risk-retention-group direct premiums: 0.25 percent on the first $25 million, 0.15 percent on the next $25 million, and 0.05 percent thereafter. Risk-retention-group direct premiums: 0.38 percent, 0.25 percent, and 0.18 percent on successive $20 million bands. Assumed reinsurance: 0.225 percent, 0.150 percent, and 0.025 percent on successive $25 million bands. Minimum $7,500, or $15,000 for a risk retention group licensed as an association captive. Maximum $100,000. Due 2 March. Incorporated cells owe the $7,500 minimum. An unincorporated protected cell is not separately subject to the minimum."
+    },
+    "annual_filing_requirements": "On or before 2 March, a captive, including each protected cell, submits a report of its financial condition prepared by a certified public accountant. Reporting uses generally accepted accounting principles unless the Commissioner accepts modifications. A protected cell captive files a consolidated report for its cells, and the 2025 instructions also require separate unaudited DC blanks for the protected cell captive, each incorporated cell, and each unincorporated protected cell. A pure captive may be allowed to report on its parent's fiscal year, with the report due within 60 days after fiscal year-end, and it still files premium-tax support by 2 March. Risk retention groups also comply with Chapter 3 of Title 31 and file the actuarial opinion by 2 March and the actuarial opinion summary by 15 March. Non-risk-retention-group audited financial reports are due 30 June under 26 DCMR section 3702. Risk-retention-group audits are due 1 June. Combined cell audits and combined actuarial opinions, when used, are due 30 June. A branch captive files copies of the reports its parent files at home, certified by two officers, plus a branch premium and reserve statement. For a 31 December branch, those filings are due 30 June. Premium tax is due 2 March. The certificate of authority is renewed by 30 April. Financial filings are emailed to captive.filings@dc.gov. From 1 January 2026, premium tax and renewal payments go through OPTins. The board meets at least once each year in the District. The Bureau's one-pager states that the meeting may be held by teleconference or webcast and that a local director is not required. The captive maintains an office in the District. Examinations are at the Commissioner's discretion and at the captive's cost. The Commissioner may waive the five-year examination in Chapter 14 for a captive that is not a risk retention group, has filed unqualified audits, has sufficient surplus, and is in compliance. The 30 October 2025 presentation describes non-risk-retention-group supervision as an annual desk analysis, with examinations at the regulator's discretion. No dormant-captive filing regime is in the current statute.",
+    "captive_administrator": {
+      "name": "Sean O'Donnell, Associate Commissioner, Risk Finance Bureau",
+      "email": "disb@dc.gov",
+      "phone": "(202) 727-8000",
+      "fax": null
+    },
+    "licensing_speed": "DISB will process a properly documented application within 30 days. The forming page states that standard, and the Bureau's 30 October 2025 presentation states licensing of 30 days or less. The one-pager also states that many business-plan changes are approved within 48 hours.",
+    "regulator": {
+      "name": "District of Columbia Department of Insurance, Securities and Banking, Risk Finance Bureau",
+      "address": "1050 First Street, NE, Suite 801, Washington, DC 20002",
+      "website": "https://disb.dc.gov/captiveins"
+    }
   },
   {
     "name": "Dubai",
@@ -727,19 +794,67 @@
   },
   {
     "name": "Georgia",
-    "summary": "The Georgia Insurance Department provides a healthy regulatory environment for captives, supported by 2018 legislation that improved formation efficiency. Georgia's premium tax structure is tiered and provides for captives under common ownership to be taxed as a single entity. The state emphasizes superior customer service to help its 50+ active captives succeed.",
+    "summary": "Georgia licenses captive insurance companies under the Georgia Captive Insurance Company Act, Chapter 41 of Title 33, enacted in 1988 and administered by the Captives Division of the Office of the Commissioner of Insurance and Safety Fire. The chapter covers pure, association, agency, industrial insured, and sponsored captives, and risk retention group captives. A sponsored captive may use incorporated or unincorporated protected cells. House Bill 348, effective 1 June 2025, amended the permissible-business section so that a captive may engage in any insurance or reinsurance the Commissioner deems reasonable, still subject to the ownership and risk limits in O.C.G.A. section 33-41-3. Workers' compensation and motor-vehicle policies must meet Georgia's minimum coverage requirements. Surplus floors are $250,000 for a pure, agency, or sponsored captive and $500,000 for an association captive, an industrial insured captive, or a risk retention group. A dormant captive maintains at least $25,000. Direct premium tax is 0.4 percent on the first $20 million and 0.3 percent thereafter. Assumed-reinsurance premium tax runs from 0.225 percent down to 0.025 percent across $20 million bands. The annual maximum is $100,000. The statute does not state a minimum premium tax. The license fee is $600 at application and the renewal fee is $500 each later year. The Division's formation page says proposed articles are approved or disapproved within 45 days and the certificate of authority within 90 days, with a further 90-day extension available under O.C.G.A. section 33-3-15. The Captives Division contact page publishes captivedivision@oci.ga.gov and does not name a captive program head or a section headcount. The Division pages reviewed do not publish a current captive census.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "2018 Captive Legislation",
+    "legislation": "Georgia Captive Insurance Company Act, O.C.G.A. Title 33, Chapter 41, and Ga. Comp. R. & Regs. Chapter 120-2-45",
+    "legislation_year": 1988,
+    "applicable_legislation": "O.C.G.A. Title 33, Chapter 41, Article 1, enacted by Ga. L. 1988, p. 966, and Article 2 on sponsored captive insurance companies, enacted in 2019. House Bill 348, Act 258, effective 1 June 2025, amended sections 33-41-2 and 33-41-3. Capital and surplus are section 33-41-8. Premium tax is section 33-41-22. Reports are section 33-41-15. Examinations are section 33-41-16. The certificate of dormancy is section 33-41-23. License and renewal fees are Ga. Comp. R. & Regs. Rule 120-2-45-.12. Annual statements are Rule 120-2-45-.07. Audits are Rule 120-2-45-.09. Examinations and the organizational-examination fee are Rule 120-2-45-.08. Premium-tax filing is Rule 120-2-45-.13.",
     "min_capital": {
-      "Pure / Agency": "$250,000",
-      "RRG / Industrial Insured": "$500,000"
+      "Pure captive": "At least $250,000 in surplus. The Commissioner sets the amount individually and may require more based on the business plan (O.C.G.A. section 33-41-8(a)(1)).",
+      "Association captive": "At least $500,000 in surplus (section 33-41-8(a)(2)).",
+      "Agency captive": "At least $250,000 in surplus (section 33-41-8(a)(3)).",
+      "Industrial insured captive": "At least $500,000 in surplus (section 33-41-8(a)(4)).",
+      "Risk retention group": "At least $500,000 in surplus (section 33-41-8(a)(5)).",
+      "Sponsored captive": "At least $250,000 in surplus under section 33-41-8(a)(6), and at least $250,000 in capital and surplus under section 33-41-101(9)(B), available to pay expenses and claims of the sponsored captive. Article 2 does not state a separate dollar floor for an unincorporated protected cell.",
+      "Dormant captive": "At least $25,000 of unimpaired paid-in capital and surplus while a certificate of dormancy is in force. If the Commissioner allows dormancy while liabilities remain, the Commissioner may require more capital, surplus, and reserves (section 33-41-23).",
+      "Form and deposit": "Minimum capital or surplus of up to $500,000 is held in cash, FDIC-insured certificates of deposit, insured savings accounts or certificates, or letters of credit that meet section 33-41-9. Additional capital above $500,000 may be held in eligible investments under section 33-11-5, shareholder obligations secured by letters of credit, or other investments the Commissioner approves. An association captive, an industrial insured captive, and a risk retention group must deposit with the state before the certificate of authority is issued. The current text of section 33-41-8(c) requires that deposit and does not state its dollar amount."
     },
-    "tax_notes": "Max tax of $100,000 per year; reinsurance tax may be waived",
+    "tax_notes": "O.C.G.A. section 33-41-22 imposes the captive tax in lieu of any other taxes imposed by Title 33. Direct premiums, after return premiums and policyholder dividends or premium deposits returned or credited, are taxed at 0.4 percent on the first $20 million and 0.3 percent on each dollar thereafter. A risk retention group captive is subject to that direct-premium tax only on coverages within Georgia. Assumed-reinsurance premium is taxed at 0.225 percent on the first $20 million, 0.150 percent on the next $20 million, 0.050 percent on the next $20 million, and 0.025 percent thereafter. Reinsurance tax does not apply to risks taxed on a direct basis, or to a qualifying assumption of loss reserves and other liabilities of another insurer under common ownership and control that the Commissioner verifies is part of a plan to discontinue that insurer. If the calculated tax exceeds $100,000 in a year, the tax is $100,000. The section does not state a minimum tax. Two or more captives under common ownership and control, other than sponsored captives, are taxed as one captive. Common ownership and control means more than 50 percent of the voting securities or membership interests. A protected cell is a captive for this tax. The aggregation rule applies to each cell and its participants, and the sponsored captive collects and remits the cells' tax. The annual return and payment are due 1 March under Rule 120-2-45-.13. A late return or payment draws a $5,000 penalty. An extension of not more than 30 days may be granted, with interest of 1 percent per month. Rule 120-2-45-.13(3) says a risk retention group files and pays premium tax under O.C.G.A. section 33-40-5. A separate section 33-40-5 rate is not restated here. A dormant captive that holds a certificate of dormancy is not liable for the section 33-41-22 tax. No Georgia corporate income-tax rate for captives is stated in Chapter 41.",
     "slug": "georgia",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Captives Division, Office of the Commissioner of Insurance and Safety Fire",
+    "contact_email": "captivedivision@oci.ga.gov",
+    "last_verified": "2026-11-11",
+    "source_urls": [
+      "https://oci.georgia.gov/regulatory-filings/captives",
+      "https://oci.georgia.gov/regulatory-filings/captives/how-do-i-form-new-captive",
+      "https://oci.georgia.gov/regulatory-filings/captives/how-do-i-redomesticate-existing-captive",
+      "https://oci.georgia.gov/contacts/captives-division",
+      "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t33-ch23-65-(v25)-2020-pdf.pdf?sfvrsn=68297_0",
+      "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t33-ch23-66-%28v25%29-pdf.pdf",
+      "https://www.legis.ga.gov/legislation/70110",
+      "https://rules.sos.ga.gov/gac/120-2-45",
+      "https://georgiacaptive.com/"
+    ],
+    "stats": null,
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Agency captive insurance companies, reinsuring placed insurance or annuity contracts or service-contract liability",
+      "Industrial insured captive insurance companies",
+      "Sponsored captive insurance companies",
+      "Incorporated protected cells and unincorporated protected cells",
+      "Risk retention group captive insurance companies",
+      "Dormant captive insurance companies holding a certificate of dormancy"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Rule 120-2-45-.12 requires a $600 license fee when the application for a certificate of authority is filed. If the Commissioner requires an organizational examination, Rule 120-2-45-.08 requires $3,000 payable to the appointed examiner, and the Commissioner may require a higher amount in writing. O.C.G.A. section 33-41-10(c) also requires the applicant to pay the costs of examining, investigating, and processing the original or renewal application. Corporate formation fees payable to the Georgia Secretary of State are not set in Chapter 41.",
+      "annual_fees": "A renewal fee of $500 is due for each year after the initial year of licensure (Rule 120-2-45-.12). A certificate of dormancy is renewed every five years for $500 (O.C.G.A. section 33-41-23(b)(3)).",
+      "premium_tax_rate": "Direct premiums: 0.4 percent on the first $20 million and 0.3 percent thereafter. A risk retention group is taxed under section 33-41-22 only on direct premiums for Georgia coverages, and Rule 120-2-45-.13(3) points risk-retention-group premium-tax filing to O.C.G.A. section 33-40-5. Assumed reinsurance: 0.225 percent, 0.150 percent, 0.050 percent, and 0.025 percent on successive $20 million bands. No minimum is stated in section 33-41-22. Annual maximum $100,000. Due 1 March. Late filing or payment penalty $5,000."
+    },
+    "annual_filing_requirements": "Each captive files the reports of its business affairs required by O.C.G.A. section 33-3-21, as section 33-41-15 provides. Rule 120-2-45-.07 requires, on or before 1 March, a report of financial condition as of the preceding 31 December, verified by the oath of an executive officer. A pure captive elects generally accepted accounting principles or statutory accounting principles. An industrial insured captive and an association captive use statutory accounting principles. An industrial insured captive, an association captive, and a risk retention group file the NAIC property-and-casualty blank by 1 March. An industrial insured or association captive that directly writes workers' compensation, and every risk retention group, also files quarterly NAIC blanks as of 31 March, 30 June, and 30 September, due 15 May, 15 August, and 15 November. Rule 120-2-45-.09 requires an audited financial report by 30 June. The audit includes an opinion on the adequacy of loss and loss-expense reserves by a Fellow of the Casualty Actuarial Society, a member of the American Academy of Actuaries, or another person who has demonstrated competence in loss-reserve evaluation and whom the Commissioner approves. The premium-tax return is due 1 March. A sponsored captive's annual financial report includes the financial experience of each protected cell. The Commissioner may examine a captive at any time, and Rule 120-2-45-.08 says an examination occurs no less often than once every five years unless the Commissioner makes a written finding that a longer period is warranted. At least one director or manager is a Georgia resident, and the company reports a director or manager change within 30 days. A material change that is not disapproved within 30 days after submission is deemed approved. A dormant captive files a financial-condition report by 1 March and does not file the other annual forms, fees, or documents that Chapter 41 would otherwise require. Filings and payments are submitted through the GIMS portal.",
+    "captive_administrator": {
+      "name": "Captives Division, Office of the Commissioner of Insurance and Safety Fire",
+      "email": "captivedivision@oci.ga.gov",
+      "phone": "(404) 656-2070",
+      "fax": null
+    },
+    "licensing_speed": "The Division's formation page states that proposed articles of incorporation are approved or disapproved within 45 days, and that the certificate of authority is then approved or disapproved within 90 days. The Division may extend that certificate review by another 90 days under O.C.G.A. section 33-3-15 by written notice. A redomestication application is approved or disapproved within 45 days under Rule 120-2-45-.17. O.C.G.A. section 33-41-10(d) says that, once the Commissioner is satisfied the application complies, the certificate is issued promptly and authorizes business until 30 June.",
+    "regulator": {
+      "name": "Office of the Commissioner of Insurance and Safety Fire, Captives Division",
+      "address": "2 Martin Luther King Jr. Drive, West Tower, Suite 702, Atlanta, GA 30334",
+      "website": "https://oci.georgia.gov/regulatory-filings/captives"
+    }
   },
   {
     "name": "Germany",
@@ -1292,20 +1407,78 @@
   },
   {
     "name": "Nevada",
-    "summary": "Nevada is one of the oldest US domiciles and frequently ranks first in new business launches due to its lack of corporate or personal income taxes. In 2019, it added a dormant captive status, allowing inactive companies to retain their certificate with fewer compliance requirements. Examination fees were also recently reduced by 33% to remain competitive.",
+    "summary": "Nevada licenses captive insurers under NRS Chapter 694C, added in 1999 and administered by the Captive Section of the Nevada Division of Insurance. A captive may be a pure, association, agency, rental, or sponsored captive, an alien or branch captive, or a state-chartered risk retention group, and a sponsored captive may establish protected cells. The Division's captive homepage states that Nevada offers a series structure that lets sponsored captives create protected cells with independent corporate structures. A white paper on protected cells and the series LLC is listed on the forms page as not yet published, and Chapter 694C itself authorizes protected cells rather than using the term series LLC. The Division's 2025 Insurance Market Report states that, as of October 2024, Nevada had 147 captive insurers and 135 sponsored captive cells, and that Nevada ranked 10th as a U.S. domicile. That report does not publish a type split, a formation count, or a surrender count with those figures. A separate sentence in the same report refers to approximately 91 captives and 160 cells; that sentence is approximate and does not match the dated census, so it is not used here. Unimpaired paid-in capital and unencumbered surplus are at least $200,000 for a pure captive, $500,000 for an association captive, a sponsored captive, or a state-chartered risk retention group, $600,000 for an agency captive, and $800,000 for a rental captive. A dormant captive, a status added in 2019, maintains at least $25,000. Direct premium tax is 0.4 percent, 0.2 percent, and 0.075 percent on successive $20 million bands. Assumed-reinsurance premium tax under NRS 694C.450 is 0.225 percent, 0.150 percent, and 0.025 percent on the same bands. The Division's annual-filings page prints 0.255 percent on the first reinsurance band; the statute and the application-fees page both state 0.225 percent, and this profile uses 0.225 percent. The annual minimum tax is $5,000 and the annual maximum is $175,000. For a sponsored captive the maximum applies to each protected cell and not to the sponsor as a whole. Nevada has no state income tax. The nonrefundable application fee is $500, license issuance and annual renewal are $300, and NRS 680C.110 adds a $250 initial fee and a $250 annual fee for a captive insurer. The Division states the combined application charge as $1,050 and the annual renewal as $550, due by March 1. A captive licensed after 1 July 2003 receives a one-time nonrefundable $5,000 credit against the first year in which premium tax is owed. The board meets at least once each year in Nevada. The contact page names Michael Reynolds, Management Analyst, as captive staff and does not give him a program-head title or publish a section headcount. No standard licensing turnaround is published.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Nevada Captive Insurance Law (Updated 2019)",
+    "legislation": "Nevada Revised Statutes Chapter 694C (Captive Insurers) and Nevada Administrative Code Chapter 694C",
+    "legislation_year": 1999,
+    "applicable_legislation": "NRS Chapter 694C, added in 1999. Capital and surplus are NRS 694C.250. The certificate of dormancy was added in 2019 as NRS 694C.259 and amended in 2021. Application and license fees are NRS 694C.220 and 694C.230, plus the captive-insurer fee in NRS 680C.110. The annual report is NRS 694C.400. Examinations are NRS 694C.410. Premium tax is NRS 694C.450, amended in 2025, and branch tax is NRS 694C.455. Sponsored captives and protected cells are NRS 694C.195. Authorized insurance is NRS 694C.300, also amended in 2025. Annual-report and audit detail is also in NAC Chapter 694C.",
     "min_capital": {
-      "Pure": "$200,000",
-      "Association / Sponsored": "$500,000",
-      "Agency": "$600,000"
+      "Pure captive": "Not less than $200,000 of unimpaired paid-in capital and unencumbered surplus (NRS 694C.250(1)(a)).",
+      "Association captive": "Not less than $500,000 (NRS 694C.250(1)(b)).",
+      "Agency captive": "Not less than $600,000 (NRS 694C.250(1)(c)).",
+      "Rental captive": "Not less than $800,000 (NRS 694C.250(1)(d)).",
+      "Sponsored captive": "Not less than $500,000 (NRS 694C.250(1)(e)). Chapter 694C does not state a separate dollar floor for an individual protected cell.",
+      "State-chartered risk retention group": "Not less than $500,000 (NRS 694C.250(1)(f)).",
+      "Dormant captive": "Not less than $25,000 of unimpaired paid-in capital and surplus while a certificate of dormancy is in force (NRS 694C.259(3)(a)).",
+      "Form of capital": "Cash or an irrevocable letter of credit, unless the Commissioner prescribes otherwise. A letter of credit must be issued by a Nevada-chartered bank or a Federal Reserve member bank the Commissioner approves, and it must renew automatically unless the issuer gives 90 days' notice. A Commissioner-approved surplus note may also evidence capital and surplus. The Commissioner may require additional capital based on the type, volume, and nature of the business (NRS 694C.250)."
     },
-    "tax_notes": "$175,000 maximum tax; first-year credit up to $5,000",
+    "tax_notes": "NRS 694C.450 imposes premium tax due not later than 1 March. Net direct premiums are taxed at two-fifths of 1 percent on the first $20 million, one-fifth of 1 percent on the next $20 million, and seventy-five thousandths of 1 percent thereafter. Assumed-reinsurance premiums are taxed at 0.225 percent, 0.150 percent, and 0.025 percent on those same bands. Reinsurance tax is not levied on risks already taxed as direct premiums, and it is not levied on a qualifying assumption of loss reserves from an insurer under common ownership and control that is being discontinued. If the calculated tax is less than $5,000, the tax is $5,000. The maximum aggregate tax is $175,000. For a sponsored captive that maximum applies to each protected cell and does not apply to the sponsored captive as a whole. Two or more captives under common ownership and control, defined as 80 percent ownership, are taxed as one captive. The premium tax is in lieu of other Nevada occupation and local taxes, except the taxes in NRS Chapters 363A, 363B, and 363C and ad valorem taxes on real or personal property in Nevada used to produce income. A captive licensed after 1 July 2003 receives a nonrefundable $5,000 credit against the first year in which it owes the tax, and not more than once. A dormant captive is not liable for the tax while the certificate of dormancy is in force. Branch tax applies only to branch business. The Division's FAQ states that Nevada has no state income tax. The Division's annual-filings page prints a 0.255 percent rate on the first $20 million of reinsurance premiums. NRS 694C.450(2)(a) and the application-fees page state 0.225 percent, and the 0.225 percent rate is used here.",
     "slug": "nevada",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Captive Section, Nevada Division of Insurance",
+    "contact_email": "captives@doi.nv.gov",
+    "last_verified": "2026-11-11",
+    "source_urls": [
+      "https://doi.nv.gov/captive-insurance/",
+      "https://doi.nv.gov/Captive_Insurance/FAQ/",
+      "https://doi.nv.gov/Captive-Insurance/Application-Fees/",
+      "https://doi.nv.gov/Captive_Insurance/Annual_Filings/",
+      "https://doi.nv.gov/Captive_Insurance/Applications/",
+      "https://doi.nv.gov/Captive-Insurance/Types-of-Captives-That-May-Be-Formed/",
+      "https://doi.nv.gov/Captive_Insurance/Team/",
+      "https://doi.nv.gov/Contact-Us/",
+      "https://doi.nv.gov/uploadedFiles/doi.nv.gov/Content/News_and_Notices/NDOI%20IMR%202025%20Final.pdf",
+      "https://www.leg.state.nv.us/NRS/NRS-694C.html",
+      "https://www.leg.state.nv.us/NRS/NRS-680C.html",
+      "https://www.leg.state.nv.us/NAC/NAC-694C.html",
+      "https://www.nvcic.com/"
+    ],
+    "stats": {
+      "reporting_year": 2024,
+      "total_captives": 147,
+      "individual_cells_count": 135,
+      "individual_cells_year": 2024,
+      "individual_cells_estimated": false
+    },
+    "types_allowed": [
+      "Pure captive insurers, including a branch captive with respect to Nevada operations unless the Commissioner provides otherwise",
+      "Association captive insurers",
+      "Agency captive insurers",
+      "Rental captive insurers",
+      "Sponsored captive insurers and protected cells",
+      "Alien captive insurers",
+      "Branch captive insurers",
+      "State-chartered risk retention groups",
+      "Dormant captive insurers holding a certificate of dormancy"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "NRS 694C.220 requires a nonrefundable application fee of $500. NRS 694C.230 requires $300 for issuance of the license. NRS 680C.110 requires a $250 initial fee for a captive insurer. The Division's annual-filings page states that those three amounts are collected together as a $1,050 application fee. Outside legal, financial, and examination services used to review the application are paid by the applicant. The Division's application-fees page also lists an incorporation fee of $75 minimum. Secretary of State formation fees are separate from the Division's $1,050 figure.",
+      "annual_fees": "NRS 694C.230 requires an annual license fee of $300 on or before 1 March, plus the fees required by NRS 680C.110. NRS 680C.110 sets the captive-insurer annual fee at $250. The Division states the combined annual license renewal as $550, due by 1 March. A dormant captive continues to pay the annual fee and the NRS 680C.110 renewal fees.",
+      "premium_tax_rate": "Direct premiums: 0.4 percent on the first $20 million, 0.2 percent on the next $20 million, and 0.075 percent thereafter. Assumed reinsurance premiums: 0.225 percent, 0.150 percent, and 0.025 percent on the same bands. Annual minimum $5,000. Annual maximum $175,000, applied per protected cell for a sponsored captive. Due 1 March. One-time $5,000 credit in the first year tax is owed, for a captive licensed after 1 July 2003."
+    },
+    "annual_filing_requirements": "By 1 March, a captive files its premium-tax return, its business plan, and the $550 annual renewal. By 30 June, a captive other than a state-chartered risk retention group files a GAAP financial-condition report, with modifications the Commissioner accepts, an audited financial statement certified by an independent certified public accountant, and an actuarial opinion. A pure captive may be allowed to file the annual report within 60 days after its parent's fiscal year-end, and it still files the premium-tax support by 1 March. A state-chartered risk retention group files on the schedule in NRS 680A.270 and files its financial statement under NRS 680A.265. A late financial report, audit, or risk-retention-group statement draws $100 a day, up to $3,000. A sponsored captive's 30 June report includes the financial experience of each protected cell. Filings are uploaded through the Division's financial-filing portal. A dormant captive does not file the NRS 694C.400 annual report, an audit, or an actuarial opinion while the certificate is in force. The certificate of dormancy is renewed after five years. Examinations are at least every three years, or every five years if the Commissioner accepts comprehensive annual audits by an appointed independent auditor. That cycle does not apply to a pure captive, which the Commissioner may examine at any reasonable time. The examination is at the captive's cost. The board meets at least once each year in Nevada, the principal place of business is in Nevada, and at least one director, or one member of a reciprocal's subscribers' advisory committee or its attorney-in-fact, is a Nevada resident.",
+    "captive_administrator": {
+      "name": "Captive Section, Nevada Division of Insurance",
+      "email": "captives@doi.nv.gov",
+      "phone": "(775) 687-0748",
+      "fax": null
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Nevada Division of Insurance, Captive Section",
+      "address": "1818 E. College Pkwy., Suite 103, Carson City, NV 89706",
+      "website": "https://doi.nv.gov/captive-insurance/"
+    }
   },
   {
     "name": "Nevis",

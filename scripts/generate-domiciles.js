@@ -196,6 +196,31 @@ function statDisplay(domicile) {
             otherFallback: 'Captive exchanges are authorized. No separate count was published.',
         };
     }
+    if (domicile.slug === 'nevada') {
+        return {
+            total: 'Captive insurers as of October 2024',
+            pureFallback: 'Not published with the October 2024 census',
+            groupFallback: 'Not published with the October 2024 census',
+            sponsoredFallback: 'Sponsored companies are inside the 147 insurers. Cells are counted separately.',
+            sponsoredWide: true,
+            cellLabel: 'Sponsored captive cells',
+            otherFallback: 'Not published with the October 2024 census',
+        };
+    }
+    if (domicile.slug === 'district-of-columbia') {
+        return {
+            total: 'Active risk-bearing entities at 30 October 2025',
+            totalWide: true,
+            newLabel: 'Licensed in 2025 through 30 October',
+            pureLabel: 'Pure, including 6 PCC cores',
+            groupLabel: 'Association, non-RRG',
+            sponsoredFallback: 'Not a separate total. PCC cores sit inside the type counts: 1 agency, 3 association, 6 pure, and 16 rental.',
+            sponsoredWide: true,
+            cellLabel: 'Protected cells (78 unincorporated, 28 incorporated)',
+            otherLabel: 'Agency (1), branch (4), rental (16), and RRGs (29)',
+            otherWide: true,
+        };
+    }
     return {};
 }
 
