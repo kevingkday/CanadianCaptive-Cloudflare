@@ -1359,36 +1359,149 @@
   },
   {
     "name": "Missouri",
-    "summary": "Centrally located with major non-stop flight access, Missouri emphasizes cost-reduction by using expert in-house analysts rather than outside consultants. It licenses varied structures, including special purpose life and sponsored cell captives. Application and licensing fees are deductible, helping to lower the barrier for new formations.",
+    "summary": "Missouri licenses captive insurers under sections 379.1300 to 379.1351, RSMo, enacted in 2007, and special purpose life reinsurance captives under sections 379.1353 to 379.1421, administered by the Department of Commerce and Insurance. The Department's February 2026 fact sheet states that 55 captives were active as of 1 February 2026 and that Missouri captives reported $8.6 billion of gross written premium in 2025. It does not publish a type split, a formation count, or a surrender count. A pure captive holds at least $250,000. An association, industrial insured, or sponsored captive holds at least $500,000. A special purpose life reinsurance captive maintains at least $250,000 of surplus in cash in Missouri. A branch captive posts a United States trust of not less than the pure-captive minimum plus the reserves on branch business. The license fee is $7,500 and the annual renewal fee is $7,500, and both are deductible from premium tax. A special purpose life reinsurance captive also pays a $10,000 application fee under 20 CSR 200-20.030. The Department's 2026 handout states that application and license amount as $17,500. Direct premium tax is 0.380 percent, 0.285 percent, 0.190 percent, and 0.072 percent on successive $20 million bands. Assumed-reinsurance tax is 0.214 percent, 0.143 percent, 0.048 percent, and 0.024 percent. The minimum is $7,500 and the maximum is $200,000. The return is due 1 February and the tax is due 1 May. Sam Komo is Captive Program Manager. The published filings address is INCaptiveFilings@insurance.mo.gov. No licensing-time standard and no staff count are published.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Missouri Department of Insurance framework",
+    "legislation": "Revised Statutes of Missouri sections 379.1300 to 379.1351 (Captive Insurance Companies) and sections 379.1353 to 379.1421 (Special Purpose Life Reinsurance Captives), and 20 CSR 200-20",
+    "legislation_year": 2007,
+    "applicable_legislation": "Sections 379.1300 to 379.1351, RSMo, originating in 2007 Senate Bill 215. Capital and surplus are section 379.1306, amended in 2013. The license, in-state requirements, and fees are section 379.1302, amended in 2009. Reports are section 379.1312, amended in 2013. Examinations are section 379.1314. Premium tax is section 379.1326, amended in 2013. Branch security is section 379.1342. Special purpose life reinsurance captives are sections 379.1353 to 379.1421, originating in 2007 Senate Bill 215. Minimum surplus and the license are section 379.1359. The SPLRC license fee is section 379.1364. The SPLRC audit is section 379.1403. SPLRC premium tax is section 379.1412, amended in 2009. Admission fees and the annual audit are also in 20 CSR 200-20.",
     "min_capital": {
-      "Pure / Special Purpose Life": "$250,000",
-      "Association / Sponsored": "$500,000"
+      "Pure captive": "Not less than $250,000 of unimpaired paid-in capital and surplus (section 379.1306.1(1)). The Department's 2026 types sheet states the same figure.",
+      "Association captive": "Not less than $500,000 (section 379.1306.1(2)).",
+      "Industrial insured captive": "Not less than $500,000 (section 379.1306.1(3)).",
+      "Sponsored captive": "Not less than $500,000 (section 379.1306.1(4)). The Department's types sheet states that the core's minimum is $500,000 and does not state a separate dollar floor for a cell.",
+      "Branch captive": "Section 379.1342 requires a United States trust, funded by an irrevocable letter of credit or other acceptable asset, of not less than the pure-captive minimum in section 379.1306.1(1) plus the reserves on branch policies and reinsurance contracts, including loss reserves, allocated loss-adjustment expenses, incurred-but-not-reported losses, and unearned premiums. The director may allow a reduction for security already posted with a reinsurer. The Department's types sheet states a $250,000 minimum placed in trust, an irrevocable letter of credit, or other acceptable assets for the benefit of U.S. policyholders.",
+      "Special purpose life reinsurance captive": "A minimum surplus in Missouri, in cash, of $250,000 (section 379.1359(5)). The Department's types sheet states the same $250,000 minimum capitalization.",
+      "Form of capital": "For a captive under sections 379.1300 to 379.1351, cash or an irrevocable letter of credit issued by a Missouri-chartered bank or a Federal Reserve member bank and approved by the director. The director may prescribe additional capital based on the type, volume, and nature of the business. An SPLRC's minimum surplus is cash held in Missouri."
     },
-    "tax_notes": "Direct tax rates tiered (0.38% down to 0.072%)",
+    "tax_notes": "Section 379.1326 taxes direct premiums, after return premiums and policyholder dividends or premium deposits returned or credited, at 0.380 percent on the first $20 million, 0.285 percent on the next $20 million, 0.190 percent on the next $20 million, and 0.072 percent thereafter. Annuity considerations are not taxed. Assumed-reinsurance premiums are taxed at 0.214 percent, 0.143 percent, 0.048 percent, and 0.024 percent on those same bands. Reinsurance tax does not apply to risks taxed on a direct basis, or to a qualifying assumption of loss reserves and other liabilities of another insurer under common ownership and control that is part of a plan to discontinue that insurer. The annual minimum aggregate tax is $7,500 and the annual maximum is $200,000. For a sponsored captive the $7,500 minimum applies to the company as a whole and not to each protected cell, and the cells are not subject to the minimum. The maximum for a protected cell is calculated under the direct-premium subsection, and the sponsored captive remits the aggregate of the cells' tax liabilities. Captives under common ownership and control are taxed as one captive. Common ownership and control is 80 percent of the voting stock, of the surplus and voting power of a mutual or nonprofit, or of the membership interest of a limited liability company. The tax is in lieu of other occupation taxes, except ad valorem taxes on real and personal property used to produce income. The return is due 1 February. The director certifies the tax by 31 March, and payment to the director of revenue is due 1 May. The license fee and the renewal fee may be deducted from the premium tax. An SPLRC is taxed under section 379.1412 on assumed reinsurance at the same 0.214 percent, 0.143 percent, 0.048 percent, and 0.024 percent bands, with the same $7,500 minimum and $200,000 maximum, and may also deduct its application, license, and renewal fees. A fee deduction that exceeds the SPLRC's tax may be carried forward for up to five years and is not refundable. The Department's February 2026 handout states the same rates, minimum, maximum, and dates.",
     "slug": "missouri",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Sam Komo, Captive Program Manager",
+    "contact_email": "INCaptiveFilings@insurance.mo.gov",
+    "last_verified": "2026-11-13",
+    "source_urls": [
+      "https://insurance.mo.gov/captive-insurance",
+      "https://insurance.mo.gov/sites/insurance/files/2026-04/2026%20Types%20of%20Captives_AOD.pdf",
+      "https://insurance.mo.gov/sites/insurance/files/2026-04/2026%20Captives%20Fees%20and%20Premium%20Tax%20Rates%20Handout_AOD.pdf",
+      "https://insurance.mo.gov/sites/insurance/files/2026-04/2026%20Captives%20Show%20Me%20Fact%20Sheet_AOD.pdf",
+      "http://s1.sos.mo.gov/cmsimages/adrules/csr/current/20csr/20c200-20.pdf",
+      "https://revisor.mo.gov/main/OneChapterRng.aspx?tb1=379.1300+to+379.1421",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1302",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1306",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1312",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1314",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1326",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1342",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1353",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1359",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1364",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1403",
+      "https://revisor.mo.gov/main/OneSection.aspx?section=379.1412",
+      "https://mocia.net/"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 55
+    },
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Industrial insured captive insurance companies",
+      "Sponsored captive insurance companies and protected cells",
+      "Branch captive insurance companies",
+      "Special purpose life reinsurance captives"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Section 379.1302 requires a nonrefundable license fee of $7,500 for examining, investigating, and processing the application. The director may charge the applicant the reasonable cost of outside legal, financial, and examination services. The renewal fee is $7,500. 20 CSR 200-20.030 states a $7,500 license fee for initial admission and, for a special purpose life reinsurance captive, an additional application fee of $10,000. The Department's February 2026 handout states the ordinary license fee as $7,500 and the SPLRC application fee and license fee as $17,500. It also states an actuarial application-review fee of $4,000, or $7,500 for an SPLRC, invoiced by the actuarial firm the Department assigns. Secretary of State organization fees are not set in the captive sections.",
+      "annual_fees": "Annual renewal fee of $7,500 (section 379.1302 and section 379.1364). The ordinary license authorizes business until 1 April. The Department's handout states the ordinary renewal date as 1 April and the SPLRC renewal date as 1 March. The license fee and the renewal fee may be deducted from premium tax. The handout states that the actuarial review fee is paid to the assigned actuarial firm.",
+      "premium_tax_rate": "Direct premiums: 0.380 percent, 0.285 percent, 0.190 percent, and 0.072 percent on successive $20 million bands. Assumed reinsurance: 0.214 percent, 0.143 percent, 0.048 percent, and 0.024 percent on the same bands. An SPLRC pays the assumed-reinsurance schedule under section 379.1412. Annual minimum $7,500. Annual maximum $200,000. For a sponsored captive the minimum applies to the company as a whole, and the company remits the aggregate of the cells' tax liabilities. Return due 1 February. Tax due 1 May."
+    },
+    "annual_filing_requirements": "Before 1 March, each captive submits a report of its financial condition verified by two executive officers (section 379.1312). Reporting uses generally accepted accounting principles unless the director approves statutory accounting principles. An association captive files in the form required by section 375.041. A pure or industrial insured captive may be allowed to report on a fiscal year-end. The report is then due 60 days after fiscal year-end, and a balance sheet, income statement, and statement of cash flows for the calendar year-end is still filed before 1 March to support the premium-tax return. 20 CSR 200-20.040 requires an annual audit by an independent certified public accountant, unless the director waives it. The audited report is due 30 June for a 31 December year-end, or within six months after an approved fiscal year-end. An SPLRC's audited report is due 31 May under that rule, and section 379.1403 requires it no later than five months after fiscal year-end. The audit includes an opinion on the adequacy of loss and loss-expense reserves by a member of the American Academy of Actuaries whom the director approves. An SPLRC, and a company providing life or annuity contracts, also includes the opinion described in section 376.380. An SPLRC files statutory-accounting financial information by 1 March. The premium-tax return is due 1 February and payment is due 1 May. The board meets at least once each year in Missouri, the principal place of business is in Missouri, a registered agent is appointed, and the captive holds at least 35 percent of its assets in Missouri or through a Missouri financial institution the director approves. Section 379.1314 requires an examination at least once every three years, which the director may enlarge to five years if the captive has a comprehensive annual audit of a scope the director accepts by independent auditors the director approves. The examination is at the captive's cost. A captive may not provide personal motor vehicle or homeowners insurance, may not write workers' compensation directly, and may not transact business as a risk retention group. It may provide excess workers' compensation and may reinsure a qualified self-insured workers' compensation plan of its parent and affiliates.",
+    "captive_administrator": {
+      "name": "Sam Komo, Captive Program Manager, Missouri Department of Commerce and Insurance",
+      "email": "INCaptiveFilings@insurance.mo.gov",
+      "phone": "(573) 522-9932",
+      "fax": "(573) 526-2092"
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Missouri Department of Commerce and Insurance",
+      "address": "301 W. High Street, Suite 530, Jefferson City, MO 65101. Mailing address: PO Box 690, Jefferson City, MO 65102-0690",
+      "website": "https://insurance.mo.gov/captive-insurance"
+    }
   },
   {
     "name": "Montana",
-    "summary": "Montana is recognized for having accessible regulators and one of the few regimes that offers special purpose captives under a series limited liability structure. This allows smaller captives to form with capital based on premium writing rather than a fixed minimum. The state legislature is extremely supportive, and captives are subject to mandatory examination at least every five years.",
+    "summary": "Montana licenses captive insurers under Title 33, Chapter 28, MCA, enacted in 2001 and administered by the Captive Insurance Team of the Commissioner of Securities and Insurance. The chapter covers pure, association, industrial insured, special purpose, protected cell, branch, and captive reinsurance companies, and captive risk retention groups. Protected cells must be incorporated. A special purpose captive's capital is an amount the commissioner sets after reviewing the business plan, and a special purpose captive may use a series of members in a limited liability company. The 2025 CSI brochure states that the captive count is 279: 56 pure, 9 special purpose, 12 reinsurance, 1 association, 3 protected cell structures, 17 protected cells, 9 series LLC structures, 165 series business units, and 7 risk retention groups. The same brochure states that 41 captives were licensed in 2024, that 26 companies had been formed as of 1 June 2025, and that Montana has licensed more than 900 captives since 2001. The captive page states that Montana has nearly 300 domiciled captives, that captive insurance contributes $5 million annually to the Montana economy, and that Montana is the fifth-largest U.S. captive domicile. Unimpaired paid-in capital and surplus is at least $250,000 for a pure captive and $500,000 for an association captive, an industrial insured captive, or a captive risk retention group. A protected cell captive holds at least $500,000, which the commissioner may reduce to not less than $250,000 if the core assumes no risk, the cells' risks are homogeneous, and there are not more than 10 cells. A captive reinsurance company holds at least 50 percent of the capital required for its type. A dormant captive maintains at least $25,000. Direct premium tax is 0.4 percent on the first $20 million and 0.3 percent thereafter. Assumed-reinsurance premium tax is 0.225 percent, 0.150 percent, and 0.050 percent. The annual minimum is $5,000 and the annual maximum is $100,000. The maximum does not apply to a protected cell captive or to a special purpose captive with a series of members. The application fee is $200 and the license and annual renewal fee is $300, charged as well to each series and each protected cell. The certificate is effective until 1 March. Examinations of captives other than risk retention groups are at the commissioner's discretion. A captive risk retention group is examined at least every five years. No standard licensing turnaround is published. The published contact is the Captive Insurance Team at captives@mt.gov.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Montana Captive Insurance Statutes",
+    "legislation": "Montana Captive Insurance Companies Act, Title 33, Chapter 28, Montana Code Annotated, and ARM Title 6, Chapter 6, Subchapter 68",
+    "legislation_year": 2001,
+    "applicable_legislation": "Title 33, Chapter 28, MCA, enacted by Chapter 298, Laws of 2001, and published as the 2025 Montana Code Annotated. Capital and surplus are 33-28-104. The certificate, lines of business, in-state meeting, and fees are 33-28-102. Reports are 33-28-107. Examinations are 33-28-108. Premium tax is 33-28-201, amended by Chapter 548, Laws of 2025. Dormant captives are 33-28-401. The Commissioner cites ARM 6.6.6801 through 6.6.6821 for the annual audit and ARM 6.6.6816 for certification of loss reserves.",
     "min_capital": {
-      "Pure": "$250,000",
-      "Association": "$500,000",
-      "Special Purpose": "Discretionary amount"
+      "Pure captive": "Not less than $250,000 of unimpaired paid-in capital and surplus (33-28-104(1)(a)).",
+      "Association captive": "Not less than $500,000 (33-28-104(1)(c)).",
+      "Industrial insured captive, including a captive risk retention group": "Not less than $500,000 (33-28-104(1)(b)).",
+      "Special purpose captive": "An amount determined by the commissioner after considering the business plan, feasibility study, and pro forma documents, including the nature of the risks to be insured (33-28-104(1)(d)). The statute does not set a dollar floor.",
+      "Protected cell captive": "Not less than $500,000. If the protected cell captive assumes no risks, the risks insured by the cells are homogeneous, and there are not more than 10 cells, the commissioner may reduce the amount to not less than $250,000 (33-28-104(1)(e)). Section 33-28-101 requires every protected cell to be incorporated. The statute does not set a separate dollar floor for an individual cell.",
+      "Branch captive": "Not less than the capital and surplus required for the foreign captive's organizational form under 33-28-104(1)(a) through (1)(e). The minimum is held jointly by the commissioner and the branch in a Federal Reserve System bank the commissioner approves.",
+      "Captive reinsurance company": "Not less than 50 percent of the capital that would be required for that type of captive (33-28-104(1)(g)).",
+      "Dormant captive": "Not less than $25,000 of unimpaired paid-in capital and surplus while a certificate of dormancy is in force (33-28-401). A risk retention group cannot be dormant under that section.",
+      "Form of capital": "Cash, a cash equivalent, or an irrevocable letter of credit on the commissioner's form, issued by a Montana-chartered bank, a Federal Reserve member bank, or another state-chartered bank the commissioner approves. The commissioner may require additional capital based on the type, volume, and nature of the business (33-28-104)."
     },
-    "tax_notes": "$5,000 minimum; $100,000 maximum tax",
+    "tax_notes": "Section 33-28-201 requires the tax by 1 March. Direct premiums, after return premiums and policyholder dividends or premium deposits returned or credited, are taxed at 0.4 percent on the first $20 million and 0.3 percent on each subsequent dollar. Assumed-reinsurance premiums are taxed at 0.225 percent on the first $20 million, 0.150 percent on the next $20 million, and 0.050 percent thereafter. Reinsurance tax does not apply to risks taxed on a direct basis, or to a qualifying assumption of loss reserves and other liabilities of another insurer under common ownership and control that is part of a plan to discontinue that insurer. If the direct and assumed taxes are under $5,000, the tax is $5,000. In the year a captive subject to the minimum is first authorized, or surrenders its certificate, the minimum is prorated by quarter. Each protected cell is considered separately in determining the aggregate tax. Each series of members of a special purpose captive is considered separately, except that the minimum tax is considered in the aggregate. The annual maximum is $100,000. That maximum does not apply to a protected cell captive or to a special purpose captive with a series of members. Two or more captives under common ownership and control, defined as 80 percent of the voting stock or, for mutuals, 80 percent of the surplus and voting power, are taxed as one captive. Only the branch business of a branch captive is taxed. A dormant captive is not liable for the section 33-28-201 tax. It pays a $1,000 annual dormancy tax by 1 March for any portion of the preceding year in which it held the certificate, and each series or protected cell is considered separate for that $1,000 tax. The certificate of dormancy expires after five consecutive years and may not be renewed. The captive page requires electronic premium-tax filing.",
     "slug": "montana",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Captive Insurance Team, Montana Commissioner of Securities and Insurance",
+    "contact_email": "captives@mt.gov",
+    "last_verified": "2026-11-13",
+    "source_urls": [
+      "https://csimt.gov/insurance/captive/",
+      "https://csimt.gov/wp-content/uploads/2025/06/Captives-Brochure_2025_small-1.pdf",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/parts_index.html",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/part_0010/section_0010/0330-0280-0010-0010.html",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/part_0010/section_0020/0330-0280-0010-0020.html",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/part_0010/section_0040/0330-0280-0010-0040.html",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/part_0010/section_0070/0330-0280-0010-0070.html",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/part_0010/section_0080/0330-0280-0010-0080.html",
+      "https://mca.legmt.gov/bills/MCA/title_0330/chapter_0280/part_0020/section_0010/0330-0280-0020-0010.html",
+      "https://mca.legmt.gov/bills/mca/title_0330/chapter_0280/part_0040/section_0010/0330-0280-0040-0010.html",
+      "https://www.mtcaptives.org/"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 279,
+      "pure_captives": 56,
+      "group_captives": 1
+    },
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Industrial insured captive insurance companies",
+      "Captive risk retention groups",
+      "Special purpose captive insurance companies, including a series of members in a limited liability company",
+      "Protected cell captive insurance companies and incorporated protected cells",
+      "Branch captive insurance companies",
+      "Captive reinsurance companies",
+      "Dormant captive insurance companies holding a certificate of dormancy, other than captive risk retention groups"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Section 33-28-102(4) requires a nonrefundable fee of $200 for examining, investigating, and processing the application of each captive, each individual series of members, and each protected cell. The commissioner may retain outside legal, financial, and examination services and charge the reasonable cost to the applicant. The captive page states the same $200 application fee together with a $300 license fee. Secretary of State organization fees are not set in Chapter 28.",
+      "annual_fees": "A fee of $300 for the year of registration and a renewal fee of $300 for each later year, payable by each captive, each individual series of members, and each protected cell (33-28-102(4)(b)). The certificate is effective until 1 March and may be renewed. A dormant captive is not otherwise liable for the section 33-28-102 annual renewal and instead pays the $1,000 dormancy tax.",
+      "premium_tax_rate": "Direct premiums: 0.4 percent on the first $20 million and 0.3 percent thereafter. Assumed reinsurance: 0.225 percent, 0.150 percent, and 0.050 percent. Annual minimum $5,000, prorated by quarter in the year of first authorization and in the year the certificate is surrendered. Annual maximum $100,000, which does not apply to a protected cell captive or to a special purpose captive with a series of members. Due 1 March. A dormant captive pays a $1,000 dormancy tax instead of the premium tax."
+    },
+    "annual_filing_requirements": "On or before 1 April, a captive other than a risk retention group submits a report of its financial condition, verified by two executive officers. A captive risk retention group submits its report on or before 1 March and files the NAIC property-and-casualty blank with the commissioner and with the NAIC, on an annual and quarterly basis. Reporting uses generally accepted accounting principles unless the commissioner requires statutory accounting principles. A captive other than a risk retention group may be allowed to report on a fiscal year-end. The report is then due 90 days after fiscal year-end, and a report supporting the premium-tax return is still filed before 1 April for the prior calendar year. A branch captive files, by 1 April, copies of the reports required in the jurisdiction where the foreign captive is formed. Premium tax is due 1 March. The captive page states that premium tax is filed electronically, and it states that captives other than risk retention groups may file the Montana short-form annual statement by 1 April. The same page states that ARM 6.6.6801 through 6.6.6821 require an annual audit by an independent certified public accountant the commissioner approves, and that ARM 6.6.6816 requires loss and loss-expense reserves to be certified by a Fellow of the Casualty Actuarial Society, a member of the American Academy of Actuaries, or another person who has demonstrated competence in loss-reserve evaluation and whom the commissioner approves. The board, the board of managing members, or a reciprocal's subscribers' advisory committee meets at least once each year in Montana. The principal place of business is in Montana, and at least one director, or one manager of a limited liability company, is a Montana resident. A captive risk retention group has at least five directors. Books and records needed for a statutory examination are kept in Montana. The commissioner may examine a captive as often as the commissioner considers advisable. A captive risk retention group is examined at least every five years. The examination is at the captive's cost. A dormant captive files a financial-condition report within 90 days of each fiscal year-end and is not subject to examination under 33-28-108 while the certificate of dormancy is in force.",
+    "captive_administrator": {
+      "name": "Captive Insurance Team, Montana Commissioner of Securities and Insurance",
+      "email": "captives@mt.gov",
+      "phone": "(406) 444-2040 or (800) 332-6148",
+      "fax": null
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Montana Commissioner of Securities and Insurance, Captive Insurance Team",
+      "address": "840 Helena Avenue, Helena, MT 59601",
+      "website": "https://csimt.gov/insurance/captive/"
+    }
   },
   {
     "name": "Netherlands",
@@ -1617,21 +1730,76 @@
   },
   {
     "name": "Oklahoma",
-    "summary": "Oklahoma is recognized for continuous innovation, offering competitive arrays of investment options and a provisional license for new applicants and redomestications. In 2020, it introduced an incentive for 'Series' captives to maintain only $50,000 in capital if certain risk-segregation criteria are met. Captives are permitted to conduct a broad selection of coverages, including workers' compensation.",
+    "summary": "Oklahoma licenses captive insurers under the Oklahoma Captive Insurance Company Act, Title 36, sections 6470.1 through 6470.35, first enacted as Chapter 334, Oklahoma Session Laws 2004, and administered by the Captive Insurance Division of the Oklahoma Insurance Department. A pure captive holds at least $250,000, of which $150,000 is paid in before the license is issued and the remaining $100,000 is paid in by the first anniversary. An association captive incorporated as a stock insurer holds at least $750,000, an industrial insured captive incorporated as a stock insurer at least $500,000, a sponsored captive at least $500,000, and a risk retention group at least $1,000,000. A special purpose or branch captive holds at least $250,000 or another amount the commissioner sets. A series captive's capital is an amount the commissioner specifies. Direct premium tax is 0.2 percent and assumed-reinsurance premium tax is 0.1 percent, due 1 March. The ordinary minimum is $5,000 and the maximum is $100,000. A series captive's annual minimum is $3,500. The nonrefundable application fee is $200, or $300 for a special purpose captive, and the license and renewal fee is $300. The Division states that it will process a completed license application within 30 to 45 business days. The commissioner may issue a provisional license. The Department's 2025 annual report states that 2024 ended with 64 captive insurers, after a net gain of five. The 19 February 2026 release states that in 2025 the Department approved all 14 applications it received, four captives dissolved, and the net gain was 10, surpassing the 2017 high of 73. That release does not state the 31 December 2025 headcount. There is no in-state manager, in-state board member, or in-state annual board-meeting requirement. Applications and questions go to oidcaptive@oid.ok.gov. Steve Kinion is Director of the Captive Insurance Division. No current staff count is published.",
     "jurisdiction": "Onshore (USA)",
-    "legislation": "Oklahoma Captive Act",
+    "legislation": "Oklahoma Captive Insurance Company Act, Title 36, Oklahoma Statutes, sections 6470.1 through 6470.35, and Oklahoma Administrative Code 365:25-15-1 through 365:25-15-23",
+    "legislation_year": 2004,
+    "applicable_legislation": "The Oklahoma Captive Insurance Company Act originated as Chapter 334, Oklahoma Session Laws 2004. Enrolled House Bill 2905 (2006) cites that chapter as the source of the captive sections. Capital and surplus are section 6470.6, as restated by enrolled Senate Bill 1035 (2021). The license, fees, and provisional license are section 6470.3, as restated by enrolled Senate Bill 1242, effective 1 November 2022. Reports are section 6470.11, as restated by Senate Bill 1035. Examinations are section 6470.13, as amended by enrolled House Bill 1108 (2013). Premium tax is section 6470.19, as restated by Senate Bill 1035. Dormancy is section 6470.35, as amended by enrolled Senate Bill 1240, effective 1 November 2022. The Department posts OAC 365:25-15 as its captive rules.",
     "min_capital": {
-      "Pure": "$250,000 ($150k first year)",
-      "Special Purpose": "$250,000",
-      "Sponsored / Industrial": "$500,000",
-      "RRG": "$1,000,000"
+      "Pure captive": "Not less than $250,000 of unimpaired aggregate paid-in capital and surplus. $150,000 must be paid in before the license is issued, and an additional $100,000 must be paid in on or before the first anniversary (36 O.S. section 6470.6(A)(1), Senate Bill 1035).",
+      "Association captive": "Not less than $750,000 for an association captive incorporated as a stock insurer (section 6470.6(A)(2)).",
+      "Industrial insured captive": "Not less than $500,000 for an industrial insured captive incorporated as a stock insurer (section 6470.6(A)(3)).",
+      "Sponsored captive": "Not less than $500,000 (section 6470.6(A)(4)). The statute does not set a separate dollar floor for an individual protected cell.",
+      "Risk retention group": "Not less than $1,000,000 for a captive doing business as a risk retention group (section 6470.6(A)(5)).",
+      "Special purpose or branch captive": "Not less than $250,000, or an amount determined by the commissioner after considering the business plan, feasibility study, and pro formas, including the nature of the risks to be insured (section 6470.6(A)(6)). The Department's types page states the same standard.",
+      "Series captive": "An amount specified by the commissioner (section 6470.6(A)(7)). The statute does not set a dollar floor. The Department's types page states the same standard.",
+      "Dormant captive": "Not less than $25,000 of unimpaired paid-in capital and surplus while a certificate of dormancy is in force (section 6470.35, Senate Bill 1240).",
+      "Form of capital": "Cash, a cash equivalent, or an irrevocable letter of credit issued by an Oklahoma-chartered bank or a Federal Reserve member bank, and approved by the commissioner. The commissioner may prescribe additional capital based on the type, volume, and nature of the business. For a branch captive, the commissioner may require a U.S. trust, funded by an irrevocable letter of credit or other acceptable asset, of not less than the required capital and surplus plus the reserves on branch policies and reinsurance contracts."
     },
-    "tax_notes": "0.2% direct / 0.1% assumed rates; $100,000 cap",
+    "tax_notes": "Section 6470.19, as restated by Senate Bill 1035, taxes each captive other than a sponsored captive, and each protected cell of a sponsored captive, at 0.2 percent of direct premiums after return premiums and policyholder dividends or premium deposits returned or credited. Annuity considerations are not taxed. Assumed-reinsurance premium is taxed at 0.1 percent. Reinsurance tax does not apply to risks taxed on a direct basis, or to a qualifying assumption of loss reserves and other liabilities of another insurer under common ownership and control that is part of a plan to discontinue that insurer. A sponsored captive pays, in the aggregate, the minimum tax. If the calculated tax is under $5,000, the tax is $5,000. In the year a captive is first licensed, or a protected cell is first approved, that minimum is prorated by quarter: $5,000, $3,750, $2,500, or $1,250. A series captive pays an annual minimum aggregate tax of $3,500. The tax paid by more than one series formed in one limited liability company or statutory trust is not restricted by the annual maximum. If the calculated tax exceeds $100,000, the tax is $100,000, subject to the common-ownership and employment provisions. Captives under common ownership and control, defined as 80 percent of the voting stock or other voting interests, are taxed as one captive, and protected cells under that ownership are taxed as one cell. A captive that employed 25 or more qualified individuals in Oklahoma throughout the tax year, and that would otherwise owe more than $50,000, pays $50,000. A qualified individual is employed in Oklahoma at least 35 hours a week by the captive or by a wholly owned subsidiary that provides management, operating, investment, or related services only to that captive. The tax is in lieu of other Oklahoma occupation taxes, except ad valorem taxes on real and personal property used to produce income. The return is due 1 March. The Department requires the filing through OPTins. A dormant captive is not liable for the section 6470 tax during the initial five-year dormancy (section 6470.35).",
     "slug": "oklahoma",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Steve Kinion, Director, Captive Insurance Division",
+    "contact_email": "oidcaptive@oid.ok.gov",
+    "last_verified": "2026-11-13",
+    "source_urls": [
+      "https://www.oid.ok.gov/captive-insurance-division/",
+      "https://www.oid.ok.gov/captive-insurance-division/types-of-captives/",
+      "https://www.oid.ok.gov/captive-insurance-division/formation-and-licensing/",
+      "https://www.oid.ok.gov/regulated-entities/financial/premium-tax/",
+      "https://www.oid.ok.gov/wp-content/uploads/2021/11/CURRENT-Captive-Rules54.pdf",
+      "https://www.oid.ok.gov/wp-content/uploads/2026/02/2025_AnnualReport_Final.pdf",
+      "https://www.oid.ok.gov/release_021926/",
+      "http://www.oklegislature.gov/cf_pdf/2005-06%20ENR/hb/hb2905%20enr.pdf",
+      "http://www.oklegislature.gov/cf_pdf/2013-14%20ENR/hb/hb1108%20enr.pdf",
+      "http://www.oklegislature.gov/cf_pdf/2021-22%20ENR/sb/sb1035%20enr.pdf",
+      "http://www.oklegislature.gov/cf_pdf/2021-22%20ENR/sb/sb1240%20enr.pdf",
+      "http://www.oklegislature.gov/cf_pdf/2021-22%20ENR/sb/sb1242%20enr.pdf",
+      "https://okcaptives.org/"
+    ],
+    "stats": {
+      "reporting_year": 2024,
+      "total_captives": 64
+    },
+    "types_allowed": [
+      "Pure captive insurance companies",
+      "Association captive insurance companies",
+      "Industrial insured captive insurance companies",
+      "Sponsored captive insurance companies and protected cells, including entity-protected cells",
+      "Special purpose captive insurance companies",
+      "Branch captive insurance companies",
+      "Series captive insurance companies",
+      "Captive risk retention groups",
+      "Dormant captive insurance companies holding a certificate of dormancy"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Section 6470.3, as restated by Senate Bill 1242, requires a nonrefundable application fee of $200 to review whether the application is complete. A special purpose captive pays a nonrefundable fee of $300. The commissioner may also charge the reasonable cost of outside legal, financial, and examination services. The license fee for the year of registration is $300. The formation page states that the filing includes a $200 review fee and a $300 license fee. A provisional license requires the same fees. Organization fees payable to the Oklahoma Secretary of State are not set in the Captive Insurance Company Act.",
+      "annual_fees": "Annual license renewal fee of $300 (section 6470.3). The license authorizes business until the succeeding 1 March, when it may be renewed. A dormant captive pays a nonrefundable annual fee of $500 (section 6470.35) rather than the premium tax during the initial five-year dormancy. The certificate of dormancy is renewed every five years and is forfeited if it is not renewed.",
+      "premium_tax_rate": "Direct premiums: 0.2 percent. Assumed reinsurance premiums: 0.1 percent. Ordinary minimum $5,000, prorated by quarter in the year of first licensure or first cell approval. Series-captive minimum $3,500. Annual maximum $100,000. A captive employing 25 or more qualified Oklahoma individuals pays $50,000 if it would otherwise owe more. Due 1 March through OPTins. A dormant captive owes no section 6470 tax during the initial five years of dormancy."
+    },
+    "annual_filing_requirements": "Before 1 March, a captive submits a report of its financial condition verified by two executive officers (section 6470.11). Reporting uses generally accepted accounting principles unless the commissioner approves statutory accounting principles or international accounting standards. A pure captive may be allowed to file on its parent's fiscal year. The statute then requires the annual report 60 days after fiscal year-end, and pages 1 through 7 of the Captive Annual Statement for the calendar year-end before 1 March to support the premium-tax return. OAC 365:25-15-3, in the rules PDF the Department posts, states that an approved pure-captive fiscal-year report is filed no later than 180 days after fiscal year-end. The audited financial report is due 30 June for a 31 December year-end. The same rule says a pure captive approved to report on a fiscal year files that report no later than 180 days after fiscal year-end. The commissioner may exempt a company with direct written and assumed premiums of $2,000,000 or less in the preceding year from the annual audit, and may exempt a company at that premium level from the annual actuarial opinion. The actuarial opinion certifies life, health, or annuity reserves, or loss and loss-expense reserves, and is given by a member of the American Academy of Actuaries or the Casualty Actuarial Society who meets the U.S. qualification standards, or by another person who has demonstrated competence in loss-reserve evaluation. A risk retention group files the report required by Title 36, section 311. Premium tax is filed through OPTins and is due 1 March. The Department states there is no in-state manager, in-state board member, or in-state annual board-meeting requirement. A captive maintains a place of business in Oklahoma designated as its registered office and appoints a resident registered agent. Section 6470.13, as amended by House Bill 1108, requires an examination at least once in five years, which the commissioner may enlarge to seven years if the captive is subject to a comprehensive annual audit of a scope the commissioner accepts, by independent auditors the commissioner approves. A dormant captive files a financial-condition report by 1 March. The rules PDF the Department still links, last amended effective 1 November 2021, describes an earlier dormancy tax. The profile follows section 6470.35 as amended in 2022.",
+    "captive_administrator": {
+      "name": "Steve Kinion, Director, Captive Insurance Division, Oklahoma Insurance Department",
+      "email": "oidcaptive@oid.ok.gov",
+      "phone": "(918) 704-8136",
+      "fax": null
+    },
+    "licensing_speed": "The Captive Insurance Division states that it will process a completed license application within 30 to 45 business days, and that it will answer questions by phone or email within 1 to 3 business days. The commissioner may issue a provisional license when the public interest will be served, after a complete application, payment of the licensure fees, and a preliminary finding that the people who will control and manage the captive are acceptable. The Division's homepage describes optional provisional licensure as authority to begin business on the day the application is filed.",
+    "regulator": {
+      "name": "Oklahoma Insurance Department, Captive Insurance Division",
+      "address": "400 NE 50th Street, Oklahoma City, OK 73105",
+      "website": "https://www.oid.ok.gov/captive-insurance-division/"
+    }
   },
   {
     "name": "Oregon",
