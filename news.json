@@ -1,6 +1,38 @@
 {
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-15",
   "articles": [
+    {
+      "title": "ABSA increases risk financing despite soft insurance market",
+      "date": "2026-11-13",
+      "source": "Captive International",
+      "category": "Market Trends",
+      "summary": "ABSA increased retained-risk financing at its November 1 renewal despite soft pricing, keeping predictable losses in its Isle of Man captive, a total-cost-of-risk lesson for Canadian buyers enjoying lower rates.",
+      "url": "https://www.captiveinternational.com/absa-increases-risk-financing-despite-soft-insurance-market"
+    },
+    {
+      "title": "AM Best Report Outlines Rating Considerations for Captive Insurers",
+      "date": "2026-11-13",
+      "source": "Captive.com",
+      "category": "Market Trends",
+      "summary": "AM Best's new FAQ explains how it rates captives and cell companies, applying a weakest-link test to unincorporated cells and generally capping captive business profile assessments at Neutral.",
+      "url": "https://www.captive.com/news/am-best-report-outlines-rating-considerations-for-captive-insurers"
+    },
+    {
+      "title": "Captive domiciles offer competing advantages as companies weigh their options",
+      "date": "2026-11-13",
+      "source": "Captive International",
+      "category": "Offshore Domiciles",
+      "summary": "With 77 captive domiciles worldwide, panellists urged owners to weigh tax, capital, regulation and exit flexibility, and to revisit domicile choice annually, including moving a captive when circumstances change.",
+      "url": "https://www.captiveinternational.com/captive-domiciles-offer-competing-advantages-as-companies-weigh-their-options"
+    },
+    {
+      "title": "BMA licences one new captive in October",
+      "date": "2026-11-11",
+      "source": "Captive Review",
+      "category": "Offshore Domiciles",
+      "summary": "Bermuda licensed one captive-class insurer in October, Class A long-term captive Project Pearl ISAC Ltd, bringing 2026 captive-class formations to eight through the first 10 months.",
+      "url": "https://captivereview.com/news/bma-licences-one-new-captive-in-october/"
+    },
     {
       "title": "Guidance Note – General business insurers with segregated accounts and separate accounts",
       "date": "2026-11-02",
@@ -10,44 +42,12 @@
       "url": "https://www.walkersglobal.com/en/Insights/2026/11/Guidance-Note--General-Business-Insurers-with-Segregated-Accounts-and-Separate-Accounts"
     },
     {
-      "title": "Premier says Cayman focused on securing US reinsurance recognition",
-      "date": "2026-11-04",
-      "source": "Cayman Independent",
-      "category": "Offshore Domiciles",
-      "summary": "Cayman's Premier says the government is backing its NAIC Qualified Jurisdiction application, with property and casualty reviewed first; any resulting rule changes will involve consultation with the captive industry.",
-      "url": "https://caymanindependent.com/premier-says-cayman-focused-on-securing-us-reinsurance-recognition/"
-    },
-    {
-      "title": "VCIA to Host Captive Tax Update Webinar December 10",
-      "date": "2026-11-06",
-      "source": "Captive.com",
-      "category": "Tax & Compliance",
-      "summary": "Vermont's captive association will review IRS regulations, global minimum tax rules and state premium taxes on December 10, a useful briefing for Canadian groups with Vermont captives planning for 2027.",
-      "url": "https://www.captive.com/news/vcia-to-host-captive-tax-update-webinar-december-10"
-    },
-    {
       "title": "Why some Canadian companies are bringing captive risks home to Alberta",
       "date": "2026-10-30",
       "source": "Canadian Underwriter",
       "category": "Canadian Domiciles",
       "summary": "Hub International says Canadian firms are redomiciling captive risks from offshore to Alberta, citing flexible rules now allowing surety, lower premiums, and better tax outcomes than offshore captives taxed under FAPI.",
       "url": "https://canadianunderwriter.ca/news/industry/why-some-canadian-companies-are-bringing-captive-risks-home-to-alberta/"
-    },
-    {
-      "title": "Piko Re targeting untapped captive reinsurance market",
-      "date": "2026-10-30",
-      "source": "Captive Review",
-      "category": "Market Trends",
-      "summary": "New captive-focused reinsurance intermediary Piko Re will target mid-sized single-parent captives and segregated cells, starting in the US with Canada flagged as a potential early expansion market.",
-      "url": "https://captivereview.com/news/piko-re-targeting-untapped-captive-reinsurance-market/"
-    },
-    {
-      "title": "Captive owners find new ways to finance risks, manage losses",
-      "date": "2026-10-29",
-      "source": "Business Insurance",
-      "category": "Offshore Domiciles",
-      "summary": "Vermont's captive regulator reports owners converting single-parent captives into sponsored captives to insure partner and joint-venture risks in segregated cells, a structure Canadian parents with Vermont captives may consider.",
-      "url": "https://www.businessinsurance.com/captive-owners-find-new-ways-to-finance-risks-manage-losses/"
     }
   ]
 }
