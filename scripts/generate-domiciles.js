@@ -61,6 +61,24 @@ function escapeTemplateValue(value) {
         .replace(/\$\{/g, '&#36;{');
 }
 
+const OG_IMAGE = `${DOMAIN}/images/og-default.png`;
+
+// Open Graph + X card tags. title/description must already be attribute-safe.
+function socialMetaTags({ title, description, url, type }) {
+    return `    <meta property="og:title" content="${title}" />
+    <meta property="og:description" content="${description}" />
+    <meta property="og:image" content="${OG_IMAGE}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="${url}" />
+    <meta property="og:type" content="${type}" />
+    <meta property="og:site_name" content="CanadianCaptive.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${title}" />
+    <meta name="twitter:description" content="${description}" />
+    <meta name="twitter:image" content="${OG_IMAGE}" />`;
+}
+
 function formatSourceLabel(url) {
     try {
         const parsed = new URL(url);
@@ -555,6 +573,10 @@ function generateDomicilePage(domicile, allDomiciles) {
 
     const hasSourceUrls = Array.isArray(domicile.source_urls) && domicile.source_urls.length > 0;
 
+    const pageTitle = `${escapeTemplateValue(domicile.name)} Domicile | CanadianCaptive.com`;
+    const pageDescription = `${escapeTemplateValue(domicile.summary.substring(0, 160).replace(/"/g, '&quot;'))}...`;
+    const pageUrl = `${DOMAIN}/domiciles/${slug}.html`;
+
     return `<!DOCTYPE html>
 <html class="light" lang="en">
 <head>
@@ -569,14 +591,10 @@ function generateDomicilePage(domicile, allDomiciles) {
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="keywords" content="${escapeTemplateValue(domicile.name)} captive insurance, ${escapeTemplateValue(domicile.jurisdiction)} domicile, captive formation" />
-    <link rel="canonical" href="https://canadiancaptive.com/domiciles/${slug}.html" />
-    <meta property="og:title" content="${escapeTemplateValue(domicile.name)} Captive Insurance Domicile | CanadianCaptive.com" />
-    <meta property="og:description" content="${escapeTemplateValue(domicile.summary.substring(0, 160).replace(/"/g, '&quot;'))}..." />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://canadiancaptive.com/domiciles/${slug}.html" />
-    <meta property="og:site_name" content="CanadianCaptive.com" />
-    <title>${escapeTemplateValue(domicile.name)} Domicile | CanadianCaptive.com</title>
-    <meta name="description" content="${escapeTemplateValue(domicile.summary.substring(0, 160).replace(/"/g, '&quot;'))}..." />
+    <link rel="canonical" href="${pageUrl}" />
+${socialMetaTags({ title: pageTitle, description: pageDescription, url: pageUrl, type: 'article' })}
+    <title>${pageTitle}</title>
+    <meta name="description" content="${pageDescription}" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
@@ -966,6 +984,10 @@ ${cardsHTML}
             return `<a href="#${id}" class="px-4 py-2 rounded-full text-sm font-medium border border-outline-variant/20 text-secondary hover:text-primary hover:border-primary/30 transition-all">${cat} (${count})</a>`;
         }).join('\n                    ');
 
+    const pageTitle = `Global Captive Domiciles (${totalCount}) | CanadianCaptive.com`;
+    const pageDescription = `Explore ${totalCount} captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments to find the right home for your captive.`;
+    const pageUrl = `${DOMAIN}/domiciles.html`;
+
     return `<!DOCTYPE html>
 <html class="scroll-smooth light" lang="en">
 <head>
@@ -979,14 +1001,10 @@ ${cardsHTML}
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="canonical" href="https://canadiancaptive.com/domiciles.html" />
-    <meta property="og:title" content="Global Captive Domiciles (${totalCount}) | CanadianCaptive.com" />
-    <meta property="og:description" content="Explore ${totalCount} captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://canadiancaptive.com/domiciles.html" />
-    <meta property="og:site_name" content="CanadianCaptive.com" />
-    <title>Global Captive Domiciles (${totalCount}) | CanadianCaptive.com</title>
-    <meta name="description" content="Explore ${totalCount} captive insurance domiciles worldwide. Compare jurisdictions, capital requirements, and tax environments to find the right home for your captive." />
+    <link rel="canonical" href="${pageUrl}" />
+${socialMetaTags({ title: pageTitle, description: pageDescription, url: pageUrl, type: 'website' })}
+    <title>${pageTitle}</title>
+    <meta name="description" content="${pageDescription}" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />

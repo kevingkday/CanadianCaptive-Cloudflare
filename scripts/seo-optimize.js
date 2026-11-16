@@ -9,6 +9,13 @@ const ROOT = path.join(__dirname, '..');
 const DOMAIN = 'https://canadiancaptive.com';
 const TODAY = new Date().toISOString().split('T')[0];
 
+function escapeAttr(value) {
+    return String(value)
+        .replace(/&(?![a-z#0-9]+;)/gi, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;');
+}
+
 // ── 1. Generate sitemap.xml ─────────────────────────────────────────────────
 
 function findHtmlFiles(dir, base = '') {
@@ -156,15 +163,45 @@ for (const [filename, meta] of Object.entries(seoMeta)) {
 
     // Add Open Graph tags if missing
     if (!content.includes('og:title')) {
-        const ogTitle = meta.ogTitle || content.match(/<title>(.*?)<\/title>/)?.[1] || 'CanadianCaptive.com';
-        const ogDesc = meta.description || '';
+        const ogTitle = escapeAttr(content.match(/<title>(.*?)<\/title>/)?.[1] || meta.ogTitle || 'CanadianCaptive.com');
+        const ogDesc = escapeAttr(meta.description || '');
         const ogType = meta.ogType || 'article';
         const canonicalUrl = filename === 'index.html' ? DOMAIN + '/' : `${DOMAIN}/${filename}`;
+        const ogImage = `${DOMAIN}/images/og-default.png`;
         const ogTags = `<meta property="og:title" content="${ogTitle}" />
     <meta property="og:description" content="${ogDesc}" />
-    <meta property="og:type" content="${ogType}" />
+    <meta property="og:image" content="${ogImage}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="${canonicalUrl}" />
-    <meta property="og:site_name" content="CanadianCaptive.com" />`;
+    <meta property="og:type" content="${ogType}" />
+    <meta property="og:site_name" content="CanadianCaptive.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${ogTitle}" />
+    <meta name="twitter:description" content="${ogDesc}" />
+    <meta name="twitter:image" content="${ogImage}" />`;
+        content = content.replace(/<title>/, ogTags + '\n    <title>');
+        changed = true;
+    } else if (!content.includes('property="og:image"') || !content.includes('name="twitter:card"')) {
+        const ogImage = `${DOMAIN}/images/og-default.png`;
+        const pageTitle = escapeAttr(content.match(/<title>(.*?)<\/title>/)?.[1] || meta.ogTitle || 'CanadianCaptive.com');
+        const pageDescription = escapeAttr(content.match(/<meta\s+name="description"[\s\S]*?content="([^"]*)"/i)?.[1] || meta.description || '');
+        const canonicalUrl = content.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1]
+            || (filename === 'index.html' ? DOMAIN + '/' : `${DOMAIN}/${filename}`);
+        const ogType = content.match(/<meta\s+property="og:type"\s+content="([^"]*)"/i)?.[1] || meta.ogType || 'website';
+        content = content.replace(/\s*<meta\s+(?:property="og:[^"]+"|name="twitter:[^"]+")[^>]*>/gi, '');
+        const ogTags = `<meta property="og:title" content="${pageTitle}" />
+    <meta property="og:description" content="${pageDescription}" />
+    <meta property="og:image" content="${ogImage}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="${canonicalUrl}" />
+    <meta property="og:type" content="${ogType}" />
+    <meta property="og:site_name" content="CanadianCaptive.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${pageTitle}" />
+    <meta name="twitter:description" content="${pageDescription}" />
+    <meta name="twitter:image" content="${ogImage}" />`;
         content = content.replace(/<title>/, ogTags + '\n    <title>');
         changed = true;
     }
