@@ -387,6 +387,13 @@ const TAILWIND_CONFIG = `tailwind.config = {
             },
         }`;
 
+function buildFaviconLinks(pathPrefix) {
+    return `    <link rel="icon" type="image/png" sizes="32x32" href="${pathPrefix}favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="${pathPrefix}favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="${pathPrefix}apple-touch-icon.png" />
+    <link rel="shortcut icon" href="${pathPrefix}favicon.ico" />`;
+}
+
 function buildNav(pathPrefix, activePage, totalCount) {
     // pathPrefix: '' for root pages, '../' for /domiciles/ pages
     const homeActive = activePage === 'home';
@@ -397,8 +404,9 @@ function buildNav(pathPrefix, activePage, totalCount) {
 
     return `    <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 py-3.5 md:py-4">
-            <a href="${pathPrefix}index.html" class="text-xl sm:text-2xl font-bold tracking-tighter text-red-700 hover:opacity-80 transition-opacity shrink-0">
-                CanadianCaptive.com
+            <a href="${pathPrefix}index.html" class="flex items-center gap-2.5 text-xl sm:text-2xl font-bold tracking-tighter text-red-700 hover:opacity-80 transition-opacity shrink-0">
+                <img src="${pathPrefix}favicon.png" alt="CanadianCaptive.com logo" class="w-7 h-7 sm:w-8 sm:h-8 rounded-md shadow-sm" />
+                <span>CanadianCaptive.com</span>
             </a>
             <div class="hidden lg:flex items-center gap-x-6 xl:gap-x-8 text-sm xl:text-base">
                 <a class="${homeActive ? 'text-red-700 font-semibold border-b-2 border-red-700 pb-1' : 'text-slate-600 hover:text-red-600 transition-colors'} font-sans antialiased tracking-tight whitespace-nowrap"
@@ -590,6 +598,7 @@ function generateDomicilePage(domicile, allDomiciles) {
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+${buildFaviconLinks(pathPrefix)}
     <meta name="keywords" content="${escapeTemplateValue(domicile.name)} captive insurance, ${escapeTemplateValue(domicile.jurisdiction)} domicile, captive formation" />
     <link rel="canonical" href="${pageUrl}" />
 ${socialMetaTags({ title: pageTitle, description: pageDescription, url: pageUrl, type: 'article' })}
@@ -1001,6 +1010,7 @@ ${cardsHTML}
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+${buildFaviconLinks('')}
     <link rel="canonical" href="${pageUrl}" />
 ${socialMetaTags({ title: pageTitle, description: pageDescription, url: pageUrl, type: 'website' })}
     <title>${pageTitle}</title>
@@ -1144,14 +1154,20 @@ function updateDynamicCountsAcrossSite(totalCount) {
         if (!fs.existsSync(filePath)) return;
         const original = fs.readFileSync(filePath, 'utf-8');
         const newNav = buildNav('', active, totalCount);
-        const updated = original
+        let updated = original
             .replace(/<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">[\s\S]*?<\/nav>/, newNav.trimStart())
             .replace(/Browse All \d+\+? Domiciles/g, `Browse All ${totalCount} Domiciles`)
             .replace(/across \d+\+? global domiciles/g, `across ${totalCount} global domiciles`)
             .replace(/Explore \d+\+? captive insurance domiciles/g, `Explore ${totalCount} captive insurance domiciles`);
+        if (!updated.includes('rel="icon"')) {
+            updated = updated.replace(
+                /<meta content="width=device-width, initial-scale=1\.0" name="viewport"\s*\/>/,
+                `<meta content="width=device-width, initial-scale=1.0" name="viewport" />\n${buildFaviconLinks('')}`
+            );
+        }
         if (updated !== original) {
             fs.writeFileSync(filePath, updated, 'utf-8');
-            console.log(`  ✓ Synced responsive nav & dynamic count (${totalCount}) in ${file}`);
+            console.log(`  ✓ Synced responsive nav, favicon & dynamic count (${totalCount}) in ${file}`);
         }
     });
 
