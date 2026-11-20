@@ -483,18 +483,70 @@
   },
   {
     "name": "Bahrain",
-    "summary": "Bahrain serves as a regional base for international insurers, with a sector regulated by the Central Bank of Bahrain (CBB) as a single regulator since 2002. The CBB differentiates between captive and commercial insurers, offering lower capital and solvency requirements for captives provided they do not include third-party liability risks. The domicile is supported by a large pool of brokers, actuaries, and insurance managers.",
+    "summary": "Bahrain licenses captive insurers through the Central Bank of Bahrain under Volume 3 of the CBB Rulebook. The Bank's insurance page states that the CBB has been the insurance regulator since 2002. The capital-adequacy module is a directive issued under Article 38 of the Central Bank of Bahrain and Financial Institutions Law 2006. A captive is Category C1 or Category C2. Category C1 may insure only non-liability risks of its shareholders or of subsidiary or associated companies of those shareholders. Category C2 is limited to the same related risks and may include liability risks if the CBB is satisfied that the activity, capital structure and management protect potential third-party claimants. Captives are not subject to the BD 5 million Tier 1 floor for a Bahraini insurance firm, or the BD 10 million floor where that firm's business is limited to reinsurance. They must keep capital available above the greater of the required solvency margin and a minimum fund of BD 75,000 for Category C1 or BD 300,000 for Category C2. A captive may be a Bahraini special purpose vehicle or one of the other insurance-firm legal forms. The annual licensing fee is a fixed BD 1,000. The fact sheet counts 1 captive among 21 locally incorporated insurance and reinsurance firms. That sheet dates the wider count of insurance companies and organisations at December 2025 and does not date the captive line separately, or publish new licences, surrenders, or a staff count. No licensing-day standard is stated in the captive provisions reviewed. Licensing enquiries go to licensing@cbb.gov.bh.",
     "jurisdiction": "Offshore",
-    "legislation": "CBB Regulatory Framework",
+    "legislation": "Central Bank of Bahrain Rulebook, Volume 3 (Insurance), including Module CA (Capital Adequacy) and Module CI (Captive Insurance), issued under the Central Bank of Bahrain and Financial Institutions Law 2006",
+    "legislation_year": 2006,
+    "applicable_legislation": "Central Bank of Bahrain and Financial Institutions Law 2006. Module CA is the CBB directive on capital adequacy of insurance licensees issued under Article 38 of that law. The directive was adopted in January 2007 and the module records a later amendment in January 2011. Category C1 and Category C2, and their minimum funds, are CA-2.1.5 and CA-2.1.6, amended January 2007. The Tier 1 exception for captives is CA-1.2.1, amended January 2007 and October 2007. Legal form is AU-2.1.1 to AU-2.1.3, amended July 2007 and, for the special-purpose-vehicle paragraph, January 2008. The annual licensing fee is AU-6.3.3, added July 2007 and amended July 2013. The Insurance Firm Return is BR-1.1, amended January 2007, with the captive risk-gap and reinsurance information in BR-1.1.6. The captive overview in ES-1.17.3 records the exemptions from quarterly and group financial reporting. The Bank's insurance page states that the CBB has regulated insurance since 2002.",
     "min_capital": {
-      "Captive": "Risk-based; lower than traditional insurers unless third-party liability is involved"
+      "Category C1": "Minimum fund of BD 75,000 (CA-2.1.5(e)). A Category C1 insurer may insure only the insurance risks, other than liability risk, of its shareholders or of subsidiary or associated companies of its shareholders (CA-2.1.6(e)).",
+      "Category C2": "Minimum fund of BD 300,000 (CA-2.1.5(f)). A Category C2 insurer is restricted to the risks of its shareholders or of their subsidiary or associated companies, and its business may include liability risks if the CBB is satisfied that the activity, capital structure and management provide sufficient protection to potential third-party claimants (CA-2.1.6(f)).",
+      "Tier 1 capital": "Captive insurers are not subject to a minimum Tier 1 capital. A Bahraini insurance firm otherwise maintains minimum Tier 1 capital of BD 5 million, or BD 10 million where its business is limited to reinsurance (CA-1.2.1).",
+      "Capital available and solvency margin": "Every insurance firm must at all times maintain capital available in excess of the greater of the required solvency margin and the minimum fund (CA-1.2.1). The required solvency margin for long-term insurance business is determined under CA-2.1.9, and for general insurance business under CA-2.1.12 (CA-2.1.7). Where the long-term aggregate falls below the minimum fund, the minimum fund is substituted. The percentage components of CA-2.1.10, CA-2.1.11 and CA-2.1.12 were not extracted from the rulebook section retrieved, so they are not restated.",
+      "Legal form and incorporation capital": "A captive's legal status must be a Bahraini special purpose vehicle established to carry out the captive's activities, or a Bahraini joint stock company, a Bahraini branch of an overseas insurance or reinsurance firm, or a Bahraini exempt company that was incorporated and licensed to conduct insurance business before 1 January 2005 (AU-2.1.1 and AU-2.1.2). A Bahraini special purpose vehicle is a closed joint stock company. The rulebook states that the minimum capital required by the Ministry of Commerce and Industry to incorporate that company is BD 1,000, and that the captive must still satisfy the Module CA capital requirements (AU-2.1.3)."
     },
-    "tax_notes": "Competitive regulatory environment",
+    "tax_notes": "The CBB Rulebook fee for a captive is a fixed annual licensing fee, not a premium tax. The National Bureau for Revenue states that value-added tax has been charged at the standard rate of 10 percent since 1 January 2022. Its financial-services guidance states that life insurance contracts, life reinsurance contracts and transfers of those contracts are exempt, and that other insurance services, such as medical and motor insurance, are taxable at 10 percent, with travel insurance zero-rated in some cases. Decree-Law No. 11 of 2024 imposes a domestic minimum top-up tax of 15 percent, from 1 January 2025, on multinational enterprises whose annual global revenue is at least EUR 750 million. On 30 December 2025 the Bureau described a draft law, to be referred to the legislature, that would charge 10 percent on profits above BD 200,000 of local companies whose revenue exceeds BD 1 million or whose annual net profit exceeds BD 200,000, with the stated aim of applying it in 2027. The Bureau said a group already within the 15 percent top-up tax would not also pay that 10 percent. The draft is not stated as a tax in force. No captive-specific income-tax exemption was stated on the Bureau pages or in the rulebook modules reviewed.",
     "slug": "bahrain",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Licensing and Regulatory Policy Directorate, Central Bank of Bahrain",
+    "contact_email": "licensing@cbb.gov.bh",
+    "last_verified": "2026-11-20",
+    "source_urls": [
+      "https://www.cbb.gov.bh/insurance/",
+      "https://www.cbb.gov.bh/fact-sheet/",
+      "https://www.cbb.gov.bh/licensing-registration/",
+      "https://www.cbb.gov.bh/wp-content/uploads/2026/03/IMR-Q2-2025.pdf",
+      "https://cbben.thomsonreuters.com/entiresection/300908",
+      "https://cbben.thomsonreuters.com/rulebook/ca-121-14",
+      "https://cbben.thomsonreuters.com/entiresection/300980",
+      "https://cbben.thomsonreuters.com/entiresection/300339",
+      "https://cbben.thomsonreuters.com/rulebook/au-633",
+      "https://cbben.thomsonreuters.com/entiresection/301689",
+      "https://cbben.thomsonreuters.com/rulebook/es-1173",
+      "https://www.nbr.gov.bh/VAT/what_is_vat",
+      "https://www.nbr.gov.bh/vat_faqs/14",
+      "https://www.nbr.gov.bh/dmtt/what_is_dmtt",
+      "https://www.nbr.gov.bh/releases/188",
+      "https://www.nbr.gov.bh/releases/229"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 1
+    },
+    "types_allowed": [
+      "Category C1 captive insurers, limited to non-liability risks of shareholders and of their subsidiary or associated companies",
+      "Category C2 captive insurers, limited to related-party risks and permitted to include liability risks where the Central Bank of Bahrain is satisfied that activity, capital and management protect third-party claimants",
+      "Captives formed as a Bahraini special purpose vehicle",
+      "Captives formed as a Bahraini joint stock company, as a branch of an overseas insurer, or as a Bahraini exempt company incorporated and licensed before 1 January 2005"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "The annual licensing fee on grant is the fixed captive fee in AU-6.3.3. A separate application fee for a captive was not stated in AU-6.3.3 or on the Bank's licensing page. The rulebook states that Ministry of Commerce and Industry incorporation capital for a Bahraini special purpose vehicle is BD 1,000. That figure is an incorporation-capital floor, not the CBB licensing fee, and the captive must still meet the Module CA minimum fund.",
+      "annual_fees": "BD 1,000 fixed annual licensing fee for a captive insurance firm (AU-6.3.3, amended July 2013). An insurance firm that is not a captive pays a fixed annual licensing fee of BD 6,000. The Bank's licensing page publishes the same captive fee of BD 1,000.",
+      "premium_tax_rate": "No premium tax is imposed by the captive licensing-fee rule. Value-added tax is 10 percent on taxable insurance other than exempt life insurance and life reinsurance. A 15 percent domestic minimum top-up tax applies from 1 January 2025 to in-scope multinational enterprises with annual global revenue of at least EUR 750 million. A proposed 10 percent tax on specified local-company profits was described by the National Bureau for Revenue on 30 December 2025 as a draft for the legislature, aimed at 2027, and is not stated as a tax in force."
+    },
+    "annual_filing_requirements": "An insurance firm prepares and submits an Insurance Firm Return for each financial year within 3 months of the financial year end (BR-1.1.1 and BR-1.1.5). The financial year is 12 months ending on 31 December unless the CBB consents in writing to another period or year end. The period cannot be shorter than 6 months or longer than 18 months (BR-1.1.2). Captive insurers submit additional return information on the risk gap, being the degree to which potential liabilities under the policy limits exceed available assets and the resources available to meet that gap, and on reinsurance providers, limits and claims (BR-1.1.6). The return is submitted on the prescribed form, with an actuary's certificate and report where applicable (BR-1.1.5). It is reviewed under the international standard on related services for agreed-upon procedures, and the review certifies that the information agrees with the books and records and with the audited financial statements (BR-1.1.14). The external auditor's report, in the CBB format, is provided within 4 months of the financial year end (BR-1.1.16). ES-1.17.3 records that captives are exempt from quarterly and group financial reporting and that public-disclosure requirements do not apply to them. The sections reviewed do not state an in-Bahrain board-meeting requirement or a periodic on-site examination interval.",
+    "captive_administrator": {
+      "name": "Insurance Supervision Directorate, Central Bank of Bahrain",
+      "email": "licensing@cbb.gov.bh",
+      "phone": "+973 17 547303",
+      "fax": null
+    },
+    "licensing_speed": null,
+    "regulator": {
+      "name": "Central Bank of Bahrain",
+      "address": "Building 96, Road 1702, Block 317, Diplomatic Area, King Faisal Highway, P.O. Box 27, Manama, Kingdom of Bahrain",
+      "website": "https://www.cbb.gov.bh/insurance/"
+    }
   },
   {
     "name": "Barbados",
@@ -683,19 +735,68 @@
   },
   {
     "name": "British Virgin Islands",
-    "summary": "The BVI offers a seamless approach to captive formation, leveraging a long tenure in corporate domiciliation and a deep cadre of professional expertise. It licenses various captive categories, including Category E for pure captives and segregated portfolio companies that allow independent underwriting for owners. There is no corporate income tax in the BVI, and capital requirements vary based on the insurance line.",
+    "summary": "The British Virgin Islands Financial Services Commission licenses insurers under the Insurance Act, 2008, the Insurance Regulations, 2009 and the Regulatory Code, 2009. The Insurance (Amendment) Act, 2015 added Category E, a pure captive that may underwrite related-party business only, and Category F, a captive that underwrites related-party business and a maximum of unrelated business in order to qualify as an insurer under the law of a foreign jurisdiction. A Category C, D, E or F insurer must appoint a licensed insurance manager. A segregated portfolio company that wants an insurance licence is licensed as Category C. Minimum contributed capital under section 130 of the Code is $200,000 where the insurer may carry on any class of long-term business, and $100,000 otherwise. The Financial Services (Fees) (Amendment) Regulations, 2023, in force for these items from 1 April 2023, charge US$1,000 to apply for an insurer's licence, US$2,000 to issue a Category C, D, E or F licence, and US$7,500 to issue a Category C segregated-portfolio-company licence. Annual renewal for Category C, D, E or F runs from US$2,000 to US$7,500 by the preceding year's gross written premium, and a Category C segregated portfolio company pays US$7,500. The 2025 fee amendment did not change those insurance items. The Commission's 2024 annual report chart shows 44 captive insurers at the end of 2024, compared with 45 at the end of 2023, within 103 active insurance entities. Captive gross direct written premium was $75,404,920 and captive total assets were $1,510,902,604. The report does not publish formations, surrenders, a pure-versus-group split, or a staff count. The Insurance Act and the fee regulations do not impose a premium tax, and they do not state a corporate income-tax rate.",
     "jurisdiction": "Offshore",
-    "legislation": "BVI Financial Services Commission framework",
+    "legislation": "Insurance Act, 2008 (Revised 2020 text published by the Commission), Insurance (Amendment) Act, 2015, Insurance Regulations, 2009, and Regulatory Code, 2009",
+    "legislation_year": 2008,
+    "applicable_legislation": "Insurance Act, 2008, as amended by the Insurance (Amendment) Act, 2015 (Act No. 16 of 2015), which inserted Category E and Category F. Licence categories are section 7. Contributed capital is section 10, and the dollar floors are Regulatory Code section 130. The solvency margin is section 12 of the Act and section 131 of the Code. An insurance manager for Category C, D, E or F is section 23. Directors are section 25. Segregated portfolio companies are section 36A. Audited financial statements are sections 56 and 57. Fees are the Financial Services (Fees) (Amendment) Regulations, 2023 (S.I. 2023 No. 5), which substituted the schedule from 1 April 2023. The annual due date remains regulation 2A of the Financial Services (Fees) Regulations, as substituted by S.I. 12 of 2017 and left in place by the 2023 substitution of the schedule. The Financial Services (Fees) (Amendment) Regulations, 2025 (S.I. 2025 No. 4), in force on 2 January 2025, amended anti-money-laundering reporting-officer fees and did not amend the insurance items. The Insurance Guidelines, 2016 explain Categories E and F and segregated portfolio licensing. The captive annual return is filed under the Financial Services (Prudential and Statistical Returns) Order, 2009, as described in the Commission's captive-return guidance.",
     "min_capital": {
-      "P&C Business": "$100,000",
-      "Life and Health": "$200,000"
+      "Contributed capital, general business": "Section 130 of the Regulatory Code sets the minimum contributed capital of a BVI insurer at $100,000 where the insurer is not authorised to carry on any class of long-term business. Section 10 of the Insurance Act requires the insurer to maintain at least the greater of that Code minimum and any higher amount the Commission directs.",
+      "Contributed capital, long-term business": "Section 130 of the Code sets the minimum at $200,000 where the insurer is authorised to carry on any class of long-term business. The same section applies to a BVI insurer that writes both long-term business and property and casualty business, because the long-term limb is triggered by authorisation for any class of long-term business.",
+      "Solvency margin, general insurer": "Section 131 of the Code requires a general insurer to maintain a minimum solvency margin of $100,000 if annual net written premium is less than $500,000; 20 percent of net annual written premium if that premium is greater than $500,000 but less than $5,000,000; and $1,000,000 plus 10 percent of the amount by which annual net written premium exceeds $5,000,000 if that premium is greater than $5,000,000. The section does not state the margin at exactly $500,000 or exactly $5,000,000. In the first financial year the premium measure is the amount projected in the business plan.",
+      "Solvency margin, long-term insurer": "Section 131 of the Code requires a long-term insurer to maintain a minimum solvency margin of $250,000. The insurer must in any event maintain a solvency margin adequate to meet its liabilities, taking into account the nature, size, complexity, structure and diversity of the business and its risk profile.",
+      "Commission direction": "The Commission may direct a higher contributed capital or a higher amount of capital resources, with at least 14 days to comply (Insurance Act, section 10). Section 129 of the Code requires capital resources adequate for the business in addition to the specific contributed-capital and solvency floors."
     },
-    "tax_notes": "No corporate income tax",
+    "tax_notes": "The Insurance Act and the Financial Services (Fees) Regulations impose licence fees. They do not impose a premium tax. No corporate income-tax rate for a captive, and no statement that the Territory imposes no income tax, was found in the Insurance Act, the Regulatory Code, the Insurance Regulations, the fee regulations, the 2024 annual report, or the Insurance Guidelines reviewed.",
     "slug": "british-virgin-islands",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "British Virgin Islands Financial Services Commission",
+    "contact_email": "commissioner@bvifsc.vg",
+    "last_verified": "2026-11-20",
+    "source_urls": [
+      "https://www.bvifsc.vg/sites/default/files/insurance_act.pdf",
+      "https://www.bvifsc.vg/sites/default/files/g00766_no_16_of_2015-insurance_amendment_act_2015_final.pdf",
+      "https://www.bvifsc.vg/sites/default/files/regulatory_code_2009.pdf",
+      "https://www.bvifsc.vg/sites/default/files/insurance_regulations.pdf",
+      "https://www.bvifsc.vg/sites/default/files/insurance_guidelines_2016.pdf",
+      "https://www.bvifsc.vg/sites/default/files/guidance_on_preparing_and_submitting_captive_insurance_business_annual_return.pdf",
+      "https://www.bvifsc.vg/sites/default/files/financial_services_fees_regulations.pdf",
+      "https://www.bvifsc.vg/sites/default/files/financial_services_fees_amendment_regulations_2023.pdf",
+      "https://www.bvifsc.vg/sites/default/files/financial_services_fees_amendment_regulations_2025.pdf",
+      "https://www.bvifsc.vg/sites/default/files/annual_report_2024.pdf",
+      "https://www.bvifsc.vg/sites/default/files/fsc_email_contacts.pdf",
+      "https://www.bvifsc.vg/sites/default/files/final_public_statement_-_fraudulent_emails.pdf"
+    ],
+    "stats": {
+      "reporting_year": 2024,
+      "total_captives": 44
+    },
+    "types_allowed": [
+      "Category E insurers, pure captives limited to related-party business",
+      "Category F insurers, captives writing related-party business and a maximum of unrelated business in order to qualify as an insurer under foreign law",
+      "Category C insurers, BVI business companies writing insurance that is not domestic business, including reinsurance that is not open-market reinsurance where the licence permits",
+      "Category C segregated portfolio companies licensed under section 36A of the Insurance Act and Part VII of the BVI Business Companies Act",
+      "Category D insurers, BVI business companies writing reinsurance, including open-market reinsurance",
+      "Insurers licensed for both life and health business and property and casualty business where the Commission is satisfied as to resources and the business plan"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Under the schedule substituted by the Financial Services (Fees) (Amendment) Regulations, 2023, with effect from 1 April 2023, the application fee for a Category A, B, C, D, E or F insurer's licence is US$1,000. The fee for issuing the licence is US$3,500 for Category A or B, US$2,000 for Category C, D, E or F, and US$7,500 for a Category C segregated portfolio company. An application to vary a licence by adding or removing a class of business, or by converting a category, is US$1,000, and approval of a variation is US$1,500 or US$2,000 for a conversion. An insurance manager's application fee is US$500 and the fee for issuing that licence is US$2,000. Registry incorporation fees are not set in the insurance rows of the schedule. The Commission's website FAQ still shows a single captive annual figure and is not the fee instrument used here.",
+      "annual_fees": "Annual fees under the Insurance Act are due no later than 28 February (regulation 2A of the Financial Services (Fees) Regulations). The 2023 schedule sets annual renewal for a Category C, D, E or F licensee, by total gross written premiums of the preceding year, at US$2,000 where premiums are $500,000 or less, US$3,000 from $500,001 to $999,999, US$3,500 from $1,000,000 to $2,400,000, US$4,500 from $2,400,001 to $4,999,999, US$6,000 from $5,000,000 to $9,999,999, and US$7,500 at $10,000,000 and above. A Category C segregated portfolio company pays US$7,500. An insurance manager's annual renewal is US$2,000. The Financial Services (Fees) (Amendment) Regulations, 2025 did not change these insurance amounts.",
+      "premium_tax_rate": "No premium tax is imposed by the Insurance Act or the fee schedule. The regulatory charge is the fixed or premium-banded licence fee. No corporate income-tax rate was stated in the Commission legislation and reports reviewed."
+    },
+    "annual_filing_requirements": "A BVI insurer submits financial statements within 6 months of the financial year end, or within a shorter prescribed period, together with an auditor's report and any report made to members (Insurance Act, section 57). The statements are approved by the directors and signed by at least one director (section 56). The insurer appoints an auditor approved by the Commission (section 61). The Commission may extend the section 57 period by up to 3 months in aggregate (section 59). A licensee in Category C, D, E or F also files the Captive Insurance Business Annual Return for the previous calendar year on or before 31 March, under the Commission's guidance on the Financial Services (Prudential and Statistical Returns) Order, 2009. The return goes to insurancereturns@bvifsc.vg. An extension of up to 30 days may be requested at least seven days before the deadline. Monetary amounts in the return are reported in US dollars. A Category C, D, E or F insurer appoints and at all times has an insurance manager that holds an insurance manager's licence, with the Commission's prior written approval (section 23). A BVI insurer has at least two directors, each an individual (section 25). A segregated portfolio company is licensed under section 36A. The Act does not state an in-Territory board-meeting requirement in the sections reviewed. The 20 March 2026 public statement directs general contact to commissioner@bvifsc.vg. The Commission's division email list also publishes Insurance@bvifsc.vg for the Insurance Division.",
+    "captive_administrator": {
+      "name": "British Virgin Islands Financial Services Commission",
+      "email": "commissioner@bvifsc.vg",
+      "phone": null,
+      "fax": null
+    },
+    "licensing_speed": "The Insurance Guidelines, 2016 state that, on receipt of a completed application, the Commission will endeavour to process the application and communicate its decision within the time stipulated in the Commission's Performance Accountability and Supervisory Service Standards. The guidelines do not state that number of days. The Insurance Act does not state a licensing-day standard.",
+    "regulator": {
+      "name": "British Virgin Islands Financial Services Commission",
+      "address": "P.O. Box 418, Pasea Estate, Road Town, Tortola VG 1110, British Virgin Islands",
+      "website": "https://www.bvifsc.vg/sites/default/files/insurance_act.pdf"
+    }
   },
   {
     "name": "Cayman Islands",
@@ -776,18 +877,62 @@
   },
   {
     "name": "China",
-    "summary": "China's captive sector is primarily focused on pure captives owned by large state-owned or private enterprises with assets exceeding RMB 100 billion. The CBIRC oversees the industry, utilizing the China Risk Oriented Solvency System (C-ROSS) without exemption for captives. There are no specific tax exemptions for captives; they are subject to standard corporate tax rates of 25% and 6% VAT.",
+    "summary": "China licenses captive insurers, called captive insurance companies in the National Financial Regulatory Administration's licensing guide, under item 409 of the Decision of the State Council on Setting Administrative Licensing for Administrative Examination and Approval Items That Need to Be Retained, State Council Order No. 412. That decision took effect on 1 July 2004 and assigns approval of the establishment, merger, division, change and dissolution of an exclusive captive organisation. The Administration's 2023 licensing guide, and its 2025 guide, still list the Insurance Law, the Provisions on the Administration of Insurance Companies, the Notice on Matters Concerning the Supervision of Captive Insurance Companies, and the Notice on Further Improving Matters Concerning the Supervision of Captive Insurance Companies as conditions for captive preparation and opening. The full texts of those two notices were not available as live Administration or State Council pages, so their parent-company asset threshold, business-line list and any captive-specific capital formula are not restated. Where the Insurance Law applies, Article 69 requires registered capital of at least RMB 200 million, paid in cash. The supervisor may set a higher floor and may not set a lower one. The Administration's legal-person list as at 31 December 2025 identifies four property insurers whose Chinese or English names identify them as captives: CNPC Captive Insurance, China Railway Captive Insurance, COSCO Shipping Captive Insurance, and Guangdong Energy Captive Insurance. The list does not use a separate captive institution type, and it does not publish formations or surrenders. No captive-specific tax exemption was stated in the Insurance Law text or the licensing guide. Enterprise income tax is 25 percent. Value-added tax on insurance services, as a financial service, is 6 percent for a general taxpayer.",
     "jurisdiction": "Onshore (China)",
-    "legislation": "CBIRC Circulars (2013 and 2015)",
+    "legislation": "Decision of the State Council on Setting Administrative Licensing for Administrative Examination and Approval Items That Need to Be Retained, State Council Order No. 412, item 409, and the Insurance Law of the People's Republic of China",
+    "legislation_year": 2004,
+    "applicable_legislation": "State Council Order No. 412 was promulgated on 29 June 2004 and took effect on 1 July 2004. Item 409 retains licensing for the establishment, merger, division, change and dissolution of an exclusive captive organisation and a mutual insurance organisation. The decision states that procedures and time limits follow the Administrative License Law. The National Financial Regulatory Administration's licensing guide of 16 June 2023 lists, as conditions for captive preparation and opening, the Insurance Law, the Provisions on the Administration of Insurance Companies, the Notice on Matters Concerning the Supervision of Captive Insurance Companies, the Notice on Further Improving Matters Concerning the Supervision of Captive Insurance Companies, and several general insurer rules on shareholders, plans, articles and senior officers. The Administration's 2025 licensing guide still cites Order No. 412, item 409, as the approval basis and still cites the first captive notice for a change of name. The full texts and document numbers of the two captive notices were not on the Administration or State Council pages retrieved. The Administration's cleanup of 24 December 2025 did not list either notice among the normative documents it repealed or declared spent. The Insurance Law text published by the Administration sets capital in Article 69, preparation and opening periods in Articles 71 and 73, reporting in Article 86, and solvency supervision in Article 137. The 2019 related-party rules state that a captive's captive business is outside those rules. The 2019 corporate-governance assessment includes captive companies and says that separate rules on captive shareholders and governance prevail where they exist.",
     "min_capital": {
-      "Minimum Requirement": "RMB 200 million (~$29M)"
+      "Insurance Law floor": "Registered capital of at least RMB 200 million (Insurance Law, Article 69). The supervisor may raise the floor for an insurer's business scope and scale and may not reduce it below RMB 200 million. Registered capital must be paid-in monetary capital. The Administration's 2023 licensing guide repeats that floor for the establishment of an insurance company and lists the Insurance Law among the conditions for a captive.",
+      "Captive notices": "The Administration's licensing guide treats two captive notices as additional conditions. Their full texts were not retrieved from a live Administration or State Council page. Any parent-company asset threshold, risk-matched capital formula, or other captive-specific amount in those notices is not restated."
     },
-    "tax_notes": "25% Corporate tax; 6% VAT",
+    "tax_notes": "Article 4 of the Enterprise Income Tax Law sets the enterprise income tax rate at 25 percent. The National People's Congress publishes that article, and the State Taxation Administration repeats it. The Administration states that a general taxpayer's value-added tax rate is 6 percent on financial services. The Foshan office of the Guangdong tax bureau, in its value-added-tax rate table for periods after 1 April 2019, lists insurance services at 6 percent. The Insurance Law text and the captive section of the licensing guide do not state a captive-specific income-tax or value-added-tax exemption. No premium-tax rate separate from value-added tax was stated on those pages.",
     "slug": "china",
-    "contact_name": null,
+    "contact_name": "National Financial Regulatory Administration",
     "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "last_verified": "2026-11-20",
+    "source_urls": [
+      "https://www.gov.cn/zwgk/2005-06/20/content_7908.htm",
+      "https://www.nfra.gov.cn/chinese/docfile/2023/ee30bf701599443a93a0cb6b69270308.pdf",
+      "https://www.nfra.gov.cn/chinese/docfile/2025/e1e67a43af34401aae960aec3b7ecc97.pdf",
+      "https://www.nfra.gov.cn/chinese/docfile/2025/ca8d8237bdf746e9a3bff26a3bf2af39.pdf",
+      "https://www.nfra.gov.cn/chinese/docfile/2026/39f80ec161ae46e3ad8f8621887445e2.pdf",
+      "https://www.nfra.gov.cn/chinese/OFFICE/PDF/1240325.pdf",
+      "https://www.nfra.gov.cn/cn/view/pages/jigougaikuang/jigougaikuang.html",
+      "https://www.gov.cn/zhengce/zhengceku/2019-12/03/content_5457919.htm",
+      "https://www.gov.cn/zhengce/zhengceku/2019-12/04/content_5458549.htm",
+      "http://www.npc.gov.cn/npc/c2/c30834/201905/t20190521_296654.html",
+      "https://www.chinatax.gov.cn/chinatax/c102449/c5237520/content.html",
+      "https://www.chinatax.gov.cn/chinatax/n810219/n810744/n3428471/n4169123/c4170302/content.html",
+      "https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_6ac1c731f719458a8d922cac345ae6d3.shtml"
+    ],
+    "stats": {
+      "reporting_year": 2025,
+      "total_captives": 4
+    },
+    "types_allowed": [
+      "Captive insurance companies approved by the National Financial Regulatory Administration under State Council Order No. 412, item 409",
+      "The four companies identified as captives on the Administration's legal-person list are classified on that list as property-insurance companies"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "No captive application fee or licence-issue fee was stated in the Administration's captive licensing guide or in the Insurance Law articles reviewed.",
+      "annual_fees": "No captive annual supervisory fee was stated in the Administration's captive licensing guide. The Administration's cleanup of 24 December 2025 declared spent the former notice that had temporarily suspended insurance regulatory fees. That cleanup does not publish a replacement fee amount.",
+      "premium_tax_rate": "Enterprise income tax of 25 percent under Article 4 of the Enterprise Income Tax Law. Value-added tax of 6 percent on insurance services for a general taxpayer. No separate premium-tax rate, and no captive-specific exemption from either tax, was stated in the Insurance Law text or the licensing guide."
+    },
+    "annual_filing_requirements": "Article 86 of the Insurance Law requires an insurance company to submit the reports, statements, documents and materials prescribed by the insurance supervisor. Solvency reports, financial accounting reports, actuarial reports, compliance reports and the other prescribed materials must record the insurance business truthfully. Article 137 requires the supervisor to establish a solvency supervision system and to monitor the solvency of insurance companies. The Administration's licensing guide lists the Insurance Law among the conditions for a captive and does not restate a captive-only filing calendar. Any quarterly captive report in the captive notices is not restated, because those notices were not retrieved from a live Administration or State Council page. The 2019 related-party measures state that they do not apply to a captive's captive business. The institution page publishes a petition-consultation telephone, 010-66279113, on working-day mornings and afternoons, and the banking and insurance consumer-complaint line 12378. It does not publish a general email address.",
+    "captive_administrator": {
+      "name": "National Financial Regulatory Administration",
+      "email": null,
+      "phone": "010-66279113",
+      "fax": null
+    },
+    "licensing_speed": "State Council Order No. 412 states that procedures and time limits for the retained licensing items follow the Administrative License Law. Insurance Law Article 71 requires a decision on preparation of an insurance company within six months after acceptance. Article 73 requires a decision on opening within 60 days after acceptance of the opening application. The captive items in the Administration's 2023 licensing guide cite Order No. 412 and do not restate those Insurance Law periods as the captive timetable.",
+    "regulator": {
+      "name": "National Financial Regulatory Administration",
+      "address": "No. 15A Financial Street, Xicheng District, Beijing 100033, People's Republic of China",
+      "website": "https://www.nfra.gov.cn/"
+    }
   },
   {
     "name": "Connecticut",
