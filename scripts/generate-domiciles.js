@@ -144,6 +144,16 @@ function statDisplay(domicile) {
             otherWide: true,
         };
     }
+    if (domicile.slug === 'france') {
+        return {
+            total: 'Captive reinsurers the ACPR said had been authorized as of 12 November 2024',
+            totalWide: true,
+            pureFallback: 'Direct captive insurers are defined. No count is published',
+            groupFallback: 'No separate count is published',
+            sponsoredFallback: 'No cell regime is stated in the Code des assurances articles reviewed',
+            otherFallback: 'The stored total is captive reinsurers only',
+        };
+    }
     if (domicile.slug === 'british-columbia') {
         return {
             pureLabel: 'Pure Captives',
