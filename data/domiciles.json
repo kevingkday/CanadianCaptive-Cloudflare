@@ -1628,35 +1628,121 @@
   },
   {
     "name": "Gibraltar",
-    "summary": "As an onshore domicile for over 50 years, Gibraltar offers captive owners direct access to the UK market under flexible EU-based laws. It features a low flat tax rate of 10% which has been in effect since 2010. While capital requirements can be more onerous than offshore locations, the domicile permits varied structures including protected cell companies and managing general agents.",
+    "summary": "Gibraltar authorises captive insurers and captive reinsurers under the Financial Services (Insurance Companies) Regulations 2020, made under the Financial Services Act 2019. The consolidated regulations were last updated on 30 June 2026. A captive insurer is owned by a financial undertaking other than an insurer or reinsurer, or by a non-financial undertaking, and its purpose is to insure only the risks of the undertaking or undertakings to which it belongs, or of its group. A captive reinsurer is defined in the same way for reinsurance. Regulation 116 sets the absolute floor of the minimum capital requirement at £2,400,000 for non-life business, including a captive insurer, £3,500,000 where any of classes 10 to 15 is covered, £3,500,000 for life business, including a captive insurer, £3,500,000 for a reinsurer, and £1,200,000 for a captive reinsurer. The Gibraltar Financial Services Commission insurance-company page states the same floors. The minimum capital requirement must also lie between 25 and 45 percent of the solvency capital requirement, which regulation 91 calibrates at a 99.5 percent value-at-risk over one year. A company may be a protected cell company only with the Commission's written consent, and only if it is or will be a Gibraltar insurer or an authorised collective investment scheme, under the Protected Cell Companies Act 2001. Corporation tax on a company's taxable income is 15 percent for an accounting period. It was 10 percent through 31 July 2021 and 12.5 percent from 1 August 2021 until 30 June 2024. The pages reviewed do not publish a captive census, a staff count for insurance supervision, or a number of days in which an application must be decided.",
     "jurisdiction": "Onshore",
-    "legislation": "Gibraltar Insurance Laws",
+    "legislation": "Financial Services Act 2019, and the Financial Services (Insurance Companies) Regulations 2020",
+    "legislation_year": 2019,
+    "applicable_legislation": "Financial Services Act 2019, dated 23 July 2019. Financial Services (Insurance Companies) Regulations 2020 (Legal Notice 2020/044), in operation from 15 January 2020, consolidated text last updated 30 June 2026. The captive insurer and captive reinsurer definitions are regulation 3(1). Permission and the scheme of operations are regulations 16 and 17. Own funds covering the solvency capital requirement are regulation 90. The 99.5 percent calibration is regulation 91(4). The minimum capital requirement and its absolute floors are regulations 115 and 116. Quarterly reporting of the minimum capital requirement is regulation 116(4). Protected Cell Companies Act 2001, including section 5 on cellular and non-cellular assets and section 11 on the Gibraltar Financial Services Commission's consent. Financial Services (Fees) Regulations 2020, consolidated through the amendments commencing on 1 April 2026 and 3 September 2026, Fee Block B1 and Schedules 1A and 1B. Financial Services (Insurance Supervisory Reporting) (Technical Standards) Regulations 2025, in operation from 31 January 2025, Article 2A, for the solvency and financial condition report deadline. Rates of Tax Rules 1989, made under the Income Tax Act 2010, rule 6, as updated to 1 July 2024, including the transitional rules 6C and 6D.",
     "min_capital": {
-      "General": "More onerous than offshore; varies by structure"
+      "Non-life, including a captive insurer": "Absolute floor of £2,400,000, unless any of the risks in classes 10 to 15 is covered (regulation 116(1)(d)(i)).",
+      "Non-life covering classes 10 to 15, including a captive insurer": "Absolute floor of £3,500,000 (regulation 116(1)(d)(i)).",
+      "Life, including a captive insurer": "Absolute floor of £3,500,000 (regulation 116(1)(d)(ii)).",
+      "Reinsurer, other than a captive reinsurer": "Absolute floor of £3,500,000 (regulation 116(1)(d)(iii)).",
+      "Captive reinsurer": "Absolute floor of £1,200,000 (regulation 116(1)(d)(iii)).",
+      "Life and non-life together": "For an undertaking authorised for both life and non-life under regulation 63(2)(a) and (b), the absolute floor is the sum of the non-life and life floors. If the non-life business is limited to class 1 or 2, and gross written premiums for either life or non-life do not exceed 10 percent of total gross written premiums, the floor is the life amount in regulation 116(1)(d)(ii).",
+      "Protected cell": "Regulation 116 states the absolute floor for the insurance or reinsurance undertaking. It does not state a separate absolute floor for a protected cell. Section 5 of the Protected Cell Companies Act 2001 requires the directors to keep cellular assets separate from non-cellular assets and to keep each cell's cellular assets separate from the other cells.",
+      "How the minimum is set": "Regulation 115 requires eligible basic own funds covering the minimum capital requirement. Regulation 116(1) calibrates the linear calculation to an 85 percent value-at-risk of basic own funds over one year and then sets absolute floors. Without displacing those floors, regulation 116(3) requires the minimum capital requirement to be at least 25 percent and no more than 45 percent of the solvency capital requirement, including any capital add-on. Regulation 90 requires eligible own funds covering the solvency capital requirement. Regulation 91(4) sets that requirement at a 99.5 percent value-at-risk of basic own funds over one year. The Gibraltar Financial Services Commission insurance-company page states the same absolute floors and the same 99.5 percent solvency capital requirement."
     },
-    "tax_notes": "10% across the board tax rate",
+    "tax_notes": "Rule 6(1) of the Rates of Tax Rules 1989 charges corporation tax at 15 percent of a company's taxable income for an accounting period. A utility is charged 20 percent, and the Commissioner may charge 20 percent where a company has abused a dominant market position. Rule 6C keeps the rate at 10 percent through 31 July 2021 and at 12.5 percent from 1 August 2021 for an accounting period that straddled 1 August 2021. Rule 6D keeps the rate at 12.5 percent through 30 June 2024 and at 15 percent from 1 July 2024 for an accounting period that straddled 1 July 2024. The Rates of Tax Rules do not impose an insurance premium tax. No separate premium-tax instrument was retrieved.",
     "slug": "gibraltar",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Gibraltar Financial Services Commission",
+    "contact_email": "authorisations@fsc.gi",
+    "last_verified": "2026-11-27",
+    "source_urls": [
+      "https://www.fsc.gi/apply/insurance-company",
+      "https://www.fsc.gi/contact",
+      "https://www.gibraltarlaws.gov.gi/legislations/financial-services-insurance-companies-regulations-2020-4808",
+      "https://www.gibraltarlaws.gov.gi/legislations/financial-services-insurance-companies-regulations-2020-4808/download",
+      "https://www.gibraltarlaws.gov.gi/legislations/financial-services-fees-regulations-2020-4804/download",
+      "https://www.gibraltarlaws.gov.gi/legislations/rates-of-tax-rules-1989-395",
+      "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+      "https://www.gibraltarlaws.gov.gi/legislations/protected-cell-companies-act-2001-857/download",
+      "https://www.gibraltarlaws.gov.gi/uploads/legislations/financial-services/2025s034/2025s034.pdf"
+    ],
+    "stats": null,
+    "types_allowed": [
+      "Captive insurers, insuring only the risks of the owner or of the group, as regulation 3(1) defines them",
+      "Captive reinsurers, reinsuring only the risks of the owner or of the group",
+      "Captive insurers and captive reinsurers structured as protected cell companies, with the Gibraltar Financial Services Commission's written consent under section 11 of the Protected Cell Companies Act 2001",
+      "Life and non-life classes. Authorisation for a class, unless expressly restricted, also permits reinsurance in that class"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Schedule 2, Fee Block B1, of the Financial Services (Fees) Regulations 2020 charges £10,500 for an application for Part 7 permission by a captive insurer, whether or not it is structured as a protected cell company. Approval of an additional protected cell is £3,500 if the Commission assesses it as non-complex, £11,000 if moderately complex, and £40,000 if complex. Unless the Commission agrees otherwise, the application is accompanied by the £3,500 and the balance of a higher fee is paid before the application is regarded as complete. The application fee is paid when the application is made. The fee regulation defines a captive insurer, for fee purposes, as an insurance or reinsurance company wholly owned by a parent which covers only risks of the group and no third-party risks. That fee definition is narrower than regulation 3(1) of the Insurance Companies Regulations. Incorporation fees of the company registry are not set in Schedule 2.",
+      "annual_fees": "Fee Block B1 charges a captive insurer, including one set up as a protected cell company, a base fee of £9,192 plus £2,625 for each cell, plus a gross-premium-income fee, a gross-technical-liabilities fee, a passporting fee, an internal-capital-model fee, and a matching-adjustment fee where those items apply. For a non-life captive the premium fee is £198 per £1,000,000 or part on the first £10,000,000 of gross premium income, then £164, £133, £100, and £65 per £1,000,000 or part on the higher bands. For a life captive the first band is £275 per £1,000,000 or part, then £253, £230, £206, and £185. The gross-technical-liabilities fee starts at £40 per £1,000,000 or part on the first £10,000,000 and then uses the lower rates in the schedule. Passporting is £1,030 on a services basis and £5,150 on an establishment basis. An approved internal capital model, and an approved matching adjustment, each add a monitoring fee of £51,500. A life captive insurer, including a protected cell company, also pays the Schedule 1B anti-money-laundering supervision fee of £4,017. Where the Commission undertakes group supervision, Schedule 1A adds £3,605, £11,330, or £41,200 according to the Commission's complexity assessment. The Schedule 1 fee is due within 28 days of the notice that permission has been granted and, after that, within 28 days from 1 April each year, unless the Commission agrees otherwise. A late fee draws an administrative fee of £250 and interest at 5 percent a year above base rate.",
+      "premium_tax_rate": "No premium tax is imposed by the Rates of Tax Rules 1989. Corporation tax is 15 percent of taxable income from 1 July 2024, after 10 percent through 31 July 2021 and 12.5 percent from 1 August 2021 to 30 June 2024."
+    },
+    "annual_filing_requirements": "Regulation 116(4) requires the minimum capital requirement to be calculated at least quarterly and the result reported to the Gibraltar Financial Services Commission. Article 2A of the Financial Services (Insurance Supervisory Reporting) (Technical Standards) Regulations 2025 requires the solvency and financial condition report to be disclosed no later than 70 business days after the financial year-end, and no later than 100 business days where the group report under regulation 233 applies. The same article requires submission of the own-risk-and-solvency-assessment report and the annual, half-yearly, and quarterly quantitative templates. Regulation 37 allows the Commission to limit reporting that would otherwise be more frequent than annual, where the burden is excessive for the risks and the information is still reported at least annually. That limit is not available merely because the undertaking is a captive, and regulation 116(4) is preserved. The regulations reviewed do not state that a board meeting must be held in Gibraltar.",
+    "captive_administrator": {
+      "name": "Licensed insurance managers. Fee Block B1 charges an insurance manager £524 a year for each captive insurer under management. The Gibraltar Financial Services Commission is the regulator, not the administrator of individual captives.",
+      "email": null,
+      "phone": null,
+      "fax": null
+    },
+    "licensing_speed": "The insurance-company page describes a three-stage application and says the Commission moves the file to the next stage when it is satisfied with the current stage. It does not state a number of days for a decision. Applicants request access to the submission system by email to authorisations@fsc.gi.",
+    "regulator": {
+      "name": "Gibraltar Financial Services Commission",
+      "address": "PO Box 940, Suite 3, Ground Floor, Atlantic Suites, Europort Avenue, Gibraltar",
+      "website": "https://www.fsc.gi/apply/insurance-company"
+    }
   },
   {
     "name": "Guam",
-    "summary": "Guam offers a unique geographical advantage for US-linked business in the Pacific and features 100% tax abatement and rebates for corporate and gross receipts taxes. Legislation enacted in 1996 and subsequent amendments provide an attractive environment for risk management headquarters. Capital and surplus can be held in cash or irrevocable letters of credit approved by the commissioner.",
+    "summary": "Guam licenses captive insurance companies under Chapter 23 of Title 22 of the Guam Code Annotated. The Compiler of Laws source note says the chapter was added by Public Law 17-85 and later amended, including by Public Law 24-104 and by Public Law 27-54, which provided for protected cell companies. The Commissioner of Banking and Insurance, in the Department of Revenue and Taxation, is the licensing authority. A pure captive may insure only its parent and affiliated entities. A group captive may insure only its member organizations and their affiliates. An industrial insured captive may insure the industrial insureds in its group, their affiliates, and controlled unaffiliated businesses. An industrial insured uses an employee insurance manager or buyer, pays at least $15,000 of aggregate annual premium, and has at least 10 full-time employees. Minimum paid-in capital is $50,000 for a pure captive, $100,000 for a stock group captive, and $150,000 for a stock industrial insured captive. A rent-a-captive or protected cell captive starts at $150,000 for the first client or cell and rises by $150,000 for each additional client or cell, to a maximum of $750,000. Free surplus is $100,000 for a pure captive and $250,000 for a rent-a-captive or protected cell company. A captive that holds a Special Qualifying Certificate pays no Guam tax on premium or other insurance income except ad valorem tax on property used to produce income, and it pays its Guam income tax and then receives a full rebate under the certificate. Chapter 58 of Title 12 separately allows a 100 percent income-tax rebate on insurance underwriting income, and a business-privilege-tax abatement on insurance underwriting receipts, each for up to 20 years and renewable. Public Law 24-266, signed on 17 August 1998, amended that rebate section. It is not the captive licensing statute. The published captive regulation still states a $200 application fee and a $2,500 licence fee. The Compiler's chapter and the Department pages reviewed do not publish a captive census or a captive-unit headcount.",
     "jurisdiction": "Offshore (USA Territory)",
-    "legislation": "Public Law 24-266",
+    "legislation": "22 GCA Chapter 23 (Captive Insurance Companies), added by Public Law 17-85",
+    "legislation_year": null,
+    "applicable_legislation": "22 GCA Chapter 23, sections 23101 to 23120, in the Compiler of Laws text. The source note says section 23101 was added by Public Law 17-85 and amended by Public Law 24-104, Public Law 27-54, and Public Law 27-88. Public Law 27-54 provided for protected cell companies. Capital and surplus are sections 23104 and 23105. Reports are section 23107. Examinations are section 23108. The premium and income-tax rule for a captive holding a Special Qualifying Certificate is section 23113, amended by Public Law 23-109 and Public Law 27-54. Chapter 16 of the captive insurance regulations published by the Compiler, citing rule-making authority in 22 GCA section 23101, sets the application, licence, and renewal fees. 12 GCA Chapter 58: section 58104(k) lists captive insurers among Qualifying Certificate applicants; section 58127.5 abates business privilege tax on insurance underwriting receipts; section 58128.4, added by Public Law 23-109 on 26 July 1996 and amended by Public Law 24-266 on 17 August 1998, provides the 100 percent income-tax rebate. The Compiler's source note for Chapter 23 does not print a calendar year for Public Law 17-85, and that public law was not separately retrieved.",
     "min_capital": {
-      "Pure": "$50,000 Cap / $100,000 Surplus",
-      "Group": "$100,000 Cap / $150,000 Surplus",
-      "Protected Cell": "$150,000 per cell (max $750k)"
+      "Pure captive": "Unimpaired paid-in capital of not less than $50,000 (22 GCA section 23104(1)) and free surplus of not less than $100,000 (section 23105(1)).",
+      "Group captive, stock": "Unimpaired paid-in capital of not less than $100,000 (section 23104(2)). Section 23105 does not state a separate surplus figure for a group captive incorporated as a stock insurer.",
+      "Group captive, mutual": "Section 23105(2) requires free surplus of not less than $150,000 for a group captive incorporated as a mutual insurer. Section 23105(4) also requires free surplus of not less than $200,000 for a group captive incorporated as a mutual insurer. The statute states both amounts. Section 23104 does not set a paid-in-capital floor for a mutual.",
+      "Industrial insured captive, stock": "Unimpaired paid-in capital of not less than $150,000 (section 23104(3)) and free surplus of not less than $200,000 (section 23105(3)).",
+      "Industrial insured captive, mutual": "Free surplus of not less than $200,000 (section 23105(5)). Section 23104 does not set a paid-in-capital floor for a mutual.",
+      "Rent-a-captive or protected cell": "Unimpaired paid-in capital of not less than $150,000 for the first client or cell, increasing by $150,000 for each additional client or cell, to a maximum of $750,000 (section 23104(4)). Free surplus of not less than $250,000 (section 23105(6)). A protected cell is not a separate legal person (section 23106).",
+      "Form of capital and surplus": "Section 23104 requires the capital to be cash deposited in a Federal Reserve member bank licensed to do business in Guam and approved by the Commissioner. Section 23105 allows surplus to be cash, or an irrevocable letter of credit issued by a Federal Reserve member bank and approved by the Commissioner, or any other form acceptable to the Commissioner. The published captive regulation also accepts an irrevocable letter of credit, from a Guam-chartered bank or a Federal Reserve member bank approved by the Commissioner, as proof of compliance with both sections 23104 and 23105."
     },
-    "tax_notes": "100% tax rebates for commercial and captive companies",
+    "tax_notes": "Section 23113 applies only to a captive that has been issued a Special Qualifying Certificate under 12 GCA Chapter 58. That captive pays no tax to the government of Guam on its premium or other insurance income, except ad valorem taxes on real and personal property used in the production of income. To the extent it must first pay its Guam income tax on that income, the tax is rebated in full under the certificate. Section 58128.4 allows a rebate of 100 percent of income tax paid on income from insurance underwriting inside or outside Guam, including income from investing funds derived from that underwriting, for up to 20 consecutive years, renewable for further periods of 20 years. For Guam risks and Guam policyholders, the beneficiary may not issue a policy directly to the policyholder and may issue it only through a licensed Guam insurance broker. Section 58127.5 abates business privilege tax, for up to 20 years and renewable for further periods of 20 years, on gross receipts from underwriting insurance risks in or out of Guam and on gross receipts from investing funds generated by that underwriting. The ordinary Qualifying Certificate income-tax rebate in section 58128.1 is up to 75 percent. The 100 percent insurance rebate is the specific rule. Section 58104(k) says a Qualifying Certificate may be issued for insurance issuance by a commercial insurer, reinsurer, or captive insurer that meets Title 22, Chapter 15, Article 3. Neither Chapter 23 nor Chapter 58 states that every captive receives the rebate without a certificate.",
     "slug": "guam",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Insurance, Securities, Banking and Real Estate Branch, Department of Revenue and Taxation",
+    "contact_email": "isbre@revtax.guam.gov",
+    "last_verified": "2026-11-27",
+    "source_urls": [
+      "https://col.guamcourts.gov/sites/default/files/22gc023.pdf",
+      "https://col.guamcourts.gov/sites/default/files/30GAR003-15.pdf",
+      "https://col.guamcourts.gov/sites/default/files/12gc058.pdf",
+      "https://www.guamtax.com/about/WebsiteDirectory.pdf",
+      "https://www.guamtax.com/about/regulatory.html",
+      "https://www.guamtax.com/about/FinancialStatementFilingduringYear2026.pdf"
+    ],
+    "stats": null,
+    "types_allowed": [
+      "Pure captive insurance companies, limited to the parent and affiliated entities",
+      "Group captive insurance companies, stock or mutual, limited to member organizations and their affiliated entities",
+      "Industrial insured captive insurance companies, stock or mutual, covering the industrial insured group, their affiliates, and controlled unaffiliated businesses",
+      "Rent-a-captive insurance companies",
+      "Protected cell companies. A protected cell is an account of the company, not a separate legal person",
+      "Excess workers' compensation for the parent and affiliates, unless the law of the jurisdiction of the transaction prohibits it, and reinsurance of a qualified self-insured workers' compensation plan of the parent and affiliates"
+    ],
+    "regulator_staff_count": null,
+    "fees": {
+      "licensing_incorporation": "Section 23102(d) requires a non-refundable fee of $200 for examining, investigating, and processing the licence application. The captive regulation published by the Compiler repeats that $200 statutory application fee. Within 30 days after the Commissioner notifies an already incorporated applicant of approval, the regulation requires payment of a $2,500 licence fee. An applicant that is not yet incorporated pays the same $2,500 within 60 days after notice of approval, together with the incorporation filings. The statute does not state the $2,500 amount. Corporate filing fees of the Department are not set in Chapter 23.",
+      "annual_fees": "The published regulation says every licence expires on the 1 April following issuance. A captive that wants to renew applies on or before 1 March. The renewal is a letter identifying the company, evidence that it still meets sections 23104 and 23105, and a check for the $2,500 annual licence fee. The renewal is deemed granted unless the Commissioner rejects it in writing. Chapter 23 does not itself state an annual dollar fee. No later fee schedule changing the $200 or $2,500 amounts was retrieved.",
+      "premium_tax_rate": "A captive holding a Special Qualifying Certificate pays no Guam tax on premium or other insurance income except ad valorem property tax, and its Guam income tax on that income is paid and then rebated in full (22 GCA section 23113). Section 58128.4 allows a 100 percent income-tax rebate on insurance underwriting income for up to 20 years, renewable. Section 58127.5 abates business privilege tax on those underwriting receipts for up to 20 years, renewable. The rebate and abatement are certificate benefits. They are not stated as automatic for every captive."
+    },
+    "annual_filing_requirements": "Section 23107(a) requires a pure captive to submit a statement of financial condition, written on generally accepted accounting principles and audited by an independent certified public accountant, on or before the last day of the sixth month after the end of its fiscal year. A captive that is not a pure captive files, on or before 1 March, a National Association of Insurance Commissioners annual statement as of the preceding 31 December, verified by at least two principal officers, and a risk-based capital report. Its audit is due on or before 1 June. The statements include reserves for known claims and expenses, claims incurred but not reported and expenses, unearned premiums, and bad debts. An actuarial opinion on known-claim and incurred-but-not-reported reserves is included in the audited statements. For a captive other than a pure captive, that opinion is filed with the annual statement by 1 March. A late filing may be fined up to $500 a day and is a ground for suspension, revocation, or non-renewal. The Commissioner examines each captive at least once every three years, and may extend that period to five years if a comprehensive annual audit of satisfactory scope is performed by independent auditors the Commissioner approves. The captive pays the examination cost. At least one of not fewer than three incorporators must be a Guam resident. The captive maintains its principal place of business on Guam and appoints a resident registered agent. The published regulation still says every licensed captive files a National Association of Insurance Commissioners statement by 1 March and an audit by the end of the sixth month. Section 23107, as amended by Public Law 24-104 and Public Law 27-54, is the later filing rule for a pure captive. The Department's 4 February 2026 financial-statement letter is addressed to domestic and alien insurers under other sections of Title 22. Section 23115 says provisions of Title 22 outside Chapter 23 do not apply to captives except where Chapter 23 specifically refers to them.",
+    "captive_administrator": {
+      "name": "Insurance, Securities, Banking and Real Estate Branch, Regulatory Division, Department of Revenue and Taxation",
+      "email": "isbre@revtax.guam.gov",
+      "phone": "(671) 635-1845, (671) 635-7664, (671) 635-1846, and (671) 635-1844",
+      "fax": null
+    },
+    "licensing_speed": "Chapter 23 does not set a number of days in which the Commissioner must grant or refuse a licence. Section 23102(f) says that if the Commissioner is satisfied the filings comply, the Commissioner may grant a licence. Section 23118 requires the Guam Captive Insurance Advisory Committee to recommend, within 30 days of receiving the information, whether the applicant should be licensed. The recommendation is advisory. The published regulation requires the $2,500 licence fee within 30 days after approval of an incorporated applicant, or within 60 days after approval of an applicant that still has to incorporate.",
+    "regulator": {
+      "name": "Commissioner of Banking and Insurance, Department of Revenue and Taxation, Regulatory Division",
+      "address": "Insurance, Banking, Securities and Real Estate Branch, 1240 Army Drive, Barrigada, Guam 96913",
+      "website": "https://www.guamtax.com/about/regulatory.html"
+    }
   },
   {
     "name": "Guernsey",
@@ -1799,18 +1885,69 @@
   },
   {
     "name": "Hong Kong",
-    "summary": "Hong Kong is a leading Asian financial hub that encourages captive establishment through simple tax regimes and targeted concessions for marine and specialty insurance. Since 2013, it has provided a 50% reduction in corporate tax for offshore business, later extended to onshore risks. The Insurance Authority's strategic vision is to build a regional hub through a bespoke regime for insurance-linked securities (ILS).",
+    "summary": "Hong Kong authorises captive insurers under the Insurance Ordinance (Cap. 41), section 2(7). A captive is authorised for general business only. That business must not cover liabilities or risks that an Ordinance requires a person to insure, and it is limited to risks of bodies corporate in the captive's corporate group, the proportional share of another body's risks to which the captive or a first-tier group member is directly exposed, and other risks that the captive or a first-tier member controls, oversees, manages, or is otherwise sufficiently connected to. The Insurance (Amendment) Ordinance 2023 and the subsidiary legislation for the risk-based capital regime commenced on 1 July 2024. Captive capital is set by the Insurance (Marine Insurers and Captive Insurers) Rules (Cap. 41U), not by the general Insurance (Valuation and Capital) Rules. The capital base must be at least HK$2 million and at least the prescribed capital amount. The Insurance Authority's list names nine authorised captive insurers as at 6 July 2026. The Authority's 2024-25 annual report said two new captive authorisations had been granted up to August 2025. An eligible captive may elect a concessionary profits tax rate of one-half of the Schedule 8 rate. The Inland Revenue Department states the normal corporate rate as 16.5 percent, so the concessionary rate is 8.25 percent, on qualifying captive insurance profits for the year of assessment 2018/19 onwards. Profits on which that election is made do not also receive the two-tiered rates. The Authority's captive brochure, published in March 2026, gives the captive contact as captives@ia.org.hk and says processing takes approximately three months.",
     "jurisdiction": "Onshore (China SAR)",
-    "legislation": "Insurance Act (Hong Kong)",
+    "legislation": "Insurance Ordinance (Cap. 41), and the Insurance (Marine Insurers and Captive Insurers) Rules (Cap. 41U)",
+    "legislation_year": 2023,
+    "applicable_legislation": "Insurance Ordinance (Cap. 41), section 2(7), for the captive definition, and section 8 for authorisation. The Insurance (Amendment) Ordinance 2023 commenced on 1 July 2024 and brought the risk-based capital framework into force with its subsidiary legislation. Insurance (Marine Insurers and Captive Insurers) Rules (Cap. 41U), Legal Notice 65 of 2024, set the captive valuation, capital, and fund requirements from that commencement. Insurance (Exemption to Appointment of Actuary) Rules (Cap. 41Q) exempt captive insurers from appointing an actuary. Insurance (Valuation and Capital) Rules (Cap. 41R) apply to authorised insurers other than marine insurers, captive insurers, and Lloyd's. Insurance (Submission of Statements, Reports and Information) Rules (Cap. 41S) set the reporting framework. Insurance (Authorization and Annual Fees) Regulation (Cap. 41C), Schedule 2, as replaced by Legal Notice 58 of 2017 and retained for captives by Legal Notice 2 of 2021, sets the captive authorisation and annual fees. Inland Revenue Ordinance (Cap. 112), section 14B(1)(b), is the concession cited by the Inland Revenue Department for an authorised captive insurer. The Companies (Amendment) (No. 2) Ordinance 2025 re-domiciliation regime came into operation on 23 May 2025. An authorised insurer incorporated outside Hong Kong that re-domiciles is supervised as if incorporated in Hong Kong, after a letter of no-objection under the new section 3BA(3) of the Insurance Ordinance.",
     "min_capital": {
-      "Minimum Paid-up": "HKD 2 million (~$260,000)"
+      "Captive insurer, floor": "The capital base must also be at least HK$2 million, even where the premium and claims calculation would be lower, and at least the minimum capital amount.",
+      "Captive insurer, prescribed capital amount": "Under rule 8, Table 2, of Legal Notice 65 of 2024, if the greater of net premium for the 12 months ending on the valuation date and relevant claims outstanding does not exceed HK$40 million or its equivalent, the prescribed capital amount for general business is HK$2 million or its equivalent. If that greater amount exceeds HK$40 million, the prescribed capital amount is 5 percent of the net premium or 5 percent of the relevant claims outstanding, whichever is the greater.",
+      "How the minimum is set": "Rule 4 of the Insurance (Marine Insurers and Captive Insurers) Rules requires the capital base to be at least each of the prescribed capital amount, the minimum capital amount, and HK$2 million. The minimum capital amount is the same as the prescribed capital amount unless the Authority varies or relaxes it. The capital base is Unlimited Tier 1 capital, plus Limited Tier 1 capital of no more than 10 percent of the prescribed capital amount, plus Tier 2 capital of no more than 50 percent of the prescribed capital amount. Guideline on Valuation and Capital Requirements (GL36), in effect from 1 July 2025, states the same HK$2 million floor for a marine insurer or a captive insurer, against HK$20 million for an applicable insurer. The Authority's captive requirements page states the same HK$2 million floor and says the prescribed capital amount uses a calculation based on net premium or relevant claims outstanding.",
+      "Other authorised insurers": "An insurer other than a marine insurer, a captive insurer, a special purpose insurer, or Lloyd's must keep a capital base of at least its prescribed capital amount, its minimum capital amount, and HK$20 million. That is not the captive test."
     },
-    "tax_notes": "16.5% Corporate tax; 50% concession available",
+    "tax_notes": "The Inland Revenue Department states the normal profits tax rate for a corporation, from the year of assessment 2008/09, as 16.5 percent. From the year of assessment 2018/19, two-tiered rates charge 8.25 percent on the first HK$2 million of assessable profits and 16.5 percent above that. A concessionary rate of 50 percent of the normal profits tax rate applies to qualifying profits of an authorised captive insurer from the year of assessment 2018/19. The Department's profits-tax-return notes say the concessionary rate is one-half of the rate in Schedule 8 to the Inland Revenue Ordinance, which is the 8.25 percent rate the Authority states, and that it applies only if the captive elects. Profits taxed at the concessionary rate do not also qualify for the two-tiered rates. An authorised captive insurer files supplementary form S7 with the profits tax return whether or not it claims the concession, including where it has a loss. The Authority says the practical benefit may differ under the OECD base-erosion and profit-shifting reform, depending on the group's effective tax rate in Hong Kong, and refers readers to the Inland Revenue Department. The captive requirements page does not state a separate premium tax. The Authority's funding includes a policyholder levy of 0.1 percent of premium, capped at HK$100 a year for a long-term policy and HK$5,000 a year for a general policy. The captive page does not say whether that levy is collected on a captive policy.",
     "slug": "hong-kong",
-    "contact_name": null,
-    "contact_email": null,
-    "last_verified": null,
-    "source_urls": []
+    "contact_name": "Market Development and External Promotion Section, Insurance Authority",
+    "contact_email": "captives@ia.org.hk",
+    "last_verified": "2026-11-27",
+    "source_urls": [
+      "https://www.ia.org.hk/en/supervision/reg_insurers_lloyd/requirements_captive_insurers.html",
+      "https://www.ia.org.hk/en/reinsurance_specialty/specialty_captive_insurance/list_of_captive_insurers.html",
+      "https://www.ia.org.hk/en/reinsurance_specialty/specialty_captive_insurance/files/IA_CI_Brochure_EN.pdf",
+      "https://www.ia.org.hk/en/legislative_framework/overview/latest_legislative_developments.html",
+      "https://www.ia.org.hk/en/infocenter/press_releases/20240701.html",
+      "https://www.ia.org.hk/en/supervision/reg_insurers_lloyd/an_overview_of_the_risk_based_capital_regime.html",
+      "https://www.ia.org.hk/en/legislative_framework/overview/files/es22024281865.pdf",
+      "https://www.ia.org.hk/en/legislative_framework/files/GL36_EN.pdf",
+      "https://www.ia.org.hk/en/legislative_framework/overview/files/es22017211658.pdf",
+      "https://www.legco.gov.hk/yr20-21/english/subleg/negative/2021ln002-e.pdf",
+      "https://www.ia.org.hk/en/infocenter/files/Insurance_Authority-AR24_25_eng.pdf",
+      "https://www.ia.org.hk/en/infocenter/files/2026-11-4_Consultation_paper-english.pdf",
+      "https://www.ia.org.hk/en/infocenter/forms/regulatory_returns.html",
+      "https://www.ia.org.hk/en/aboutus/contact_us.html",
+      "https://www.ird.gov.hk/eng/tax/bus_pft.htm",
+      "https://www.ird.gov.hk/eng/faq/cpt51.htm",
+      "https://www.ird.gov.hk/eng/faq/s7.htm"
+    ],
+    "stats": {
+      "reporting_year": 2026,
+      "total_captives": 9
+    },
+    "types_allowed": [
+      "Captive insurers authorised for general business only, limited by section 2(7) to group risks, a proportional share of risks to which the captive or a first-tier group member is directly exposed, and other risks the captive or a first-tier member controls, oversees, manages, or is sufficiently connected to",
+      "No long-term business. Compulsory insurance required by an Ordinance is outside the captive authorisation",
+      "No protected-cell or incorporated-cell captive is described in the Ordinance provisions or Rules reviewed. Special purpose insurers are authorised separately and are not captive insurers"
+    ],
+    "regulator_staff_count": "The Insurance Authority reported 357 staff as of March 2025 and said it planned a team of 380 in 2025. No headcount for captive supervision is published.",
+    "fees": {
+      "licensing_incorporation": "Schedule 2 to the Insurance (Authorization and Annual Fees) Regulation, replaced by Legal Notice 58 of 2017, charges a captive insurer, on authorisation under section 13(1)(a), the aggregate of a fixed fee of HK$30,000 and a variable fee. Legal Notice 2 of 2021 left captive insurers on that Schedule 2 structure and prescribed a separate fixed fee of HK$15,000, with no variable fee, for a special purpose insurer. The Authority's 2024-25 annual report states the captive fixed fee as HK$30,000. The variable fee for Schedule 2 is the captive's insurance liabilities multiplied by the Schedule 3 rate. Unlike the fee for other authorised insurers, the Schedule 2 calculation is not capped at HK$7 million. Schedule 3 sets the rate at 0.0039 percent from 26 June 2022 and for each subsequent year beginning on 26 June. The Authority's consultation paper of 4 November 2026 still describes the current variable rate as 0.0039 percent. Its proposed increase is for long-term business and is not in force. The Schedule 2 fee is payable upon authorisation. Company-registry incorporation fees are not set in Schedule 2.",
+      "annual_fees": "The annual fee under section 13(1)(b) is the same aggregate for a captive insurer: a fixed fee of HK$30,000 plus the variable fee at 0.0039 percent of insurance liabilities, without the HK$7 million cap that applies to Schedule 1. The 4 November 2026 consultation says a special purpose insurer does not pay the variable component. The definition of insurance liabilities used after the 1 July 2024 risk-based capital commencement was not re-extracted from a later amending instrument.",
+      "premium_tax_rate": "Concessionary profits tax of one-half of the Schedule 8 corporate rate, stated by the Authority as 8.25 percent, on qualifying profits from authorised captive insurance business, if the captive elects. The normal corporate rate is 16.5 percent. The two-tiered 8.25 percent rate on the first HK$2 million is not available for profits on which the captive concession is elected. No captive premium-tax rate is stated on the captive requirements page."
+    },
+    "annual_filing_requirements": "The Authority's regulatory-returns page, in the captive-insurer section current as of the March 2026 and April 2026 forms, requires a quarterly return of financial position, capital adequacy, and business information within eight weeks after each quarter-end, and an annual return of financial position, capital adequacy, business, governance, and supplementary information within six months after the financial year-end. Captive insurers are not given the monthly return required of other authorised insurers on that page. The captive requirements page says a captive notifies the Authority after appointing a key person in a control function, rather than obtaining prior approval, and is exempt from appointing a certifying actuary under rule 3 of Cap. 41Q. It is exempt from the assets-in-Hong Kong requirement that applies to a non-Hong Kong general insurer's onshore business, from Guideline GL20 on cybersecurity, and from Guideline GL21 on enterprise risk management. Guideline GL10 on corporate governance is encouraged rather than required. The risk-based capital overview says an insurer generally submits an own-risk-and-solvency assessment at least annually under GL21. The captive page's exemption from GL21 is the captive-specific statement. Insurance (Public Disclosure) Rules (Cap. 41W) came into operation on 22 May 2026. The legislative-developments page does not state a captive exemption from those rules.",
+    "captive_administrator": {
+      "name": "Market Development and External Promotion Section, Insurance Authority",
+      "email": "captives@ia.org.hk",
+      "phone": "+852 3899 9983",
+      "fax": null
+    },
+    "licensing_speed": "The Insurance Authority's captive insurance brochure, published in March 2026, says application processing time is approximately three months, subject to the completeness and quality of the application materials. The brochure describes an initial discussion, a preliminary meeting, an unsigned draft application, a signed formal application, an approval in principle, an office inspection, and then the certificate of authorisation. The application form it names is Form IA-6C, filed by the ultimate parent.",
+    "regulator": {
+      "name": "Insurance Authority",
+      "address": "19/F, 41 Heung Yip Road, Wong Chuk Hang, Hong Kong",
+      "website": "https://www.ia.org.hk/en/supervision/reg_insurers_lloyd/requirements_captive_insurers.html"
+    }
   },
   {
     "name": "Illinois",
